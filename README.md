@@ -108,4 +108,4 @@ Found 15 hardware stores in Richmond, VA
 - **"REQUEST_DENIED"**: Enable the Places API (New) in Google Cloud Console
 - **"API key not valid"**: Check your API key and make sure it's correct
 - **"Quota exceeded"**: You've hit the API usage limits for the day
-- **No results**: Try increasing the search radius or adding more locations 
+- **No results**: Try increasing the search radius or adding more locations
