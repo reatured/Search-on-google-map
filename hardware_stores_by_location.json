@@ -1,0 +1,1079 @@
+[
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.7418476,
+        "lng": -73.9913589
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.7433790302915,
+          "lng": -73.98991901970848
+        },
+        "southwest": {
+          "lat": 40.7406810697085,
+          "lng": -73.9926169802915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "The Home Depot",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 2988,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103130809397573294959\">Demi Nada</a>"
+        ],
+        "photo_reference": "ATKogpdnh5RhuPozOuINAOoflfHiFuYpaBoT2aWWIvMXBgRMA3NNavoePMemMz_IC_i5vWqQ1WfG2jz0Y58mYe6yNTdtUGfW_RIPgBKzbYZzRfuuspQwAz48uGMaMnMtiISL7lzHlfSOaI-qxKrcOI1KbYrQ75RG87y2Z9LB3DgCHWf-UjGBSJBRnkJ0vUghvbvy9qQxhj7giRS4-OWtDn3lYvHWYgTps-q43sff0BE7bvpOmksK32PrWUmcWQGzqmOM5ja-fa4Ea-KafOaJ5WUt-zGiWpIklSNXtuLLu8FdK_TRyc1fZAw0Llq6XLuao-FfTlYiphu_n9RrJOJzssqmieC-f6AI6ktvO7mvQlH7nxLa8doQzSMa0_FgSZ_bR1TNvJiXGlu6-Lpu9rjn7Gr6scFOFguH73yOjD1rghaHYPC19GgJW6POmek242vadFS7PR8o9-Qrdbb57koNcH2DlUSU7RGq4A6KcqDhQ8eIUNdTyFU4vDZNAwnSJNqE85E8-ljLCtKyQMsz_xJmIgWu3RenM10QRHfeNuFCh6M7uYhVaTo6iDovO7BxU_9Tdn9my1Nz__4mNPUZ8dMJPNotT24YnzDWzAFQ1hwqoT7oRg13cSwIdemNRzN5XYX51XJNOiBzlw",
+        "width": 5312
+      }
+    ],
+    "place_id": "ChIJQ5RcZKRZwokRzVgM9HRP9xA",
+    "plus_code": {
+      "compound_code": "P2R5+PF New York, NY, USA",
+      "global_code": "87G8P2R5+PF"
+    },
+    "price_level": 2,
+    "rating": 4.3,
+    "reference": "ChIJQ5RcZKRZwokRzVgM9HRP9xA",
+    "scope": "GOOGLE",
+    "types": [
+      "hardware_store",
+      "furniture_store",
+      "home_goods_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 4796,
+    "vicinity": "40 West 23rd Street, New York"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.7606582,
+        "lng": -73.9609335
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.76205098029151,
+          "lng": -73.9595092197085
+        },
+        "southwest": {
+          "lat": 40.75935301970851,
+          "lng": -73.9622071802915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "The Home Depot",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 2448,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115235755172384586896\">Christopher Jenness</a>"
+        ],
+        "photo_reference": "ATKogpc9ro_RF6h7KGjgX7DHugNlVJvmf6vEdHhTZGDEmOqPmIWD3wl0gogEgd87QDYPd_vU5otfXtear7HovNqeZ6AsSViP_VYidEZFMYohdkrGGj4wOybPn8yMqLn1lr-Ul8XcV6sYPPnNASFsvglQWIasYZblYG9j0lQO9CnISJRCpHFNRvAi1n6izgywQwOyKK_SNdUHegJ3IbIOvI-MEGl750pkrEaPhwJEzct1M14sXvgqytKc_Y_ubSV7FedB5ECcdRw0jczxjv4Yk6dM_k0XYKy-aSp-PNqcSOxP6L8VPPivukAAax9Lg_D5oX-OqL97xoL4TkhFZQANMITpJkk6idq6LWlyIzPwTypbw4_PErDSNREFJcEWDt0saeYv-twqqzl_EIdW58K5ASMnKtPUB5qbhe6lQackPBu0v0JtmSFRZdSZd_iZGScK28zJN222Zt6UmLZusPtXAoelDYoTD1YONRYK2rDxkpgApx_rWLmdk9K85GaaC6xdNGqjq4qDe-mfVE05Fxr91s0b44-v0TzsdPr_We-PhytvFL4Hy9jvJCRZCpRcMjcsKrJmLPEVGHTfLumsn-jSC76QcjvBibiyVTDWrD_WUbOY9TIRT-ufUfgRCAs9adRVz1RIE1cVVA",
+        "width": 3264
+      }
+    ],
+    "place_id": "ChIJ4_fTzMq93YkRTikCCb6fXYQ",
+    "plus_code": {
+      "compound_code": "Q26Q+7J New York, NY, USA",
+      "global_code": "87G8Q26Q+7J"
+    },
+    "price_level": 2,
+    "rating": 4.3,
+    "reference": "ChIJ4_fTzMq93YkRTikCCb6fXYQ",
+    "scope": "GOOGLE",
+    "types": [
+      "hardware_store",
+      "furniture_store",
+      "home_goods_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 3114,
+    "vicinity": "410 East 61st Street, New York"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.6917871,
+        "lng": -73.9528313
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.69332053029149,
+          "lng": -73.95159141970849
+        },
+        "southwest": {
+          "lat": 40.69062256970849,
+          "lng": -73.9542893802915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "The Home Depot",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 768,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115815892796061066586\">The Home Depot</a>"
+        ],
+        "photo_reference": "ATKogpdrvBYMrovGpOsihhzb-HdH7ruatFIS7V1_StpDvUlzxvKIYZYz2GWDaucRqZveq3hUVIN9eBiNjDaEzvBy9CX50-z-mw-EgYUKIYkRnxpC74KC8PZENdIqPoodcjgPCfDDU9UVvc358TGu7X7Ycey4tVDPfLv_gY9Edo2nc9Ljtseu2pvYAcc_KpJmgw2zZpt059p7hWpOgRvMAG2xMIY6cufB1lm8Nu-431IFz1FuR6w8qWCBDOTVbRJ6UvHOgyoAumUYfoOGJryXFZC07gn35oKICV_Vo1xkdtlfQTm7D2hhBB-8VuoxFcNoztyTUXDB4c09dZ4",
+        "width": 1024
+      }
+    ],
+    "place_id": "ChIJWefgTJNbwokRi1Q7KHmWNhs",
+    "plus_code": {
+      "compound_code": "M2RW+PV Brooklyn, NY, USA",
+      "global_code": "87G8M2RW+PV"
+    },
+    "price_level": 2,
+    "rating": 3.8,
+    "reference": "ChIJWefgTJNbwokRi1Q7KHmWNhs",
+    "scope": "GOOGLE",
+    "types": [
+      "hardware_store",
+      "furniture_store",
+      "home_goods_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 4972,
+    "vicinity": "230 Nostrand Avenue, Brooklyn"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.6674681,
+        "lng": -73.9989034
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.66916353029151,
+          "lng": -73.99722506970849
+        },
+        "southwest": {
+          "lat": 40.66646556970851,
+          "lng": -73.9999230302915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "The Home Depot",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 292,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115668491781011347706\">The Home Depot</a>"
+        ],
+        "photo_reference": "ATKogpdBaRgbKJo-yEXdB9YbwRsabkBfMtrnfsmqBl8GCzKXDIuuWlsTv2dk3SkjrDSFaX4QI9TE3hcL5DIw7FEoxJOKdlBrEZO8vbHP8yJNn4EzVRHksm9gd6kRzLlTFkCZalc-81MC0Uaff_GSea2idrVKMbYAVS44PfacX9ctA79t6LjR9hUKLV5HE0rBNtYl3ui0vGBccobxKKCPl4525bao7N-DAbd63hlf0ffr8hHG1sc7FB767asEdtJJWfQ1OEyXaEwMmPdtt-XHgOIsavJHsDahQowrQcru6qseoczHzPenW3RlQdylKFThVo0wSRjMNOeQ",
+        "width": 704
+      }
+    ],
+    "place_id": "ChIJ53DG5-9awokRFEQyo8IfHeA",
+    "plus_code": {
+      "compound_code": "M282+XC Brooklyn, NY, USA",
+      "global_code": "87G8M282+XC"
+    },
+    "price_level": 2,
+    "rating": 4,
+    "reference": "ChIJ53DG5-9awokRFEQyo8IfHeA",
+    "scope": "GOOGLE",
+    "types": [
+      "hardware_store",
+      "furniture_store",
+      "home_goods_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 3826,
+    "vicinity": "550 Hamilton Avenue, Brooklyn"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.6719847,
+        "lng": -73.9950858
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.6732622802915,
+          "lng": -73.99417356970851
+        },
+        "southwest": {
+          "lat": 40.6705643197085,
+          "lng": -73.99687153029151
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "Lowe's Home Improvement",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3000,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/114222813373469903914\">naftulie</a>"
+        ],
+        "photo_reference": "ATKogpdnZZnwlrqWGYM2oy0ltgOuQh119Rnw4AnbZoqT9x1k6PbTO7wUQYo3rWKO8i43FzvGIcwFdW6s2n7aIH83iCuTn8qg1prdDE8_oQYlJD1fH7QJUlcPUyWzic3496B5Wclvicxgl9H-_8phWJdKTwe9MOnkR51e4bK3ASqBRz2rYAVKZRH85ILW-IXeMT4Qe8S6_D6UWe1fVr9ELWbfq2xwUwoGxb9RmP7Na5mZl-5Q9pWodoGfFgPBoZks7bbpKo7n-xNVCUVRBXZgRLv8i-h5SmXwDfV9fzw6uh_YyQqJ7bKhBOms1rChSA-_L6WEDjJXLvz_v7cxDS2fIzWnHykWDh2xJC4KvGPcQ3M5Tjo6cvlm8-m_Ks9fE2QXn_qK9b0xb-XYzuqAcdOGtZK7t16CaXlQH0Jj8H_JbAt-J0vTLshXFzVxFTEOVbWKM5nxFyzFk0nfn49sHP-sjE5XB5R56Gb7nu5qmK85rEI4riu4dMIhxxj3k87AxWkZu-IlzOF-YYFziFjQc6e9Uacf6IS-zyxPY-xPlTT07hSw9RtoGKxGbk2gj3CQ2br8DZNFnon_c8s8c1aNxhyFmaZBqC2YXFlHbx3b9JSfO2aqc9kU7m9lGLEcm5FdNE9jUy0fpm3dZw",
+        "width": 4000
+      }
+    ],
+    "place_id": "ChIJiXinqPBawokR_Oc37wuFHQg",
+    "plus_code": {
+      "compound_code": "M2C3+QX Brooklyn, NY, USA",
+      "global_code": "87G8M2C3+QX"
+    },
+    "price_level": 1,
+    "rating": 3.9,
+    "reference": "ChIJiXinqPBawokR_Oc37wuFHQg",
+    "scope": "GOOGLE",
+    "types": [
+      "hardware_store",
+      "furniture_store",
+      "home_goods_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 4264,
+    "vicinity": "118 2nd Avenue, Brooklyn"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.7521473,
+        "lng": -73.91204479999999
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.7538014302915,
+          "lng": -73.9110175197085
+        },
+        "southwest": {
+          "lat": 40.75110346970851,
+          "lng": -73.9137154802915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "The Home Depot",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 2340,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/103542791706983362737\">Tenzing Sherpa</a>"
+        ],
+        "photo_reference": "ATKogpfIhwu7gHVMMkAU2IjcLTXjjy1pCATkxaUE9q_6wsBYgAsj42Pepkb2FXrTzGJvjmAGBhv16VsXcdXJvN7RbLEBDMCyYq886nd9uibAokqdgpnn1AO8fXmKWqR6KHxYr7od64ZgEPu_zy7jcDGY9Ekp2YaGz62X6Zp_c7Bf_QHAQWhbcIlBqiJj0o0rqAHIHjfl5IFQUyzas_vW04bjE2fV3F8o7Ad9aubiUn6NIcjzfyqfWjvtoMaINYlsEX5zdT9MidBtFUolqw3h4fH_EBYmFvL5qzOdEFZbKqvd9peEUdOh1ay6XFjoOSbtde25mW8VVDAdNsRUmuzBnW-vFYPeoUf5t2NbSuW13uSvrLn2nfNP44O2YyWooh6IRENFoldsqse-LJJj-eoKaW4E-BkYnyCtRb5ytBt9DwtYaqqVIkdXTnf9fpo-5AQ1u4MZGdTY9tgNJjXAjKrlNx9IUygxKTr6KswzjWFplAeW1ncOz_wglpYdh07pZ057Jm3x8ce8oWXtyPyFqieA88I72dIafIaOWKGpQQ3pz0Edt3wy6GAnZtnO_Kx-sLbXmcESgn5Bw259lPkP0AsJd-KCVls0UpnarUVoYUrTcseyts5JB7oHhOijU69d__kf6eviBmsxi9DV",
+        "width": 4160
+      }
+    ],
+    "place_id": "ChIJKybRgxhfwokR0uNZGII2KpE",
+    "plus_code": {
+      "compound_code": "Q32Q+V5 Long Island City, Queens, NY, USA",
+      "global_code": "87G8Q32Q+V5"
+    },
+    "price_level": 2,
+    "rating": 4.1,
+    "reference": "ChIJKybRgxhfwokR0uNZGII2KpE",
+    "scope": "GOOGLE",
+    "types": [
+      "hardware_store",
+      "furniture_store",
+      "home_goods_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 4813,
+    "vicinity": "50-10 Northern Boulevard, Long Island City"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.7833401,
+        "lng": -74.05016359999999
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.7852236802915,
+          "lng": -74.04860106970848
+        },
+        "southwest": {
+          "lat": 40.7825257197085,
+          "lng": -74.0512990302915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "The Home Depot",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 786,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/112161416193260119961\">Travel Joy</a>"
+        ],
+        "photo_reference": "ATKogpd1CSFsYXRO73R1v-qim-ZXSOwMWR85AUgcWLzE8AMbZtaaqbtIEr2yB0g94qxKPI86Ooco_7VTbZFae8XfIwB53fAkuMVlX066eipczP1FoHGZDXnTkOoYETFUrvNwcF7cXl4S-wxLAmMUP26LttJmrWBoWjQEFx6qS4ZwLKfam18yCTXgWDdRiC63ldErFkWuGBcXpdYOYy77ecXXegoceTkR4c-We2LfixiPEKOW6uENyevTaRaag5PkzCoeO0iWXYlTvkaCobDgEVA1aDETtR-BogFqYXkaAxrmngleVvOAgpgFUmVqPhIOKfQxS0Ho-TJokmpkVfwzx_ost614Jtwv23vtN5cgSwM6au0V9gB02OkW-XN5gdNoBTtqNfQ3RyBIBaJVe1m7NijP_ODVv3FfIlNtT7rIMDIVPx3m_VN23MITf8EHUCyMug9mGj5jzb6PZRBDC0xu8kf8E8MxngLYHwJGIO8DpMaCHuLyKw46H-I-AeQE1Qocdq5d7y5IAIobxSzBWN0F3Wn1pDqbkp2zV9oUb78_GuETIoLEyDcncSt4JzLL7AEpatIQFnoLrBXJa3d3SixvrWQnciGH-9c1DwrlS_204s3ytYOAIUzmcEnqA1rQFsQWcrk76-yaPw",
+        "width": 1256
+      }
+    ],
+    "place_id": "ChIJzaCcwupXwokRChaw65lh9AI",
+    "plus_code": {
+      "compound_code": "QWMX+8W Secaucus, NJ, USA",
+      "global_code": "87G7QWMX+8W"
+    },
+    "price_level": 1,
+    "rating": 4.2,
+    "reference": "ChIJzaCcwupXwokRChaw65lh9AI",
+    "scope": "GOOGLE",
+    "types": [
+      "hardware_store",
+      "furniture_store",
+      "home_goods_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1935,
+    "vicinity": "1055 Paterson Plank Road, Secaucus"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.730658,
+        "lng": -74.0404776
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.7318744302915,
+          "lng": -74.0392394197085
+        },
+        "southwest": {
+          "lat": 40.7291764697085,
+          "lng": -74.0419373802915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "The Home Depot",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3264,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/108131615994063199837\">YT Mok</a>"
+        ],
+        "photo_reference": "ATKogpeevd8wE8w-x5FBtQtjJkxHyBF7sa8Mfe1LEK-V0mFJbTAtDYoiXhV7mL_o_L3SSK_1FBq_X3eSRTu7XjsFmO2NNCMzMXWstsHHENS1VeuYefpMAQT_ugEgL-BQna8ZtfkTE1s5ObS90qEQg7VhEwqc1cDaNHOoSJAjy2Y3tGxmlabI3zjkSBAWRdmcVN6ZlNekGohc-XEwir-ud0pkzM0KdAGXoBHyfwSNWN-a7BX4aqwXgJn1zW0Cha-7zsKtU0Gl7o0-AvqorVDLC_H-WhP4tnc-KCaU8fSSlZYVZuG8YijhaNtxGIerGdHkPbA3OybgDnEuJyR5XwMltBByHzgh5MWSM1OXR0GouRPCldaZ8ey9ynMTlXgx-wgtZqJFpLtI5y-Oxt0qI2NNjb2IwOMvr8EW-VhDGxSLbItmASlxlXkxt2Xn42gE4dyGdVWOirW0ZMex6ZScWoihxCliJ3kImntfEhHO6Ke8E8Sa3rvWtY9tuhwDFxk2e5Jc1NJuCh46NHyyay29LeBF8qGVeiDRCO0-wYqU4j14sMmYI9mONeU5-tOLzZI9Vwk54VZtu_WzAC-Lh5AmPvlQ73Gec8ot8I_5KTqb3hbirFLg9S5ukjkWLY5OWW8knbjbvSOFKn43lQ",
+        "width": 2448
+      }
+    ],
+    "place_id": "ChIJFyz-9U5XwokRN6YU1rzbSJA",
+    "plus_code": {
+      "compound_code": "PXJ5+7R Jersey City, NJ, USA",
+      "global_code": "87G7PXJ5+7R"
+    },
+    "price_level": 1,
+    "rating": 4.2,
+    "reference": "ChIJFyz-9U5XwokRN6YU1rzbSJA",
+    "scope": "GOOGLE",
+    "types": [
+      "hardware_store",
+      "furniture_store",
+      "home_goods_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 2040,
+    "vicinity": "180 12th Street, Jersey City"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.72328359999999,
+        "lng": -74.0945414
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.72435143029149,
+          "lng": -74.09272666970848
+        },
+        "southwest": {
+          "lat": 40.7216534697085,
+          "lng": -74.09542463029149
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "Lowe's Home Improvement",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 270,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115233689780192790390\">Lowe&#39;s Home Improvement</a>"
+        ],
+        "photo_reference": "ATKogpeD3PArwv-8Z5X_wg_tbpLf7BDsW0jmbd6Chq6HZSts_3HO7G27ctkgSLZBwQ0MuEOYAaJayCE7E4dEz4Tne9AruwBvRtYC_cQxWSX90_wMU6IHs2t5Ic6u-F7ta5tH8Z-rhTeKUXSr8KPcnnPMuS3oCuZ6acYwjHQbHrijAqp8qONwnrMg2ZiyZ4xl-_ljSwOtpZUSKjW3P-btq2dxTEIYgAwTjMFyI0Mw2uV-zf8G90JpWnii317Pv1gMquAUoKI9TnBi0UU7nGA1RmbPOaPvv59NWWhTnFxoiEvHA8OhzQi9fJJg1atsCRa-c_7XwQpeZd1Ym9g",
+        "width": 480
+      }
+    ],
+    "place_id": "ChIJJWHWwDBRwokRhFd34UnfWz4",
+    "plus_code": {
+      "compound_code": "PWF4+85 Jersey City, NJ, USA",
+      "global_code": "87G7PWF4+85"
+    },
+    "price_level": 1,
+    "rating": 3.9,
+    "reference": "ChIJJWHWwDBRwokRhFd34UnfWz4",
+    "scope": "GOOGLE",
+    "types": [
+      "hardware_store",
+      "furniture_store",
+      "home_goods_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1753,
+    "vicinity": "727 New Jersey 440, Jersey City"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.7423007,
+        "lng": -73.9799719
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.7436949802915,
+          "lng": -73.97858976970849
+        },
+        "southwest": {
+          "lat": 40.7409970197085,
+          "lng": -73.9812877302915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "Nuthouse Hardware",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105790452300122794195\">G A (TheFamous)</a>"
+        ],
+        "photo_reference": "ATKogpfouNxQ2s3uB6i9qs3f-ClYAx5v_sITBTDx98ncrvD4JuZvnJswwwpneiSaWgt2wHprF_PhbRBVNlXiy466KvSPmiL9bEoMbDR0V8QGnzT9WdvtGaY-oy8W81YvwkWYynk6UzbPAKcxwnOsgE-xgqjEc17iww6rpBLsjGC9ufWKwI34EvIUdnPsRAtTlxbJfs3qAu7TX9_4Du7xilJURKXXwqd5dhWxw5E31KAtKdXjNgvr2CnR4ErnGxLxvAwhlgW3L5nBEv_jSAyjnQDZSdX8DVKs6GfxSlSYcLDPpp8h5oWooW0hbI9owux2XVIa25aRVlbbc70YJADt3s4sLIBO4srO8-5lMgIlD6OmMulPQxa1UVgNO0_O52QzGsbobG7oaA0cKQImBMFP_IiTl-2yvdkTvGrFeHmEYyX2zRJXevo5jyqNRGxuzAuqfqRxL2PuMxx9t4c1fUMbFTjwy8hk6KgmpKfFMAecyX26MeoBISqT05fbwv3T12HIxGhZDIuUtw4usJRXMO6P-C0RcVS7VVwJeE0CSzjfJmJQtPxA01wMSMI7ALcDmpWc_0Wi9rl7NDMXnxgGwes-IbXRn02DV5esVMnvJyX3F5r2YNHRoNMntLbDKqO4cF5MWg8g",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJcctiAAlZwokRt1_nE9PF8nQ",
+    "plus_code": {
+      "compound_code": "P2RC+W2 New York, NY, USA",
+      "global_code": "87G8P2RC+W2"
+    },
+    "rating": 4,
+    "reference": "ChIJcctiAAlZwokRt1_nE9PF8nQ",
+    "scope": "GOOGLE",
+    "types": [
+      "hardware_store",
+      "home_goods_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 291,
+    "vicinity": "202 East 29th Street, New York"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.79298029999999,
+        "lng": -74.0423136
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.79428158029149,
+          "lng": -74.0406108697085
+        },
+        "southwest": {
+          "lat": 40.79158361970849,
+          "lng": -74.04330883029151
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "Walmart Supercenter",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 600,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/105561179919194268407\">Walmart Supercenter</a>"
+        ],
+        "photo_reference": "ATKogpfHwv6uK2Hk6apbb9TkLkPDGOynYA2e46boglEFXCqFn9Q0xKw1IVIi7cOqzhEw_O65JdSGu5BXJ0yIKKpR-RxoSNUFsgkZy_NvnL2tf8-3belgqP-Arcp3NfdYTeFjaDwZf2zQ8YMmMrX8aE0xGBqR03b4p15uMmigyiLxZNhbcC7yilz_hKCl9DWngTRA33a89AdXmCWRHhfHcRATRpYJ6TqmCA8HU8lFGZeNQp-6YcbMogI7FDtY1olXE8YBI1Q25zEw7sjC37_nDqsMpNOBIa2TNkz1BHaCrm8C_OWUtY45AvR1o9FcZD5PVyRzJtYCgMMCEbE",
+        "width": 1067
+      }
+    ],
+    "place_id": "ChIJJUniTu5XwokRQ5cu6kIRyFs",
+    "plus_code": {
+      "compound_code": "QXV5+53 Secaucus, NJ, USA",
+      "global_code": "87G7QXV5+53"
+    },
+    "price_level": 1,
+    "rating": 4.3,
+    "reference": "ChIJJUniTu5XwokRQ5cu6kIRyFs",
+    "scope": "GOOGLE",
+    "types": [
+      "department_store",
+      "hardware_store",
+      "furniture_store",
+      "bakery",
+      "electronics_store",
+      "home_goods_store",
+      "grocery_or_supermarket",
+      "clothing_store",
+      "food",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 18666,
+    "vicinity": "400 Park Place, Secaucus"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.7105868,
+        "lng": -74.09684779999999
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.71324325,
+          "lng": -74.09359505000002
+        },
+        "southwest": {
+          "lat": 40.70954664999999,
+          "lng": -74.10018044999998
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "The Home Depot",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/108061871786013509054\">Asif Billa</a>"
+        ],
+        "photo_reference": "ATKogpfsCbGMiG196rVcn_sp68aotXFNEfEhiWYOfXkg54wCVA5fc-nRTeSm0kt-BmHwysFvU1XNGM0hkjhepqr6EKUgBV0ARfAgDA47QoBEncmcIwuze5ZP2NOLPHxBHV3IIvpkUduJ9eKPBTSdMPyJJaalKLVFqrDbM-XkPNorumwYjuHkJC_Lv8aGE9cY9MTIRFMJsH6dyi604gggUreqz3iEYVmSE-P4nVoFom7Q0CJAJMrezRaeUBGHFvOOZdK57pfcehWpC_lvRHP0jEiakgYZl1iO2AJQRXoqBsn68s_vBxXRYtTcauHLeiDk9wbHVyWXvh-l6ZcwxCzBoyHhE9LqICmfJkf2PgTzH22Oqdh2kL6bSYgPhNwf2PX3KFT7xP5gKV2MsbzMR-5SuIn4xCIVfw7HdAZZOhDufJ24JU2wN0WH8DogtZycirDyyCoT0CEES-JeqgCtySp6RD4sHSroKsh5BuLVk4eg2dxy0b2sf0oGDRwo4BN2XLsR_pXKonLkvtj6XL0oRGffW2j5_5_EYWUmaRcGtoeuZaImS7LsuV9T5KKnPpmy8UumCh-mcNosyBKRTsKwQhqfdcvLpQUVWk5a2lteyrxfU5eutF_nfw-jAIrHwaWFnThQsP0EHG-UWcH6",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJM_LNvz5RwokRmi6sxava2Sc",
+    "plus_code": {
+      "compound_code": "PW63+67 Jersey City, NJ, USA",
+      "global_code": "87G7PW63+67"
+    },
+    "price_level": 1,
+    "rating": 4,
+    "reference": "ChIJM_LNvz5RwokRmi6sxava2Sc",
+    "scope": "GOOGLE",
+    "types": [
+      "hardware_store",
+      "furniture_store",
+      "home_goods_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1789,
+    "vicinity": "440 New Jersey 440, Jersey City"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.73731849999999,
+        "lng": -73.9974943
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.7387909302915,
+          "lng": -73.99605441970849
+        },
+        "southwest": {
+          "lat": 40.7360929697085,
+          "lng": -73.99875238029149
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "American Clay and Italian Lime plaster Workshop",
+    "opening_hours": {
+      "open_now": false
+    },
+    "place_id": "ChIJZchFfr1ZwokRB8c5nw2Sjtc",
+    "plus_code": {
+      "compound_code": "P2P3+W2 New York, NY, USA",
+      "global_code": "87G8P2P3+W2"
+    },
+    "rating": 5,
+    "reference": "ChIJZchFfr1ZwokRB8c5nw2Sjtc",
+    "scope": "GOOGLE",
+    "types": [
+      "hardware_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 1,
+    "vicinity": "104 West 14th Street 5th floor, New York"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.7340088,
+        "lng": -74.0075021
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.73531938029149,
+          "lng": -74.00603321970848
+        },
+        "southwest": {
+          "lat": 40.73262141970849,
+          "lng": -74.00873118029149
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "Garber Hardware",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 1280,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110728708912068559918\">Garber Hardware</a>"
+        ],
+        "photo_reference": "ATKogpeMcfSxH8GtWx5vzHa5jy43rSCtY2weGcLVfrjJf_pWjk79VV4njYVIrBNN46UPlXXiYJKdRuv-Uxcpu5VAEnn1YwlUST0bRTODAgyPehnEfW4lZSGsssjAwgm9Cd4SU-6C8JhUOD5ZFuZYY5xZU4TuXfVQelufeA1eFiMYxrqcVpO0RKBJu5NLDYZQqGfHeeKdAoJXSq3yjkxds5qJqiS-afHpDKmF619IbxpOeenO-FnsHzi9oTp4WL6UiEDsnM-rQv2NZZWvvHDIijWTHQ-E71YofX07wqQ3cdewflfD1nFQRQBf4h6qZJxyzUzzn5z2vuajxqA",
+        "width": 2274
+      }
+    ],
+    "place_id": "ChIJq_exWetZwokR31EVR4dJvps",
+    "plus_code": {
+      "compound_code": "PXMR+JX New York, NY, USA",
+      "global_code": "87G7PXMR+JX"
+    },
+    "rating": 4.2,
+    "reference": "ChIJq_exWetZwokR31EVR4dJvps",
+    "scope": "GOOGLE",
+    "types": [
+      "hardware_store",
+      "home_goods_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 154,
+    "vicinity": "710 Greenwich Street, New York"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.7072431,
+        "lng": -73.9382388
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.7085694302915,
+          "lng": -73.9366793697085
+        },
+        "southwest": {
+          "lat": 40.70587146970851,
+          "lng": -73.9393773302915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "Kings Building Material",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 3024,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/104902168179929370560\">Katsuyuki Kubomiya</a>"
+        ],
+        "photo_reference": "ATKogpcyZ0R8iqGudN8rXnQeT_Zfu4ZbEY7YRcCg_7d_1LrzBAjlv8DvHxg8HnsJxxGJeegkY8fVd5pSqdKxpx2Q8kdPdZi12ta4MlpXMQlj37feTzq2ChpkGpFYfc0upr74aR79hSTDy6Vg_hfT8vpeJ6aYh50P0HdOaBIdnuun1X3StO_MG6T5MJtssTSiRgeR-1DnkJtdCsGZqwLE7sgFA6IKE0pae5rTRhCHnGidsDI1dKUBVTH5eC92639SkSHmNW_Sd8_FJNW9-8PMWbhTVzUs4ZJFKsoRmwCVtWBrHFB2dc6su4meyvYWpKrUEreqP76Cm1TQ51mqy2R6HYyDwfb6PqzYUxbzegNKzg2i68ZOJjVyhM_IUrFsAg5g5J1deoVUHscIKSIGbaywyIRYusstG2kduNtNau1IsrG_A1GiDmIXObLFtyq_o6t_MJdahavWd6PtBQxgfLx53EZ86T97c_19toZlODKv3VdmRtsuz3Hl9l7HKArBKuTYZtOg0k5vK5RYUwCgCY-aeREH5D00gAqMA4V7QTpb-hAAqR1VMLRE3vLydkZ7vkV135GDiNH6Etm8k050lzsT2MW-lMfEfIawgPFRn21_pHg4CR6V7PeYuaV0KxGS0qBXyZR06J82SNUO",
+        "width": 4032
+      }
+    ],
+    "place_id": "ChIJZ4gikP9bwokRmEGgJusMmkM",
+    "plus_code": {
+      "compound_code": "P346+VP Brooklyn, NY, USA",
+      "global_code": "87G8P346+VP"
+    },
+    "rating": 4.2,
+    "reference": "ChIJZ4gikP9bwokRmEGgJusMmkM",
+    "scope": "GOOGLE",
+    "types": [
+      "hardware_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 62,
+    "vicinity": "303 Johnson Avenue, Brooklyn"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.6616238,
+        "lng": -74.0017065
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.6630217302915,
+          "lng": -74.0003094697085
+        },
+        "southwest": {
+          "lat": 40.6603237697085,
+          "lng": -74.0030074302915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "Tools For Working Wood",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 2988,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109448102045069038329\">Tools For Working Wood</a>"
+        ],
+        "photo_reference": "ATKogpeIKQCj_xyiMeh2r7LOxScPeJzCjNkGe6EE_4q6sU51T1S3ZkuH1mV26YxVf5eAmDgiPpLwS6xD60-d7dQDuyfwuMmX_G-selh5HTDE1rn9xJAFaKfrpCj7_jqRP7Q8IE0NbbFcw5vRgcTADUfiZKsui_0Ua7Ns437__A6DPayRvCft7WMZXNGrDJIqKXX8HYl5bPSqgQDvcuyE3468mWYDtt0_ZRuTKm3m6EU_vkaejg8hTqixmxu4NomXkNDHlQxAvMYXXtYxvlic1cjGqKSn5n_DxgTcEL5LMVGlaUllh9ySFSWjVSU1F-9f2iam0jbAwAn1fww",
+        "width": 5312
+      }
+    ],
+    "place_id": "ChIJP-Kvir9awokRTWUwBqwo2Ac",
+    "plus_code": {
+      "compound_code": "MX6X+J8 Brooklyn, NY, USA",
+      "global_code": "87G7MX6X+J8"
+    },
+    "rating": 4.7,
+    "reference": "ChIJP-Kvir9awokRTWUwBqwo2Ac",
+    "scope": "GOOGLE",
+    "types": [
+      "hardware_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 62,
+    "vicinity": "112 26th Street, Brooklyn"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.6913035,
+        "lng": -73.9912901
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.69269628029149,
+          "lng": -73.9900722197085
+        },
+        "southwest": {
+          "lat": 40.68999831970849,
+          "lng": -73.99277018029152
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "Ace Hardware Bruno's Home Center",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 3072,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/102300202548163591595\">Marco De Nichilo</a>"
+        ],
+        "photo_reference": "ATKogpesYNc91vLItGIrqFfyZRz_2FcuK-4ygWgNwAuZiKR3D1-M0ZPkIIxkLx7J3QS-AGdJUHCGdRMr7e7ixTSjEBt3HyAX9q2WWQDqmQEtFj65qDobP1XN8DcnWi23p4zdWWLktSdZIfuKmRVDLR0iatm8H-na3bKcGOBE8PW1K7kN5CPL7wc-hP1IPkWN-QNS3HOwrL-rsrowG8PV4UIwiAEA08HVhV4EAj6MKWMZXCP7a8jG0iHSanDHTJ3_S_0DzsfVZiOlQGGbe1dKy3XXLoI1IWC1-4Q7WzxAS8ctIgb_nScz4RWSsoeR_LEuwmFQPmaty1Cv9f6zCvS43DuJVh4YIkuZ2aWSRlz604rARn6okrgbBLudw7njQ67-q1CiuqEH2bhNjgxGPqvth3qdleZR74gSRZjT7BGZz-3s_LSw1cUMZ929t9Vz3xMPs2i93K03av_6jY9RJAno4FGcINSG6X8w4h2rqXPyg_K6-FfaqaY6psMQ6Og37SER0NZ5ybgq5aHOHbBp-wufgTdpHIcSARtkJMqtpWFl6A7iw2NFt6BE7-1JmeZcK7t4kKvmqIxoRYtXBhmceiB017VZJnFfpyD0PPniif4ZBWb5AuWbPQ9k9Pmrr0TzZgVNslFJ",
+        "width": 4080
+      }
+    ],
+    "place_id": "ChIJxahN2U5awokRN6fOhnUpgwo",
+    "plus_code": {
+      "compound_code": "M2R5+GF Brooklyn, NY, USA",
+      "global_code": "87G8M2R5+GF"
+    },
+    "price_level": 2,
+    "rating": 4.1,
+    "reference": "ChIJxahN2U5awokRN6fOhnUpgwo",
+    "scope": "GOOGLE",
+    "types": [
+      "hardware_store",
+      "home_goods_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 254,
+    "vicinity": "85 Court Street, Brooklyn"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.6708809,
+        "lng": -73.9780487
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.6722631302915,
+          "lng": -73.97675166970849
+        },
+        "southwest": {
+          "lat": 40.6695651697085,
+          "lng": -73.9794496302915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "Tarzian Hardware",
+    "opening_hours": {
+      "open_now": true
+    },
+    "photos": [
+      {
+        "height": 1440,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/115220501566674888998\">Tarzian Hardware</a>"
+        ],
+        "photo_reference": "ATKogpeZN1afYNiw9mSZ2DYWgh12cI2sPsAV-UFTo-OrdLnKOLoR8wKC_NweFcd0VyrtUDTqGrIkLIIZjO6tKYY7Yxbz4l168RBltA_sZxogZrM3fyN-V50Ynkak1XNgnMQFPaJzk09ZprgF0hb2q9luftpgQmE9qVJ31SoBE5853flm45N-_jtaqi00afQWyTx59GpkUhmo3RhlzG7giZhJ-HlLvYmBgQG0zZVs1-P2IdnX0lQC2ShSDntvetx-m5MAuK-mW5BQ1tshVu86SWE43bzjNK9FA3fVNRSXRfMST0IoC83Q59El4wLyXHt7Ls9HjcHsxU3N6ao",
+        "width": 1078
+      }
+    ],
+    "place_id": "ChIJicYXWwFbwokRUzOvfmr5Ieo",
+    "plus_code": {
+      "compound_code": "M2CC+9Q Brooklyn, NY, USA",
+      "global_code": "87G8M2CC+9Q"
+    },
+    "price_level": 2,
+    "rating": 4.7,
+    "reference": "ChIJicYXWwFbwokRUzOvfmr5Ieo",
+    "scope": "GOOGLE",
+    "types": [
+      "hardware_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 292,
+    "vicinity": "193 7th Avenue, Brooklyn"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.7505804,
+        "lng": -73.998092
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.7519715802915,
+          "lng": -73.9968508197085
+        },
+        "southwest": {
+          "lat": 40.7492736197085,
+          "lng": -73.9995487802915
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "Howard Supply",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 4032,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/109250164819939093155\">Jason Chatfield</a>"
+        ],
+        "photo_reference": "ATKogpfpjfNIRhRxYJ25XXYyZg7mTqhVXPG4-3eEtrKg1fhUpYAdwdzsgamNdKZeda2dS68S566qrDhaPouSGEws7pKSlxYB1J9maOowpEcxIHmfE2YweyddvhNAyO6lSyelrqSTIXlMPaa1px-0SkTML2rIsw8i9RJ75bM4X8OF03a1iA1O1UrnXGaAcfR1B_kjuoblcrdw5B1qy9wbKHgVZ1ULW64u5GhdbX2bOFDNYkjJME7TOHXMbyILSdfyqbo9SEfySRIjmgvTMEtJ2q8srvzvdjIuu8zIIOmtXeqHbKS5kF7ThbAHoGFnlERmePc04BVaDenJCJBjaQ_igW29R_bg0_uD9NGyu0uZMD8AKP2iTiFhc-5TIBp1bCmBuwndyoTDDJDmMPbqT7SBbqswtQcnwAAt-kWuenI8MUPhS5Hi-KhmL_4zJa9iQOYFHDafK4168TcFjikm5dWx3mxXgX4hAcNizbexyohy2pXG6xdO2UocPGXbwzv9gShsBh015vvIEQigeBhp6bhTBTU7tHZTyt246Q9v761cUE-OXvpvGqWY8FjXQ6eGuQ8w7k1yjEuJTqjTQ1KUu6ixl-_Zyt35u6Pc-LsA2Nmtkq8zlb296DSvvjFfifx0pH-J8NyCCVUCPRbq",
+        "width": 3024
+      }
+    ],
+    "place_id": "ChIJySRtzbFZwokRU2VE2e7yD3o",
+    "plus_code": {
+      "compound_code": "Q222+6Q New York, NY, USA",
+      "global_code": "87G8Q222+6Q"
+    },
+    "rating": 3.7,
+    "reference": "ChIJySRtzbFZwokRU2VE2e7yD3o",
+    "scope": "GOOGLE",
+    "types": [
+      "hardware_store",
+      "home_goods_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 25,
+    "vicinity": "344 9th Avenue, New York"
+  },
+  {
+    "business_status": "OPERATIONAL",
+    "geometry": {
+      "location": {
+        "lat": 40.7442633,
+        "lng": -73.9937331
+      },
+      "viewport": {
+        "northeast": {
+          "lat": 40.74558768029149,
+          "lng": -73.99242591970851
+        },
+        "southwest": {
+          "lat": 40.7428897197085,
+          "lng": -73.99512388029152
+        }
+      }
+    },
+    "icon": "https://maps.gstatic.com/mapfiles/place_api/icons/v1/png_71/shopping-71.png",
+    "icon_background_color": "#4B96F3",
+    "icon_mask_base_uri": "https://maps.gstatic.com/mapfiles/place_api/icons/v2/shopping_pinlet",
+    "name": "Horizon Window Treatments",
+    "opening_hours": {
+      "open_now": false
+    },
+    "photos": [
+      {
+        "height": 3904,
+        "html_attributions": [
+          "<a href=\"https://maps.google.com/maps/contrib/110113621683273865063\">Horizon Window Treatments</a>"
+        ],
+        "photo_reference": "ATKogpcYJIZtkPOGuAzTmIOWE0dC0bdtVHBBVOjS9qD6y8wA59LavjRxb9f3B_Ve1p8IVdWACT0gvISNmMjsJhqn9LB4AtqNvM9hmGGay8a7wnFuYDmHVkDw4NC01I9dnUdglL4V4Ynsr-T8yYjb7ixLfcSvpS2CDddD_sQDMtuY4bg6bQoC2Wx81TRoSX5RorXpNQgL1uks9v4t9SQ7iQLxNJbVn3Rosbuk4ETc9_oeNnru-jn3yUpvcwhRQORjuHoYGJ1RT8cDcXZuKI_pCodqtuS4qXUFliasyZyOjw7d97oY-oBWp5zeV8WBtDeNkxpNlE5c09r5kaw",
+        "width": 4587
+      }
+    ],
+    "place_id": "ChIJYc_WIKVZwokR-P0ijKyGOlk",
+    "plus_code": {
+      "compound_code": "P2V4+PG New York, NY, USA",
+      "global_code": "87G8P2V4+PG"
+    },
+    "rating": 5,
+    "reference": "ChIJYc_WIKVZwokR-P0ijKyGOlk",
+    "scope": "GOOGLE",
+    "types": [
+      "hardware_store",
+      "general_contractor",
+      "home_goods_store",
+      "store",
+      "point_of_interest",
+      "establishment"
+    ],
+    "user_ratings_total": 107,
+    "vicinity": "133 West 24th Street, New York"
+  }
+]
