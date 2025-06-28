@@ -1,8 +1,13 @@
 import requests
 import json
+import os
+from dotenv import load_dotenv
 
-# Replace with your own API key
-API_KEY = 'AIzaSyDElHwsa5R4Be53h6mJWEanOzmChyjNwt4'
+# Load environment variables from .env file
+load_dotenv()
+
+# Get API key from environment variable
+API_KEY = os.getenv('GOOGLE_MAPS_API_KEY')
 # Virginia coordinates (centered around Richmond, VA)
 LOCATION = '37.5407,-77.4360'  # Richmond, VA
 RADIUS = 50000  # in meters (50 km) - increased to cover more of Virginia

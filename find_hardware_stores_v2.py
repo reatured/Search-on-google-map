@@ -1,9 +1,14 @@
 import requests
 import json
 import time
+import os
+from dotenv import load_dotenv
 
-# Replace with your own API key
-API_KEY = 'AIzaSyDElHwsa5R4Be53h6mJWEanOzmChyjNwt4'
+# Load environment variables from .env file
+load_dotenv()
+
+# Get API key from environment variable
+API_KEY = os.getenv('GOOGLE_MAPS_API_KEY')
 
 # Multiple Virginia locations to search
 VIRGINIA_LOCATIONS = [

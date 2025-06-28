@@ -1,8 +1,13 @@
 import requests
 import json
+import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Test the API key
-API_KEY = 'AIzaSyDElHwsa5R4Be53h6mJWEanOzmChyjNwt4'
+API_KEY = os.getenv('GOOGLE_MAPS_API_KEY')
 
 print("Testing Google Places API Key...")
 print("=" * 50)
