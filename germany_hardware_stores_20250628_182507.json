@@ -1,0 +1,6228 @@
+{
+  "total_stores": 289,
+  "search_locations": [
+    [
+      "52.5200,13.4050",
+      "Berlin, Germany"
+    ],
+    [
+      "53.5511,9.9937",
+      "Hamburg, Germany"
+    ],
+    [
+      "50.9375,6.9603",
+      "Cologne, Germany"
+    ],
+    [
+      "48.1351,11.5820",
+      "Munich, Germany"
+    ],
+    [
+      "50.1109,8.6821",
+      "Frankfurt, Germany"
+    ],
+    [
+      "51.3397,12.3731",
+      "Leipzig, Germany"
+    ],
+    [
+      "51.4556,7.0116",
+      "Essen, Germany"
+    ],
+    [
+      "51.5136,7.4653",
+      "Dortmund, Germany"
+    ],
+    [
+      "51.2277,6.7735",
+      "D\u00fcsseldorf, Germany"
+    ],
+    [
+      "53.0793,8.8017",
+      "Bremen, Germany"
+    ],
+    [
+      "49.4521,11.0767",
+      "Nuremberg, Germany"
+    ],
+    [
+      "50.9375,6.9603",
+      "Bonn, Germany"
+    ],
+    [
+      "48.1351,11.5820",
+      "Augsburg, Germany"
+    ],
+    [
+      "50.1109,8.6821",
+      "Wiesbaden, Germany"
+    ],
+    [
+      "51.3397,12.3731",
+      "Dresden, Germany"
+    ],
+    [
+      "51.4556,7.0116",
+      "Duisburg, Germany"
+    ],
+    [
+      "51.5136,7.4653",
+      "Bochum, Germany"
+    ],
+    [
+      "51.2277,6.7735",
+      "Wuppertal, Germany"
+    ],
+    [
+      "53.0793,8.8017",
+      "Hannover, Germany"
+    ],
+    [
+      "49.4521,11.0767",
+      "F\u00fcrth, Germany"
+    ],
+    [
+      "48.7758,9.1829",
+      "Stuttgart, Germany"
+    ],
+    [
+      "49.0069,8.4037",
+      "Karlsruhe, Germany"
+    ],
+    [
+      "49.4521,11.0767",
+      "Erlangen, Germany"
+    ],
+    [
+      "50.1109,8.6821",
+      "Mannheim, Germany"
+    ],
+    [
+      "51.3397,12.3731",
+      "Chemnitz, Germany"
+    ],
+    [
+      "51.4556,7.0116",
+      "Oberhausen, Germany"
+    ],
+    [
+      "51.5136,7.4653",
+      "Hagen, Germany"
+    ],
+    [
+      "51.2277,6.7735",
+      "M\u00f6nchengladbach, Germany"
+    ],
+    [
+      "53.0793,8.8017",
+      "Braunschweig, Germany"
+    ],
+    [
+      "49.4521,11.0767",
+      "W\u00fcrzburg, Germany"
+    ],
+    [
+      "48.7758,9.1829",
+      "Heilbronn, Germany"
+    ],
+    [
+      "49.0069,8.4037",
+      "Pforzheim, Germany"
+    ],
+    [
+      "49.4521,11.0767",
+      "Bamberg, Germany"
+    ],
+    [
+      "50.1109,8.6821",
+      "Ludwigshafen, Germany"
+    ],
+    [
+      "51.3397,12.3731",
+      "Zwickau, Germany"
+    ],
+    [
+      "51.4556,7.0116",
+      "M\u00fclheim, Germany"
+    ],
+    [
+      "51.5136,7.4653",
+      "Hamm, Germany"
+    ],
+    [
+      "51.2277,6.7735",
+      "Leverkusen, Germany"
+    ],
+    [
+      "53.0793,8.8017",
+      "Oldenburg, Germany"
+    ],
+    [
+      "49.4521,11.0767",
+      "Regensburg, Germany"
+    ],
+    [
+      "52.5200,13.4050",
+      "Berlin State, Germany"
+    ],
+    [
+      "53.5511,9.9937",
+      "Hamburg State, Germany"
+    ],
+    [
+      "48.1351,11.5820",
+      "Bavaria, Germany"
+    ],
+    [
+      "50.1109,8.6821",
+      "Hesse, Germany"
+    ],
+    [
+      "51.3397,12.3731",
+      "Saxony, Germany"
+    ],
+    [
+      "51.4556,7.0116",
+      "North Rhine-Westphalia, Germany"
+    ],
+    [
+      "53.0793,8.8017",
+      "Lower Saxony, Germany"
+    ],
+    [
+      "49.4521,11.0767",
+      "Baden-W\u00fcrttemberg, Germany"
+    ],
+    [
+      "48.7758,9.1829",
+      "Baden-W\u00fcrttemberg South, Germany"
+    ],
+    [
+      "49.0069,8.4037",
+      "Baden-W\u00fcrttemberg North, Germany"
+    ],
+    [
+      "51.2277,6.7735",
+      "North Rhine-Westphalia West, Germany"
+    ],
+    [
+      "51.5136,7.4653",
+      "North Rhine-Westphalia East, Germany"
+    ],
+    [
+      "53.5511,9.9937",
+      "Schleswig-Holstein, Germany"
+    ],
+    [
+      "54.3233,10.1228",
+      "Schleswig-Holstein North, Germany"
+    ],
+    [
+      "52.5200,13.4050",
+      "Brandenburg, Germany"
+    ],
+    [
+      "51.3397,12.3731",
+      "Saxony-Anhalt, Germany"
+    ],
+    [
+      "50.9375,6.9603",
+      "Rhineland-Palatinate, Germany"
+    ],
+    [
+      "49.4521,11.0767",
+      "Thuringia, Germany"
+    ],
+    [
+      "51.2277,6.7735",
+      "Saarland, Germany"
+    ],
+    [
+      "53.0793,8.8017",
+      "Mecklenburg-Vorpommern, Germany"
+    ],
+    [
+      "47.5579,7.5886",
+      "Freiburg, Germany"
+    ],
+    [
+      "49.0069,8.4037",
+      "Heidelberg, Germany"
+    ],
+    [
+      "49.4521,11.0767",
+      "Bayreuth, Germany"
+    ],
+    [
+      "50.1109,8.6821",
+      "Mainz, Germany"
+    ],
+    [
+      "51.3397,12.3731",
+      "Halle, Germany"
+    ],
+    [
+      "51.4556,7.0116",
+      "Gelsenkirchen, Germany"
+    ],
+    [
+      "51.5136,7.4653",
+      "Herne, Germany"
+    ],
+    [
+      "51.2277,6.7735",
+      "Krefeld, Germany"
+    ],
+    [
+      "53.0793,8.8017",
+      "Osnabr\u00fcck, Germany"
+    ],
+    [
+      "49.4521,11.0767",
+      "Hof, Germany"
+    ],
+    [
+      "48.7758,9.1829",
+      "T\u00fcbingen, Germany"
+    ],
+    [
+      "49.0069,8.4037",
+      "Heidelberg, Germany"
+    ],
+    [
+      "49.4521,11.0767",
+      "Coburg, Germany"
+    ],
+    [
+      "50.1109,8.6821",
+      "Offenbach, Germany"
+    ],
+    [
+      "51.3397,12.3731",
+      "Plauen, Germany"
+    ],
+    [
+      "51.4556,7.0116",
+      "Bottrop, Germany"
+    ],
+    [
+      "51.5136,7.4653",
+      "Recklinghausen, Germany"
+    ],
+    [
+      "51.2277,6.7735",
+      "Neuss, Germany"
+    ],
+    [
+      "53.0793,8.8017",
+      "Wolfsburg, Germany"
+    ],
+    [
+      "49.4521,11.0767",
+      "Hof, Germany"
+    ]
+  ],
+  "timestamp": "20250628_182507",
+  "stores": [
+    {
+      "id": "ChIJc89ZqsNQqEcRh49E9EiYIFA",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 89046800",
+      "formattedAddress": "Kurf\u00fcrstendamm 129A, 10711 Berlin, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-berlin-kurfuerstendamm/fc/643?cid=MyBGoo_643NL",
+      "userRatingCount": 6189,
+      "displayName": {
+        "text": "BAUHAUS Berlin-Kurf\u00fcrstendamm",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJF0aL-gRQqEcR7PKlUJha7dw",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 7551560",
+      "formattedAddress": "Alboinstra\u00dfe 18, 12103 Berlin, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-berlin-schoeneberg/fc/597?cid=MyBGoo_597NL",
+      "userRatingCount": 6621,
+      "displayName": {
+        "text": "BAUHAUS Berlin-Sch\u00f6neberg",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJmSxcBuZTqEcR3zstfV773O4",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 36411110",
+      "formattedAddress": "Kapweg 1, 13405 Berlin, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-berlin-wedding/fc/656?cid=MyBGoo_656NL",
+      "userRatingCount": 4930,
+      "displayName": {
+        "text": "BAUHAUS Berlin-Wedding",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJsba0P7hPqEcRJXRxDCgjlyA",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 6279000",
+      "formattedAddress": "Hasenheide 109, 10967 Berlin, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-berlin-neukoelln/fc/814?cid=MyBGoo_814NL",
+      "userRatingCount": 3342,
+      "displayName": {
+        "text": "BAUHAUS Berlin-Neuk\u00f6lln",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJv0Xf1qhbqEcRQQ579CEkk1E",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 84717404",
+      "formattedAddress": "Goerzallee 189-223, 14167 Berlin, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.obi.de/markt/berlin-steglitz?wt__mc=gp.de404_Berlin-Steglitz%E2%80%A6",
+      "userRatingCount": 5852,
+      "displayName": {
+        "text": "OBI Markt Berlin-Steglitz",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJEXyAYvZRqEcRMqssH0YWRBw",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 46783960",
+      "formattedAddress": "Demminer Str. 31, 13355 Berlin, Germany",
+      "rating": 3.9,
+      "websiteUri": "https://www.obi.de/markt/berlin-wedding?wt__mc=gp.de226_Berlin-Wedding%E2%80%A6",
+      "userRatingCount": 1142,
+      "displayName": {
+        "text": "OBI Markt Berlin-Wedding",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ0aZ2DmNOqEcRWdJJ8cZvdKs",
+      "types": [
+        "hardware_store",
+        "market",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 46776210",
+      "formattedAddress": "Hermann-Blankenstein-Stra\u00dfe 44, 10249 Berlin, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://toom.de/m/berlin-friedrichshain/",
+      "userRatingCount": 3438,
+      "displayName": {
+        "text": "toom Baumarkt Berlin-Friedrichshain",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJiZ4_A11PqEcRam5MFToycoM",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 68224110",
+      "formattedAddress": "Grenzallee, Naumburger Str. 33, 12057 Berlin, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.de/markt/berlin-neukoelln?wt__mc=gp.de430_Berlin-Neuk%C3%B6lln%E2%80%A6",
+      "userRatingCount": 4485,
+      "displayName": {
+        "text": "OBI Markt Berlin-Neuk\u00f6lln",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJR9PIF61NqEcRBn9LZSvTo24",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 4284640",
+      "formattedAddress": "Ostseestra\u00dfe 107 - 111, 10409 Berlin, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/berlin-weissensee?wt__mc=gp.de383_Berlin-Wei%C3%9Fensee%E2%80%A6",
+      "userRatingCount": 3623,
+      "displayName": {
+        "text": "OBI Markt Berlin-Wei\u00dfensee",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJS2r47UZOqEcRbCQd5Y_XAjc",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 29363820",
+      "formattedAddress": "An d. Ostbahn 3, 10243 Berlin, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.hellweg.de/markt/berlin-friedrichshain/",
+      "userRatingCount": 2468,
+      "displayName": {
+        "text": "HELLWEG - Die Profi-Baum\u00e4rkte Berlin",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ3YH-iLRIqEcR_skugJtFF_c",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 33977990",
+      "formattedAddress": "Schnellerstra\u00dfe 139, 12439 Berlin, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-berlin(treptow)/fc/866?cid=MyBGoo_866NL",
+      "userRatingCount": 3436,
+      "displayName": {
+        "text": "Bauhaus",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ0Zv44-pOqEcRGH8zvwBI7_A",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 57797110",
+      "formattedAddress": "Buchberger Str. 5, 10365 Berlin, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/berlin-lichtenberg?wt__mc=gp.de482_Berlin-Lichtenberg%E2%80%A6",
+      "userRatingCount": 2624,
+      "displayName": {
+        "text": "OBI Markt Berlin-Lichtenberg",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJH3ZUEZ1RqEcRXjbRUcRIvZ0",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 39063330",
+      "formattedAddress": "Ellen-Epstein-Stra\u00dfe 1, 10559 Berlin, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.hellweg.de/markt/Berlin-Tiergarten/",
+      "userRatingCount": 2427,
+      "displayName": {
+        "text": "HELLWEG - Die Profi-Baum\u00e4rkte Berlin",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJSwi8fmNPqEcRblUUR-UZw0k",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 600910",
+      "formattedAddress": "Haarlemer Str. 57, 12359 Berlin, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.possling.de/",
+      "userRatingCount": 848,
+      "displayName": {
+        "text": "Holz Possling",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJf9XwqzBQqEcRiyRlXKZeoRI",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 21459270",
+      "formattedAddress": "Yorckstra\u00dfe 38-39, 10965 Berlin, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.hellweg.de/markt/Berlin-Kreuzberg/",
+      "userRatingCount": 2727,
+      "displayName": {
+        "text": "HELLWEG - Die Profi-Baum\u00e4rkte Berlin",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ96oZf1RQqEcROpq9D80fxaE",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 2351000",
+      "formattedAddress": "Bayreuther Str. 3-4, 10787 Berlin, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-berlin-amwittenbergplatz/fc/840?cid=MyBGoo_840NL",
+      "userRatingCount": 1158,
+      "displayName": {
+        "text": "BAUHAUS Berlin Am Wittenbergplatz",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJkZuf7lpRqEcR91TR9RkS0bQ",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 422860",
+      "formattedAddress": "Friedrich-Olbricht-Damm 65, 13627 Berlin, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.possling.de/",
+      "userRatingCount": 749,
+      "displayName": {
+        "text": "Holz Possling",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJJ-9DaNtEqEcRDgvtbLjvpS8",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 720050",
+      "formattedAddress": "Nahmitzer Damm 26, 12277 Berlin, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-berlin-marienfelde/fc/604?cid=MyBGoo_604NL",
+      "userRatingCount": 3608,
+      "displayName": {
+        "text": "BAUHAUS Berlin-Marienfelde",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJD_bZ2NJHqEcRS5d3-4yjPtA",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 67066100",
+      "formattedAddress": "Adlergestell 303, 12489 Berlin, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/berlin-treptow?wt__mc=gp.de532_Berlin-Treptow%E2%80%A6",
+      "userRatingCount": 4323,
+      "displayName": {
+        "text": "OBI store Berlin-Treptow",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJA9JKCbpSqEcRMpU5D6r1C-0",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "030 4759710",
+      "formattedAddress": "Sch\u00f6nerlinder Str. 53, 13127 Berlin, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-berlin-pankow/fc/578?cid=MyBGoo_578NL",
+      "userRatingCount": 2595,
+      "displayName": {
+        "text": "BAUHAUS Berlin-Pankow",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJV8hGp_mLsUcRMbpXvWGGdOs",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "040 46069590",
+      "formattedAddress": "Wandsbeker Zollstra\u00dfe 95, 22041 Hamburg, Germany",
+      "rating": 4,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-hamburg-wandsbek/fc/851?cid=MyBGoo_851NL",
+      "userRatingCount": 4809,
+      "displayName": {
+        "text": "BAUHAUS Hamburg-Wandsbek",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ8bCmgWSJsUcRDO7psM7zKfA",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "040 64225700",
+      "formattedAddress": "Bramfelder Ch 136, 22177 Hamburg, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-hamburg-bramfeld/fc/663?cid=MyBGoo_663NL",
+      "userRatingCount": 4666,
+      "displayName": {
+        "text": "BAUHAUS Hamburg-Bramfeld",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJFUdG4eyFsUcR2t7RSHyl8fU",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "040 89726420",
+      "formattedAddress": "Ruhrstra\u00dfe 46-88, 22761 Hamburg, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/hamburg-altona?wt__mc=gp.de497_Hamburg-Altona%E2%80%A6",
+      "userRatingCount": 1240,
+      "displayName": {
+        "text": "OBI Markt Hamburg-Altona",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJfz6Rim2GsUcRPFzt8Q1jJkM",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "040 52108980",
+      "formattedAddress": "Kieler Str. 499, 22525 Hamburg, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-hamburg-stellingen/fc/664?cid=MyBGoo_664NL",
+      "userRatingCount": 3202,
+      "displayName": {
+        "text": "BAUHAUS Hamburg-Stellingen",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJU13t06KRsUcRxVo7Ba3cQEw",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "040 78876260",
+      "formattedAddress": "Schlachthofstra\u00dfe 1, 21079 Hamburg, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-hamburg-harburg/fc/619?cid=MyBGoo_619NL",
+      "userRatingCount": 4286,
+      "displayName": {
+        "text": "BAUHAUS Hamburg-Harburg",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJw30y4aGIsUcRwo7s_OgI8QQ",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "040 5577820",
+      "formattedAddress": "Alte Kollaustra\u00dfe 44-46, 22529 Hamburg, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-hamburg-lokstedt/fc/654?cid=MyBGoo_654NL",
+      "userRatingCount": 3194,
+      "displayName": {
+        "text": "BAUHAUS Hamburg-Lokstedt",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJqSTYZiaEsUcR9yH9Fl0VVBg",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "040 53327000",
+      "formattedAddress": "Rugenbarg 252, 22549 Hamburg, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-hamburg-lurup/fc/865?cid=MyBGoo_865NL",
+      "userRatingCount": 2949,
+      "displayName": {
+        "text": "BAUHAUS Hamburg-Lurup",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ2905ur2IsUcRcCxw0sz3JtI",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "040 51326380",
+      "formattedAddress": "Nedderfeld 100, 22529 Hamburg, Germany",
+      "rating": 4,
+      "websiteUri": "https://www.obi.de/markt/hamburg-eppendorf?wt__mc=gp.de281_Hamburg-Eppendorf%E2%80%A6",
+      "userRatingCount": 3202,
+      "displayName": {
+        "text": "OBI Hamburg-Eppendorf",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJlapQX6ONsUcRgwIxnDX-1r8",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "040 8197390",
+      "formattedAddress": "Unterer Landweg 77, 22113 Hamburg, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-hamburg-moorfleet/fc/595?cid=MyBGoo_595NL",
+      "userRatingCount": 3532,
+      "displayName": {
+        "text": "BAUHAUS Hamburg-Moorfleet",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJZ79lgviHsUcR9-9tBS4BZMQ",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "040 52300523",
+      "formattedAddress": "Niendorfer Str. 85, 22848 Norderstedt, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/norderstedt?wt__mc=gp.de420_Norderstedt%E2%80%A6",
+      "userRatingCount": 4561,
+      "displayName": {
+        "text": "OBI Markt Norderstedt",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJH0gpxIXysUcRGQCLqVCgFlo",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "040 7258390",
+      "formattedAddress": "Curslacker Neuer Deich 16-20, 21029 Hamburg, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-hamburg-bergedorf/fc/620?cid=MyBGoo_620NL",
+      "userRatingCount": 3782,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJLf1oALP0sUcRM40xND5mAdg",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "040 66907670",
+      "formattedAddress": "Rahlstedter Str. 2, 22885 Barsb\u00fcttel, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-barsbuettel/fc/624?cid=MyBGoo_624NL",
+      "userRatingCount": 2995,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJe13K4AKIsUcRAbFxWu7RNqE",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "040 68860350",
+      "formattedAddress": "Tarpen 19, 22419 Hamburg, Germany",
+      "rating": 4,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-hamburg-langenhorn/fc/858?cid=MyBGoo_858NL",
+      "userRatingCount": 1871,
+      "displayName": {
+        "text": "Bauhaus AG",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJy65kwCqSsUcRiMQsT8dpVkA",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "040 7661670",
+      "formattedAddress": "Gro\u00dfmoordamm 98, 21079 Hamburg, Germany",
+      "rating": 4.5,
+      "websiteUri": "https://www.obi.de/markt/hamburg-harburg?wt__mc=gp.de443_Hamburg-Harburg%E2%80%A6",
+      "userRatingCount": 1124,
+      "displayName": {
+        "text": "OBI Markt Hamburg-Harburg",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ4e1G8g7zsUcRkS5M3d7hVQk",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "040 7309370",
+      "formattedAddress": "Wilhelm-Bergner-Stra\u00dfe 2, 21509 Glinde, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/glinde?wt__mc=gp.de040_Glinde%E2%80%A6",
+      "userRatingCount": 2855,
+      "displayName": {
+        "text": "OBI",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJWz-o_h-YsUcRg38tesD_WcE",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "04181 999660",
+      "formattedAddress": "Nordring 6, 21244 Buchholz in der Nordheide, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/buchholz?wt__mc=gp.de545_Buchholz%E2%80%A6",
+      "userRatingCount": 2501,
+      "displayName": {
+        "text": "OBI Buchholz",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJdZHkypHysUcRf_uDvEJ_QXo",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "040 41626780",
+      "formattedAddress": "Kurt-A.-K\u00f6rber-Chaussee 9, 21033 Hamburg, Germany",
+      "rating": 4,
+      "websiteUri": "https://www.obi.de/markt/hamburg-bergedorf?wt__mc=gp.de483_Hamburg-Bergedorf%E2%80%A6",
+      "userRatingCount": 2582,
+      "displayName": {
+        "text": "OBI Markt Hamburg-Bergedorf",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJrclrKrmMsUcRgt_7aUVbgIc",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "general_contractor",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "040 71003690",
+      "formattedAddress": "Willinghusener Weg 3, 22113 Oststeinbek, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.globus-baumarkt.de/info/markt/oststeinbek/",
+      "userRatingCount": 1350,
+      "displayName": {
+        "text": "Globus Baumarkt Oststeinbek",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJrQWJ-BqbsUcR5ay0arlKy2Q",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "040 7020700",
+      "formattedAddress": "Cuxhavener Str. 366, 21149 Hamburg, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.obi.de/markt/hamburg-neugraben?wt__mc=gp.de377_Hamburg-Neugraben%E2%80%A6",
+      "userRatingCount": 1270,
+      "displayName": {
+        "text": "OBI Markt Hamburg-Neugraben",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJZ_OVnTiRsUcRZedUhhZZl3g",
+      "types": [
+        "hardware_store",
+        "supermarket",
+        "home_improvement_store",
+        "grocery_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "040 881610980",
+      "formattedAddress": "Winsener Str. 233, 21077 Hamburg, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.tedox.de/standorte/hamburg-harburg",
+      "userRatingCount": 968,
+      "displayName": {
+        "text": "tedox KG",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJffM1bTslv0cR1m_Q-i0V0aE",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0221 9438100",
+      "formattedAddress": "Weinsbergstra\u00dfe 190A, 50825 K\u00f6ln, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-koeln-ehrenfeld/fc/665?cid=MyBGoo_665NL",
+      "userRatingCount": 4066,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJVa75ydglv0cR9Zt1UCxFQg4",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0221 9643730",
+      "formattedAddress": "Istanbulstra\u00dfe 20, 51103 K\u00f6ln, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-koeln-kalk/fc/616?cid=MyBGoo_616NL",
+      "userRatingCount": 6560,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJCwAcrws7v0cRUoASUXSocUE",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02234 955980",
+      "formattedAddress": "Europaallee 13, 50226 Frechen, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-frechen/fc/569?cid=MyBGoo_569NL",
+      "userRatingCount": 4955,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ31Y2V0Env0cRa5C9JotBTwg",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02203 297480",
+      "formattedAddress": "Theodor-Heuss-Stra\u00dfe 80-86, 51149 K\u00f6ln, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-koeln-porz/fc/608?cid=MyBGoo_608NL",
+      "userRatingCount": 4142,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ65TFv1sjv0cRhR7Xh3c6AFw",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02233 208930",
+      "formattedAddress": "Luxemburger Str. 223-225, 50354 H\u00fcrth, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-huerth/fc/629?cid=MyBGoo_629NL",
+      "userRatingCount": 3125,
+      "displayName": {
+        "text": "BAUHAUS H\u00fcrth",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJtznW7X0vv0cR7SfdCuMmzmE",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "furniture_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0221 9765250",
+      "formattedAddress": "Niehler Str. 276, 50735 K\u00f6ln, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.de/markt/koeln-niehl?wt__mc=gp.de240_K%C3%B6ln-Niehl%E2%80%A6",
+      "userRatingCount": 1363,
+      "displayName": {
+        "text": "OBI Markt K\u00f6ln-Niehl",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ09aLrbcuv0cRWbv9gWIkigA",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0214 876200",
+      "formattedAddress": "Syltstra\u00dfe 14, 51377 Leverkusen, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-leverkusen/fc/555?cid=MyBGoo_555NL",
+      "userRatingCount": 2958,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJjwkbxkYwv0cRfdfsXSRGvnE",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0221 5896660",
+      "formattedAddress": "Im Gewerbegebiet Pesch 4, 50767 K\u00f6ln, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/koeln-pesch?wt__mc=gp.de141_K%C3%B6ln-Pesch%E2%80%A6",
+      "userRatingCount": 4343,
+      "displayName": {
+        "text": "OBI Markt K\u00f6ln-Pesch",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ2wO_YRImv0cRt0YOM4RkoQQ",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0221 969450",
+      "formattedAddress": "Frankfurter Str. 194-196, 51065 K\u00f6ln, Germany",
+      "rating": 4.7,
+      "websiteUri": "https://www.obi.de/markt/koeln-muelheim?wt__mc=gp.de252_K%C3%B6ln-M%C3%BClheim%E2%80%A6",
+      "userRatingCount": 5211,
+      "displayName": {
+        "text": "OBI Markt K\u00f6ln-M\u00fclheim",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJg6L1whI7v0cRUFSlNvwb4C0",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02234 659190",
+      "formattedAddress": "Emmy-Noether-Stra\u00dfe 12, 50858 K\u00f6ln, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.obi.de/markt/koeln-marsdorf?wt__mc=gp.de413_K%C3%B6ln-Marsdorf%E2%80%A6",
+      "userRatingCount": 1914,
+      "displayName": {
+        "text": "OBI Markt K\u00f6ln-Marsdorf",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJwW2t5JLhvkcRCaeaO9tzNyY",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0228 9087370",
+      "formattedAddress": "Endenicher Str. 120-140, 53115 Bonn, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-bonn-endenich/fc/890?cid=MyBGoo_890NL",
+      "userRatingCount": 1256,
+      "displayName": {
+        "text": "BAUHAUS Bonn-Endenich",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ2bpjNrUfv0cR6tBo_wi98OE",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02222 92780",
+      "formattedAddress": "Alexander-Bell-Stra\u00dfe 6, 53332 Bornheim, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-bornheim/fc/609?cid=MyBGoo_609NL",
+      "userRatingCount": 3792,
+      "displayName": {
+        "text": "BAUHAUS Bornheim",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJR3PCfPDdvkcRL_552OHtzl4",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02241 127190",
+      "formattedAddress": "Isaac-B\u00fcrger-Stra\u00dfe 1, 53721 Siegburg, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.de/markt/siegburg?wt__mc=gp.de472_Siegburg%E2%80%A6",
+      "userRatingCount": 2245,
+      "displayName": {
+        "text": "OBI Siegburg",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJab0H977hvkcRYrGQ4iSBqHc",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0228 7637630",
+      "formattedAddress": "Bornheimer Str. 166, 53119 Bonn, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/bonn-nord?wt__mc=gp.de480_Bonn-Nord%E2%80%A6",
+      "userRatingCount": 1283,
+      "displayName": {
+        "text": "OBI Bonn-Nord",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ37oaAB_hvkcRFAeJ4gL0mQ4",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0228 6293080",
+      "formattedAddress": "Gerhardstra\u00dfe 2, 53225 Bonn, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-bonn-beuel/fc/657?cid=MyBGoo_657NL",
+      "userRatingCount": 2523,
+      "displayName": {
+        "text": "BAUHAUS Bonn-Beuel",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJwaqv-2Ixv0cR3WB5r_JsFik",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02238 965070",
+      "formattedAddress": "Siemensstra\u00dfe 2, 50259 Pulheim, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-pulheim/fc/891?cid=MyBGoo_891NL",
+      "userRatingCount": 1479,
+      "displayName": {
+        "text": "BAUHAUS Pulheim",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ-y8vl6Auv0cRrpp05l5-Cgw",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0214 404940",
+      "formattedAddress": "Robert-Blum-Stra\u00dfe 47, 51373 Leverkusen, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/leverkusen?wt__mc=gp.de504_Leverkusen%E2%80%A6",
+      "userRatingCount": 1897,
+      "displayName": {
+        "text": "OBI Leverkusen",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJxV2coM3ZvkcRH-42UgbzTds",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02204 201890",
+      "formattedAddress": "Overather Str. 125, 51429 Bergisch Gladbach, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-bergischgladbach-bensberg/fc/892?cid=MyBGoo_892NL",
+      "userRatingCount": 1284,
+      "displayName": {
+        "text": "BAUHAUS Bergisch Gladbach",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ5Z2nvtkjv0cROITZ0PRpEJw",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02236 32280",
+      "formattedAddress": "Otto-Hahn-Stra\u00dfe 6-8, 50997 K\u00f6ln, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/koeln-godorf?wt__mc=gp.de539_K%C3%B6ln-Godorf%E2%80%A6",
+      "userRatingCount": 1297,
+      "displayName": {
+        "text": "OBI Markt K\u00f6ln-Godorf",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJoYmOotnXvkcRZOSfG3Fycc4",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02202 1010",
+      "formattedAddress": "Jakobstra\u00dfe 57, 51465 Bergisch Gladbach, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.de/markt/bergisch-gladbach?wt__mc=gp.de448_Bergisch_Gladbach%E2%80%A6",
+      "userRatingCount": 1474,
+      "displayName": {
+        "text": "OBI Bergisch Gladbach",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJmf_l4x92nkcRsThUXWmh6B0",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "089 5794950",
+      "formattedAddress": "Landsberger Str. 175-179, 80687 M\u00fcnchen, Germany",
+      "rating": 4,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-muenchen/fc/520?cid=MyBGoo_520NL",
+      "userRatingCount": 5623,
+      "displayName": {
+        "text": "BAUHAUS M\u00fcnchen",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJeQlIGGx0nkcRrdL5G5GP84s",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "089 32209120",
+      "formattedAddress": "Maria-Probst-Stra\u00dfe 50, 80939 M\u00fcnchen, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-muenchen-freimann/fc/870?cid=MyBGoo_870NL",
+      "userRatingCount": 4373,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJnY6i0ZF2nkcRfRIgo9PoSS0",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "089 35893270",
+      "formattedAddress": "Lerchenauer Str. 134, 80809 M\u00fcnchen, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.hagebaumarkt-muenchen.de/maerkte-events/muenchen-nord-lerchenauer-strasse/",
+      "userRatingCount": 3245,
+      "displayName": {
+        "text": "hagebaumarkt & Garden Center Munich North",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJW1NC-JfYnUcRpvz5AMPYiIg",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "089 54727850",
+      "formattedAddress": "Westendstra\u00dfe 221, 80686 M\u00fcnchen, Germany",
+      "rating": 4,
+      "websiteUri": "https://www.obi.de/markt/muenchen-westend?wt__mc=gp.de132_M%C3%BCnchen-Westend%E2%80%A6",
+      "userRatingCount": 1110,
+      "displayName": {
+        "text": "OBI Markt M\u00fcnchen-Westend",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJt6ZfuNXYnUcR4r3ZlIqsiNw",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "pet_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "089 8569840",
+      "formattedAddress": "Hofmannstra\u00dfe 10, 81379 M\u00fcnchen, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.hagebaumarkt-muenchen.de/maerkte-events/muenchen-hofmannstrasse/",
+      "userRatingCount": 3094,
+      "displayName": {
+        "text": "hagebaumarkt & Gartencenter Hofmannstra\u00dfe",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ7bLPNibgnUcRX9jz_YJXoRE",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "089 15883370",
+      "formattedAddress": "Schwablhofstra\u00dfe 6, 81827 M\u00fcnchen, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.de/markt/muenchen-trudering?wt__mc=gp.de225_M%C3%BCnchen-Trudering%E2%80%A6",
+      "userRatingCount": 1628,
+      "displayName": {
+        "text": "OBI Markt M\u00fcnchen-Trudering",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJbQA_Bj10nkcRHHPosyDvfyk",
+      "types": [
+        "atm",
+        "hardware_store",
+        "department_store",
+        "supermarket",
+        "bakery",
+        "grocery_store",
+        "finance",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "089 3219810",
+      "formattedAddress": "Maria-Probst-Stra\u00dfe 6, 80939 M\u00fcnchen, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.v-markt.de/so/v-markt-muenchen-euro--industriepark/59",
+      "userRatingCount": 2705,
+      "displayName": {
+        "text": "V-Market",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJL_s1bLMKnkcRTEkQrFHof_g",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "089 20060940",
+      "formattedAddress": "Riemer Str. 199, 81929 M\u00fcnchen, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.de/markt/muenchen-daglfing?wt__mc=gp.de552_M%C3%BCnchen-Daglfing%E2%80%A6",
+      "userRatingCount": 1374,
+      "displayName": {
+        "text": "OBI Markt M\u00fcnchen-Daglfing",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJU70ls5gJnkcRUc6tWGmGSi0",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "089 92104760",
+      "formattedAddress": "Taxetstra\u00dfe 1, 85599 Vaterstetten, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/parsdorf?wt__mc=gp.de499_Parsdorf%E2%80%A6",
+      "userRatingCount": 3769,
+      "displayName": {
+        "text": "Obi Markt Parsdorf",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJcf0J_CLZnUcRk_r3M9cguDs",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "pet_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "089 92927860",
+      "formattedAddress": "Meglingerstra\u00dfe 31, 81477 M\u00fcnchen, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.hagebaumarkt-muenchen.de/maerkte-events/muenchen-sued-meglingerstrasse/",
+      "userRatingCount": 2678,
+      "displayName": {
+        "text": "hagebaumarkt & Gartencenter M\u00fcnchen S\u00fcd",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJZZf3OQnenUcRmBzqEfI-0s8",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "pet_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "089 92333450",
+      "formattedAddress": "Gr\u00fcnwalder Weg 33, 82008 Unterhaching, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.hagebaumarkt-muenchen.de/maerkte-events/unterhaching/",
+      "userRatingCount": 2923,
+      "displayName": {
+        "text": "hagebaumarkt & FLORALAND Unterhaching",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJb9N0CzzWnUcR1Ud74QR7E78",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "pet_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "089 960579980",
+      "formattedAddress": "Gertrude-Blanch-Stra\u00dfe 2, 82110 Germering, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.hagebaumarkt-muenchen.de/maerkte-events/germering/",
+      "userRatingCount": 2746,
+      "displayName": {
+        "text": "GBH Heimwerkermarkt GmbH & Co. KG",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJnyGrfn97nkcRsWetZb704ec",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "08131 51700",
+      "formattedAddress": "Fraunhoferstra\u00dfe 2, 85221 Dachau, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.de/markt/dachau?wt__mc=gp.de334_Dachau%E2%80%A6",
+      "userRatingCount": 620,
+      "displayName": {
+        "text": "OBI Markt Dachau",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ_cENieLXnUcR5FyrZQSds30",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "089 15002850",
+      "formattedAddress": "Am Gleisdreieck 8, 81243 M\u00fcnchen, Germany",
+      "rating": 3.8,
+      "websiteUri": "https://www.obi.de/markt/muenchen-neuaubing?wt__mc=gp.de224_M%C3%BCnchen-Neuaubing%E2%80%A6",
+      "userRatingCount": 229,
+      "displayName": {
+        "text": "OBI Markt M\u00fcnchen-Neuaubing",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJa_o3J5fZnUcRaaWs3foSHik",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "089 85683770",
+      "formattedAddress": "Lena-Christ-Stra\u00dfe 54, 82152 Planegg, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.de/markt/muenchen-martinsried?wt__mc=gp.de492_M%C3%BCnchen-Martinsried%E2%80%A6",
+      "userRatingCount": 232,
+      "displayName": {
+        "text": "OBI Markt M\u00fcnchen-Martinsried",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJrdFI7Hx1nkcR_kQipavkQ8w",
+      "types": [
+        "hardware_store",
+        "parking",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "formattedAddress": "Grillparzerstra\u00dfe 12, 81675 M\u00fcnchen, Germany",
+      "rating": 4.4,
+      "userRatingCount": 30,
+      "displayName": {
+        "text": "Toom Der Baumarkt",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ94_zkTbQnUcR6HB-qcmjDWY",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "08151 6668680",
+      "formattedAddress": "Gautinger Str. 41, 82319 Starnberg, Germany",
+      "rating": 3.9,
+      "websiteUri": "https://www.hagebau-oberland.de/standorte/starnberg/mn_26149",
+      "userRatingCount": 402,
+      "displayName": {
+        "text": "hagebaumarkt Starnberg",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJSS3CDux1nkcRCRpzcZspVE0",
+      "types": [
+        "hardware_store",
+        "locksmith",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "089 2866100",
+      "formattedAddress": "T\u00fcrkenstra\u00dfe 31, 80799 M\u00fcnchen, Germany",
+      "rating": 3.9,
+      "websiteUri": "https://www.suckfuell24.com/",
+      "userRatingCount": 276,
+      "displayName": {
+        "text": "Suckf\u00fcll Handels GmbH",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJA4uKISngnUcR-ry7vzvpNfA",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "089 5480255",
+      "formattedAddress": "Gewerbegebiet Drosselweg, Wasserburger Landstra\u00dfe 133, 81827 M\u00fcnchen, Germany",
+      "rating": 4.1,
+      "websiteUri": "http://www.hagebaumarkt-muenchen.de/standorte/muenchen-wasserburger-landstrasse/mn_18764",
+      "userRatingCount": 592,
+      "displayName": {
+        "text": "hagebaumarkt & Gartencenter M\u00fcnchen Wasserburger Landstra\u00dfe",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJd5WGG-jhnUcRubRXcOF4vDg",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "089 995295240",
+      "formattedAddress": "M\u00fcnchener Str. 18, 85540 Haar, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.hagebaumarkt-muenchen.de/maerkte-events/haar/",
+      "userRatingCount": 846,
+      "displayName": {
+        "text": "hagebaumarkt & Gartencenter M\u00fcnchen-Haar",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJbweRlfYWvUcRxkTaN7Y7Ars",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "06181 95340",
+      "formattedAddress": "Edisonstra\u00dfe 3, 63457 Hanau, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-hanau/fc/560?cid=MyBGoo_560NL",
+      "userRatingCount": 5325,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJS9baVJoOvUcRpGvkLMrT5FA",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "069 2197880",
+      "formattedAddress": "Hanauer Landstra\u00dfe 517-543, 60386 Frankfurt am Main, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-frankfurt/fc/589?cid=MyBGoo_589NL",
+      "userRatingCount": 3939,
+      "displayName": {
+        "text": "Bauhaus Frankfurt",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJV85ZTRcMvUcRyv37Y9YrQbA",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "069 6605683",
+      "formattedAddress": "M\u00f6rfelder Landstra\u00dfe 129, 60598 Frankfurt am Main, Germany",
+      "rating": 4,
+      "websiteUri": "https://www.obi.de/markt/frankfurt-sachsenhausen?wt__mc=gp.de042_Frankfurt-Sachsenhausen%E2%80%A6",
+      "userRatingCount": 1910,
+      "displayName": {
+        "text": "OBI",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ37L0tGShvUcR4CBbwCST-VM",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "general_contractor",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "06192 959680",
+      "formattedAddress": "Nordring 5-9, 65719 Hofheim am Taunus, Germany",
+      "rating": 4.4,
+      "websiteUri": "https://www.globus-baumarkt.de/info/markt/hofheim/",
+      "userRatingCount": 2314,
+      "displayName": {
+        "text": "Globus Baumarkt Hofheim",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ-fkMadwOvUcRclbXImn-ur4",
+      "types": [
+        "hardware_store",
+        "locksmith",
+        "market",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "069 130258410",
+      "formattedAddress": "Friedberger Landstra\u00dfe 323, 60389 Frankfurt am Main, Germany",
+      "rating": 4,
+      "websiteUri": "https://toom.de/m/frankfurt-bornheim/",
+      "userRatingCount": 1473,
+      "displayName": {
+        "text": "toom Baumarkt Frankfurt-Bornheim",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJg_m_B9gFvUcRwswAUb8MXc0",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "06101 98550",
+      "formattedAddress": "Zeppelinstra\u00dfe 25, 61118 Bad Vilbel, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-bad-vilbel/fc/898?cid=MyBGoo_898NL",
+      "userRatingCount": 779,
+      "displayName": {
+        "text": "BAUHAUS Bad Vilbel",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJFZOb1CkNvUcRfAACRklmDHo",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "06103 93310",
+      "formattedAddress": "Frankfurter Str. 127, 63303 Dreieich, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.de/markt/dreieich?wt__mc=gp.de534_Dreieich%E2%80%A6",
+      "userRatingCount": 1668,
+      "displayName": {
+        "text": "OBI",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJCd5Qr5MRvUcRZ3hmnX-LviU",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "069 83007820",
+      "formattedAddress": "M\u00fchlheimer Str. 325, 63075 Offenbach am Main, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/offenbach?wt__mc=gp.de549_Offenbach%E2%80%A6",
+      "userRatingCount": 1541,
+      "displayName": {
+        "text": "OBI Markt Offenbach",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJGakBPCttvUcRUFIrWBwTmCM",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "general_contractor",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "06074 407210",
+      "formattedAddress": "Albert-Einstein-Stra\u00dfe 3, 63128 Dietzenbach, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.globus-baumarkt.de/info/markt/dietzenbach/",
+      "userRatingCount": 1213,
+      "displayName": {
+        "text": "Globus Baumarkt Dietzenbach",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJPawv65SZvUcRjeuO9k5t3oc",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "06142 176030",
+      "formattedAddress": "Alzeyer Str. 13, 65428 R\u00fcsselsheim am Main, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.obi.de/markt/ruesselsheim?wt__mc=gp.de548_R%C3%BCsselsheim%E2%80%A6",
+      "userRatingCount": 853,
+      "displayName": {
+        "text": "OBI Markt R\u00fcsselsheim",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ-Ue03SQCvUcRAvrUQC9_NPI",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "general_contractor",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "06031 684550",
+      "formattedAddress": "Stra\u00dfheimer Str. 24, 61169 Friedberg (Hessen), Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.globus-baumarkt.de/info/markt/friedberg/",
+      "userRatingCount": 1907,
+      "displayName": {
+        "text": "Globus Baumarkt Friedberg",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJR1XomnkOvUcRYRbA-abwY98",
+      "types": [
+        "hardware_store",
+        "supermarket",
+        "home_improvement_store",
+        "grocery_store",
+        "food_store",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "069 818410",
+      "formattedAddress": "Strahlenbergerstra\u00dfe 129, 63067 Offenbach am Main, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.tedox.de/standorte/offenbach",
+      "userRatingCount": 1401,
+      "displayName": {
+        "text": "tedox KG",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJr3vR5PkWvUcRUr97H5ZoY8A",
+      "types": [
+        "hardware_store",
+        "supermarket",
+        "home_improvement_store",
+        "grocery_store",
+        "food_store",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "06181 9066680",
+      "formattedAddress": "R\u00f6derseestra\u00dfe 4, 63457 Hanau, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.tedox.de/standorte/hanau",
+      "userRatingCount": 1313,
+      "displayName": {
+        "text": "tedox KG",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJHQqcf_ZsvUcRK-dVjEoNnBM",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "06074 696200",
+      "formattedAddress": "Ober-Rodener Str. 13, 63322 R\u00f6dermark, Germany",
+      "rating": 3.8,
+      "websiteUri": "https://www.obi.de/markt/roedermark?wt__mc=gp.de449_R%C3%B6dermark%E2%80%A6",
+      "userRatingCount": 749,
+      "displayName": {
+        "text": "OBI",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJEVa7XSWfvUcRWRH8Ew_PvWE",
+      "types": [
+        "hardware_store",
+        "supermarket",
+        "home_improvement_store",
+        "grocery_store",
+        "food_store",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "06142 22415",
+      "formattedAddress": "Fl\u00f6rsheimer Str. 3, 65479 Raunheim, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.tedox.de/standorte/raunheim",
+      "userRatingCount": 1035,
+      "displayName": {
+        "text": "tedox",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJsRzQAWwKvUcRmkRPLhMZWoI",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "069 935260",
+      "formattedAddress": "Geisenheimer Str. 2, 60529 Frankfurt am Main, Germany",
+      "rating": 4.3,
+      "websiteUri": "http://www.as5.de/",
+      "userRatingCount": 343,
+      "displayName": {
+        "text": "Anton Schneider GmbH 5",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJQ2l_B3KnvUcRHhc2PgGEbuY",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "06196 7770680",
+      "formattedAddress": "Ludwig-Erhard-Stra\u00dfe 21-39, 65760 Eschborn, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500787&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500787?branch=500787&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500787",
+      "userRatingCount": 64,
+      "displayName": {
+        "text": "W\u00fcrth Eschborn",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJO2AUVvKivUcRH7ieyXFZtA8",
+      "types": [
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "06122 98260",
+      "formattedAddress": "Hessenstra\u00dfe 20-24, 65719 Hofheim am Taunus, Germany",
+      "rating": 4.4,
+      "websiteUri": "http://www.mobau-braun.de/",
+      "userRatingCount": 575,
+      "displayName": {
+        "text": "Bauzentrum Mobau Braun GmbH",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJteFVm60bvUcROQT_mPvctsU",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "06187 90960",
+      "formattedAddress": "Kilianst\u00e4dter Str. 13-23, 61130 Nidderau, Germany",
+      "rating": 4.3,
+      "websiteUri": "http://www.hack-baustoffe.de/",
+      "userRatingCount": 1091,
+      "displayName": {
+        "text": "Hagebaumarkt Hack GmbH",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJAQAAAOMWvUcRcwlDqgIgcfI",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "06181 304720",
+      "formattedAddress": "Kinzigbogen 16, 63452 Hanau, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.baywa-baumarkt.de/markt/Hanau/",
+      "userRatingCount": 1089,
+      "displayName": {
+        "text": "BayWa Bau & Gartenmarkt",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJA8qBXRH4pkcRR_R3u6xXCHU",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0341 2306400",
+      "formattedAddress": "Brandenburger Str. 21, 04103 Leipzig, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.obi.de/markt/leipzig-zentrum?wt__mc=gp.de574_Leipzig-Zentrum%E2%80%A6",
+      "userRatingCount": 2627,
+      "displayName": {
+        "text": "OBI market Leipzig",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJXdVeJIdXpkcRzJEyR0O-4p0",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0341 6003780",
+      "formattedAddress": "Handelsstra\u00dfe 3, 04356 Leipzig, Germany",
+      "rating": 4.4,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-leipzig/fc/646?cid=MyBGoo_646NL",
+      "userRatingCount": 3545,
+      "displayName": {
+        "text": "BAUHAUS Leipzig",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJh7tonHD2pkcRRoGcy4BPQV0",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0341 9403280",
+      "formattedAddress": "L\u00f6wen Center, Miltitzer Str. 13, 04178 Leipzig, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.de/markt/leipzig-burghausen?wt__mc=gp.de493_Leipzig-Burghausen%E2%80%A6",
+      "userRatingCount": 934,
+      "displayName": {
+        "text": "OBI Leipzig-Burghausen",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJV06I06n5pkcR0wJjqoQefj8",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0341 860480",
+      "formattedAddress": "Chemnitzer Str. 6, 04289 Leipzig, Germany",
+      "rating": 4.5,
+      "websiteUri": "https://www.obi.de/markt/leipzig-probstheida?wt__mc=gp.de038_Leipzig-Probstheida%E2%80%A6",
+      "userRatingCount": 553,
+      "displayName": {
+        "text": "OBI Markt Leipzig-Probstheida",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJXWSIA2f5pkcRre_U9R1Pj_E",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "general_contractor",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "034297 613",
+      "formattedAddress": "Nordstra\u00dfe 1, 04416 Markkleeberg, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.globus-baumarkt.de/info/markt/markkleeberg/",
+      "userRatingCount": 1020,
+      "displayName": {
+        "text": "Globus Baumarkt Markkleeberg",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ5_4ypTn3pkcRxKyM_--BJ8k",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0341 4275432",
+      "formattedAddress": "Gerhard-Ellrodt-Stra\u00dfe 21, 04249 Leipzig, Germany",
+      "rating": 4,
+      "websiteUri": "https://www.hagebau.de/",
+      "userRatingCount": 898,
+      "displayName": {
+        "text": "hagebaumarkt Leipzig",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJZXGG0VNfpkcRdQyt64hr1Qk",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0341 468120",
+      "formattedAddress": "Hallesche Str. 214, 04159 Leipzig, Germany",
+      "rating": 4,
+      "websiteUri": "https://www.hellweg.de/markt/Leipzig/",
+      "userRatingCount": 1115,
+      "displayName": {
+        "text": "HELLWEG - Die Profi-Baum\u00e4rkte Leipzig",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJtf21RRT4pkcR6hkKPScLzzI",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0341 4686690",
+      "formattedAddress": "Rackwitzer Str. 57, 04347 Leipzig, Germany",
+      "rating": 4.6,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500166&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500166?branch=500166&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500166",
+      "userRatingCount": 62,
+      "displayName": {
+        "text": "W\u00fcrth Leipzig-Sch\u00f6nefeld",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJSbAoH8GJpkcR1tVs1wIyWaY",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "03461 248990",
+      "formattedAddress": "Kollenbeyer Weg 2, 06217 Merseburg, Germany",
+      "rating": 4.4,
+      "websiteUri": "https://www.obi.de/markt/merseburg?wt__mc=gp.de060_Merseburg%E2%80%A6",
+      "userRatingCount": 866,
+      "displayName": {
+        "text": "OBI Markt Merseburg",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJoa5JDGRbpkcRKnPR6O5mMEQ",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "034202 3990",
+      "formattedAddress": "Raiffeisenstra\u00dfe 1, 04509 Delitzsch, Germany",
+      "rating": 4,
+      "websiteUri": "https://www.hellweg.de/markt/Delitzsch/",
+      "userRatingCount": 827,
+      "displayName": {
+        "text": "HELLWEG - Die Profi-Baum\u00e4rkte Delitzsch",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ_9DseF32pkcR6x6-8jXrJ5c",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0341 25367360",
+      "formattedAddress": "Schomburgkstra\u00dfe 10, 04179 Leipzig, Germany",
+      "rating": 4.9,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500980&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500980?branch=500980&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500980",
+      "userRatingCount": 32,
+      "displayName": {
+        "text": "W\u00fcrth Leipzig-Neulindenau",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJS52InAr4pkcRr90KbINey30",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0341 9265540",
+      "formattedAddress": "Wollk\u00e4mmereistra\u00dfe 2a, 04357 Leipzig, Germany",
+      "rating": 4.5,
+      "websiteUri": "https://zusammenbauen.de/jetzt",
+      "userRatingCount": 106,
+      "displayName": {
+        "text": "wego Leipzig",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ6QZ8hxZWpkcRJrJ9bzE-PNA",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "034298 495560",
+      "formattedAddress": "Leipziger Str. 129c, 04425 Taucha, Germany",
+      "rating": 4.7,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500858&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500858?branch=500858&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500858",
+      "userRatingCount": 28,
+      "displayName": {
+        "text": "W\u00fcrth Taucha",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ83xo2LHvpkcRh1Fpoca0-Is",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "034296 9760",
+      "formattedAddress": "Carsdorfer H\u00f6he 16, 04523 Pegau, Germany",
+      "rating": 4.5,
+      "websiteUri": "https://www.hagebau.com/detailseite.jsp?companyId=132552",
+      "userRatingCount": 130,
+      "displayName": {
+        "text": "hagebaucentrum Pegau",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJK6Sdz-ABp0cR9iWDbYidbsA",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "034293 477790",
+      "formattedAddress": "Erdmannshainer Str. 39, 04683 Naunhof, Germany",
+      "rating": 4.4,
+      "websiteUri": "https://www.landmaxx.de/",
+      "userRatingCount": 269,
+      "displayName": {
+        "text": "LandMAXX hardware store Naunhof",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJMWocq59cpkcR6cEJ3vN5TwU",
+      "types": [
+        "hardware_store",
+        "pet_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "034202 805400",
+      "formattedAddress": "Richard-Wagner-Stra\u00dfe 18d, 04509 Delitzsch, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.rhg.de/bau-garten-delitzsch",
+      "userRatingCount": 408,
+      "displayName": {
+        "text": "RHG Bau & Garten Delitzsch",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ0Tl-pPz5pkcRpKf14iZ1GbI",
+      "types": [
+        "wholesaler",
+        "hardware_store",
+        "clothing_store",
+        "general_contractor",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0341 69768400",
+      "formattedAddress": "Wollk\u00e4mmereistra\u00dfe 5, 04347 Leipzig, Germany",
+      "rating": 4.8,
+      "websiteUri": "https://www.pft-bitterfeld.de/ansprechpartner/filiale-leipzig.html",
+      "userRatingCount": 12,
+      "displayName": {
+        "text": "Handelshof Leipzig - Partner f\u00fcr Technik",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJgTaWQ3P3pkcR1wRjmtkOvjY",
+      "types": [
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0341 9468541",
+      "formattedAddress": "Zschochersche Str. 82a, 04229 Leipzig, Germany",
+      "rating": 4.2,
+      "websiteUri": "http://www.hgl-leipzig.de/",
+      "userRatingCount": 33,
+      "displayName": {
+        "text": "Pache & Hauser Hausger\u00e4te Service",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJS20qCk2LpkcRWDuvatQmCFU",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "03461 2757990",
+      "formattedAddress": "Am Haupttor Bau 4930, 06237 Leuna, Germany",
+      "rating": 4,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500168&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500168?branch=500168&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500168",
+      "userRatingCount": 5,
+      "displayName": {
+        "text": "W\u00fcrth CHEMPARK Leuna",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJnUqd4jNXpkcRocHi4IhULRM",
+      "types": [
+        "hardware_store",
+        "storage",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0341 6003780",
+      "formattedAddress": "Im Sachsenpark, Handelsstra\u00dfe 3, 04356 Leipzig, Germany",
+      "rating": 4.8,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/drive-in-arena",
+      "userRatingCount": 4,
+      "displayName": {
+        "text": "Drive-In-Arena",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJSxrFH1_duEcRW5yk2iBYMY0",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0201 294770",
+      "formattedAddress": "Langemarckstra\u00dfe 2, 45141 Essen, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-essen-frillendorf/fc/539?cid=MyBGoo_539NL",
+      "userRatingCount": 4145,
+      "displayName": {
+        "text": "BAUHAUS Essen-Frillendorf",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJLbCufZq4uEcR2xNXZPb3u4g",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0203 710290",
+      "formattedAddress": "Keniastra\u00dfe 28, 47269 Duisburg, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-duisburg-grossenbaum/fc/579?cid=MyBGoo_579NL",
+      "userRatingCount": 3763,
+      "displayName": {
+        "text": "BAUHAUS Duisburg-Grossenbaum",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJbQlt_OrCuEcRkRBCyxmLHr0",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0201 821790",
+      "formattedAddress": "Schederhofstra\u00dfe 129, 45145 Essen, Germany",
+      "rating": 4,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-essen-frohnhausen/fc/505?cid=MyBGoo_505NL",
+      "userRatingCount": 2638,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJyS7iRP7guEcRJAIvmJjC3t8",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0234 5399430",
+      "formattedAddress": "Hofsteder Str. 205, 44809 Bochum, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-bochum-hofstede/fc/648?cid=MyBGoo_648NL",
+      "userRatingCount": 3958,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJVwAAB4PJuEcRj8_LbJQ3t2U",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0211 437140",
+      "formattedAddress": "Franz-Rennefeld-Weg 8, 40472 D\u00fcsseldorf, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.de/markt/duesseldorf-rath?wt__mc=gp.de411_D%C3%BCsseldorf_Rath%E2%80%A6",
+      "userRatingCount": 2273,
+      "displayName": {
+        "text": "OBI Markt D\u00fcsseldorf-Rath",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJuQpaa6fJuEcRiHLVNRo9Gmk",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0211 2107410",
+      "formattedAddress": "Am H\u00fclserhof 49, 40472 D\u00fcsseldorf, Germany",
+      "rating": 4.6,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-duesseldorf-rath/fc/878?cid=MyBGoo_878NL",
+      "userRatingCount": 617,
+      "displayName": {
+        "text": "BAUHAUS D\u00fcsseldorf-Rath",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJldQFJVLauEcRuOgepFaUDrs",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02051 95200",
+      "formattedAddress": "Metallstra\u00dfe 15, 42551 Velbert, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.de/markt/velbert?wt__mc=gp.de412_Velbert%E2%80%A6",
+      "userRatingCount": 2554,
+      "displayName": {
+        "text": "OBI Markt Velbert",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJiVtvlWkouUcRxmdnvPoJFLU",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0202 4784990",
+      "formattedAddress": "Widukindstra\u00dfe 97, 42289 Wuppertal, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-wuppertal/fc/617?cid=MyBGoo_617NL",
+      "userRatingCount": 4356,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJi_6186zguEcRTXHgB79s6p4",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02327 94750",
+      "formattedAddress": "Fritz-Reuter-Stra\u00dfe 38, 44867 Bochum, Germany",
+      "rating": 4,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-bochum-wattenscheid/fc/535?cid=MyBGoo_535NL",
+      "userRatingCount": 2521,
+      "displayName": {
+        "text": "BAUHAUS Bochum-Wattenscheid",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJU4klUxIfuUcRfWwshOZNr1g",
+      "types": [
+        "hardware_store",
+        "florist",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0234 92660",
+      "formattedAddress": "Hauptstra\u00dfe 90, 44894 Bochum, Germany",
+      "rating": 4.4,
+      "websiteUri": "https://www.ziesak.de/",
+      "userRatingCount": 2281,
+      "displayName": {
+        "text": "Hagebaumarkt Ziesak",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJu3Nv3dIfuUcRKP1TycfaXnI",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0234 950220",
+      "formattedAddress": "Castroper Hellweg 51, 44805 Bochum, Germany",
+      "rating": 4,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-bochumharpen/fc/519?cid=MyBGoo_519NL",
+      "userRatingCount": 2048,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJQepLKc3BuEcRxpqxDaj-TH4",
+      "types": [
+        "hardware_store",
+        "general_contractor",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0208 437700",
+      "formattedAddress": "M\u00fclheimer Str. 25, 46049 Oberhausen, Germany",
+      "rating": 4.3,
+      "websiteUri": "http://www.ziesak.de/",
+      "userRatingCount": 2180,
+      "displayName": {
+        "text": "hagebaumarkt Ziesak",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ6UXr9iXfuEcRpidSwCP4QGY",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02324 92400",
+      "formattedAddress": "Beuler H\u00f6he 2, 45525 Hattingen, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/hattingen?wt__mc=gp.de081_Hattingen%E2%80%A6",
+      "userRatingCount": 1399,
+      "displayName": {
+        "text": "OBI Hattingen",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJwei4VW7vuEcRW-LmlpKHc-U",
+      "types": [
+        "hardware_store",
+        "market",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0209 930810",
+      "formattedAddress": "Sperberstra\u00dfe 21A, 45894 Gelsenkirchen, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://toom.de/m/gelsenkirchen/",
+      "userRatingCount": 2242,
+      "displayName": {
+        "text": "toom Baumarkt Gelsenkirchen",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ75Ycon7XuEcRwyvT15Ko1z4",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0202 37380",
+      "formattedAddress": "Steinbecker Meile 10, 42103 Wuppertal, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/wuppertal?wt__mc=gp.de380_Wuppertal%E2%80%A6",
+      "userRatingCount": 677,
+      "displayName": {
+        "text": "OBI Markt Wuppertal",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJrajH5cz6uEcRqoX7tokWDRI",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "general_contractor",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02365 204340",
+      "formattedAddress": "Karl-Breuing-Stra\u00dfe 15, 45770 Marl, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.globus-baumarkt.de/info/markt/marl/",
+      "userRatingCount": 1781,
+      "displayName": {
+        "text": "Globus Baumarkt Marl",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJDVSjrL3quEcRmLBGyeS43Tc",
+      "types": [
+        "hardware_store",
+        "supermarket",
+        "home_improvement_store",
+        "grocery_store",
+        "food_store",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0208 6589410",
+      "formattedAddress": "Max-Eyth-Stra\u00dfe 3-7, 46149 Oberhausen, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.tedox.de/standorte/oberhausen",
+      "userRatingCount": 1967,
+      "displayName": {
+        "text": "tedox KG",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ33ctXOLcuEcRFgki34UiKg4",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0201 843090",
+      "formattedAddress": "Frankenstra\u00dfe 58, 45134 Essen, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.hellweg.de/markt/Essen-Rellinghausen/",
+      "userRatingCount": 2206,
+      "displayName": {
+        "text": "HELLWEG - Die Profi-Baum\u00e4rkte Essen",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ2zUQzQ2UuEcRGS27V2CwGeQ",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02064 4170",
+      "formattedAddress": "Max-Eyth-Stra\u00dfe 9, 46539 Dinslaken, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.stewes.de/standorte",
+      "userRatingCount": 2572,
+      "displayName": {
+        "text": "STEWES Dinslaken - hagebaumarkt, Gartencenter, Baustoffhandel",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJMRvWtc_juEcRJxWNRu1OsB0",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02361 904310",
+      "formattedAddress": "Schmalkalder Str. 10, 45665 Recklinghausen, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/recklinghausen?wt__mc=gp.de540_Recklinghausen%E2%80%A6",
+      "userRatingCount": 351,
+      "displayName": {
+        "text": "OBI Markt Recklinghausen",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJB1y_QJg8uUcR4kPDLi5-8MQ",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02331 34770",
+      "formattedAddress": "Eckeseyer Str. 90, 58089 Hagen, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-hagen/fc/507?cid=MyBGoo_507NL",
+      "userRatingCount": 4103,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ6dx8B6kQuUcR6LTnyrTb7v0",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0231 8610810",
+      "formattedAddress": "Bornstra\u00dfe 333, 44145 Dortmund, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-dortmund/fc/573?cid=MyBGoo_573NL",
+      "userRatingCount": 3700,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJxy08hqEWuUcRn8Hk3faKHxs",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0231 945300",
+      "formattedAddress": "Schleefstra\u00dfe 20-22, 44287 Dortmund, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-dortmund-aplerbeck/fc/509?cid=MyBGoo_509NL",
+      "userRatingCount": 2330,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJLULmD4EYuUcR2TSGMKGcpkQ",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02302 580150",
+      "formattedAddress": "Brauckstra\u00dfe 20, 58454 Witten, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-witten/fc/625?cid=MyBGoo_625NL",
+      "userRatingCount": 3523,
+      "displayName": {
+        "text": "BAUHAUS Witten",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJQ5IsVrwXuUcRHpV2-QmVLOg",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0231 7581020",
+      "formattedAddress": "Zeche Crone 1, 44265 Dortmund, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.hellweg.de/markt/Dortmund-Hacheney/",
+      "userRatingCount": 2765,
+      "displayName": {
+        "text": "HELLWEG - Die Profi-Baum\u00e4rkte Dortmund",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJS9KC-50NuUcRW1KPaVxRWA0",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "general_contractor",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02307 9850",
+      "formattedAddress": "Geschwister-Scholl-Stra\u00dfe 1, 59192 Bergkamen, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.globus-baumarkt.de/info/markt/bergkamen/",
+      "userRatingCount": 1546,
+      "displayName": {
+        "text": "Globus Baumarkt Bergkamen",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJRZzbXtgYuUcR4V6w2eUKbi0",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0231 9632380",
+      "formattedAddress": "Borussiastra\u00dfe 88, 44149 Dortmund, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.hellweg.de/markt/Dortmund-Kley/",
+      "userRatingCount": 2291,
+      "displayName": {
+        "text": "HELLWEG The professional DIY GmbH & Co. KG",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJjf9Ha0QTuUcRsfAbXZcbXmM",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "general_contractor",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02303 258710",
+      "formattedAddress": "Hans-B\u00f6ckler-Stra\u00dfe 3, 59423 Unna, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.globus-baumarkt.de/info/markt/unna/",
+      "userRatingCount": 1246,
+      "displayName": {
+        "text": "Globus Baumarkt Unna",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ15_9Ay0XuUcRUfld9GFp81g",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0231 5622630",
+      "formattedAddress": "Hann\u00f6versche Str. 56, 44143 Dortmund, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.hellweg.de/markt/Dortmund-Wambel/",
+      "userRatingCount": 2134,
+      "displayName": {
+        "text": "HELLWEG - Die Profi-Baum\u00e4rkte Dortmund",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJE938lijiuEcRRw8bvCnV4f0",
+      "types": [
+        "hardware_store",
+        "supermarket",
+        "home_improvement_store",
+        "grocery_store",
+        "food_store",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02323 946630",
+      "formattedAddress": "Roonstra\u00dfe 9, 44629 Herne, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.tedox.de/standorte/herne",
+      "userRatingCount": 1111,
+      "displayName": {
+        "text": "tedox KG",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJGW0u9wMZuUcRcXvaX2y59lM",
+      "types": [
+        "hardware_store",
+        "supermarket",
+        "home_improvement_store",
+        "grocery_store",
+        "food_store",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0231 179977",
+      "formattedAddress": "Planetenfeldstra\u00dfe 24-30, 44149 Dortmund, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.tedox.de/standorte/dortmund-dorstfeld",
+      "userRatingCount": 1352,
+      "displayName": {
+        "text": "tedox KG",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJkbUkeavjuEcRMgfKVPG6IYg",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02361 375540",
+      "formattedAddress": "Herner Str. 378, 45659 Recklinghausen, Germany",
+      "rating": 4,
+      "websiteUri": "https://www.hellweg.de/markt/Recklinghausen/",
+      "userRatingCount": 1048,
+      "displayName": {
+        "text": "HELLWEG - Die Profi-Baum\u00e4rkte Recklinghausen",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ6W9qxlUXuUcRp0QrWuV9ikk",
+      "types": [
+        "hardware_store",
+        "supermarket",
+        "home_improvement_store",
+        "grocery_store",
+        "food_store",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0231 98129810",
+      "formattedAddress": "Borsigstra\u00dfe 4, 44145 Dortmund, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.tedox.de/standorte/dortmund-borsigstrasse",
+      "userRatingCount": 508,
+      "displayName": {
+        "text": "tedox KG",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJjY15HQHhuEcR0uJqsv3ZJ8o",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0234 954250",
+      "formattedAddress": "Riemker Str. 4, 44809 Bochum, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.hellweg.de/markt/Bochum/",
+      "userRatingCount": 1671,
+      "displayName": {
+        "text": "HELLWEG - Die Profi-Baum\u00e4rkte Bochum",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJayIfotHLuEcRgMsuDENru7U",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0211 986730",
+      "formattedAddress": "Kettwiger Str. 69, 40233 D\u00fcsseldorf, Germany",
+      "rating": 4,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-duesseldorf-flingern/fc/491?cid=MyBGoo_491NL",
+      "userRatingCount": 3359,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJg3YOmfjLuEcREyP6uWVSGYA",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0211 291820",
+      "formattedAddress": "Nach den Mauresk\u00f6then 137, 40625 D\u00fcsseldorf, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-duesseldorf-gerresheim/fc/566?cid=MyBGoo_566NL",
+      "userRatingCount": 5511,
+      "displayName": {
+        "text": "Bauhaus",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ30RVpITMuEcRJMpknosE_sQ",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0211 7377630",
+      "formattedAddress": "Reisholzer Bahnstra\u00dfe 37, 40599 D\u00fcsseldorf, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-duesseldorf-reisholz/fc/618?cid=MyBGoo_618NL",
+      "userRatingCount": 3887,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJl8OJkUk1v0cRSfnbplHNuFc",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02137 920990",
+      "formattedAddress": "Am Kirchenmorgen, Gewerbegebiet 1, 41470 Neuss, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-neuss/fc/628?cid=MyBGoo_628NL",
+      "userRatingCount": 3539,
+      "displayName": {
+        "text": "BAUHAUS Neuss",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJowECF9lTv0cRxZcj4X6Z1d4",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02166 998960",
+      "formattedAddress": "Odenkirchener Str. 298, 41236 M\u00f6nchengladbach, Germany",
+      "rating": 4.4,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-moenchengladbach/fc/879?cid=MyBGoo_879NL",
+      "userRatingCount": 1967,
+      "displayName": {
+        "text": "BAUHAUS M\u00f6nchengladbach",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJkZPQ_favuEcRAY9bMvROLdY",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02151 655050",
+      "formattedAddress": "Mevissenstra\u00dfe 75, 47803 Krefeld, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-krefeld/fc/633?cid=MyBGoo_633NL",
+      "userRatingCount": 3731,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJhxz42A21uEcR5Rh5dXeFZ70",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02131 178650",
+      "formattedAddress": "K\u00f6lner Str. 100, 41464 Neuss, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.de/markt/neuss?wt__mc=gp.de455_Neuss%E2%80%A6",
+      "userRatingCount": 1888,
+      "displayName": {
+        "text": "OBI Neuss",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJV3iLs_61uEcRAwHHvySBmmM",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0211 5008030",
+      "formattedAddress": "Heerdter Landstr. 239, 40549 D\u00fcsseldorf, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/duesseldorf-heerdt?wt__mc=gp.de149_D%C3%BCsseldorf_Heerdt%E2%80%A6",
+      "userRatingCount": 2326,
+      "displayName": {
+        "text": "OBI Markt D\u00fcsseldorf Heerdt",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJU_ScjYLUuEcRbAEJUiMvznA",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0212 248000",
+      "formattedAddress": "Mangenberger Str. 10, 42655 Solingen, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.obi.de/markt/solingen?wt__mc=gp.de419_Solingen%E2%80%A6",
+      "userRatingCount": 2131,
+      "displayName": {
+        "text": "OBI Markt Solingen",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ6S92XxKwuEcRGBjjgLgDIrk",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02151 37380",
+      "formattedAddress": "Untergath 89, 47805 Krefeld, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-krefeld/fc/541?cid=MyBGoo_541NL",
+      "userRatingCount": 2691,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJp8u_KxDNuEcRHw2DgxvB2Oo",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02103 908870",
+      "formattedAddress": "Westring 5, 40721 Hilden, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.de/markt/hilden?wt__mc=gp.de553_Hilden%E2%80%A6",
+      "userRatingCount": 1356,
+      "displayName": {
+        "text": "OBI Hilden",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJiz6e9JHLuEcRhXwkQeQBbIw",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0211 984190",
+      "formattedAddress": "K\u00f6nigsberger Str. 87, 40231 D\u00fcsseldorf, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.de/markt/duesseldorf-lierenfeld?wt__mc=gp.de127_D%C3%BCsseldorf-Lierenfeld%E2%80%A6",
+      "userRatingCount": 930,
+      "displayName": {
+        "text": "OBI Flea Market Dusseldorf-Lierenfeld",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJay0d4gSxuEcRECq_Xoxhv-c",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "general_contractor",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02159 52950",
+      "formattedAddress": "Krefelder Str. 84, 40670 Meerbusch, Germany",
+      "rating": 4.4,
+      "websiteUri": "https://www.globus-baumarkt.de/info/markt/meerbusch/",
+      "userRatingCount": 1665,
+      "displayName": {
+        "text": "Globus Baumarkt Meerbusch",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJE1mEXXHUuEcRay8xUAkaX9E",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0212 252210",
+      "formattedAddress": "Focher Str. 53, 42719 Solingen, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-solingen/fc/562?cid=MyBGoo_562NL",
+      "userRatingCount": 1941,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJSSE2qovGuEcRp_LsTPBBeEw",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "02102 713600",
+      "formattedAddress": "An d. Hoffnung 125, 40885 Ratingen, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.harbecke.hagebau.de/Standorte/Baumarkt-Ratingen",
+      "userRatingCount": 937,
+      "displayName": {
+        "text": "hagebaumarkt Ratingen-Breitscheid",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJDe-Nr5PUuEcRclbfcCgmN9o",
+      "types": [
+        "hardware_store",
+        "supermarket",
+        "home_improvement_store",
+        "grocery_store",
+        "food_store",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0212 3834513",
+      "formattedAddress": "Walter-Dodde-Stra\u00dfe 7, 42657 Solingen, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.tedox.de/standorte/solingen",
+      "userRatingCount": 1467,
+      "displayName": {
+        "text": "tedox KG",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJJ8YsN4cnsUcRg70rs2qJTSQ",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0421 485560",
+      "formattedAddress": "Stresemannstra\u00dfe 14, 28207 Bremen, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-bremen/fc/647?cid=MyBGoo_647NL",
+      "userRatingCount": 5425,
+      "displayName": {
+        "text": "BAUHAUS Bremen",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJj5S57pfWsEcRKWGYrpLqC3I",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "04206 41670",
+      "formattedAddress": "3-K-Weg 23, 28816 Stuhr, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-stuhr-gross-mackenstedt/fc/553?cid=MyBGoo_553NL",
+      "userRatingCount": 2909,
+      "displayName": {
+        "text": "BAUHAUS Stuhr-Gro\u00df-Mackenstedt",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ8xrcO8nVsEcRPolubbrKjLs",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "04221 916070",
+      "formattedAddress": "Reinersweg 20, 27751 Delmenhorst, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.de/markt/delmenhorst?wt__mc=gp.de008_Delmenhorst%E2%80%A6",
+      "userRatingCount": 1461,
+      "displayName": {
+        "text": "OBI Markt Delmenhorst",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ4ySRjl_fsEcRnYtF67v3lII",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0421 5157400",
+      "formattedAddress": "Hans-Bredow-Stra\u00dfe 20, 28307 Bremen, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-bremen-osterholz(weserpark)/fc/863?cid=MyBGoo_863NL",
+      "userRatingCount": 2197,
+      "displayName": {
+        "text": "BAUHAUS Bremen-Osterholz (Weserpark)",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJW0CUbXUesUcRlGE-BlyJ-7Q",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "04297 817880",
+      "formattedAddress": "Posthausen 1, 28870 Ottersberg, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.de/markt/posthausen?wt__mc=gp.de082_Posthausen%E2%80%A6",
+      "userRatingCount": 1229,
+      "displayName": {
+        "text": "OBI Markt Posthausen",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJeVugYV7fsEcRT-gJcTGoQIA",
+      "types": [
+        "hardware_store",
+        "supermarket",
+        "home_improvement_store",
+        "grocery_store",
+        "food_store",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0421 4899050",
+      "formattedAddress": "Hans-Bredow-Stra\u00dfe 36, 28307 Bremen, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.tedox.de/standorte/bremen",
+      "userRatingCount": 1037,
+      "displayName": {
+        "text": "tedox KG",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJdcTeYvKFZEERXMSVDdJXuuY",
+      "types": [
+        "discount_store",
+        "hardware_store",
+        "supermarket",
+        "shopping_mall",
+        "grocery_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "05191 98030",
+      "formattedAddress": "Industriestra\u00dfe 8, 28876 Oyten, Germany",
+      "rating": 4,
+      "websiteUri": "http://www.jawoll.de/markt-oyten",
+      "userRatingCount": 970,
+      "displayName": {
+        "text": "Jawoll",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJZ5OIzhLVsEcRCs6UoOQpA7U",
+      "types": [
+        "hardware_store",
+        "supermarket",
+        "home_improvement_store",
+        "grocery_store",
+        "food_store",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "04221 123420",
+      "formattedAddress": "Weberstra\u00dfe 7, 27753 Delmenhorst, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.tedox.de/standorte/delmenhorst",
+      "userRatingCount": 535,
+      "displayName": {
+        "text": "tedox KG",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ0cYwVj_XsEcRY-l68PMuhYE",
+      "types": [
+        "hardware_store",
+        "general_contractor",
+        "wholesaler",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0421 847550",
+      "formattedAddress": "Charlotte-Auerbach-Stra\u00dfe 12, 28816 Stuhr, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.leymann-baustoffe.de/standort/brinkum",
+      "userRatingCount": 84,
+      "displayName": {
+        "text": "Leymann materials Brinkum",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ32PN4l8msUcRzwrA9PonxwE",
+      "types": [
+        "hardware_store",
+        "garden",
+        "bicycle_store",
+        "park",
+        "sporting_goods_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0421 207420",
+      "formattedAddress": "Borgfelder Heerstra\u00dfe 25, 28357 Bremen, Germany",
+      "rating": 3.7,
+      "websiteUri": "https://www.baumarkt-bremen.de/",
+      "userRatingCount": 245,
+      "displayName": {
+        "text": "Viohl Baumarkt - Bremen",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJu6ec9PYosUcRoIysfNDmnh8",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0421 399880",
+      "formattedAddress": "Straubinger Str. 11, 28219 Bremen, Germany",
+      "rating": 4.6,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500640&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500640?branch=500640&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500640",
+      "userRatingCount": 47,
+      "displayName": {
+        "text": "W\u00fcrth Bremen-Walle",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJr0_muzoosUcRnmMr78lPO1w",
+      "types": [
+        "hardware_store",
+        "general_contractor",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0421 54950",
+      "formattedAddress": "Richard-Dunkel-Stra\u00dfe 120, 28199 Bremen, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://zusammenbauen.de/jetzt",
+      "userRatingCount": 95,
+      "displayName": {
+        "text": "wego vti Bremen",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJR4ag5TIksUcRdbIYnZDK1_w",
+      "types": [
+        "hardware_store",
+        "garden",
+        "locksmith",
+        "park",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "04298 93630",
+      "formattedAddress": "Goebelstra\u00dfe 2, 28865 Lilienthal, Germany",
+      "rating": 4.4,
+      "websiteUri": "http://www.rohdenburg.de/",
+      "userRatingCount": 206,
+      "displayName": {
+        "text": "H.H. Rohdenburg GmbH hagebau kompakt",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJl7FH6_PYsEcRyyTv36vY3XE",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0421 4852080",
+      "formattedAddress": "Europaallee 20, 28309 Bremen, Germany",
+      "rating": 4.7,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500504&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500504?branch=500504&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500504",
+      "userRatingCount": 19,
+      "displayName": {
+        "text": "W\u00fcrth Bremen-Hemelingen",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJI_QXezQksUcRgLY8mrRjLPo",
+      "types": [
+        "hardware_store",
+        "sporting_goods_store",
+        "clothing_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "04298 6995950",
+      "formattedAddress": "Scheeren 11, 28865 Lilienthal, Germany",
+      "rating": 4.4,
+      "websiteUri": "https://raisa-markt.de/standorte/lilienthal/",
+      "userRatingCount": 168,
+      "displayName": {
+        "text": "RAISA eG || Raiffeisen-Markt Lilienthal",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJM-ShwHUssUcRAoabNGCYnuo",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0421 67579100",
+      "formattedAddress": "Bremer Heerstra\u00dfe 17b, 28719 Bremen, Germany",
+      "rating": 4.8,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500636&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500636?branch=500636&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500636",
+      "userRatingCount": 14,
+      "displayName": {
+        "text": "W\u00fcrth Bremen-Burglesum",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJGYy7G8bVsEcRDX_KKqTx7gY",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "04221 8509060",
+      "formattedAddress": "Nienburger Str. 10, 27755 Delmenhorst, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500638&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500638?branch=500638&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500638",
+      "userRatingCount": 19,
+      "displayName": {
+        "text": "W\u00fcrth Delmenhorst",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJxZuJUoDZsEcRdZDT8rOXUZs",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "04203 81350",
+      "formattedAddress": "Lahauser Str. 22, 28844 Weyhe, Germany",
+      "rating": 4.6,
+      "websiteUri": "http://www.holz-koehrmann.de/",
+      "userRatingCount": 84,
+      "displayName": {
+        "text": "HolzLand K\u00f6hrmann",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJXYJMRB8xsUcRj1HI7-rJwEo",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "04793 93070",
+      "formattedAddress": "Sophie-Tietjen-Ring 2, 27729 Hambergen, Germany",
+      "rating": 4.6,
+      "websiteUri": "http://www.dietrich-baustoffe.com/",
+      "userRatingCount": 311,
+      "displayName": {
+        "text": "Dietrich GmbH & Co. KG - Building Materials",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJXVqfQQYosUcRGyQYXDkwpbU",
+      "types": [
+        "home_goods_store",
+        "gift_shop",
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0421 76058",
+      "formattedAddress": "Ostertorsteinweg 13, 28203 Bremen, Germany",
+      "rating": 4.4,
+      "websiteUri": "http://caesar-hb.de/",
+      "userRatingCount": 144,
+      "displayName": {
+        "text": "Caesar Handels GmbH",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ5yLG2-hWn0cRZwtr1qvuRXU",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0911 9509980",
+      "formattedAddress": "Geisseestra\u00dfe 89, 90439 N\u00fcrnberg, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-nuernberg/fc/859?cid=MyBGoo_859NL",
+      "userRatingCount": 3932,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJfxtGZNFZn0cRBLkGD4s4NQc",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0911 424370",
+      "formattedAddress": "Regensburger Str. 250, 90480 N\u00fcrnberg, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.obi.de/markt/nuernberg-regensburger-strasse?wt__mc=gp.de456_N%C3%BCrnberg_Regensburger_Strasse%E2%80%A6",
+      "userRatingCount": 2677,
+      "displayName": {
+        "text": "OBI Nuremberg Regensburger Str.",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJNYlC631Wn0cRHL6Py1-l29Q",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0911 3140300",
+      "formattedAddress": "Leyher Str. 123, 90431 N\u00fcrnberg, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.obi.de/markt/nuernberg-leyher-strasse?wt__mc=gp.de009_N%C3%BCrnberg_Leyher_Strasse%E2%80%A6",
+      "userRatingCount": 2644,
+      "displayName": {
+        "text": "OBI",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJMaKc-bb4oUcRg54yk7BZ9lc",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "09131 120420",
+      "formattedAddress": "Neum\u00fchle 1, 91056 Erlangen, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/erlangen-west?wt__mc=gp.de310_Erlangen-West%E2%80%A6",
+      "userRatingCount": 2654,
+      "displayName": {
+        "text": "OBI Erlangen West",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJXxIVYm5Vn0cRwctdodAYJuo",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0911 9734740",
+      "formattedAddress": "Am Annaberg 3-5, 90766 F\u00fcrth, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/fuerth?wt__mc=gp.de071_F%C3%BCrth%E2%80%A6",
+      "userRatingCount": 3346,
+      "displayName": {
+        "text": "OBI Markt F\u00fcrth",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJWywZtDj5oUcRUOol9HBbU04",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "09131 506720",
+      "formattedAddress": "Kurt-Schumacher-Stra\u00dfe 14, 91052 Erlangen, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/erlangen-ost?wt__mc=gp.de434_Erlangen-Ost%E2%80%A6",
+      "userRatingCount": 2605,
+      "displayName": {
+        "text": "OBI market Erlangen East",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ4UhJcF9Xn0cR26h3LU4_DEc",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0911 567900",
+      "formattedAddress": "\u00c4u\u00dfere Bayreuther Str. 220, 90411 N\u00fcrnberg, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/nuernberg-aeussere-bayreuther-strasse?wt__mc=gp.de491_N%C3%BCrnberg_%C3%84u%C3%9Fere_Bayreuther_Stra%C3%9Fe%E2%80%A6",
+      "userRatingCount": 710,
+      "displayName": {
+        "text": "OBI Markt N\u00fcrnberg \u00c4u\u00dfere Bayreuther Stra\u00dfe",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ8z2Zps5Xn0cRzo43Cw1RvxU",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0911 3610452",
+      "formattedAddress": "Kilianstra\u00dfe 104, 90425 N\u00fcrnberg, Germany",
+      "rating": 4.4,
+      "websiteUri": "https://www.baywa-baumarkt.de/markt/Nuernberg/",
+      "userRatingCount": 1417,
+      "displayName": {
+        "text": "BayWa Bau- & Garden Centers GmbH & Co. KG",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJn4HvdDJQn0cRADpK4wAqQsA",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "09122 63190",
+      "formattedAddress": "N\u00fcrnberger Str. 86, 91126 Schwabach, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/schwabach?wt__mc=gp.de022_Schwabach%E2%80%A6",
+      "userRatingCount": 2066,
+      "displayName": {
+        "text": "OBI Markt Schwabach",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ-Slq1lNRn0cRhl-AC5OmG0s",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0911 967260",
+      "formattedAddress": "Spitzleitenweg 11, 90547 Stein, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-nuernberg-stein/fc/567?cid=MyBGoo_567NL",
+      "userRatingCount": 1582,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJJ0VKXePgoUcRujVZfXb-tRk",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "09123 97920",
+      "formattedAddress": "Faunberg 1, 91207 Lauf an der Pegnitz, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/lauf?wt__mc=gp.de350_Lauf%E2%80%A6",
+      "userRatingCount": 1630,
+      "displayName": {
+        "text": "OBI Markt Lauf",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJrxW6bBhEn0cRMCYfNe_jZqE",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "09171 843870",
+      "formattedAddress": "Gildestra\u00dfe 1, 91154 Roth, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/roth?wt__mc=gp.de375_Roth%E2%80%A6",
+      "userRatingCount": 1459,
+      "displayName": {
+        "text": "OBI Markt Roth",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJcRrFHCVUn0cRmL4loYzoBn4",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0911 47759310",
+      "formattedAddress": "Tucherstra\u00dfe 1, 90763 F\u00fcrth, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.baywa-baumarkt.de/markt/Fuerth/",
+      "userRatingCount": 1380,
+      "displayName": {
+        "text": "BayWa Bau- & Garden Centers GmbH & Co. KG",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJmxX9qAXioUcRbvVZ8tRw-0U",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0911 5754630",
+      "formattedAddress": "Am Gewerbepark 1, 90552 R\u00f6thenbach an der Pegnitz, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/roethenbach?wt__mc=gp.de409_R%C3%B6thenbach%E2%80%A6",
+      "userRatingCount": 1005,
+      "displayName": {
+        "text": "OBI Markt R\u00f6thenbach",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ7YcP_dxQn0cR9d5EN1scUlY",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0911 64250",
+      "formattedAddress": "Hamburger Str. 98, 90451 N\u00fcrnberg, Germany",
+      "rating": 4.6,
+      "websiteUri": "http://www.baustoffunion.de/",
+      "userRatingCount": 283,
+      "displayName": {
+        "text": "Baustoff Union GmbH & Co. KG Ndl. N\u00fcrnberg",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJSx0Qp7b4oUcRnlNOfzJ7pmE",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "09131 75450",
+      "formattedAddress": "Schallershofer Str. 88, 91056 Erlangen, Germany",
+      "rating": 4.4,
+      "websiteUri": "https://www.gebhardt-bauzentrum.de/standorte/erlangen",
+      "userRatingCount": 381,
+      "displayName": {
+        "text": "GEBHARDT CONSTRUCTION CENTER Erlangen",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJJ-ZIZrFdn0cRlaP4gYmOSiI",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "09128 92020",
+      "formattedAddress": "Bahnhofstra\u00dfe 2, 90592 Schwarzenbruck, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/schwarzenbruck?wt__mc=gp.de142_Schwarzenbruck%E2%80%A6",
+      "userRatingCount": 433,
+      "displayName": {
+        "text": "OBI Markt Schwarzenbruck",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ78bKNIFWn0cRyo8-4qAOG2g",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0911 9658570",
+      "formattedAddress": "Sigmundstra\u00dfe 175/177, 90431 N\u00fcrnberg, Germany",
+      "rating": 4.5,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500700&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500700?branch=500700&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500700",
+      "userRatingCount": 52,
+      "displayName": {
+        "text": "W\u00fcrth Nuremberg branch-courts",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJP6rWeo7-oUcRN6hFKHe73NQ",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "09131 9330790",
+      "formattedAddress": "Am Weichselgarten 30, 91058 Erlangen, Germany",
+      "rating": 4.6,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500707&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500707?branch=500707&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500707",
+      "userRatingCount": 20,
+      "displayName": {
+        "text": "W\u00fcrth branch Erlangen",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJXWoPliBUn0cReQYkhplyjPA",
+      "types": [
+        "hardware_store",
+        "general_contractor",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0911 961060",
+      "formattedAddress": "Am Fernmeldeturm 7, 90441 N\u00fcrnberg, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://zusammenbauen.de/jetzt",
+      "userRatingCount": 98,
+      "displayName": {
+        "text": "wego vti N\u00fcrnberg",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJf7CIuPzcmUcR0aNX4r3osT4",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0711 5188660",
+      "formattedAddress": "Industriestra\u00dfe 57, 70565 Stuttgart, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-stuttgart-moehringen/fc/626?cid=MyBGoo_626NL",
+      "userRatingCount": 3345,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJx2fGWz_EmUcR_Vj30TFGz08",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0711 7224770",
+      "formattedAddress": "Augsburger Str. 500, 70327 Stuttgart, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-stuttgart-untertuerkheim/fc/631?cid=MyBGoo_631NL",
+      "userRatingCount": 2825,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJC4QLCcrCmUcRrsiun2dBDt8",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0711 7973110",
+      "formattedAddress": "Nikolaus-Otto-Stra\u00dfe 20, 70771 Leinfelden-Echterdingen, Germany",
+      "rating": 3.9,
+      "websiteUri": "https://www.obi.de/markt/leinfelden-echterdingen?wt__mc=gp.de023_Leinfelden-Echterdingen%E2%80%A6",
+      "userRatingCount": 1753,
+      "displayName": {
+        "text": "OBI Market",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJGaxah8LamUcRtLtuCgv9pAE",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0711 5408140",
+      "formattedAddress": "Stuttgarter Str. 17, 70469 Stuttgart, Germany",
+      "rating": 3.7,
+      "websiteUri": "https://www.obi.de/markt/stuttgart-feuerbach?wt__mc=gp.de017_Stuttgart-Feuerbach%E2%80%A6",
+      "userRatingCount": 1597,
+      "displayName": {
+        "text": "OBI Markt Stuttgart-Feuerbach",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJeU6Jsk7bmUcRYQbbRUBzfWA",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0711 6648210",
+      "formattedAddress": "Sophienstra\u00dfe 23, 70178 Stuttgart, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-stuttgart/fc/871?cid=MyBGoo_871NL",
+      "userRatingCount": 309,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ8SlEvIbTmUcRHTjU41qBzlg",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07142 90160",
+      "formattedAddress": "Geisinger Str. 65, 74321 Bietigheim-Bissingen, Germany",
+      "rating": 4,
+      "websiteUri": "https://www.obi.de/markt/bietigheim?wt__mc=gp.de432_Bietigheim%E2%80%A6",
+      "userRatingCount": 2139,
+      "displayName": {
+        "text": "OBI Markt Bietigheim",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ50yKZ2XbmUcR7f0fWJTcPKc",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0711 3516400",
+      "formattedAddress": "Am Stellwerk 4, 70197 Stuttgart, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.de/markt/stuttgart-westbahnhof?wt__mc=gp.de496_Stuttgart-Westbahnhof%E2%80%A6",
+      "userRatingCount": 715,
+      "displayName": {
+        "text": "OBI Stuttgart-Westbahnhof",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ2zYEti_QmUcRH-XUahLL83A",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "store",
+        "general_contractor",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07154 1770",
+      "formattedAddress": "Leibnizstra\u00dfe 10, 70806 Kornwestheim, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.globus-baumarkt.de/info/markt/kornwestheim/",
+      "userRatingCount": 1322,
+      "displayName": {
+        "text": "Globus Baumarkt Kornwestheim",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ21TiHWnEmUcRjKdV2gAae0A",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0711 4070010",
+      "formattedAddress": "Hedelfinger Str. 54, 70327 Stuttgart, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.obi.de/markt/stuttgart-wangen?wt__mc=gp.de113_Stuttgart-Wangen%E2%80%A6",
+      "userRatingCount": 1294,
+      "displayName": {
+        "text": "OBI Stuttgart-Wangen",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJLy7HFvmVmUcRg1_jZzpWkIQ",
+      "types": [
+        "hardware_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07021 970520",
+      "formattedAddress": "Stuttgarter Str. 51, 73230 Kirchheim unter Teck, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://toom.de/m/kirchheim/",
+      "userRatingCount": 2354,
+      "displayName": {
+        "text": "toom Baumarkt Kirchheim",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ4Q_RlTjemUcR0inIHeR7eLg",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07031 86750",
+      "formattedAddress": "Mahdentalstra\u00dfe 78, 71065 Sindelfingen, Germany",
+      "rating": 3.9,
+      "websiteUri": "https://www.obi.de/markt/sindelfingen?wt__mc=gp.de068_Sindelfingen%E2%80%A6",
+      "userRatingCount": 1170,
+      "displayName": {
+        "text": "OBI Markt Sindelfingen",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJb4XYe_7FmUcRlU0ofs051TY",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07151 986100",
+      "formattedAddress": "Ziegeleistra\u00dfe 2, 71332 Waiblingen, Germany",
+      "rating": 4,
+      "websiteUri": "https://www.obi.de/markt/waiblingen?wt__mc=gp.de131_Waiblingen%E2%80%A6",
+      "userRatingCount": 2734,
+      "displayName": {
+        "text": "OBI Waiblingen",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ9QnctNHHmUcRpzcgtJG6Goo",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "store",
+        "general_contractor",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07151 96433",
+      "formattedAddress": "Kalkofenstra\u00dfe 14, 71384 Weinstadt, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.globus-baumarkt.de/info/markt/weinstadt/",
+      "userRatingCount": 1732,
+      "displayName": {
+        "text": "Globus Baumarkt Weinstadt",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJm2dFgL7ZmUcRahRrZgDWhS0",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07156 17774000",
+      "formattedAddress": "Dieselstra\u00dfe 18, 71254 Ditzingen, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://hagebau-bolay.de/standorte/ditzingen/hagebau-bolay.php",
+      "userRatingCount": 1742,
+      "displayName": {
+        "text": "hagebau bolay / hagebaumarkt mit Floraland",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJJwjoDJHYmUcR_6mBMvnMeO4",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07152 308160",
+      "formattedAddress": "R\u00f6merstra\u00dfe 7-9, 71229 Leonberg, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.de/markt/leonberg?wt__mc=gp.de096_Leonberg%E2%80%A6",
+      "userRatingCount": 698,
+      "displayName": {
+        "text": "OBI Leonberg",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ-RfBeDJ8l0cRIoCLrniDovE",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "store",
+        "general_contractor",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07042 93020",
+      "formattedAddress": "Stuttgarter Str. 121, 71665 Vaihingen an der Enz, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.globus-baumarkt.de/info/markt/vaihingen/",
+      "userRatingCount": 1307,
+      "displayName": {
+        "text": "Globus Baumarkt Vaihingen",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJr3hFlbrJmUcRVbabECY8iaM",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07195 589270",
+      "formattedAddress": "Friedrich-List-Stra\u00dfe 5, 71364 Winnenden, Germany",
+      "rating": 3.9,
+      "websiteUri": "https://www.obi.de/markt/winnenden?wt__mc=gp.de533_Winnenden%E2%80%A6",
+      "userRatingCount": 930,
+      "displayName": {
+        "text": "OBI",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ-XGzdHjPmUcREHkrpacBCSk",
+      "types": [
+        "hardware_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0711 517990",
+      "formattedAddress": "Benzstra\u00dfe 19, 70736 Fellbach, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.kemmler.de/niederlassungen/fellbach-oeffingen/?utm_source=google&utm_medium=My+Business&utm_campaign=Fellbach",
+      "userRatingCount": 410,
+      "displayName": {
+        "text": "Kemmler Materials & Tile",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJqSNQRFlil0cR41obAYQgYf4",
+      "types": [
+        "hardware_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07152 50062000",
+      "formattedAddress": "Dieselstra\u00dfe 11, 71277 Rutesheim, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://hagebau-bolay.de/standorte/rutesheim/hagebau-bolay.php",
+      "userRatingCount": 1379,
+      "displayName": {
+        "text": "hagebau Bolay / hagebaumarkt Garden Center",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJndyY9GzEmUcRb7o0mbmxDII",
+      "types": [
+        "hardware_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0711 955630",
+      "formattedAddress": "Kesselstra\u00dfe 33, 70327 Stuttgart, Germany",
+      "rating": 4.4,
+      "websiteUri": "https://www.fliesen-kemmler.de/niederlassungen/stuttgart-wangen",
+      "userRatingCount": 391,
+      "displayName": {
+        "text": "Kemmler Baustoffe & Fliesen S-Wangen",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJmXKTdYMIl0cRNvvkJ8nb1vQ",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0721 8935300",
+      "formattedAddress": "K\u00e4ppelestra\u00dfe 2, 76131 Karlsruhe, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-karlsruhe-oststadt/fc/852?cid=MyBGoo_852NL",
+      "userRatingCount": 3019,
+      "displayName": {
+        "text": "Bauhaus",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJe3QWixCkl0cRjjI96yg38_c",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07251 97680",
+      "formattedAddress": "Kammerforststra\u00dfe 19, 76646 Bruchsal, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-bruchsal/fc/872?cid=MyBGoo_872NL",
+      "userRatingCount": 3018,
+      "displayName": {
+        "text": "BAUHAUS Bruchsal",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJoS16X9kGl0cRN8MeiR9GBRo",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0721 597170",
+      "formattedAddress": "Neureuter Str. 4, 76185 Karlsruhe, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-karlsruhe-muehlburg/fc/525?cid=MyBGoo_525NL",
+      "userRatingCount": 2348,
+      "displayName": {
+        "text": "BAUHAUS",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJUUu2-lIcl0cRZUjPs7ZrcZc",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07222 506490",
+      "formattedAddress": "Im Baisert 1, 76437 Rastatt, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-rastatt/fc/530?cid=MyBGoo_530NL",
+      "userRatingCount": 3334,
+      "displayName": {
+        "text": "BAUHAUS Rastatt",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJgQMGa11yl0cRdM0tjbh4_xE",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07231 429060",
+      "formattedAddress": "Konstanzer Str. 6, 75179 Pforzheim, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-pforzheim/fc/590?cid=MyBGoo_590NL",
+      "userRatingCount": 3276,
+      "displayName": {
+        "text": "BAUHAUS Pforzheim",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJF6mSkmoGl0cR9LgIjbXokB0",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0721 932710",
+      "formattedAddress": "Nebeniusstra\u00dfe 4-6, 76137 Karlsruhe, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-karlsruhe-suedstadt/fc/330?cid=MyBGoo_330NL",
+      "userRatingCount": 1016,
+      "displayName": {
+        "text": "BAUHAUS Karlsruhe-S\u00fcdstadt",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ_SQ18aQFl0cR_ogq7SFG5SY",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "store",
+        "general_contractor",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07243 505740",
+      "formattedAddress": "Hertzstra\u00dfe 3, 76275 Ettlingen, Germany",
+      "rating": 4.2,
+      "websiteUri": "http://www.hagebaumarkt-ettlingen.de/",
+      "userRatingCount": 1702,
+      "displayName": {
+        "text": "hagebaumarkt Ettlingen GmbH & Co. KG",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJAeZ4UDOll0cRsbIMvZdUKjk",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "store",
+        "general_contractor",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07254 9866",
+      "formattedAddress": "Hambr\u00fccker Landstra\u00dfe 7-9, 68753 Wagh\u00e4usel, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.globus-baumarkt.de/info/markt/waghaeusel-wiesental/",
+      "userRatingCount": 1286,
+      "displayName": {
+        "text": "Globus Baumarkt Wagh\u00e4usel-Wiesental",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJvX8ZT3Syl0cRgA8OXSLxNC8",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "store",
+        "general_contractor",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07274 9530",
+      "formattedAddress": "Mainzer Str. 4, 76726 Germersheim, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.globus-baumarkt.de/info/markt/germersheim/",
+      "userRatingCount": 961,
+      "displayName": {
+        "text": "Globus Baumarkt Germersheim",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJbehtd8MGl0cRUU6QOmhwTuw",
+      "types": [
+        "hardware_store",
+        "supermarket",
+        "home_improvement_store",
+        "home_goods_store",
+        "grocery_store",
+        "food_store",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0721 98234170",
+      "formattedAddress": "Carl-Metz-Stra\u00dfe 3, 76185 Karlsruhe, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.tedox.de/standorte/karlsruhe",
+      "userRatingCount": 645,
+      "displayName": {
+        "text": "tedox KG",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJOV1winpyl0cRizpt-tSJ7Z8",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07231 940600",
+      "formattedAddress": "Sandweg 18, 75179 Pforzheim, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.b1-discount.de/",
+      "userRatingCount": 1442,
+      "displayName": {
+        "text": "B1 Discount-Baumarkt - toom Baumarkt GmbH",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ4UsE3yaml0cRzzS83qOij64",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07244 73690",
+      "formattedAddress": "Fraunhoferstra\u00dfe 2, 76297 Stutensee, Germany",
+      "rating": 4.3,
+      "websiteUri": "http://www.hornung-baustoffe.de/",
+      "userRatingCount": 263,
+      "displayName": {
+        "text": "Hornung Baustoff Fachhandel",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJO9VUqK4dl0cRwUb8ovEy014",
+      "types": [
+        "hardware_store",
+        "supermarket",
+        "home_improvement_store",
+        "home_goods_store",
+        "grocery_store",
+        "food_store",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07222 506100",
+      "formattedAddress": "Im W\u00f6hr 8, 76437 Rastatt, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.tedox.de/standorte/rastatt",
+      "userRatingCount": 463,
+      "displayName": {
+        "text": "tedox KG",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJzYGyHmcIl0cR6M7Jwye-EWM",
+      "types": [
+        "hardware_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0721 625220",
+      "formattedAddress": "Printzstra\u00dfe 2a, 76139 Karlsruhe, Germany",
+      "rating": 4.4,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500400&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500400?branch=500400&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500400",
+      "userRatingCount": 48,
+      "displayName": {
+        "text": "W\u00fcrth Karlsruhe branch-Hagsfeld",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJc4V5QTcBl0cRpiU_yT_HCdY",
+      "types": [
+        "hardware_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0721 82448910",
+      "formattedAddress": "Industriestra\u00dfe 2, 76189 Karlsruhe, Germany",
+      "rating": 4.8,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500404&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500404?branch=500404&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500404",
+      "userRatingCount": 27,
+      "displayName": {
+        "text": "W\u00fcrth Karlsruhe-Rheinhafen",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJx43K3wkFl0cR41bUXSyGRGg",
+      "types": [
+        "hardware_store",
+        "home_goods_store",
+        "store",
+        "general_contractor",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07243 33660",
+      "formattedAddress": "Siemensstra\u00dfe 5-7, 76275 Ettlingen, Germany",
+      "rating": 4.6,
+      "websiteUri": "https://zusammenbauen.de/jetzt",
+      "userRatingCount": 63,
+      "displayName": {
+        "text": "wego vti Ettlingen",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJM7O8w2FUlkcRr7oETGvfE4o",
+      "types": [
+        "hardware_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07276 8550",
+      "formattedAddress": "St.-Christophorus-Stra\u00dfe 1b, 76863 Herxheim bei Landau (Pfalz), Germany",
+      "rating": 4.2,
+      "websiteUri": "http://www.gillet-baustoffe.de/",
+      "userRatingCount": 167,
+      "displayName": {
+        "text": "Werkers Welt",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJgST3DK4dl0cR4Z38-qCo7v8",
+      "types": [
+        "hardware_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07222 4056990",
+      "formattedAddress": "Zollersb\u00fchnstra\u00dfe 2, 76437 Rastatt, Germany",
+      "rating": 4.6,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500402&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500402?branch=500402&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500402",
+      "userRatingCount": 33,
+      "displayName": {
+        "text": "W\u00fcrth Rastatt",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ6azXrRCkl0cRO44KLqZipDY",
+      "types": [
+        "hardware_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07251 7240890",
+      "formattedAddress": "Im Ochsenstall 30a, 76689 Karlsdorf-Neuthard, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500403&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500403?branch=500403&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500403",
+      "userRatingCount": 24,
+      "displayName": {
+        "text": "W\u00fcrth Karlsdorf-Neuthard",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJD7obK15yl0cRkw_zjsiqzy4",
+      "types": [
+        "hardware_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07231 139420",
+      "formattedAddress": "Stuttgarter Str. 1, 75179 Pforzheim, Germany",
+      "rating": 4.8,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500405&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500405?branch=500405&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500405",
+      "userRatingCount": 19,
+      "displayName": {
+        "text": "W\u00fcrth Pforzheim",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJAf-6znZWskcR_3N_8nzAroo",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0431 6902150",
+      "formattedAddress": "Gutenbergstra\u00dfe 79, 24116 Kiel, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-kiel-ravensberg/fc/853?cid=MyBGoo_853NL",
+      "userRatingCount": 2691,
+      "displayName": {
+        "text": "Bauhaus",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJWQJ9WNxZskcR7PgK2TzRZu0",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "04307 82420",
+      "formattedAddress": "Klausdorfer Str. 28-32, 24223 Schwentinental, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-schwentinental-raisdorf/fc/634?cid=MyBGoo_634NL",
+      "userRatingCount": 3084,
+      "displayName": {
+        "text": "BAUHAUS Schwentinental-Raisdorf",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJEUtjI_JVskcRHhc_LdJK7fs",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0431 301130",
+      "formattedAddress": "Steenbeker Weg 215, 24106 Kiel, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-kiel-suchsdorf/fc/571?cid=MyBGoo_571NL",
+      "userRatingCount": 1460,
+      "displayName": {
+        "text": "Bauhaus",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJRW40J_RXskcR7IqgeN7ojag",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0431 6006930",
+      "formattedAddress": "Sch\u00f6nberger Landstra\u00dfe 1-13, 24232 Sch\u00f6nkirchen, Germany",
+      "rating": 4.4,
+      "websiteUri": "https://www.hagebau.de/baumarkt/hagebaumarkt-nord-gmbh-co-kg-ndl-schoenkirchen-schoenkirchen-sn128909/?storeCompanyId=128909",
+      "userRatingCount": 406,
+      "displayName": {
+        "text": "hagebaumarkt Sch\u00f6nkirchen",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJIcdeyMJZskcRghNoDBbZozk",
+      "types": [
+        "hardware_store",
+        "supermarket",
+        "grocery_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "04307 276960",
+      "formattedAddress": "Gutenbergstra\u00dfe 1-9, 24223 Schwentinental, Germany",
+      "rating": 4.1,
+      "websiteUri": "https://www.tedox.de/standorte/schwentinental",
+      "userRatingCount": 617,
+      "displayName": {
+        "text": "tedox KG",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJwblgs-BZskcR9N2QLNXv8VA",
+      "types": [
+        "discount_store",
+        "shopping_mall",
+        "hardware_store",
+        "supermarket",
+        "grocery_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "05191 98030",
+      "formattedAddress": "Carl-Zeiss-Stra\u00dfe 1-13, 24223 Schwentinental, Germany",
+      "rating": 3.8,
+      "websiteUri": "https://www.jawoll.de/markt-schwentinental",
+      "userRatingCount": 937,
+      "displayName": {
+        "text": "Jawoll",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJdUbZdR_5skcRV9zPC5LOfsM",
+      "types": [
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0431 399660",
+      "formattedAddress": "Redderkoppel 3-5, 24159 Kiel, Germany",
+      "rating": 4.4,
+      "websiteUri": "http://www.foerde-baumarkt.de/",
+      "userRatingCount": 580,
+      "displayName": {
+        "text": "Fjord-Baumarkt Holger Claussen GmbH",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJy2u6SXRWskcR51lG7XNYvmY",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0431 88801970",
+      "formattedAddress": "Holzkoppelweg 8 - 12, 24118 Kiel, Germany",
+      "rating": 4.6,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500313&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500313?branch=500313&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500313",
+      "userRatingCount": 25,
+      "displayName": {
+        "text": "W\u00fcrth Kiel-Ravensberg",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJOfcLinRWskcRQJtesdPr4yA",
+      "types": [
+        "hardware_store",
+        "general_contractor",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0431 239530",
+      "formattedAddress": "Holzkoppelweg 20, 24118 Kiel, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://zusammenbauen.de/jetzt",
+      "userRatingCount": 78,
+      "displayName": {
+        "text": "wego vti Kiel",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJj4X87IoHs0cRav7ITgfBQH4",
+      "types": [
+        "hardware_store",
+        "supermarket",
+        "grocery_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "04351 754550",
+      "formattedAddress": "Rendsburger Str. 117, 24340 Eckernf\u00f6rde, Germany",
+      "rating": 4.4,
+      "websiteUri": "https://www.tedox.de/standorte/eckernfoerde",
+      "userRatingCount": 79,
+      "displayName": {
+        "text": "tedox KG",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJDahrWx9UskcRD2ETOHAcNtY",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0431 647400",
+      "formattedAddress": "Seekoppelweg 7a, 24113 Kiel, Germany",
+      "rating": 5,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500870&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500870?branch=500870&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500870",
+      "userRatingCount": 33,
+      "displayName": {
+        "text": "W\u00fcrth Kiel",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJRxr33-NNskcR0GUTVvL4BoM",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "bicycle_store",
+        "sporting_goods_store",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "04322 552840",
+      "formattedAddress": "M\u00fchlenstra\u00dfe 3, 24582 Bordesholm, Germany",
+      "rating": 4.6,
+      "websiteUri": "http://www.profikiel.de/",
+      "userRatingCount": 86,
+      "displayName": {
+        "text": "Profi Kiel",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ1VVLINdXskcRcuybgZt7dwY",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0431 25960870",
+      "formattedAddress": "Edisonstra\u00dfe 20c, 24145 Kiel, Germany",
+      "rating": 4.7,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500887&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500887?branch=500887&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500887",
+      "userRatingCount": 44,
+      "displayName": {
+        "text": "W\u00fcrth Kiel-Wellsee",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJFxiiPtRTskcRjJcp9GlSm5M",
+      "types": [
+        "department_store",
+        "gift_shop",
+        "hardware_store",
+        "tea_house",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "04347 9121",
+      "formattedAddress": "Rosenberg 22, 24220 Flintbek, Germany",
+      "rating": 4.6,
+      "websiteUri": "http://www.renner-haus-garten.de/",
+      "userRatingCount": 296,
+      "displayName": {
+        "text": "Renner Home + Garden Household goods shop",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJI7Yw-dtZskcRwIVSovSXNVU",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "04307 8234950",
+      "formattedAddress": "Klausdorfer Str. 56, 24223 Schwentinental, Germany",
+      "rating": 4.9,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500838&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500838?branch=500838&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500838",
+      "userRatingCount": 18,
+      "displayName": {
+        "text": "W\u00fcrth Schwentinental",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJvVToUIJWskcRZvPTTRwxNRw",
+      "types": [
+        "wholesaler",
+        "shopping_mall",
+        "hardware_store",
+        "drugstore",
+        "health",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0431 65949380",
+      "formattedAddress": "Rendsburger Landstra\u00dfe 85, 24113 Kiel, Germany",
+      "rating": 5,
+      "websiteUri": "http://www.hygienekontor-kiel.de/",
+      "userRatingCount": 8,
+      "displayName": {
+        "text": "Hygienekontor Kiel GmbH",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJb10oY4FZskcRWoMMC8pma_w",
+      "types": [
+        "hardware_store",
+        "storage",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "04307 82420",
+      "formattedAddress": "Klausdorfer Str. 28-32, 24223 Schwentinental, Germany",
+      "websiteUri": "https://www.bauhaus.info/fachcentren/drive-in-arena",
+      "displayName": {
+        "text": "Drive-In-Arena",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJVaYam7BVskcRpf3RHvPk9cA",
+      "types": [
+        "hardware_store",
+        "clothing_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "0431 647400",
+      "formattedAddress": "Seekoppelweg 7a, 24113 Kiel, Germany",
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/logodruckservice_arbeitskleidung/textildruck_detail.php?branch=500870&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500870?branch=&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=",
+      "displayName": {
+        "text": "W\u00fcrth Kiel - Textildruck",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJn6NhS-FNskcRpEwWH5V04Dg",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "04191 996645",
+      "formattedAddress": "Bahnhofstra\u00dfe 50 A, 24582 Bordesholm, Germany",
+      "websiteUri": "http://www.mjs-waffen.de/",
+      "displayName": {
+        "text": "MJS GmbH",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJk8IdpFywkUcRwratneNv2W0",
+      "types": [
+        "hardware_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07621 422570",
+      "formattedAddress": "Industriestra\u00dfe 1, 79541 L\u00f6rrach, Germany",
+      "rating": 4.2,
+      "websiteUri": "https://www.bauhaus.info/fachcentren/fachcentrum-loerrach-haagen/fc/594?cid=MyBGoo_594NL",
+      "userRatingCount": 3373,
+      "displayName": {
+        "text": "BAUHAUS L\u00f6rrach-Haagen",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ2boQwjm4kUcRwecxEkMdJS0",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "058 329 11 00",
+      "formattedAddress": "Reinacherstrasse 29, 4053 Basel, Switzerland",
+      "rating": 4.1,
+      "websiteUri": "https://www.obi.ch/markt/basel-dreispitz?wt__mc=gp.ch021_Basel_Dreispitz%E2%80%A6",
+      "userRatingCount": 2524,
+      "displayName": {
+        "text": "OBI Basel Dreispitz",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ-4zbpNu4kUcReI-55cjcqGs",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "bicycle_store",
+        "sporting_goods_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "061 485 70 00",
+      "formattedAddress": "Binningerstrasse 74, 4123 Allschwil, Switzerland",
+      "rating": 4.2,
+      "websiteUri": "https://www.jumbo.ch/de/standorte/s/6039_POS",
+      "userRatingCount": 719,
+      "displayName": {
+        "text": "JUMBO Allschwil",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJjV5upQy2kUcRTd1ioahaSoU",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "bicycle_store",
+        "sporting_goods_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "061 826 96 16",
+      "formattedAddress": "R\u00fctiweg 9, 4133 Pratteln, Switzerland",
+      "rating": 4.2,
+      "websiteUri": "https://www.jumbo.ch/de/standorte/s/6047_POS",
+      "userRatingCount": 591,
+      "displayName": {
+        "text": "JUMBO Pratteln",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJAVhcfbq5kUcRcoi7_Usm9P8",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "bicycle_store",
+        "sporting_goods_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "061 685 99 99",
+      "formattedAddress": "Clarastrasse 6, 4058 Basel, Switzerland",
+      "rating": 4,
+      "websiteUri": "https://www.jumbo.ch/de/standorte/s/6048_POS",
+      "userRatingCount": 384,
+      "displayName": {
+        "text": "JUMBO Basel-Clara",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJWWpfy3rHkUcRi6QGyHg6ziE",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "bicycle_store",
+        "sporting_goods_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "061 406 90 30",
+      "formattedAddress": "M\u00fchlemattstrasse 44, 4104 Oberwil, Switzerland",
+      "rating": 4.1,
+      "websiteUri": "https://www.jumbo.ch/de/standorte/s/1046_POS",
+      "userRatingCount": 889,
+      "displayName": {
+        "text": "JUMBO Oberwil",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJY4C5-NG1kUcRJfVAu9HVvAk",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "bicycle_store",
+        "sporting_goods_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "061 815 97 97",
+      "formattedAddress": "Junkholzweg 1, 4303 Kaiseraugst, Switzerland",
+      "rating": 4.2,
+      "websiteUri": "https://www.jumbo.ch/de/standorte/s/1043_POS",
+      "userRatingCount": 953,
+      "displayName": {
+        "text": "JUMBO Maximo Kaiseraugst",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ4ZYwYy41kEcR6vlQcSBsf2c",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "bicycle_store",
+        "sporting_goods_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "061 976 96 10",
+      "formattedAddress": "Gewerbestrasse 8, 4450 Sissach, Switzerland",
+      "rating": 4.2,
+      "websiteUri": "https://www.jumbo.ch/de/standorte/s/1045_POS",
+      "userRatingCount": 857,
+      "displayName": {
+        "text": "JUMBO Sissach",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJt3iKQMPHkUcRkdjjVCpbhXk",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "058 575 83 00",
+      "formattedAddress": "Sternenhofstrasse 10, 4153 Reinach, Switzerland",
+      "rating": 4,
+      "websiteUri": "https://www.doitgarden.ch/de/cp/store/0026460/do-it-garden-reinach-sternenhof?utm_source=GoogleMaps&utm_medium=organic&utm_campaign=Reinach",
+      "userRatingCount": 187,
+      "displayName": {
+        "text": "Do it + Garden - Reinach-Sternenhof",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJW7woLp3GkUcRWGeaJNWBRvI",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "bicycle_store",
+        "sporting_goods_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "061 765 95 95",
+      "formattedAddress": "Baselstrasse 10, 4222 Zwingen, Switzerland",
+      "rating": 4.2,
+      "websiteUri": "https://www.jumbo.ch/de/standorte/s/1032_POS",
+      "userRatingCount": 597,
+      "displayName": {
+        "text": "JUMBO Zwingen",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ7YShCgnKkUcRCPB4mWhmqzU",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "058 575 75 20",
+      "formattedAddress": "Hammerstrasse 5, 4414 F\u00fcllinsdorf, Switzerland",
+      "rating": 4.5,
+      "websiteUri": "https://www.doitgarden.ch/de/cp/store/0026470/do-it-garden-schoenthal?utm_source=GoogleMaps&utm_medium=organic&utm_campaign=F%C3%BCllinsdorf",
+      "userRatingCount": 114,
+      "displayName": {
+        "text": "Do it + Garden - Sch\u00f6nthal",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJi46GdXm7kUcRoaFuC6ubEsU",
+      "types": [
+        "hardware_store",
+        "market",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07621 96860",
+      "formattedAddress": "Pasteurallee 3, 79589 Binzen, Germany",
+      "rating": 4.2,
+      "websiteUri": "http://www.hornbach.de/",
+      "userRatingCount": 319,
+      "displayName": {
+        "text": "Hornbach Drive-in - Building Material Center",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJgaAH3rSxkUcR4rNGmwBoZVI",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07621 1610980",
+      "formattedAddress": "Im Entenbad 23, 79541 L\u00f6rrach, Germany",
+      "rating": 4.9,
+      "websiteUri": "https://www.wuerth.de/web/de/awkg/niederlassungen/niederlassung.php?branch=500587&utm_source=google&utm_medium=organic&utm_campaign=MyBusiness&utm_content=500587?branch=500587&utm_source=ExtNet&utm_medium=organic&utm_campaign=ExtNet&utm_content=500587",
+      "userRatingCount": 28,
+      "displayName": {
+        "text": "W\u00fcrth L\u00f6rrach",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJ-242mL2-kUcRKUbCkP_C3Hs",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "03 89 69 80 00",
+      "formattedAddress": "10 ZI, Rue de Nancy, 68220 H\u00e9singue, France",
+      "rating": 3.9,
+      "websiteUri": "https://www.pointp.fr/infos-agence/hesingue-point-p-3159",
+      "userRatingCount": 102,
+      "displayName": {
+        "text": "Point.P - H\u00e9singue",
+        "languageCode": "fr"
+      }
+    },
+    {
+      "id": "ChIJjxiVEstNkEcR2bO4cmLFRqk",
+      "types": [
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07762 52100",
+      "formattedAddress": "Im Hemmet 8, 79664 Wehr, Germany",
+      "rating": 4.3,
+      "websiteUri": "https://www.fschuenke.de/",
+      "userRatingCount": 98,
+      "displayName": {
+        "text": "Sch\u00fcnke Bauzentrum Baumaschinen GmbH / Sch\u00fcnke-rent",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJExsDm6y5kUcRvy5h6zc1D4o",
+      "types": [
+        "hardware_store",
+        "consultant",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "061 500 04 10",
+      "formattedAddress": "Nauenstrasse 71a, 4052 Basel, Switzerland",
+      "rating": 5,
+      "websiteUri": "https://primetrack.ch/",
+      "userRatingCount": 8,
+      "displayName": {
+        "text": "Primetrack AG",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJw8V1Fhi4kUcR4aO3HCR73hU",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "061 336 99 00",
+      "formattedAddress": "Genuastrasse 4, 4142 M\u00fcnchenstein, Switzerland",
+      "rating": 4.3,
+      "websiteUri": "http://www.egokiefer.ch/",
+      "userRatingCount": 19,
+      "displayName": {
+        "text": "EgoKiefer AG",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJZ_GoRZGwkUcRBramE65h6FI",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "07621 46117",
+      "formattedAddress": "Spitalstra\u00dfe 5, 79539 L\u00f6rrach, Germany",
+      "rating": 4.6,
+      "websiteUri": "http://www.home.regioseiten.com/sturm",
+      "userRatingCount": 71,
+      "displayName": {
+        "text": "Hermann Sturm Nachfolger GmbH",
+        "languageCode": "de"
+      }
+    },
+    {
+      "id": "ChIJJzeQV7y-kUcRv-n5QrXagzw",
+      "types": [
+        "hardware_store",
+        "car_repair",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "03 89 69 74 23",
+      "formattedAddress": "4a Rue des Champs, 68220 H\u00e9singue, France",
+      "rating": 4.3,
+      "websiteUri": "http://www.stohler-ag.fr/",
+      "userRatingCount": 43,
+      "displayName": {
+        "text": "STOHLER AG FRANCE - HESINGUE",
+        "languageCode": "fr"
+      }
+    },
+    {
+      "id": "ChIJtfBDznrHkUcRr7LUSIxtGt0",
+      "types": [
+        "hardware_store",
+        "general_contractor",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "061 401 21 30",
+      "formattedAddress": "Weidenstrasse 33, 4142 M\u00fcnchenstein, Switzerland",
+      "rating": 4.4,
+      "websiteUri": "http://www.glasfelber.ch/",
+      "userRatingCount": 17,
+      "displayName": {
+        "text": "Glas Felber AG",
+        "languageCode": "de"
+      }
+    }
+  ]
+}
