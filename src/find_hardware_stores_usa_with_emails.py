@@ -2,6 +2,36 @@
 """
 Enhanced script to find hardware stores across the United States with email discovery
 Supports incremental saving and resume functionality
+
+🔍 Email Discovery Methods with Metadata Tracking:
+
+1. Website Scraping (High Accuracy: 0.9-0.95)
+   - Main page analysis: Scans business website for email addresses
+   - Contact page search: Looks for /contact, /contact-us, /about, /about-us pages
+   - Email extraction: Uses regex to find valid email patterns
+   - Spam filtering: Removes common spam emails (noreply, donotreply, etc.)
+   - Confidence: 'high' to 'very_high'
+
+2. Email Pattern Generation (Medium-Low Accuracy: 0.3-0.8)
+   - Business name analysis: Creates email patterns from store names
+   - Domain extraction: Uses business website domain when available
+   - Common patterns: Generates emails like info@domain.com, contact@domain.com
+   - Fallback domains: Uses common domains (gmail.com, yahoo.com) when no website domain
+   - Confidence: 'low' to 'high' based on domain quality
+
+📊 CSV Output Structure:
+- Each email gets its own column with metadata
+- Email_1, Email_1_Method, Email_1_Source, Email_1_Accuracy_Score, Email_1_Confidence
+- Email_2, Email_2_Method, Email_2_Source, Email_2_Accuracy_Score, Email_2_Confidence  
+- Email_3, Email_3_Method, Email_3_Source, Email_3_Accuracy_Score, Email_3_Confidence
+
+🎯 Accuracy Scoring:
+- 0.95: Contact page scraping (very_high confidence)
+- 0.90: Main page scraping (high confidence)
+- 0.80: Business domain with suffix (high confidence)
+- 0.70: Business domain with name (medium confidence)
+- 0.40: Common domain with name (low confidence)
+- 0.30: Common domain with suffix (low confidence)
 """
 
 import requests
@@ -280,10 +310,10 @@ def get_website_content(url, timeout=5):
 
 def find_emails_from_website(website_url, store_name):
     """Attempt to find email addresses from a business website"""
-    emails = []
+    emails_with_metadata = []
     
     if not website_url or website_url == 'N/A':
-        return emails
+        return emails_with_metadata
     
     try:
         # Normalize URL
@@ -295,7 +325,15 @@ def find_emails_from_website(website_url, store_name):
         if content:
             # Extract emails from main page
             page_emails = extract_emails_from_text(content)
-            emails.extend(page_emails)
+            for email in page_emails:
+                if not any(spam in email.lower() for spam in ['noreply', 'no-reply', 'donotreply']):
+                    emails_with_metadata.append({
+                        'email': email,
+                        'method': 'website_scraping',
+                        'source': 'main_page',
+                        'accuracy_score': 0.9,
+                        'confidence': 'high'
+                    })
             
             # Try to find contact page
             contact_urls = [
@@ -310,16 +348,26 @@ def find_emails_from_website(website_url, store_name):
                     contact_content = get_website_content(contact_url)
                     if contact_content:
                         contact_emails = extract_emails_from_text(contact_content)
-                        emails.extend(contact_emails)
+                        for email in contact_emails:
+                            if not any(spam in email.lower() for spam in ['noreply', 'no-reply', 'donotreply']):
+                                emails_with_metadata.append({
+                                    'email': email,
+                                    'method': 'website_scraping',
+                                    'source': 'contact_page',
+                                    'accuracy_score': 0.95,
+                                    'confidence': 'very_high'
+                                })
                         break
                 except:
                     continue
         
-        # Remove duplicates and filter out spam
+        # Remove duplicates based on email address
         unique_emails = []
-        for email in set(emails):
-            if not any(spam in email.lower() for spam in ['noreply', 'no-reply', 'donotreply']):
-                unique_emails.append(email)
+        seen_emails = set()
+        for email_data in emails_with_metadata:
+            if email_data['email'] not in seen_emails:
+                seen_emails.add(email_data['email'])
+                unique_emails.append(email_data)
         
         return unique_emails[:3]  # Limit to 3 emails per store
         
@@ -328,17 +376,17 @@ def find_emails_from_website(website_url, store_name):
 
 def generate_common_emails(store_name, website_url):
     """Generate common email patterns for a business"""
-    emails = []
+    emails_with_metadata = []
     
     if not store_name or store_name == 'Unknown':
-        return emails
+        return emails_with_metadata
     
     # Clean store name
     clean_name = re.sub(r'[^\w\s]', '', store_name.lower())
     words = clean_name.split()
     
     if not words:
-        return emails
+        return emails_with_metadata
     
     # Extract domain from website
     domain = None
@@ -362,22 +410,54 @@ def generate_common_emails(store_name, website_url):
     # Common email suffixes
     suffixes = ['info', 'contact', 'sales', 'service', 'admin']
     
-    # Generate emails
+    # Generate emails with metadata
     for pattern in patterns:
         if domain:
-            emails.append(f"{pattern}@{domain}")
+            emails_with_metadata.append({
+                'email': f"{pattern}@{domain}",
+                'method': 'pattern_generation',
+                'source': 'business_domain',
+                'accuracy_score': 0.7,
+                'confidence': 'medium'
+            })
         
         # Try with common domains
         for common_domain in ['gmail.com', 'yahoo.com']:
-            emails.append(f"{pattern}@{common_domain}")
+            emails_with_metadata.append({
+                'email': f"{pattern}@{common_domain}",
+                'method': 'pattern_generation',
+                'source': 'common_domain',
+                'accuracy_score': 0.4,
+                'confidence': 'low'
+            })
         
         # Try with suffixes
         for suffix in suffixes:
             if domain:
-                emails.append(f"{suffix}@{domain}")
-            emails.append(f"{suffix}@gmail.com")
+                emails_with_metadata.append({
+                    'email': f"{suffix}@{domain}",
+                    'method': 'pattern_generation',
+                    'source': 'business_domain_suffix',
+                    'accuracy_score': 0.8,
+                    'confidence': 'high'
+                })
+            emails_with_metadata.append({
+                'email': f"{suffix}@gmail.com",
+                'method': 'pattern_generation',
+                'source': 'common_domain_suffix',
+                'accuracy_score': 0.3,
+                'confidence': 'low'
+            })
     
-    return list(set(emails))[:5]
+    # Remove duplicates and limit
+    unique_emails = []
+    seen_emails = set()
+    for email_data in emails_with_metadata:
+        if email_data['email'] not in seen_emails:
+            seen_emails.add(email_data['email'])
+            unique_emails.append(email_data)
+    
+    return unique_emails[:5]
 
 def load_progress():
     """Load existing progress from file"""
@@ -385,6 +465,29 @@ def load_progress():
         try:
             with open(PROGRESS_FILE, 'r') as f:
                 progress = json.load(f)
+            
+            # Handle backward compatibility - convert old 'emails' to 'emails_data'
+            for store in progress.get('all_stores', []):
+                if 'emails' in store and 'emails_data' not in store:
+                    # Convert old format to new format
+                    old_emails = store['emails']
+                    if isinstance(old_emails, list) and old_emails:
+                        # Convert simple email list to metadata format
+                        emails_data = []
+                        for email in old_emails[:3]:  # Limit to 3 emails
+                            emails_data.append({
+                                'email': email,
+                                'method': 'legacy_conversion',
+                                'source': 'unknown',
+                                'accuracy_score': 0.5,
+                                'confidence': 'unknown'
+                            })
+                        store['emails_data'] = emails_data
+                    else:
+                        store['emails_data'] = []
+                    # Remove old format
+                    store.pop('emails', None)
+            
             print(f"📂 Loaded existing progress from {PROGRESS_FILE}")
             return progress
         except Exception as e:
@@ -410,7 +513,7 @@ def save_progress(progress):
         print(f"⚠️  Error saving progress: {e}")
 
 def save_store_to_csv(store):
-    """Save a single store to CSV file with email information"""
+    """Save a single store to CSV file with email information and metadata"""
     try:
         display_name = store.get('displayName', {})
         name = display_name.get('text', 'Unknown')
@@ -420,22 +523,51 @@ def save_store_to_csv(store):
         rating = store.get('rating', 'N/A')
         user_rating_count = store.get('userRatingCount', 'N/A')
         
-        # Get email information
-        emails = store.get('emails', [])
-        email_str = '; '.join(emails) if emails else 'N/A'
+        # Get email information with metadata
+        emails_data = store.get('emails_data', [])
+        
+        # Prepare CSV row with up to 3 email columns
+        row = [name, address, phone, website, rating, user_rating_count]
+        
+        # Add email columns (up to 3 emails with metadata)
+        for i in range(3):
+            if i < len(emails_data):
+                email_info = emails_data[i]
+                row.extend([
+                    email_info['email'],
+                    email_info['method'],
+                    email_info['source'],
+                    email_info['accuracy_score'],
+                    email_info['confidence']
+                ])
+            else:
+                # Empty columns for missing emails
+                row.extend(['N/A', 'N/A', 'N/A', 'N/A', 'N/A'])
         
         with open(CSV_FILE, 'a', newline='', encoding='utf-8') as csvfile:
             csv_writer = csv.writer(csvfile)
-            csv_writer.writerow([name, address, phone, website, email_str, rating, user_rating_count])
+            csv_writer.writerow(row)
     except Exception as e:
         print(f"⚠️  Error saving to CSV: {e}")
 
 def initialize_csv():
-    """Initialize CSV file with headers including email column"""
+    """Initialize CSV file with headers including email metadata columns"""
     if not os.path.exists(CSV_FILE):
         with open(CSV_FILE, 'w', newline='', encoding='utf-8') as csvfile:
             csv_writer = csv.writer(csvfile)
-            csv_writer.writerow(['Name', 'Address', 'Phone', 'Website', 'Emails', 'Rating', 'Review Count'])
+            headers = ['Name', 'Address', 'Phone', 'Website', 'Rating', 'Review Count']
+            
+            # Add headers for up to 3 emails with metadata
+            for i in range(1, 4):
+                headers.extend([
+                    f'Email_{i}',
+                    f'Email_{i}_Method',
+                    f'Email_{i}_Source', 
+                    f'Email_{i}_Accuracy_Score',
+                    f'Email_{i}_Confidence'
+                ])
+            
+            csv_writer.writerow(headers)
         print(f"📄 Created CSV file: {CSV_FILE}")
 
 def is_excluded_chain(store_name):
@@ -494,21 +626,21 @@ def search_location_with_pagination(city_name, progress):
                         # Get website URL
                         website = place.get('websiteUri', 'N/A')
                         
-                        # Attempt to find emails
-                        emails = []
+                        # Attempt to find emails with metadata
+                        emails_data = []
                         if website and website != 'N/A':
                             print(f"    🔍 Searching for emails: {name}")
-                            emails = find_emails_from_website(website, name)
+                            emails_data = find_emails_from_website(website, name)
                         
                         # If no emails found, generate patterns
-                        if not emails:
+                        if not emails_data:
                             generated_emails = generate_common_emails(name, website)
                             if generated_emails:
-                                emails = generated_emails
+                                emails_data = generated_emails
                                 print(f"    📧 Generated email patterns: {name}")
                         
                         # Add email information to store data
-                        place['emails'] = emails
+                        place['emails_data'] = emails_data
                         
                         location_stores.append(place)
                         progress['all_stores'].append(place)
@@ -527,17 +659,23 @@ def search_location_with_pagination(city_name, progress):
                             print(f"      Address: {address}")
                             print(f"      Phone: {phone}")
                             print(f"      Website: {website}")
-                            print(f"      Emails: {'; '.join(emails) if emails else 'N/A'}")
+                            
+                            # Print email information with metadata
+                            if emails_data:
+                                for i, email_info in enumerate(emails_data[:2], 1):  # Show first 2 emails
+                                    print(f"      Email {i}: {email_info['email']} ({email_info['method']}, {email_info['confidence']}, score: {email_info['accuracy_score']})")
+                            else:
+                                print(f"      Emails: N/A")
+                            
                             print(f"      Rating: {rating} ({user_rating_count} reviews)")
                             print()
-                        
-                        time.sleep(0.1)
                 
                 next_page_token = data.get('nextPageToken')
                 
                 if next_page_token:
-                    time.sleep(2)
-                    
+                    # time.sleep(2)  # Google requires a short delay before using next_page_token
+                    pass
+                
             else:
                 error_data = response.json()
                 print(f"Error in {city_name}: {response.status_code}")
@@ -595,7 +733,7 @@ def main():
             save_progress(progress)
             
             print(f"💾 Progress saved. Total stores: {len(progress['all_stores'])}")
-            time.sleep(1)
+            # time.sleep(1)  # Delay between locations
             
     except KeyboardInterrupt:
         print(f"\n⏸️  Search interrupted by user.")
@@ -628,15 +766,15 @@ def main():
         print(f"📧 Attempted email discovery for all stores")
         
         # Show top stores with emails
-        stores_with_emails = [s for s in progress['all_stores'] if s.get('emails')]
+        stores_with_emails = [s for s in progress['all_stores'] if s.get('emails_data')]
         print(f"📧 Stores with emails found: {len(stores_with_emails)}")
         
         if stores_with_emails:
             print("\nTop stores with emails:")
             for i, store in enumerate(stores_with_emails[:5], 1):
                 name = store.get('displayName', {}).get('text', 'Unknown')
-                emails = store.get('emails', [])
-                email_str = '; '.join(emails)
+                emails_data = store.get('emails_data', [])
+                email_str = '; '.join([email_info['email'] for email_info in emails_data[:2]])
                 print(f"{i}. {name}")
                 print(f"   Emails: {email_str}")
     else:
