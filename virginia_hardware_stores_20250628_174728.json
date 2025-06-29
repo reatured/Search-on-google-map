@@ -1,0 +1,4099 @@
+{
+  "total_stores": 177,
+  "search_locations": [
+    [
+      "37.5407,-77.4360",
+      "Richmond, VA"
+    ],
+    [
+      "38.8977,-77.0365",
+      "Arlington, VA"
+    ],
+    [
+      "38.9072,-77.0369",
+      "Washington DC area, VA"
+    ],
+    [
+      "36.8508,-76.2859",
+      "Norfolk, VA"
+    ],
+    [
+      "37.2707,-79.9414",
+      "Roanoke, VA"
+    ],
+    [
+      "38.0293,-78.4767",
+      "Charlottesville, VA"
+    ],
+    [
+      "37.2296,-80.4139",
+      "Blacksburg, VA"
+    ],
+    [
+      "38.4496,-78.8689",
+      "Harrisonburg, VA"
+    ],
+    [
+      "39.1857,-78.1633",
+      "Winchester, VA"
+    ],
+    [
+      "37.4138,-79.1422",
+      "Lynchburg, VA"
+    ]
+  ],
+  "timestamp": "20250628_174728",
+  "stores": [
+    {
+      "id": "ChIJEWcTshsTsYkReV47dWBrQl4",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "grocery_store",
+        "bakery",
+        "home_goods_store",
+        "food_store",
+        "sporting_goods_store",
+        "clothing_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 320-6991",
+      "formattedAddress": "2410 Sheila Ln, Richmond, VA 23225, USA",
+      "rating": 3.9,
+      "websiteUri": "https://www.walmart.com/store/2821-richmond-va/?veh=seo_loc",
+      "userRatingCount": 5741,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJwS2hCf8_sYkRfjGc48Q6Xcs",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "supermarket",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "grocery_store",
+        "bakery",
+        "home_goods_store",
+        "food_store",
+        "sporting_goods_store",
+        "clothing_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 360-9777",
+      "formattedAddress": "11400 W Broad St, Glen Allen, VA 23060, USA",
+      "rating": 4,
+      "websiteUri": "https://www.walmart.com/store/1523-glen-allen-va/?veh=seo_loc",
+      "userRatingCount": 5107,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ185CoBsasYkRUnX0BHC2YEk",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "grocery_store",
+        "bakery",
+        "home_goods_store",
+        "food_store",
+        "sporting_goods_store",
+        "clothing_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 253-1528",
+      "formattedAddress": "5001 Nine Mile Rd, Richmond, VA 23223, USA",
+      "rating": 3.7,
+      "websiteUri": "https://www.walmart.com/store/7032-henrico-va/?veh=seo_loc",
+      "userRatingCount": 5539,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJiSLRIvsUsYkRG4FwyG1sDuM",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "grocery_store",
+        "bakery",
+        "home_goods_store",
+        "food_store",
+        "sporting_goods_store",
+        "clothing_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 774-2236",
+      "formattedAddress": "6920 Forest Ave, Richmond, VA 23230, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.walmart.com/store/4191-richmond-va/?veh=seo_loc",
+      "userRatingCount": 3534,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ9ecztxEWsYkR9BeMXOKlVxk",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "grocery_store",
+        "bakery",
+        "home_goods_store",
+        "food_store",
+        "sporting_goods_store",
+        "clothing_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 553-8432",
+      "formattedAddress": "7901 Brook Rd, Richmond, VA 23227, USA",
+      "rating": 3.8,
+      "websiteUri": "https://www.walmart.com/store/2295-richmond-va/?veh=seo_loc",
+      "userRatingCount": 5784,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJr-WVfDIKsYkR4WxxVW8nmmo",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "grocery_store",
+        "bakery",
+        "home_goods_store",
+        "food_store",
+        "sporting_goods_store",
+        "clothing_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 768-0060",
+      "formattedAddress": "12000 Iron Bridge Rd, Chester, VA 23831, USA",
+      "rating": 3.9,
+      "websiteUri": "https://www.walmart.com/store/1524-chester-va/?veh=seo_loc",
+      "userRatingCount": 5266,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJUeEsO1gUsYkRItbUfuYJeIk",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 289-6020",
+      "formattedAddress": "6501 W Broad St, Richmond, VA 23230, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.homedepot.com/l/Intown-Richmond/VA/Richmond/23230/4632?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1533,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJMwMmek4RsYkRwMWR2jDDwFY",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 219-0640",
+      "formattedAddress": "1640 W Broad St, Richmond, VA 23220, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.lowes.com/store/VA-Richmond/1037?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-1037-_-na-_-0-_-0&y_source=1_MTE4NDA3Ni03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 2031,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJcYBdDUAYsYkRT-dAfeoECSw",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "grocery_store",
+        "bakery",
+        "home_goods_store",
+        "food_store",
+        "sporting_goods_store",
+        "clothing_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 730-8877",
+      "formattedAddress": "7430 Bell Creek Rd, Mechanicsville, VA 23111, USA",
+      "rating": 3.8,
+      "websiteUri": "https://www.walmart.com/store/1525-mechanicsville-va/?veh=seo_loc",
+      "userRatingCount": 4988,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJVVVVVUVusYkR-RcWwgrd4EE",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "grocery_store",
+        "bakery",
+        "home_goods_store",
+        "food_store",
+        "sporting_goods_store",
+        "clothing_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 378-9001",
+      "formattedAddress": "900 Walmart Way, Midlothian, VA 23113, USA",
+      "rating": 4,
+      "websiteUri": "https://www.walmart.com/store/1969-midlothian-va/?veh=seo_loc",
+      "userRatingCount": 4370,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJn_o-Qec7sYkRwHcElGEkY3g",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "grocery_store",
+        "bakery",
+        "home_goods_store",
+        "food_store",
+        "sporting_goods_store",
+        "clothing_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 798-2511",
+      "formattedAddress": "145 Hill Carter Pkwy, Ashland, VA 23005, USA",
+      "rating": 4,
+      "websiteUri": "https://www.walmart.com/store/2795-ashland-va/?veh=seo_loc",
+      "userRatingCount": 3290,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJIZHD25dzsYkRRHNibMROfXw",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "grocery_store",
+        "bakery",
+        "home_goods_store",
+        "food_store",
+        "sporting_goods_store",
+        "clothing_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 744-8437",
+      "formattedAddress": "12200 Chattanooga Plz, Midlothian, VA 23112, USA",
+      "rating": 4,
+      "websiteUri": "https://www.walmart.com/store/2808-midlothian-va/?veh=seo_loc",
+      "userRatingCount": 3210,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJV83ejy1rsYkR2TPvyyiZGs0",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "grocery_store",
+        "bakery",
+        "home_goods_store",
+        "food_store",
+        "sporting_goods_store",
+        "clothing_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 270-6034",
+      "formattedAddress": "1504 N Parham Rd, Richmond, VA 23229, USA",
+      "rating": 4,
+      "websiteUri": "https://www.walmart.com/store/3869-richmond-va/?veh=seo_loc",
+      "userRatingCount": 2629,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJVVVVVZFysYkRM8AsKgai9mA",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 897-9021",
+      "formattedAddress": "1386 Carmia Way, Richmond, VA 23235, USA",
+      "rating": 4.3,
+      "websiteUri": "https://www.homedepot.com/l/Midlothian/VA/Richmond/23235/4631?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1285,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJQ_Gx9p9tsYkRsy5W-YUI8vc",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 379-8500",
+      "formattedAddress": "1512 Koger Center Blvd, Richmond, VA 23235, USA",
+      "rating": 3.9,
+      "websiteUri": "https://www.lowes.com/store/VA-Richmond/0113?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-113-_-na-_-0-_-0&y_source=1_MTE4NDA4Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 1878,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJPcoH2ZVzsYkRwpHcImDTsaY",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 744-6311",
+      "formattedAddress": "12300 Chattanooga Plz, Midlothian, VA 23112, USA",
+      "rating": 4.2,
+      "websiteUri": "https://www.homedepot.com/l/SW-Richmond/VA/Midlothian/23112/4627?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1434,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJOfDE-x4TsYkRXxxfN5Hwcuo",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 272-8151",
+      "formattedAddress": "2501 Sheila Ln, Richmond, VA 23225, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.lowes.com/store/VA-Richmond/0676?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-676-_-na-_-0-_-0&y_source=1_MTE4NDA4MC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 1710,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJyXZxFYZqsYkRZ_wwboAeztc",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 364-0782",
+      "formattedAddress": "11260 W Broad St, Glen Allen, VA 23060, USA",
+      "rating": 4.2,
+      "websiteUri": "https://www.homedepot.com/l/Richmond-W-Broad/VA/Glen-Allen/23060/4611?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1070,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ3f1K7Qg8sYkRHyv-7kx91MI",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 550-0482",
+      "formattedAddress": "10233 Lakeridge Pkwy, Ashland, VA 23005, USA",
+      "rating": 4.2,
+      "websiteUri": "https://www.homedepot.com/l/North-Richmond/VA/Ashland/23005/4653?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1116,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ_6fdDH1qsYkRc8vKsoXTgiY",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(804) 364-5975",
+      "formattedAddress": "4401 Pouncey Tract Rd, Glen Allen, VA 23060, USA",
+      "rating": 4,
+      "websiteUri": "https://www.lowes.com/store/VA-Glen-Allen/0687?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-687-_-na-_-0-_-0&y_source=1_MTE4NDA4MS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 1430,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJy1391WPIt4kRqpZ2j_HGM38",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(202) 719-3770",
+      "formattedAddress": "5929 Georgia Ave NW, Washington, DC 20011, USA",
+      "rating": 4,
+      "websiteUri": "https://www.walmart.com/store/5968-washington-dc/?veh=seo_loc",
+      "userRatingCount": 7958,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJywIxCdHHt4kRDNBJeIZ1Jbc",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(202) 756-4418",
+      "formattedAddress": "310 Riggs Rd NE, Washington, DC 20011, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.walmart.com/store/3035-washington-dc/?veh=seo_loc",
+      "userRatingCount": 7507,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJPVzqyM7At4kRCIe-p9-PbyA",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(301) 773-7848",
+      "formattedAddress": "6210 Annapolis Rd, Landover Hills, MD 20784, USA",
+      "rating": 3.8,
+      "websiteUri": "https://www.walmart.com/store/5129-landover-hills-md?veh=seo_loc",
+      "userRatingCount": 9396,
+      "displayName": {
+        "text": "Walmart",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJE6ErrcOxt4kRDxklQP0RCio",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(703) 253-9901",
+      "formattedAddress": "6303 Richmond Hwy, Alexandria, VA 22306, USA",
+      "rating": 3.8,
+      "websiteUri": "https://www.walmart.com/store/5753-alexandria-va/?veh=seo_loc",
+      "userRatingCount": 5462,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJFUD3vWBKtokRAYh3VoN7CQw",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(571) 623-3300",
+      "formattedAddress": "1500 B Cornerside Blvd, Vienna, VA 22182, USA",
+      "rating": 4.2,
+      "websiteUri": "https://www.walmart.com/store/5936-vienna-va/?veh=seo_loc",
+      "userRatingCount": 5091,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJrWgmKoatt4kRq0G6JL_MmTM",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(703) 924-8800",
+      "formattedAddress": "5885 Kingstowne Blvd, Alexandria, VA 22315, USA",
+      "rating": 3.9,
+      "websiteUri": "https://www.walmart.com/store/2194-alexandria-va?veh=seo_loc",
+      "userRatingCount": 7788,
+      "displayName": {
+        "text": "Walmart",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJG4VQbwq4t4kRJ9Uw1Y_NOnI",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(202) 526-8760",
+      "formattedAddress": "901 Rhode Island Ave NE, Washington, DC 20018, USA",
+      "rating": 3.9,
+      "websiteUri": "https://www.homedepot.com/l/NE-Washington-Dc/DC/Washington/20018/2583?emt=MSGMBGoogleMaps",
+      "userRatingCount": 2398,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJt9hGjYi0t4kRBR6Q0KUY6p0",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(703) 534-9580",
+      "formattedAddress": "6210 Seven Corners Center, Falls Church, VA 22044, USA",
+      "rating": 3.9,
+      "websiteUri": "https://www.homedepot.com/l/Falls-Church/VA/Falls-Church/22044/4608?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1923,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJFUrsGHzMt4kR4rlJ-CezbfA",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(301) 634-3726",
+      "formattedAddress": "7111 Westlake Terrace, Bethesda, MD 20817, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.homedepot.com/l/Bethesda/MD/Bethesda/20817/2509?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1481,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJPZmIVOm8t4kRjthG75FSnRg",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(301) 877-0502",
+      "formattedAddress": "8745 Branch Ave, Clinton, MD 20735, USA",
+      "rating": 3.8,
+      "websiteUri": "https://www.walmart.com/store/2799-clinton-md?veh=seo_loc",
+      "userRatingCount": 7145,
+      "displayName": {
+        "text": "Walmart",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJj9QsAkqyt4kR4RB9eYIhtg8",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(703) 823-1900",
+      "formattedAddress": "400 S Pickett St, Alexandria, VA 22304, USA",
+      "rating": 4,
+      "websiteUri": "https://www.homedepot.com/l/Alexandria/VA/Alexandria/22304/4603?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1582,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJP14jlnpLtokRLvdFBb_MwwI",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(703) 205-1245",
+      "formattedAddress": "2815 Merrilee Dr, Fairfax, VA 20598, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.homedepot.com/l/Merrifield/VA/Fairfax/22031/4605?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1542,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJv164DT3Ot4kR0okvKnEtjgA",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(301) 871-0603",
+      "formattedAddress": "14000 Georgia Ave, Aspen Hill, MD 20906, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.homedepot.com/l/Aspen-Hill/MD/Aspen-Hill/20906/2558?emt=MSGMBGoogleMaps",
+      "userRatingCount": 2319,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJlWWeoGCtt4kRsl9tZZn_Mfg",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(703) 924-0193",
+      "formattedAddress": "6691 Frontier Dr, Springfield, VA 22150, USA",
+      "rating": 4,
+      "websiteUri": "https://www.homedepot.com/l/Springfield/VA/Springfield/22150/4617?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1553,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJVeZgFVC6t4kRljIH487480M",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(301) 839-9600",
+      "formattedAddress": "6003 Oxon Hill Rd, Oxon Hill, MD 20745, USA",
+      "rating": 3.8,
+      "websiteUri": "https://www.homedepot.com/l/Oxon-Hill/MD/Oxon-Hill/20745/2554?emt=MSGMBGoogleMaps",
+      "userRatingCount": 2469,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJV7Vo9Q9MtokRgYl08t7Pt8I",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(703) 591-6808",
+      "formattedAddress": "3201 Blenheim Blvd, Fairfax, VA 22030, USA",
+      "rating": 3.9,
+      "websiteUri": "https://www.homedepot.com/l/Fairfax-Circle/VA/Fairfax/22030/4639?emt=MSGMBGoogleMaps",
+      "userRatingCount": 865,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJnUr_FFbGt4kRVTmiAUfaJg8",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(301) 891-1106",
+      "formattedAddress": "3301 East-West Hwy, Hyattsville, MD 20782, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.homedepot.com/l/Hyattsville/MD/Hyattsville/20782/2564?emt=MSGMBGoogleMaps",
+      "userRatingCount": 2337,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ6wt-RuGxt4kRmA2kI8KpqLM",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(703) 765-8011",
+      "formattedAddress": "6750 Richmond Hwy, Alexandria, VA 22306, USA",
+      "rating": 3.6,
+      "websiteUri": "https://www.lowes.com/store/VA-Alexandria/0715?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-715-_-na-_-0-_-0&y_source=1_MTE4MzgxOC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 1835,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJQSGMMWPHt4kRWp1swbFBkwI",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(202) 378-2500",
+      "formattedAddress": "2438 Market St NE, Washington, DC 20018, USA",
+      "rating": 4,
+      "websiteUri": "https://www.lowes.com/store/DC-Washington/3256?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-3256-_-na-_-0-_-0&y_source=1_Mjk5MzU5OS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 2371,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJUSjbO-HEt4kRRFdSpEAccuw",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(301) 680-3500",
+      "formattedAddress": "2300 Broadbirch Dr, Silver Spring, MD 20904, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.homedepot.com/l/Silver-Spring/MD/Silver-Spring/20904/2551?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1570,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ0W7cF0-XuokRdQKjePui-4I",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 480-0587",
+      "formattedAddress": "7530 Tidewater Dr, Norfolk, VA 23505, USA",
+      "rating": 3.7,
+      "websiteUri": "https://www.walmart.com/store/5488-norfolk-va/?veh=seo_loc",
+      "userRatingCount": 7513,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJp7J4rUSWuokRCW6Ui-ipEWs",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 461-6330",
+      "formattedAddress": "1170 N Military Hwy, Norfolk, VA 23502, USA",
+      "rating": 3.7,
+      "websiteUri": "https://www.walmart.com/store/1811-norfolk-va/?veh=seo_loc",
+      "userRatingCount": 6966,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJUxZrtUvquokR_dVn4l2nTLY",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 364-7616",
+      "formattedAddress": "546 First Colonial Rd, Virginia Beach, VA 23451, USA",
+      "rating": 4,
+      "websiteUri": "https://www.walmart.com/store/5922-virginia-beach-va/?veh=seo_loc",
+      "userRatingCount": 5004,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJzenqGZiVuokRWJYtvWFe0Sc",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 278-2004",
+      "formattedAddress": "4821 Virginia Beach Blvd, Virginia Beach, VA 23462, USA",
+      "rating": 4,
+      "websiteUri": "https://www.walmart.com/store/4064-virginia-beach-va/?veh=seo_loc",
+      "userRatingCount": 6459,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJgWubdcC8uokRDjO3Al5miRs",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 436-6055",
+      "formattedAddress": "1521 Sam's Cir, Chesapeake, VA 23320, USA",
+      "rating": 3.9,
+      "websiteUri": "https://www.walmart.com/store/1841-chesapeake-va/?veh=seo_loc",
+      "userRatingCount": 6968,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJC3L6UFqWuokRGrm46fJu-fU",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 461-6197",
+      "formattedAddress": "1261 N Military Hwy, Norfolk, VA 23502, USA",
+      "rating": 4.2,
+      "websiteUri": "https://www.homedepot.com/l/Military-Circle/VA/Norfolk/23502/4615?emt=MSGMBGoogleMaps",
+      "userRatingCount": 3145,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJszTR9mmDuokRXU1b5JzCfAk",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 826-6377",
+      "formattedAddress": "1900 Cunningham Dr, Hampton, VA 23666, USA",
+      "rating": 3.7,
+      "websiteUri": "https://www.walmart.com/store/1631-hampton-va/?veh=seo_loc",
+      "userRatingCount": 6402,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJn8B-2rC_uokRD-x42qvLEJ4",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 416-3480",
+      "formattedAddress": "2021 Lynnhaven Pkwy, Virginia Beach, VA 23456, USA",
+      "rating": 4,
+      "websiteUri": "https://www.walmart.com/store/2529-virginia-beach-va/?veh=seo_loc",
+      "userRatingCount": 4927,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ3e0vxRSiuokRIsmXD7ka_AY",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 399-1795",
+      "formattedAddress": "1098 Frederick Blvd, Portsmouth, VA 23707, USA",
+      "rating": 3.7,
+      "websiteUri": "https://www.walmart.com/store/3831-portsmouth-va/?veh=seo_loc",
+      "userRatingCount": 4827,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ2WraVE-WuokRtUZZwTy5I88",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 455-5205",
+      "formattedAddress": "1081 N Military Hwy, Norfolk, VA 23502, USA",
+      "rating": 4,
+      "websiteUri": "https://www.lowes.com/store/VA-Norfolk/1065?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-1065-_-na-_-0-_-0&y_source=1_MTE4Mzk2OC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 3202,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJtbpku6TquokR9gATAobW3WU",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 498-9633",
+      "formattedAddress": "657 Phoenix Dr, Virginia Beach, VA 23452, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.walmart.com/store/1688-virginia-beach-va/?veh=seo_loc",
+      "userRatingCount": 4448,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJGymrub6fuokR0ivXhw-Zcpc",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 483-8860",
+      "formattedAddress": "6259 College Dr, Suffolk, VA 23435, USA",
+      "rating": 3.9,
+      "websiteUri": "https://www.walmart.com/store/3214-suffolk-va/?veh=seo_loc",
+      "userRatingCount": 4512,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJFdGUdTSVuokRZ6KhT303V6E",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 340-5804",
+      "formattedAddress": "3352 Virginia Beach Blvd, Virginia Beach, VA 23452, USA",
+      "rating": 4.3,
+      "websiteUri": "https://www.homedepot.com/l/Celebration-Station/VA/Virginia-Beach/23452/4614?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1849,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJp-O0VUmguokRzShNJoVwqRA",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 488-6098",
+      "formattedAddress": "2448 Chesapeake Square Ring Rd, Chesapeake, VA 23321, USA",
+      "rating": 3.8,
+      "websiteUri": "https://www.walmart.com/store/1682-chesapeake-va/?veh=seo_loc",
+      "userRatingCount": 4341,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJKZW65l6DuokRxeplRx7_ofU",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 827-5446",
+      "formattedAddress": "1413 N Armistead Ave, Hampton, VA 23666, USA",
+      "rating": 4.2,
+      "websiteUri": "https://www.homedepot.com/l/Hampton/VA/Hampton/23666/4612?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1868,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJp62Fcru8uokR-fhL8qab4HM",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 548-8478",
+      "formattedAddress": "1400 Tintern St, Chesapeake, VA 23320, USA",
+      "rating": 4.2,
+      "websiteUri": "https://www.homedepot.com/l/Chesapeake/VA/Chesapeake/23320/4619?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1852,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ1am8m7OhuokR582SG_FdoXg",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 465-9166",
+      "formattedAddress": "2421 Old Taylor Rd, Chesapeake, VA 23321, USA",
+      "rating": 4.2,
+      "websiteUri": "https://www.homedepot.com/l/Portsmouth/VA/Chesapeake/23321/4622?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1677,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJl-uYrry8uokRuHLRPBP5bhw",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 436-0707",
+      "formattedAddress": "1308 Battlefield Blvd N, Chesapeake, VA 23320, USA",
+      "rating": 4,
+      "websiteUri": "https://www.lowes.com/store/VA-Chesapeake/0439?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-439-_-na-_-0-_-0&y_source=1_MTE4Mzk2Ni03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 2865,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJIYkMWLq_uokR91DzpP9OG9Y",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 471-4880",
+      "formattedAddress": "2020 Lynnhaven Pkwy, Virginia Beach, VA 23456, USA",
+      "rating": 4.3,
+      "websiteUri": "https://www.homedepot.com/l/Va-Beach-Princess-Anne/VA/Virginia-Beach/23456/4626?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1892,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJl_-0hvykuokRd6gHnfQKpRo",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(757) 312-8309",
+      "formattedAddress": "632 Grassfield Pkwy, Chesapeake, VA 23322, USA",
+      "rating": 4,
+      "websiteUri": "https://www.walmart.com/store/5253-chesapeake-va/?veh=seo_loc",
+      "userRatingCount": 2520,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ_27z93wOTYgRXn-SPzyQVkM",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "furniture_store",
+        "home_improvement_store",
+        "sporting_goods_store",
+        "clothing_store",
+        "electronics_store",
+        "grocery_store",
+        "food_store",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 265-5600",
+      "formattedAddress": "4807 Valley View Blvd NW, Roanoke, VA 24012, USA",
+      "rating": 3.7,
+      "websiteUri": "https://www.walmart.com/store/2312-roanoke-va/?veh=seo_loc",
+      "userRatingCount": 5416,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ9ZVqV9JyTYgRM5rJS1niGYg",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "furniture_store",
+        "home_improvement_store",
+        "sporting_goods_store",
+        "clothing_store",
+        "electronics_store",
+        "grocery_store",
+        "food_store",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 772-3892",
+      "formattedAddress": "5350 Clearbrook Village Ln, Roanoke, VA 24014, USA",
+      "rating": 4,
+      "websiteUri": "https://www.walmart.com/store/1301-roanoke-va/?veh=seo_loc",
+      "userRatingCount": 3985,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJH68FvA0KTYgRs1ED4Q3HGJY",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "furniture_store",
+        "home_improvement_store",
+        "sporting_goods_store",
+        "clothing_store",
+        "electronics_store",
+        "grocery_store",
+        "food_store",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 375-2919",
+      "formattedAddress": "1851 W Main St, Salem, VA 24153, USA",
+      "rating": 3.8,
+      "websiteUri": "https://www.walmart.com/store/1309-salem-va/?veh=seo_loc",
+      "userRatingCount": 3843,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJG0HVOwcRTYgRw3r4cpaZzOg",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "furniture_store",
+        "home_improvement_store",
+        "sporting_goods_store",
+        "clothing_store",
+        "electronics_store",
+        "grocery_store",
+        "food_store",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 977-3745",
+      "formattedAddress": "4524 Challenger Ave NE, Roanoke, VA 24012, USA",
+      "rating": 4,
+      "websiteUri": "https://www.walmart.com/store/3243-roanoke-va/?veh=seo_loc",
+      "userRatingCount": 3937,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJG19yCE0MTYgR84JqD2vdUoo",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "art_gallery",
+        "general_contractor",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 343-6200",
+      "formattedAddress": "902 13th St SW, Roanoke, VA 24016, USA",
+      "rating": 4.7,
+      "websiteUri": "https://blackdogsalvage.com/",
+      "userRatingCount": 826,
+      "displayName": {
+        "text": "Black Dog Salvage",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJqbJ0tZ4OTYgRABzZkUpBzoQ",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 265-7655",
+      "formattedAddress": "3217 Hershberger Rd NW, Roanoke, VA 24017, USA",
+      "rating": 4.2,
+      "websiteUri": "https://www.homedepot.com/l/Roanoke/VA/Roanoke/24017/4609?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1262,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJH5RYT2AOTYgRz1Q7TpwhRjQ",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 366-3838",
+      "formattedAddress": "5040 Rutgers St NW, Roanoke, VA 24012, USA",
+      "rating": 4.2,
+      "websiteUri": "https://www.lowes.com/store/VA-Roanoke/0419?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-419-_-na-_-0-_-0&y_source=1_MTE4MzUzMi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 2205,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJiVNTcdoMTYgRE-QHphBEOHc",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 725-1883",
+      "formattedAddress": "4224 Valley Ave, Roanoke, VA 24018, USA",
+      "rating": 4,
+      "websiteUri": "https://www.lowes.com/store/VA-Roanoke/0664?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-664-_-na-_-0-_-0&y_source=1_MTE4MzU0NS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 1510,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJK3M3DdkMTYgRL37e2nCUXV0",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 772-3087",
+      "formattedAddress": "4176 Franklin Rd, Roanoke, VA 24014, USA",
+      "rating": 4.2,
+      "websiteUri": "https://www.homedepot.com/l/South-Roanoke/VA/Roanoke/24014/4628?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1001,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJb42goD4KTYgRDmnd-PfkhVY",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 378-2030",
+      "formattedAddress": "840 W Main St, Salem, VA 24153, USA",
+      "rating": 4.2,
+      "websiteUri": "https://www.lowes.com/store/VA-Salem/2939?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-2939-_-na-_-0-_-0&y_source=1_MTE4MzUzNS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 1254,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJWbD_QwYRTYgRSVn3e__5L-U",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 265-6440",
+      "formattedAddress": "4520 Challenger Ave, Roanoke, VA 24012, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.lowes.com/store/VA-Roanoke/1764?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-1764-_-na-_-0-_-0&y_source=1_MTE4MzUzMC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 1310,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJf1ysRgEMTYgRmEQ0qU88SHo",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 265-7871",
+      "formattedAddress": "4142 Melrose Ave NW Suite 7 Suite 7, Roanoke, VA 24017, USA",
+      "rating": 4.3,
+      "websiteUri": "https://www.harborfreight.com/storelocator/4142-melrose-ave-unit-7-roanoke-24017?number=98",
+      "userRatingCount": 1039,
+      "displayName": {
+        "text": "Harbor Freight",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ1T2hb6EPTYgRX6zM3SLuAUs",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "pet_store",
+        "food_store",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 265-8467",
+      "formattedAddress": "8110 Gander Way, Roanoke, VA 24019, USA",
+      "rating": 4.3,
+      "websiteUri": "https://www.tractorsupply.com/tsc/store_Roanoke-VA-24019_1258?utm_source=localgmblisting&utm_medium=organic",
+      "userRatingCount": 451,
+      "displayName": {
+        "text": "Tractor Supply Co.",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJWUFOEmcTTYgR-OhyelrGyTE",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "pet_store",
+        "food_store",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 342-2542",
+      "formattedAddress": "981 Hardy Rd, Vinton, VA 24179, USA",
+      "rating": 4.6,
+      "websiteUri": "https://www.tractorsupply.com/tsc/store_Vinton-VA-24179_2537?utm_source=localgmblisting&utm_medium=organic",
+      "userRatingCount": 282,
+      "displayName": {
+        "text": "Tractor Supply Co.",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJa3Tl-qEMTYgR9mHb3x_ZqwI",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 989-5245",
+      "formattedAddress": "3647 Brambleton Ave SW, Roanoke, VA 24018, USA",
+      "rating": 4.6,
+      "websiteUri": "http://www.acehardware.com/store-details/16998?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=16998",
+      "userRatingCount": 710,
+      "displayName": {
+        "text": "Northwest Ace Hardware",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ6--cGzkPTYgRebD4q3X1Rco",
+      "types": [
+        "discount_store",
+        "hardware_store",
+        "book_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 204-4981",
+      "formattedAddress": "4943 Valley View Blvd NW, Roanoke, VA 24012, USA",
+      "rating": 4.4,
+      "websiteUri": "http://www.ollies.us/",
+      "userRatingCount": 1295,
+      "displayName": {
+        "text": "Ollie's Bargain Outlet",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJtUnt_uYLTYgR7iJQlEH7JHs",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 986-0264",
+      "formattedAddress": "301 Electric Rd, Salem, VA 24153, USA",
+      "rating": 4.5,
+      "websiteUri": "https://www.northerntool.com/store/salemva-store-salem-va",
+      "userRatingCount": 380,
+      "displayName": {
+        "text": "Northern Tool + Equipment",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJMQLFF-INTYgRDugO4FFBcvk",
+      "types": [
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 362-1868",
+      "formattedAddress": "2303 Williamson Rd NE, Roanoke, VA 24012, USA",
+      "rating": 4.6,
+      "websiteUri": "http://www.northwesthardware.com/",
+      "userRatingCount": 212,
+      "displayName": {
+        "text": "Northwest ACE Hardware",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJZbrGNshvTYgRxKlOoaTlsA8",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "pet_store",
+        "food_store",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 334-1109",
+      "formattedAddress": "58 Virginia Mkt Pl Dr, Rocky Mount, VA 24151, USA",
+      "rating": 4.4,
+      "websiteUri": "https://www.tractorsupply.com/tsc/store_Rockymount-VA-24151_1532?utm_source=localgmblisting&utm_medium=organic",
+      "userRatingCount": 454,
+      "displayName": {
+        "text": "Tractor Supply Co.",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ3Z6YdrILTYgRlt6IGIiQ35I",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "pet_store",
+        "food_store",
+        "home_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 375-2772",
+      "formattedAddress": "1363 W Main St, Salem, VA 24153, USA",
+      "rating": 4.5,
+      "websiteUri": "https://www.tractorsupply.com/tsc/store_Salem-VA-24153_2433?utm_source=localgmblisting&utm_medium=organic",
+      "userRatingCount": 57,
+      "displayName": {
+        "text": "Tractor Supply Co.",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ2ZBcVfB3tIkRfGkQFZqGMuA",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "grocery_store",
+        "bakery",
+        "home_goods_store",
+        "food_store",
+        "sporting_goods_store",
+        "clothing_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 973-1412",
+      "formattedAddress": "975 Hilton Heights Rd, Charlottesville, VA 22901, USA",
+      "rating": 3.9,
+      "websiteUri": "https://www.walmart.com/store/1780-charlottesville-va/?veh=seo_loc",
+      "userRatingCount": 3692,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJT94Wlf53tIkRhoUJlOsBZEM",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 975-7140",
+      "formattedAddress": "400 Woodbrook Dr, Charlottesville, VA 22901, USA",
+      "rating": 3.8,
+      "websiteUri": "https://www.lowes.com/store/VA-Charlottesville/0517?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-517-_-na-_-0-_-0&y_source=1_MTE4MzM2Mi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 1797,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ-8oxjgb0s4kR9Hg1dbeEmzk",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "grocery_store",
+        "bakery",
+        "home_goods_store",
+        "food_store",
+        "sporting_goods_store",
+        "clothing_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 832-1259",
+      "formattedAddress": "164 Camp Creek Pkwy, Gordonsville, VA 22942, USA",
+      "rating": 3.8,
+      "websiteUri": "https://www.walmart.com/store/4682-gordonsville-va/?veh=seo_loc",
+      "userRatingCount": 3454,
+      "displayName": {
+        "text": "Walmart Gordonsville",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJARs1jg9ytIkR39GZXDtMf2g",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "grocery_store",
+        "bakery",
+        "home_goods_store",
+        "food_store",
+        "sporting_goods_store",
+        "clothing_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 990-6013",
+      "formattedAddress": "135 Stoneridge Dr N, Ruckersville, VA 22968, USA",
+      "rating": 4,
+      "websiteUri": "https://www.walmart.com/store/4638-ruckersville-va/?veh=seo_loc",
+      "userRatingCount": 2058,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJXScD_kwJtIkRTLHB2nuCzMQ",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 832-1220",
+      "formattedAddress": "165 Camp Creek Pkwy, Gordonsville, VA 22942, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.lowes.com/store/VA-Gordonsville/2862?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-2862-_-na-_-0-_-0&y_source=1_MTE4MzU0OC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 1356,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJYfLetY6Is4kR17qJ_L7bG50",
+      "types": [
+        "hardware_store",
+        "pet_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 984-2190",
+      "formattedAddress": "921 River Rd, Charlottesville, VA 22901, USA",
+      "rating": 4.3,
+      "websiteUri": "https://www.tractorsupply.com/tsc/store_Charlottesville-VA-22901_530?utm_source=localgmblisting&utm_medium=organic",
+      "userRatingCount": 533,
+      "displayName": {
+        "text": "Tractor Supply Co.",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJmYYxW5Z3tIkRw3IRPyjuvPI",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 214-4200",
+      "formattedAddress": "440 Gander Dr, Charlottesville, VA 22901, USA",
+      "rating": 4.4,
+      "websiteUri": "https://www.harborfreight.com/storelocator/440-gander-drive-charlottesville-22901?number=3055",
+      "userRatingCount": 499,
+      "displayName": {
+        "text": "Harbor Freight",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJUQuiZTGGs4kR-o14EPMUDL8",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 293-8171",
+      "formattedAddress": "941 Preston Ave, Charlottesville, VA 22903, USA",
+      "rating": 4.7,
+      "websiteUri": "http://www.martinhardwareinc.com/",
+      "userRatingCount": 371,
+      "displayName": {
+        "text": "Martin Hardware Co",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJwXGeOVqTs4kRdjRQObxunz4",
+      "types": [
+        "hardware_store",
+        "pet_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 591-6669",
+      "formattedAddress": "1418 S Boston Rd, Palmyra, VA 22963, USA",
+      "rating": 4.6,
+      "websiteUri": "https://www.tractorsupply.com/tsc/store_Palmyra-VA-22963_2526?utm_source=localgmblisting&utm_medium=organic",
+      "userRatingCount": 166,
+      "displayName": {
+        "text": "Tractor Supply Co.",
+        "languageCode": "usa"
+      }
+    },
+    {
+      "id": "ChIJjXVhORWNs4kR3j91P0ubhFE",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 591-0670",
+      "formattedAddress": "114 Crofton Pl, Palmyra, VA 22963, USA",
+      "rating": 4.7,
+      "websiteUri": "http://www.acehardware.com/store-details/15757?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=15757",
+      "userRatingCount": 361,
+      "displayName": {
+        "text": "Fluvanna Hardware",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJD2PnDA9SDogRvU-ai8q-BRI",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "general_contractor",
+        "home_goods_store",
+        "wholesaler",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 971-7000",
+      "formattedAddress": "505 Garrett St, Charlottesville, VA 22902, USA",
+      "rating": 4.4,
+      "websiteUri": "https://www.ferguson.com/store/va/charlottesville/plumbingpvf-0031?utm_source=google&utm_medium=organic&utm_campaign=rt_lis_listingtraffic&utm_content=listing",
+      "userRatingCount": 37,
+      "displayName": {
+        "text": "Ferguson Plumbing Supply",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJHXUQHBN_s4kRwBHiwma8SF4",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 823-1387",
+      "formattedAddress": "5221 Rockfish Gap Turnpike, Charlottesville, VA 22903, USA",
+      "rating": 4.5,
+      "websiteUri": "https://cardinalhomecenter.com/?utm_source=GMBCrozet&utm_medium=organic",
+      "userRatingCount": 89,
+      "displayName": {
+        "text": "Cardinal Home Center",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJd7JfdPhxtIkR2V_ehOV7Kf0",
+      "types": [
+        "hardware_store",
+        "pet_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 985-2162",
+      "formattedAddress": "42 Carmen Pl, Ruckersville, VA 22968, USA",
+      "rating": 4.4,
+      "websiteUri": "https://www.tractorsupply.com/tsc/store_Ruckersville-VA-22968_1922?utm_source=localgmblisting&utm_medium=organic",
+      "userRatingCount": 244,
+      "displayName": {
+        "text": "Tractor Supply Co.",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJfX-Bh9-Fs4kRjLhgvK34x7M",
+      "types": [
+        "hardware_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 973-5356",
+      "formattedAddress": "1200 Stoney Ridge Rd, Charlottesville, VA 22902, USA",
+      "rating": 4.3,
+      "websiteUri": "https://www.bldr.com/contact/request-quote?utm_source=yext&utm_medium=listing&utm_campaign=requestquote&utm_content=CHARVAYD",
+      "userRatingCount": 24,
+      "displayName": {
+        "text": "Builders FirstSource",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJg1TWOfDzs4kR1jMGbysML6Q",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 589-8213",
+      "formattedAddress": "220 Zion Park Rd, Troy, VA 22974, USA",
+      "rating": 4.4,
+      "websiteUri": "http://www.northlandforest.com/",
+      "userRatingCount": 28,
+      "displayName": {
+        "text": "Northland Forest Products Inc",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJHWfAfYnzs4kRAiQEWzhFULU",
+      "types": [
+        "hardware_store",
+        "general_contractor",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 589-0855",
+      "formattedAddress": "1180 Seminole Trail Ste 405, Charlottesville, VA 22901, USA",
+      "rating": 4.8,
+      "websiteUri": "https://www.ferguson.com/store/va/charlottesville/hvac-1978?utm_source=google&utm_medium=organic&utm_campaign=hvac_lis_listingtraffic&utm_content=listing",
+      "userRatingCount": 5,
+      "displayName": {
+        "text": "Ferguson HVAC Supply",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ3TWRJrqZs4kR7Peyxp5cn-k",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 286-2521",
+      "formattedAddress": "127 Irish Rd, Scottsville, VA 24590, USA",
+      "rating": 4.1,
+      "websiteUri": "http://www.wfpaulettace.com/?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=16073",
+      "userRatingCount": 125,
+      "displayName": {
+        "text": "W.F. Paulett & Son",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJNSB5QNV_s4kRFr3gSlJmRh4",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 823-4381",
+      "formattedAddress": "5783 The Square, Crozet, VA 22932, USA",
+      "rating": 4.8,
+      "websiteUri": "https://www.facebook.com/crozethardware/",
+      "userRatingCount": 85,
+      "displayName": {
+        "text": "Crozet Hardware Co Inc",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJnWqN9oBxtIkRzsgG6cd_9CU",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 481-1794",
+      "formattedAddress": "148 Cedar Grove Rd, Ruckersville, VA 22968, USA",
+      "rating": 4.7,
+      "websiteUri": "https://www.doitbest.com/randys-hardware/",
+      "userRatingCount": 64,
+      "displayName": {
+        "text": "Randy's Do It Best Hardware",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJd36dcD6Hs4kRVN2dnvFooZA",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "general_contractor",
+        "home_goods_store",
+        "wholesaler",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 218-6655",
+      "formattedAddress": "399 Hillsdale Dr, Charlottesville, VA 22901, USA",
+      "rating": 1,
+      "websiteUri": "https://www.ferguson.com/branch/seminole-ln-charlottesville-va-plumbing?utm_source=google&utm_medium=organic&utm_campaign=rt_lis_listingtraffic&utm_content=listing",
+      "userRatingCount": 1,
+      "displayName": {
+        "text": "Ferguson Plumbing Supply",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJi9BbimOTTYgRH0MduDbeENw",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "grocery_store",
+        "food_store",
+        "sporting_goods_store",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 381-3705",
+      "formattedAddress": "2400 N Franklin St, Christiansburg, VA 24073, USA",
+      "rating": 3.9,
+      "websiteUri": "https://www.walmart.com/store/1292-christiansburg-va/?veh=seo_loc",
+      "userRatingCount": 4112,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ9zBNEH2TTYgRGV1m6fHdvi4",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 381-1000",
+      "formattedAddress": "350 Peppers Ferry Rd NE, Christiansburg, VA 24073, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.lowes.com/store/VA-Christiansburg/0447?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-447-_-na-_-0-_-0&y_source=1_MTE4MzUzNi03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 1494,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJLcdzhuPuTYgRrKiuyzzJUSc",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "grocery_store",
+        "food_store",
+        "sporting_goods_store",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 731-3378",
+      "formattedAddress": "7373 Peppers Ferry Blvd, Fairlawn, VA 24141, USA",
+      "rating": 3.9,
+      "websiteUri": "https://www.walmart.com/store/2762-fairlawn-va/?veh=seo_loc",
+      "userRatingCount": 2574,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJx_WepGWTTYgRmZOyEHDGpf0",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 381-0084",
+      "formattedAddress": "200 Conston Ave NW, Christiansburg, VA 24073, USA",
+      "rating": 4.2,
+      "websiteUri": "https://www.homedepot.com/l/Christiansburg/VA/Christiansburg/24073/4634?emt=MSGMBGoogleMaps",
+      "userRatingCount": 916,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJL0wWH-TuTYgRjEyXcBJz7jE",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 633-7000",
+      "formattedAddress": "6115 Lowes Dr, Radford, VA 24141, USA",
+      "rating": 4.2,
+      "websiteUri": "https://www.lowes.com/store/VA-Radford/2458?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-2458-_-na-_-0-_-0&y_source=1_MTE4MzU0My03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 1006,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJN-ZlJ8WTTYgRtIbMfwypeFE",
+      "types": [
+        "hardware_store",
+        "pet_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 381-7630",
+      "formattedAddress": "1542 Roanoke St, Christiansburg, VA 24073, USA",
+      "rating": 4.4,
+      "websiteUri": "https://www.tractorsupply.com/tsc/store_Christiansburg-VA-24073_475?utm_source=localgmblisting&utm_medium=organic",
+      "userRatingCount": 491,
+      "displayName": {
+        "text": "Tractor Supply Co.",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJPUMgviaVTYgRosOkXMZJQpE",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 418-4913",
+      "formattedAddress": "801 Kabrich St, Blacksburg, VA 24060, USA",
+      "rating": 4.7,
+      "websiteUri": "http://www.acehardware.com/store-details/18415?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=18415",
+      "userRatingCount": 86,
+      "displayName": {
+        "text": "Northwest Ace Hardware",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ-5lDsmKTTYgR227JcmXg-4c",
+      "types": [
+        "hardware_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 381-1081",
+      "formattedAddress": "2505 Market St NE, Christiansburg, VA 24073, USA",
+      "rating": 4.5,
+      "websiteUri": "https://www.harborfreight.com/storelocator/2505-market-street-christiansburg-24073?number=625",
+      "userRatingCount": 506,
+      "displayName": {
+        "text": "Harbor Freight",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJvYyScSCTTYgRjNtNzuNQVaA",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 394-3311",
+      "formattedAddress": "520 Roanoke St, Christiansburg, VA 24073, USA",
+      "rating": 4.5,
+      "websiteUri": "http://www.acehardware.com/store-details/16995?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=16995",
+      "userRatingCount": 353,
+      "displayName": {
+        "text": "Northwest Ace Hardware",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJgdE4L8WTTYgRB26ZX65pzQc",
+      "types": [
+        "hardware_store",
+        "jewelry_store",
+        "electronics_store",
+        "finance",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 384-4080",
+      "formattedAddress": "1595 Roanoke St, Christiansburg, VA 24073, USA",
+      "rating": 4.8,
+      "websiteUri": "http://dannyspawn.com/",
+      "userRatingCount": 236,
+      "displayName": {
+        "text": "Danny's Pawn Shop",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJdU7gKu2VTYgREEUHGbPIJOE",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "general_contractor",
+        "wholesaler",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 200-6089",
+      "formattedAddress": "325 Ferguson Dr, Blacksburg, VA 24060, USA",
+      "rating": 3,
+      "websiteUri": "https://www.ferguson.com/store/va/blacksburg/plumbingpvf-0179?utm_source=google&utm_medium=organic&utm_campaign=rt_lis_listingtraffic&utm_content=listing",
+      "userRatingCount": 2,
+      "displayName": {
+        "text": "Ferguson Plumbing Supply",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJByaP33GVTYgRBJCfH9XIkZc",
+      "types": [
+        "hardware_store",
+        "locksmith",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 552-1221",
+      "formattedAddress": "1460 S Main St, Blacksburg, VA 24060, USA",
+      "rating": 4.3,
+      "websiteUri": "https://stores.truevalue.com/va/blacksburg/18479",
+      "userRatingCount": 91,
+      "displayName": {
+        "text": "Blacksburg True Value",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJAyB5ATRftVIRMt2sdw_6pIg",
+      "types": [
+        "hardware_store",
+        "store",
+        "general_contractor",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 381-2479",
+      "formattedAddress": "1700 Parkway Dr, Christiansburg, VA 24073, USA",
+      "rating": 4.9,
+      "websiteUri": "https://www.ferguson.com/store/va/christiansburg/hvac-0918?utm_source=google&utm_medium=organic&utm_campaign=hvac_lis_listingtraffic&utm_content=listing",
+      "userRatingCount": 15,
+      "displayName": {
+        "text": "Ferguson HVAC Supply",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJkThpiJ3tTYgRWiUSCtFubyA",
+      "types": [
+        "hardware_store",
+        "store",
+        "general_contractor",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 639-1250",
+      "formattedAddress": "2550 Fire Tower Rd, Christiansburg, VA 24073, USA",
+      "rating": 4.4,
+      "websiteUri": "http://turmanlumber.com/",
+      "userRatingCount": 34,
+      "displayName": {
+        "text": "Turman Lumber Company",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJTZWnfYuTTYgRZg5OV54cuLo",
+      "types": [
+        "hardware_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 382-2984",
+      "formattedAddress": "885 Roanoke St, Christiansburg, VA 24073, USA",
+      "rating": 5,
+      "websiteUri": "https://www.southernstates.com/farm-store/store-locations/75715",
+      "userRatingCount": 1,
+      "displayName": {
+        "text": "Southern States - 75715",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ7SDa23HsTYgRyJ5U11cWmTE",
+      "types": [
+        "hardware_store",
+        "store",
+        "general_contractor",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 392-8060",
+      "formattedAddress": "366 Walton Rd, Radford, VA 24141, USA",
+      "rating": 3.9,
+      "websiteUri": "http://nrvfence.com/",
+      "userRatingCount": 19,
+      "displayName": {
+        "text": "NRV Fence & Handrail, LLC",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJz6c2YgXvTYgRB6WORKTkQQg",
+      "types": [
+        "hardware_store",
+        "home_goods_store",
+        "store",
+        "wholesaler",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 744-2440",
+      "formattedAddress": "700 Tyler Ave, Radford, VA 24141, USA",
+      "websiteUri": "http://goodnightsheettight.com/",
+      "displayName": {
+        "text": "SheetTight",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJZVY0BJiStIkRpnrWALSCDEI",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 433-0808",
+      "formattedAddress": "171 Burgess Rd, Harrisonburg, VA 22801, USA",
+      "rating": 3.9,
+      "websiteUri": "https://www.walmart.com/store/1726-harrisonburg-va/?veh=seo_loc",
+      "userRatingCount": 4963,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJqxKVamyTtIkRJ4onifyQ7Cw",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 438-0349",
+      "formattedAddress": "2160 John Wayland Hwy, Harrisonburg, VA 22801, USA",
+      "rating": 3.8,
+      "websiteUri": "https://www.walmart.com/store/2807-harrisonburg-va/?veh=seo_loc",
+      "userRatingCount": 2596,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJs6uC2qOStIkRGB-MsH8gmA8",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 433-7660",
+      "formattedAddress": "201 Linda Ln, Harrisonburg, VA 22802, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.lowes.com/store/VA-Harrisonburg/0509?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-509-_-na-_-0-_-0&y_source=1_MTE4MzUzOS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 1836,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJhaWYbGn6tIkRg9PygaO4D-o",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "sporting_goods_store",
+        "grocery_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 896-0212",
+      "formattedAddress": "375 S Main St, Timberville, VA 22853, USA",
+      "rating": 4,
+      "websiteUri": "https://www.walmart.com/store/6952-timberville-va/?veh=seo_loc",
+      "userRatingCount": 1584,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJp5V9Qr2StIkRSVzKl3pJ80s",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 438-8887",
+      "formattedAddress": "121 Burgess Rd, Harrisonburg, VA 22801, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.homedepot.com/l/Harrisonburg/VA/Harrisonburg/22801/4645?emt=MSGMBGoogleMaps",
+      "userRatingCount": 796,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJF0S66CGTtIkRO7efoiMuXGw",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 434-9967",
+      "formattedAddress": "1030 S High St, Harrisonburg, VA 22801, USA",
+      "rating": 4.7,
+      "websiteUri": "https://www.rockinghamcoop.com/rocking-r-ace-hardware",
+      "userRatingCount": 668,
+      "displayName": {
+        "text": "Rocking R Ace Hardware",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ3xnN-J6StIkRtYBnKBcKqRM",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 568-9839",
+      "formattedAddress": "1854 E Market St, Harrisonburg, VA 22801, USA",
+      "rating": 4.4,
+      "websiteUri": "https://www.harborfreight.com/storelocator/1854-east-market-street-harrisonburg-22801?number=527",
+      "userRatingCount": 794,
+      "displayName": {
+        "text": "Harbor Freight",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJiYkfaAaTtIkRCPzfQVHVVLA",
+      "types": [
+        "discount_store",
+        "hardware_store",
+        "book_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 433-3900",
+      "formattedAddress": "2255 S Main St, Harrisonburg, VA 22801, USA",
+      "rating": 4.3,
+      "websiteUri": "https://www.ollies.com/",
+      "userRatingCount": 1366,
+      "displayName": {
+        "text": "Ollie's Bargain Outlet",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJl0-Hg4KStIkR2ax6Gau9Oss",
+      "types": [
+        "hardware_store",
+        "pet_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 434-1492",
+      "formattedAddress": "2385 E Market St, Harrisonburg, VA 22801, USA",
+      "rating": 4.4,
+      "websiteUri": "https://www.tractorsupply.com/tsc/store_Harrisonburg-VA-22801_696?utm_source=localgmblisting&utm_medium=organic",
+      "userRatingCount": 402,
+      "displayName": {
+        "text": "Tractor Supply Co.",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJe-9l0fKTtIkRP8xctuTyGDc",
+      "types": [
+        "hardware_store",
+        "pet_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 209-8112",
+      "formattedAddress": "45 Baxter Dr, Harrisonburg, VA 22801, USA",
+      "rating": 4.5,
+      "websiteUri": "https://www.tractorsupply.com/tsc/store_Harrisonburg-VA-22801_2653?utm_source=localgmblisting&utm_medium=organic",
+      "userRatingCount": 40,
+      "displayName": {
+        "text": "Tractor Supply Co.",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJO31rl9qStIkRejaAbPaKVfk",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 434-3882",
+      "formattedAddress": "265 Chesapeake Ave, Harrisonburg, VA 22801, USA",
+      "rating": 4.4,
+      "websiteUri": "http://www.mongerlumber.com/",
+      "userRatingCount": 66,
+      "displayName": {
+        "text": "R.S. Monger & Sons Inc.",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJx8q3HLaTtIkReA_Rscu54pw",
+      "types": [
+        "hardware_store",
+        "discount_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 490-0300",
+      "formattedAddress": "2261 S Main St, Harrisonburg, VA 22801, USA",
+      "rating": 4.1,
+      "websiteUri": "https://centralvalleyhabitat.org/restore/",
+      "userRatingCount": 21,
+      "displayName": {
+        "text": "Habitat for Humanity ReStore",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJBVSAzzfttIkRdrzre7RZz24",
+      "types": [
+        "hardware_store",
+        "general_contractor",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 434-9961",
+      "formattedAddress": "230 Charles St, Harrisonburg, VA 22802, USA",
+      "rating": 4.5,
+      "websiteUri": "https://www.winchesterequipment.com/",
+      "userRatingCount": 75,
+      "displayName": {
+        "text": "Valley Equipment Co.",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJr-BnE1xgtIkRLTmaWCPisck",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 298-9144",
+      "formattedAddress": "300 S Stuart Ave, Elkton, VA 22827, USA",
+      "rating": 4.6,
+      "websiteUri": "http://www.acehardware.com/store-details/08473?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=08473",
+      "userRatingCount": 238,
+      "displayName": {
+        "text": "Dean Home Center Inc",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJHQYjM_CTtIkR32ar2_lu2I4",
+      "types": [
+        "hardware_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 437-9360",
+      "formattedAddress": "4562 S Valley Pike, Harrisonburg, VA 22801, USA",
+      "rating": 4.9,
+      "websiteUri": "http://www.countylineva.com/",
+      "userRatingCount": 55,
+      "displayName": {
+        "text": "County Line Materials",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJs077BW_6tIkRbNl3US16epc",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 896-5403",
+      "formattedAddress": "14064 Timber Way, Timberville, VA 22853, USA",
+      "rating": 4.6,
+      "websiteUri": "https://www.doitbest.com/randys-hardware/",
+      "userRatingCount": 125,
+      "displayName": {
+        "text": "Randy's Do it Best Hardware",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJu2oM7pSTtIkRv59j-0moKt0",
+      "types": [
+        "hardware_store",
+        "general_contractor",
+        "home_improvement_store",
+        "home_goods_store",
+        "wholesaler",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 433-7000",
+      "formattedAddress": "44 Reedy Cir, Harrisonburg, VA 22801, USA",
+      "rating": 4.9,
+      "websiteUri": "https://www.ferguson.com/store/va/harrisonburg/plumbingpvf-0161?utm_source=google&utm_medium=organic&utm_campaign=rt_lis_listingtraffic&utm_content=listing",
+      "userRatingCount": 11,
+      "displayName": {
+        "text": "Ferguson Plumbing Supply",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJbfN7rmyVtIkRv_QpqFcWvro",
+      "types": [
+        "hardware_store",
+        "general_contractor",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 879-2518",
+      "formattedAddress": "3319 Lumber Mill Rd, Dayton, VA 22821, USA",
+      "rating": 4.7,
+      "websiteUri": "http://www.martinslumber.com/",
+      "userRatingCount": 35,
+      "displayName": {
+        "text": "Martin's Native Lumber",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJh7PXly6UtIkRAz3GnMtQv5U",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 828-2561",
+      "formattedAddress": "601 N Main St, Bridgewater, VA 22812, USA",
+      "rating": 4.7,
+      "websiteUri": "https://www.rockinghamcoop.com/bridgewater-ace-hardware",
+      "userRatingCount": 100,
+      "displayName": {
+        "text": "Rockingham Cooperative ACE Hardware - Bridgewater",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJSRKhJ2n6tIkRuT1Jtkx8Qkw",
+      "types": [
+        "hardware_store",
+        "sporting_goods_store",
+        "food",
+        "point_of_interest",
+        "store",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 896-7017",
+      "formattedAddress": "368 5th Ave, Timberville, VA 22853, USA",
+      "rating": 4.6,
+      "websiteUri": "https://www.rockinghamcoop.com/timberville-store-mill",
+      "userRatingCount": 59,
+      "displayName": {
+        "text": "Rockingham Cooperative - Timberville",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ0adrqe7utYkRsZWGe9oDFqA",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "grocery_store",
+        "food_store",
+        "sporting_goods_store",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 667-9111",
+      "formattedAddress": "2350 S Pleasant Valley Rd, Winchester, VA 22601, USA",
+      "rating": 3.9,
+      "websiteUri": "https://www.walmart.com/store/1406-winchester-va/?veh=seo_loc",
+      "userRatingCount": 4031,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJGVy6997ttYkRvO4RbTWraJE",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "grocery_store",
+        "food_store",
+        "sporting_goods_store",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 545-8730",
+      "formattedAddress": "501 Wal-Mart Dr, Winchester, VA 22603, USA",
+      "rating": 3.9,
+      "websiteUri": "https://www.walmart.com/store/3344-winchester-va/?veh=seo_loc",
+      "userRatingCount": 3526,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJO1XgJebutYkRf5qCmX0WFXo",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 723-0619",
+      "formattedAddress": "2350 Legge Blvd, Winchester, VA 22601, USA",
+      "rating": 4.2,
+      "websiteUri": "https://www.homedepot.com/l/Winchester/VA/Winchester/22601/4618?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1039,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJoVlIolbotYkReLoFBKWPoQc",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "grocery_store",
+        "food_store",
+        "sporting_goods_store",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 868-5076",
+      "formattedAddress": "201 Maranto Manor Dr, Winchester, VA 22602, USA",
+      "rating": 3.9,
+      "websiteUri": "https://www.walmart.com/store/4514-winchester-va/?veh=seo_loc",
+      "userRatingCount": 1754,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJre80Ju_utYkR4Um7mHAAuxU",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 678-9030",
+      "formattedAddress": "2200 S Pleasant Valley Rd, Winchester, VA 22601, USA",
+      "rating": 4.2,
+      "websiteUri": "https://www.lowes.com/store/VA-Winchester/0656?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-656-_-na-_-0-_-0&y_source=1_MTE4MzU0NC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 1364,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJSQCJrEBvO4gRV2ILjyQ1ntk",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 409-3232",
+      "formattedAddress": "261 Market St, Winchester, VA 22602, USA",
+      "rating": 4.3,
+      "websiteUri": "https://www.lowes.com/store/VA-Winchester/2724?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-2724-_-na-_-0-_-0&y_source=1_MTE4MzUzNy03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 1151,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJm7I4Pw_EtYkRFEf-q6w57-I",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 305-2030",
+      "formattedAddress": "80 Riverton Commons Dr, Front Royal, VA 22630, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.lowes.com/store/VA-Front-Royal/2555?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-2555-_-na-_-0-_-0&y_source=1_MTE4MzUzMS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 894,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ7QECcbnvtYkRNbhK6dvms3E",
+      "types": [
+        "hardware_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 667-2365",
+      "formattedAddress": "1131 Berryville Ave, Winchester, VA 22601, USA",
+      "rating": 4.4,
+      "websiteUri": "https://www.harborfreight.com/storelocator/1131-berryville-ave-winchester-22601?number=595",
+      "userRatingCount": 771,
+      "displayName": {
+        "text": "Harbor Freight",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJSW-DHJXvtYkREMj_qGv-RlA",
+      "types": [
+        "hardware_store",
+        "pet_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 535-0058",
+      "formattedAddress": "150 Getty Ln, Winchester, VA 22603, USA",
+      "rating": 4.4,
+      "websiteUri": "https://www.tractorsupply.com/tsc/store_Winchester-VA-22603_697?utm_source=localgmblisting&utm_medium=organic",
+      "userRatingCount": 406,
+      "displayName": {
+        "text": "Tractor Supply Co.",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJH-_23zvqtYkRrVLD9Ev9phY",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "sporting_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 869-5700",
+      "formattedAddress": "208 Centre Dr, Stephens City, VA 22655, USA",
+      "rating": 4.4,
+      "websiteUri": "https://www.milleracehardware.com/?utm_source=local&utm_medium=organic&utm_campaign=gbp",
+      "userRatingCount": 636,
+      "displayName": {
+        "text": "Miller's Ace Hardware",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ8xVKkqHvtYkRbq7eFmWnIJ0",
+      "types": [
+        "discount_store",
+        "hardware_store",
+        "book_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 486-4639",
+      "formattedAddress": "655 E Jubal Early Dr, Winchester, VA 22601, USA",
+      "rating": 4.3,
+      "websiteUri": "http://www.ollies.us/",
+      "userRatingCount": 1524,
+      "displayName": {
+        "text": "Ollie's Bargain Outlet",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJJS1jjrfvtYkR7zRQgx6EYeI",
+      "types": [
+        "hardware_store",
+        "locksmith",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 662-3457",
+      "formattedAddress": "832 Berryville Ave, Winchester, VA 22601, USA",
+      "rating": 4.8,
+      "websiteUri": "https://stores.truevalue.com/va/winchester/15388",
+      "userRatingCount": 435,
+      "displayName": {
+        "text": "Solenberger's Home & Hardware",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJK46Dy_fttYkRUwU5aUxpDgg",
+      "types": [
+        "hardware_store",
+        "pet_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 542-1892",
+      "formattedAddress": "141 Wal-Mart Dr, Winchester, VA 22603, USA",
+      "rating": 4.3,
+      "websiteUri": "https://www.tractorsupply.com/tsc/store_Winchester-VA-22603_2536?utm_source=localgmblisting&utm_medium=organic",
+      "userRatingCount": 41,
+      "displayName": {
+        "text": "Tractor Supply Co.",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ5_wxUQD5tYkR8N9IMgEeEVc",
+      "types": [
+        "hardware_store",
+        "pet_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(304) 446-4605",
+      "formattedAddress": "90 Creamery Lane, Inwood, WV 25428, USA",
+      "rating": 3.7,
+      "websiteUri": "https://www.tractorsupply.com/tsc/store_Inwood-WV-25428_2942?utm_source=localgmblisting&utm_medium=organic",
+      "userRatingCount": 15,
+      "displayName": {
+        "text": "Tractor Supply Co.",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJa6idBUHvtYkRMMHoPVB4l9Q",
+      "types": [
+        "hardware_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 678-4522",
+      "formattedAddress": "119 Arbor Ct, Winchester, VA 22602, USA",
+      "rating": 4.5,
+      "websiteUri": "https://info.frogalelumber.com/",
+      "userRatingCount": 42,
+      "displayName": {
+        "text": "Frogale Lumber Supply",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJwW6YlVTitYkRz3mCzME7umk",
+      "types": [
+        "hardware_store",
+        "locksmith",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 955-1900",
+      "formattedAddress": "600 E Main St, Berryville, VA 22611, USA",
+      "rating": 4.3,
+      "websiteUri": "https://stores.truevalue.com/va/berryville/16461",
+      "userRatingCount": 69,
+      "displayName": {
+        "text": "Berryville True Value Hardware",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJo_JcIw_EtYkRdvjftwl8wMo",
+      "types": [
+        "shopping_mall",
+        "hardware_store",
+        "supermarket",
+        "grocery_store",
+        "food_store",
+        "restaurant",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "formattedAddress": "10 Riverton Commons Dr, Front Royal, VA 22630, USA",
+      "rating": 4.3,
+      "websiteUri": "http://properties.edens.com/rivertoncommons",
+      "userRatingCount": 2187,
+      "displayName": {
+        "text": "Riverton Commons",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJUb5Ujf3vtYkRqw5h43yx8fw",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "general_contractor",
+        "wholesaler",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 773-6260",
+      "formattedAddress": "321 Front Royal Pike, Winchester, VA 22602, USA",
+      "rating": 4.6,
+      "websiteUri": "https://www.ferguson.com/store/va/winchester/plumbingpvf-0019?utm_source=google&utm_medium=organic&utm_campaign=rt_lis_listingtraffic&utm_content=listing",
+      "userRatingCount": 10,
+      "displayName": {
+        "text": "Ferguson Plumbing Supply",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJOcBjqBAss1IRtSbjvKuojJs",
+      "types": [
+        "hardware_store",
+        "store",
+        "general_contractor",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 542-6670",
+      "formattedAddress": "503 Fort Collier Rd, Winchester, VA 22603, USA",
+      "rating": 4,
+      "websiteUri": "https://www.ferguson.com/store/va/winchester/hvac-1532?utm_source=google&utm_medium=organic&utm_campaign=hvac_lis_listingtraffic&utm_content=listing",
+      "userRatingCount": 4,
+      "displayName": {
+        "text": "Ferguson HVAC Supply",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJCe1O5zHwtYkRLrSMvlTK1pM",
+      "types": [
+        "hardware_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(540) 662-4158",
+      "formattedAddress": "131 W Brooke Rd, Winchester, VA 22603, USA",
+      "rating": 4.5,
+      "websiteUri": "http://www.northeastern.com/",
+      "userRatingCount": 8,
+      "displayName": {
+        "text": "Northeastern Supply",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ1bdVyInasokRcMYADrGCK9o",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "grocery_store",
+        "food_store",
+        "sporting_goods_store",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 832-0304",
+      "formattedAddress": "3900 Wards Rd, Lynchburg, VA 24502, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.walmart.com/store/1350-lynchburg-va/?veh=seo_loc",
+      "userRatingCount": 4475,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJs70ROEXXsokRLsuVuTL27YA",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "grocery_store",
+        "food_store",
+        "sporting_goods_store",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 200-9132",
+      "formattedAddress": "3227 Old Forest Rd, Lynchburg, VA 24501, USA",
+      "rating": 4,
+      "websiteUri": "https://www.walmart.com/store/4697-lynchburg-va/?veh=seo_loc",
+      "userRatingCount": 3061,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJf6VrgcHQsokRHLE9sKs8wak",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 582-1619",
+      "formattedAddress": "7902 Graves Mill Rd, Lynchburg, VA 24502, USA",
+      "rating": 4.2,
+      "websiteUri": "https://www.homedepot.com/l/Lynchburg/VA/Lynchburg/24502/4655?emt=MSGMBGoogleMaps",
+      "userRatingCount": 1260,
+      "displayName": {
+        "text": "The Home Depot",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJYYx7P0XQsokR4yhGA1Uz_D8",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 239-7600",
+      "formattedAddress": "8216 Timberlake Rd, Lynchburg, VA 24502, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.lowes.com/store/VA-Lynchburg/0437?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-437-_-na-_-0-_-0&y_source=1_MTE4MzM1OC03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 1966,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJD97a4bDYsokRa6K9l_YyKxY",
+      "types": [
+        "department_store",
+        "hardware_store",
+        "bakery",
+        "clothing_store",
+        "electronics_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "grocery_store",
+        "food_store",
+        "sporting_goods_store",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 846-9650",
+      "formattedAddress": "197 Madison Heights Square, Madison Heights, VA 24572, USA",
+      "rating": 3.9,
+      "websiteUri": "https://www.walmart.com/store/2565-madison-heights-va/?veh=seo_loc",
+      "userRatingCount": 2267,
+      "displayName": {
+        "text": "Walmart Supercenter",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJYWqtktjYsokRoQW6_viD3pc",
+      "types": [
+        "home_improvement_store",
+        "hardware_store",
+        "furniture_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 238-1268",
+      "formattedAddress": "150 River James Shopping Ctr, Madison Heights, VA 24572, USA",
+      "rating": 4.2,
+      "websiteUri": "https://www.lowes.com/store/VA-Madison-Heights/1839?cm_mmc=lod-_-c-_-lcl-_-awr-_-yxt-_-go-_-1839-_-na-_-0-_-0&y_source=1_MTE4MzM1Ny03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D",
+      "userRatingCount": 1354,
+      "displayName": {
+        "text": "Lowe's Home Improvement",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJRxB7SV7QsokRHr0SjMhllFw",
+      "types": [
+        "hardware_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 237-9485",
+      "formattedAddress": "7621 Timberlake Rd, Lynchburg, VA 24502, USA",
+      "rating": 4.5,
+      "websiteUri": "https://www.harborfreight.com/storelocator/7621-timberlake-rd-lynchburg-24502?number=227",
+      "userRatingCount": 556,
+      "displayName": {
+        "text": "Harbor Freight",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJwwpiC8bTsokRCALxVHApG5w",
+      "types": [
+        "hardware_store",
+        "pet_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 525-2378",
+      "formattedAddress": "1225 Perrowville Rd, Forest, VA 24551, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.tractorsupply.com/tsc/store_Forest-VA-24551_2510?utm_source=localgmblisting&utm_medium=organic",
+      "userRatingCount": 30,
+      "displayName": {
+        "text": "Tractor Supply Co.",
+        "languageCode": "usa"
+      }
+    },
+    {
+      "id": "ChIJVVVVVYXQsokRFQqHrohcKxQ",
+      "types": [
+        "discount_store",
+        "hardware_store",
+        "book_store",
+        "furniture_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 847-4792",
+      "formattedAddress": "3700 Candlers Mountain Rd, Lynchburg, VA 24502, USA",
+      "rating": 4.4,
+      "websiteUri": "https://www.ollies.com/",
+      "userRatingCount": 1449,
+      "displayName": {
+        "text": "Ollie's Bargain Outlet",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJsaAinDLRsokRE_-Btoz3uFw",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 385-5150",
+      "formattedAddress": "2650 Lakeside Dr, Lynchburg, VA 24501, USA",
+      "rating": 4.7,
+      "websiteUri": "https://overstreethardware.com/",
+      "userRatingCount": 410,
+      "displayName": {
+        "text": "Overstreet Hardware and Rental",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJQ0F9H6_YsokRNtK7Y2ruWT0",
+      "types": [
+        "hardware_store",
+        "pet_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "food_store",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 929-6730",
+      "formattedAddress": "248 Amelon Sq Plz, Madison Heights, VA 24572, USA",
+      "rating": 4.3,
+      "websiteUri": "https://www.tractorsupply.com/tsc/store_Madisonheights-VA-24572_467?utm_source=localgmblisting&utm_medium=organic",
+      "userRatingCount": 524,
+      "displayName": {
+        "text": "Tractor Supply Co.",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJNWXQIm_asokRGYnAj155URA",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 237-0395",
+      "formattedAddress": "2317 Wards Rd, Lynchburg, VA 24502, USA",
+      "rating": 4.5,
+      "websiteUri": "https://www.northerntool.com/store/lynchburgva-store-lynchburg-va",
+      "userRatingCount": 243,
+      "displayName": {
+        "text": "Northern Tool + Equipment",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJ24Mr463TsokRH88pxpV4R7I",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 616-2989",
+      "formattedAddress": "15097 Forest Rd, Forest, VA 24551, USA",
+      "rating": 4.6,
+      "websiteUri": "http://www.overstreethardware.com/?utm_source=google&utm_medium=local&utm_campaign=localmaps&utm_content=17086",
+      "userRatingCount": 239,
+      "displayName": {
+        "text": "Overstreet Hardware and Home",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJQYjn99rbsokRc_ybQRfPxNg",
+      "types": [
+        "hardware_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 847-1023",
+      "formattedAddress": "3401 Campbell Ave, Lynchburg, VA 24501, USA",
+      "rating": 4.6,
+      "websiteUri": "https://www.valleyfastenersinc.com/",
+      "userRatingCount": 38,
+      "displayName": {
+        "text": "Valley Fasteners of Lynchburg",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJd20wBTTQsokRBuq97GO-GvI",
+      "types": [
+        "hardware_store",
+        "home_goods_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 239-3402",
+      "formattedAddress": "21020 Timberlake Rd, Lynchburg, VA 24502, USA",
+      "rating": 3.8,
+      "websiteUri": "https://www.bldr.com/contact/request-quote?utm_source=yext&utm_medium=listing&utm_campaign=requestquote&utm_content=LYNCVAYD",
+      "userRatingCount": 18,
+      "displayName": {
+        "text": "Builders FirstSource",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJiZn61tPRsokRWgvs9Si_8to",
+      "types": [
+        "hardware_store",
+        "home_improvement_store",
+        "home_goods_store",
+        "store",
+        "general_contractor",
+        "wholesaler",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 209-6194",
+      "formattedAddress": "2010 Graves Mill Rd, Forest, VA 24551, USA",
+      "rating": 2,
+      "websiteUri": "https://www.ferguson.com/store/va/forest/plumbingpvf-0075?utm_source=google&utm_medium=organic&utm_campaign=rt_lis_listingtraffic&utm_content=listing",
+      "userRatingCount": 3,
+      "displayName": {
+        "text": "Ferguson Plumbing Supply",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJtxYOyFois4kRQ57zj9ySNiw",
+      "types": [
+        "hardware_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 946-7711",
+      "formattedAddress": "183 S Main St, Amherst, VA 24521, USA",
+      "rating": 4.8,
+      "userRatingCount": 122,
+      "displayName": {
+        "text": "Hill Hardware Corporation",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJmYTpEcfvtYkREO6C3BP2lFs",
+      "types": [
+        "hardware_store",
+        "store",
+        "general_contractor",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 316-9701",
+      "formattedAddress": "2104 Graves Mill Rd, Forest, VA 24551, USA",
+      "rating": 4,
+      "websiteUri": "https://www.ferguson.com/store/va/forest/hvac-1881?utm_source=google&utm_medium=organic&utm_campaign=hvac_lis_listingtraffic&utm_content=listing",
+      "userRatingCount": 1,
+      "displayName": {
+        "text": "Ferguson HVAC Supply",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJkfeGIgPnsokRao8MXzAu1WQ",
+      "types": [
+        "hardware_store",
+        "food_store",
+        "store",
+        "point_of_interest",
+        "food",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 993-2106",
+      "formattedAddress": "10060 Village Hwy, Concord, VA 24538, USA",
+      "rating": 4.1,
+      "websiteUri": "https://www.facebook.com/pages/Carsons-Store/143612599005925",
+      "userRatingCount": 182,
+      "displayName": {
+        "text": "Carson's Store",
+        "languageCode": "en"
+      }
+    },
+    {
+      "id": "ChIJZwEIq57XsokR8Y-cXW0LfxY",
+      "types": [
+        "hardware_store",
+        "store",
+        "point_of_interest",
+        "establishment"
+      ],
+      "nationalPhoneNumber": "(434) 384-3310",
+      "formattedAddress": "4904 Boonsboro Rd, Lynchburg, VA 24503, USA",
+      "rating": 4.6,
+      "websiteUri": "http://www.facebook.com/BoonsboroHardware",
+      "userRatingCount": 41,
+      "displayName": {
+        "text": "Boonsboro Road Hardware",
+        "languageCode": "en"
+      }
+    }
+  ]
+}
