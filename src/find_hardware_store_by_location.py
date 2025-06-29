@@ -74,20 +74,17 @@ def find_hardware_stores(lat, lng):
         'key': API_KEY
     }
     next_page_token = None
-    page = 1
     while True:
         if next_page_token:
             params['pagetoken'] = next_page_token
-            # Google recommends waiting a short time before using next_page_token
-            time.sleep(2)
+            time.sleep(2)  # Google requires a short delay before using next_page_token
         resp = requests.get(PLACES_URL, params=params)
         data = resp.json()
         results = data.get('results', [])
         all_results.extend(results)
         next_page_token = data.get('next_page_token')
-        if not next_page_token or page >= 3:
+        if not next_page_token:
             break
-        page += 1
     return all_results
 
 
@@ -190,11 +187,17 @@ def main():
         # Small delay to avoid hitting API limits
         time.sleep(0.1)
 
-    # Save simplified results
-    with open('hardware_stores_by_location.json', 'w') as f:
-        json.dump(simplified_results, f, indent=2, ensure_ascii=False)
+    # Save results to JSON file
+    json_filename = f'../output/raw/hardware_stores_by_location.json'
+    with open(json_filename, 'w') as f:
+        json.dump({
+            'location': location,
+            'total_stores': len(stores),
+            'timestamp': time.strftime('%Y-%m-%d %H:%M:%S'),
+            'stores': simplified_results
+        }, f, indent=2)
     
-    print(f"Results saved to 'hardware_stores_by_location.json'")
+    print(f"Results saved to '{json_filename}'")
     print("\nNote: For stores without contact info, you can:")
     print("- Search the business name on Google")
     print("- Check their website for contact details")
