@@ -62,7 +62,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hardware Store Finder v0.2</h1>
+        <h1>Hardware Store Finder</h1>
         <form onSubmit={handleSearch} style={{ marginBottom: 20 }}>
           <input
             type="text"
@@ -152,6 +152,10 @@ function App() {
           )}
         </div>
       </header>
+
+      <footer>
+      v0.2
+      </footer>
     </div>
   );
 }
