@@ -154,7 +154,7 @@ function App() {
       </header>
 
       <footer>
-      v0.2
+      v0.3
       </footer>
     </div>
   );
