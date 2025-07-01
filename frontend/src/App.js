@@ -33,6 +33,7 @@ function App() {
         throw new Error(data.detail || 'API error');
       }
       const data = await response.json();
+      console.log('Full API JSON data:', data);
       // If backend returns all details, just add one by one with a delay for effect
       if (Array.isArray(data.stores)) {
         for (let i = 0; i < data.stores.length; i++) {
@@ -154,7 +155,7 @@ function App() {
       </header>
 
       <footer>
-      v0.3
+      v0.4
       </footer>
     </div>
   );
