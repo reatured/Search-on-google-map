@@ -1,3 +1,33 @@
+# Progress Report
+
+**Project Progress:**
+
+```
+[■■■■■■■■■■■■■■■■□□□□□□] 60%
+```
+
+**Done:**
+- [x] Archive old script in `src/`
+- [x] Update README and DEV_PLAN for new architecture
+- [x] Scaffold backend directory and virtual environment
+- [x] Install FastAPI, Uvicorn, requests, python-dotenv in backend
+- [x] Create FastAPI app with `/search` endpoint (Google Places integration)
+- [x] Enable CORS for frontend integration
+- [x] Test backend endpoint with real data
+
+**To Do:**
+- [ ] Add error handling and validation to backend
+- [ ] Add API documentation/comments
+- [ ] Scaffold React frontend in `frontend/`
+- [ ] Build search UI in React
+- [ ] Connect React frontend to FastAPI backend
+- [ ] Add loading/error states to frontend
+- [ ] Prepare for deployment (backend & frontend)
+- [ ] Write deployment instructions
+- [ ] (Optional) Add stretch goals: authentication, favorites, export, map view
+
+---
+
 # Development Plan: Find Hardware Store (Modern Web App)
 
 ## Overview
