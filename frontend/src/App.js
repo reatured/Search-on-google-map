@@ -27,7 +27,7 @@ function App() {
     setResults([]);
     try {
       // Fetch the list of stores (without details)
-      const response = await fetch(`http://localhost:8000/search?location=${encodeURIComponent(location)}`);
+      const response = await fetch(`http://ec2-3-16-217-107.us-east-2.compute.amazonaws.com:8000/search?location=${encodeURIComponent(location)}`);
       if (!response.ok) {
         const data = await response.json();
         throw new Error(data.detail || 'API error');
@@ -62,7 +62,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hardware Store Finder</h1>
+        <h1>Hardware Store Finder v0.1</h1>
         <form onSubmit={handleSearch} style={{ marginBottom: 20 }}>
           <input
             type="text"
