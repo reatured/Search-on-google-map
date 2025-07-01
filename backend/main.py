@@ -5,9 +5,11 @@ from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 from typing import List, Optional
 from pydantic import BaseModel
+import time
 
 load_dotenv()
 API_KEY = os.getenv('GOOGLE_MAPS_API_KEY')
+print("Loaded API KEY:", API_KEY)
 
 GEOCODE_URL = 'https://maps.googleapis.com/maps/api/geocode/json'
 PLACES_URL = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json'
@@ -68,6 +70,7 @@ def search_hardware_stores(
     while True:
         if next_page_token:
             params['pagetoken'] = next_page_token
+            time.sleep(2)
         try:
             resp = requests.get(PLACES_URL, params=params, timeout=10)
             resp.raise_for_status()
