@@ -27,7 +27,7 @@ function App() {
     setResults([]);
     try {
       // Fetch the list of stores (without details)
-      const response = await fetch(`https://random-id.ngrok-free.app/search?location=${encodeURIComponent(location)}`);
+      const response = await fetch(`https://bbe8-3-16-217-107.ngrok-free.app/search?location=${encodeURIComponent(location)}`);
       if (!response.ok) {
         const data = await response.json();
         throw new Error(data.detail || 'API error');
