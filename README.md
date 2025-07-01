@@ -1,6 +1,58 @@
 # Find Hardware Store
 
-A comprehensive Python project to find hardware stores across different locations using Google Places API. This project includes scripts for searching hardware stores in Virginia, the United States, France, Germany, Washington, and any custom location.
+A project to find hardware stores using the Google Places API. The project is being upgraded to a modern web application with a FastAPI backend and a React frontend.
+
+---
+
+## 🚧 Project Upgrade In Progress
+
+We are archiving the old script-based approach and building a new architecture:
+
+### New Architecture
+- **Backend:** FastAPI (Python) — provides an API endpoint to search for hardware stores using the Google Places API
+- **Frontend:** React — modern web interface for searching and displaying hardware stores
+
+### Old Script (Archived)
+- The original script for searching hardware stores by location is now archived in the `src/` directory for reference.
+- The script can still be run manually for batch data collection.
+
+---
+
+## Setup (for the new version)
+
+### 1. Backend (FastAPI)
+- Install dependencies: `pip install fastapi uvicorn requests python-dotenv`
+- Create a `.env` file with your Google Maps API key: `GOOGLE_MAPS_API_KEY=your_api_key_here`
+- Run the backend: `uvicorn backend.main:app --reload`
+
+### 2. Frontend (React)
+- Navigate to the frontend directory: `cd frontend`
+- Install dependencies: `npm install`
+- Start the frontend: `npm start`
+
+---
+
+## Old Script Usage (for reference)
+
+You can still run the archived script for batch data collection:
+
+```bash
+cd src
+python3 find_hardware_store_by_location.py
+```
+
+---
+
+## Roadmap
+- [x] Archive legacy script
+- [ ] Build FastAPI backend for Google Places search
+- [ ] Build React frontend for user interface
+- [ ] Connect frontend and backend
+- [ ] Deploy full-stack application
+
+---
+
+For more details, see the code in the `src/`, `backend/`, and `frontend/` directories.
 
 ## 📁 Project Structure
 
