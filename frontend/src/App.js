@@ -26,8 +26,16 @@ function App() {
     setError('');
     setResults([]);
     try {
-      const response = await fetch(`http://127.0.0.1:8000/search?location=${encodeURIComponent(location)}`);
-      const text = await response.text();
+      const response = await fetch(
+        `https://9f49-3-16-217-107.ngrok-free.app/search?location=${encodeURIComponent(location)}`,
+        {
+          method: 'GET',
+          redirect: 'follow'
+        }
+      );
+       const text = await response.text();
+      console.log(text)
+      console.log(response)
       try {
         const data = JSON.parse(text);
         console.log('Full API JSON data:', data);

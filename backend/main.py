@@ -37,6 +37,8 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
+
 @app.get("/search", response_model=SearchResponse, summary="Search hardware stores by location", tags=["Search"])
 def search_hardware_stores(
     location: str = Query(..., description="Address, city, or place to search for hardware stores")
