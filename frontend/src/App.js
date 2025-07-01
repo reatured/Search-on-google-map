@@ -27,7 +27,7 @@ function App() {
     setResults([]);
     try {
       const response = await fetch(
-        `https://4f74-3-16-217-107.ngrok-free.app/search?location=${encodeURIComponent(location)}`,
+        `https://search-on-google-map-production.up.railway.app/search?location=${encodeURIComponent(location)}`,
         {
           method: 'GET',
           redirect: 'follow'
