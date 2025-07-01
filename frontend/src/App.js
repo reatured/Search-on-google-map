@@ -26,23 +26,27 @@ function App() {
     setError('');
     setResults([]);
     try {
-      // Fetch the list of stores (without details)
-      const response = await fetch(`https://bbe8-3-16-217-107.ngrok-free.app/search?location=${encodeURIComponent(location)}`);
-      if (!response.ok) {
-        const data = await response.json();
-        throw new Error(data.detail || 'API error');
-      }
-      const data = await response.json();
-      console.log('Full API JSON data:', data);
-      // If backend returns all details, just add one by one with a delay for effect
-      if (Array.isArray(data.stores)) {
-        for (let i = 0; i < data.stores.length; i++) {
-          setResults(prev => [...prev, data.stores[i]]);
-          // Simulate network delay for demo (remove or adjust as needed)
-          await new Promise(res => setTimeout(res, 80));
+      const response = await fetch(`http://127.0.0.1:8000/search?location=${encodeURIComponent(location)}`);
+      const text = await response.text();
+      try {
+        const data = JSON.parse(text);
+        console.log('Full API JSON data:', data);
+        // If backend returns all details, just add one by one with a delay for effect
+        if (Array.isArray(data.stores)) {
+          for (let i = 0; i < data.stores.length; i++) {
+            setResults(prev => [...prev, data.stores[i]]);
+            // Simulate network delay for demo (remove or adjust as needed)
+            await new Promise(res => setTimeout(res, 80));
+          }
+        } else {
+          setError('No stores found in response.');
         }
+      } catch (jsonErr) {
+        console.error('Failed to parse JSON. Raw response:', text);
+        setError('Failed to parse server response. See console for details.');
       }
     } catch (err) {
+      console.error('Fetch or parse error:', err);
       setError(err.message);
     } finally {
       setLoading(false);
