@@ -1,6 +1,6 @@
 # 🔧 Hardware Store Finder
 
-A modern web application that helps users find hardware stores near any location using Google Maps API. Built with a React frontend and FastAPI backend, deployed on GitHub Pages and Railway.
+A modern web application that helps users find hardware stores near any location using Google Maps API. Built with a React frontend and FastAPI backend, deployed on GitHub Pages and Railway with PostgreSQL database integration.
 
 ## ✨ Features
 
@@ -8,12 +8,14 @@ A modern web application that helps users find hardware stores near any location
 - **Location-based search** - Find hardware stores near any address, city, or place
 - **Real-time results** - Get instant results with store details
 - **Comprehensive data** - Store names, addresses, phone numbers, and websites
+- **Intelligent caching** - Results cached for 1 hour to improve performance
 
 ### 🏪 **Store Information**
 - **Store names** and **addresses**
 - **Phone numbers** for easy contact
 - **Website links** for more information
 - **Distance-based results** (within 10km radius)
+- **Geographic coordinates** for mapping integration
 
 ### 🎨 **Modern UI/UX**
 - **Clean, responsive design** that works on all devices
@@ -21,15 +23,25 @@ A modern web application that helps users find hardware stores near any location
 - **Error handling** with user-friendly messages
 - **Beautiful animations** and smooth interactions
 
-### ⚡ **Performance**
+### ⚡ **Performance & Analytics**
 - **Fast API responses** with optimized Google Places API calls
 - **CORS-enabled** for seamless frontend-backend communication
 - **Production-ready** deployment
+- **Search analytics** - Track popular locations and search patterns
+- **Performance monitoring** - Response time tracking and success rates
+
+### 📊 **Data Storage & Analytics**
+- **PostgreSQL database** for persistent data storage
+- **Search history tracking** - Every search is logged with metadata
+- **Store data persistence** - All store information saved to database
+- **Analytics endpoints** - Popular searches, statistics, and recent activity
+- **Smart caching** - Reduces API calls and improves response times
 
 ## 🚀 Live Demo
 
 - **Frontend**: [https://reatured.github.io/Search-on-google-map](https://reatured.github.io/Search-on-google-map)
 - **Backend API**: Deployed on Railway with automatic HTTPS
+- **Database**: PostgreSQL hosted on Railway
 
 ## 🛠️ Tech Stack
 
@@ -40,6 +52,8 @@ A modern web application that helps users find hardware stores near any location
 
 ### Backend
 - **FastAPI** - High-performance Python web framework
+- **SQLAlchemy** - Database ORM
+- **PostgreSQL** - Relational database
 - **Google Maps API** - Geocoding and Places data
 - **Railway** - Cloud deployment platform
 - **Python 3.11** - Backend runtime
@@ -59,21 +73,26 @@ Search-on-google-map/
 │   └── styles.css           # Styling and animations
 ├── backend/                  # FastAPI backend application
 │   ├── main.py              # FastAPI server and API endpoints
+│   ├── models.py            # SQLAlchemy database models
+│   ├── database.py          # Database connection and setup
 │   ├── requirements.txt     # Python dependencies
 │   ├── Procfile             # Railway deployment configuration
-│   └── runtime.txt          # Python version specification
+│   ├── runtime.txt          # Python version specification
+│   └── alembic.ini          # Database migration configuration
 └── README.md                # This file
 ```
 
 ## 🔧 API Endpoints
 
-### `GET /search`
-Search for hardware stores near a location.
+### Search Endpoints
+- `GET /search` - Search for hardware stores near a location
 
-**Parameters:**
-- `location` (string, required): Address, city, or place to search
+### Analytics Endpoints
+- `GET /analytics/popular-searches` - Get most searched locations
+- `GET /analytics/search-stats` - Get search statistics
+- `GET /analytics/recent-searches` - Get recent search history
 
-**Response:**
+### Example Response
 ```json
 {
   "location": "Tokyo, Japan",
@@ -83,7 +102,10 @@ Search for hardware stores near a location.
       "address": "123 Main St, Tokyo, Japan",
       "website": "https://example.com",
       "phone": "+81-3-1234-5678",
-      "email": null
+      "email": null,
+      "place_id": "ChIJ...",
+      "latitude": 35.6762,
+      "longitude": 139.6503
     }
   ]
 }
@@ -101,11 +123,13 @@ Search for hardware stores near a location.
 - Environment variable management
 - HTTPS endpoint with CORS support
 - Automatic deployments from GitHub
+- PostgreSQL database integration
 
 ## 🔑 Environment Variables
 
 ### Backend (Railway)
 - `GOOGLE_MAPS_API_KEY`: Your Google Maps API key
+- `DATABASE_URL`: PostgreSQL connection string (automatically set by Railway)
 
 ## 🏃‍♂️ Local Development
 
@@ -138,9 +162,12 @@ Search for hardware stores near a location.
 4. Set up environment variables:
    ```bash
    echo "GOOGLE_MAPS_API_KEY=your_api_key_here" > .env
+   echo "DATABASE_URL=postgresql://localhost/hardware_finder" >> .env
    ```
 
-5. Run the server:
+5. Set up local PostgreSQL database (optional for development)
+
+6. Run the server:
    ```bash
    uvicorn main:app --reload
    ```
@@ -150,20 +177,24 @@ Search for hardware stores near a location.
 This project demonstrates:
 
 1. **Full-stack development** - React frontend + FastAPI backend
-2. **API integration** - Google Maps APIs for real-world data
-3. **Modern deployment** - GitHub Pages + Railway cloud hosting
-4. **Production practices** - CORS, error handling, environment variables
-5. **User experience** - Responsive design, loading states, error messages
+2. **Database integration** - PostgreSQL with SQLAlchemy ORM
+3. **API integration** - Google Maps APIs for real-world data
+4. **Modern deployment** - GitHub Pages + Railway cloud hosting
+5. **Production practices** - CORS, error handling, environment variables
+6. **Data analytics** - Search tracking and performance monitoring
+7. **User experience** - Responsive design, loading states, error messages
 
 ## 🔍 How It Works
 
 1. **User enters a location** in the search box
 2. **Frontend sends request** to the FastAPI backend
-3. **Backend geocodes the location** using Google Geocoding API
-4. **Backend searches for hardware stores** using Google Places API
-5. **Backend gets detailed information** for each store
-6. **Results are returned** to the frontend
-7. **Frontend displays the stores** in a clean, organized list
+3. **Backend checks cache** for existing results
+4. **If not cached, backend geocodes the location** using Google Geocoding API
+5. **Backend searches for hardware stores** using Google Places API
+6. **Backend gets detailed information** for each store
+7. **Results are saved to database** for analytics and caching
+8. **Results are returned** to the frontend
+9. **Frontend displays the stores** in a clean, organized list
 
 ## 🎉 Future Enhancements
 
@@ -177,9 +208,9 @@ This project demonstrates:
 ## 🚀 Next Steps
 
 ### 📊 **Online Data Storage & Caching**
-- **Database Integration** - Implement PostgreSQL or MongoDB for storing search results
-- **Cache Management** - Cache frequently searched locations to reduce API calls
-- **Data Persistence** - Store historical search data for analytics
+- **Database Integration** - ✅ Implemented PostgreSQL for storing search results
+- **Cache Management** - ✅ Cache frequently searched locations to reduce API calls
+- **Data Persistence** - ✅ Store historical search data for analytics
 - **Rate Limiting** - Implement smart rate limiting to optimize API usage
 
 ### 🔍 **Advanced Search Capabilities**
@@ -197,8 +228,8 @@ This project demonstrates:
 ### 📈 **Scalability Improvements**
 - **Load Balancing** - Distribute search load across multiple API endpoints
 - **Background Jobs** - Process large searches asynchronously
-- **Data Analytics** - Track search patterns and popular locations
-- **Performance Monitoring** - Monitor API response times and success rates
+- **Data Analytics** - ✅ Track search patterns and popular locations
+- **Performance Monitoring** - ✅ Monitor API response times and success rates
 
 ---
 
