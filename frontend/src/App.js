@@ -27,7 +27,7 @@ function App() {
     setResults([]);
     try {
       // Fetch the list of stores (without details)
-      const response = await fetch(`http://localhost:8000/search?location=${encodeURIComponent(location)}`);
+      const response = await fetch(`http://ec2-3-16-217-107.us-east-2.compute.amazonaws.com:8000/search?location=${encodeURIComponent(location)}`);
       if (!response.ok) {
         const data = await response.json();
         throw new Error(data.detail || 'API error');
