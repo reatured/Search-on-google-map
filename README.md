@@ -1,3 +1,65 @@
+# Find Hardware Store Web App
+
+A full-stack web application to search for hardware stores by location using Google Places API. The backend is built with FastAPI (Python), and the frontend is a React app.
+
+---
+
+## 🌐 Web App Quick Start
+
+### 1. Backend Setup (FastAPI)
+
+```bash
+cd backend
+# (Recommended) Create and activate a virtual environment
+python3 -m venv venv
+source venv/bin/activate
+
+# Install dependencies
+pip install fastapi uvicorn python-dotenv requests
+
+# Add your Google Maps API key to .env
+# Example:
+echo "GOOGLE_MAPS_API_KEY=your_api_key_here" > .env
+
+# Start the backend server
+uvicorn main:app --reload
+# The API will be available at http://localhost:8000
+# Interactive docs: http://localhost:8000/docs
+```
+
+### 2. Frontend Setup (React)
+
+```bash
+cd frontend
+npm install  # Only needed the first time
+npm start
+# The app will open at http://localhost:3000
+```
+
+### 3. Usage
+- Enter a location (city, address, etc.) in the search box.
+- Click "Search" to find hardware stores near that location.
+- Results will show name, address, phone, and website (if available).
+
+---
+
+## Project Structure (Full Stack)
+
+```
+Find Hardware Store/
+├── backend/         # FastAPI backend (API server)
+│   ├── main.py      # FastAPI app entry point
+│   └── ...
+├── frontend/        # React frontend (web UI)
+│   ├── src/App.js   # Main React app logic
+│   └── ...
+├── src/             # Python scripts for batch data collection
+├── output/          # Data output from scripts
+└── README.md        # (This file)
+```
+
+---
+
 # Find Hardware Store
 
 A comprehensive Python project to find hardware stores across different locations using Google Places API. This project includes scripts for searching hardware stores in Virginia, the United States, France, Germany, Washington, and any custom location.
