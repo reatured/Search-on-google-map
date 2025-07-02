@@ -14,6 +14,16 @@ L.Icon.Default.mergeOptions({
   shadowUrl: markerShadow,
 });
 
+const highlightIcon = new L.Icon({
+  iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png',
+  iconRetinaUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-red.png',
+  shadowUrl: markerShadow,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
 function BulkMap({ center, setCenter, radius, setRadius }) {
   // Custom hook to handle map click
   useMapEvents({
@@ -46,6 +56,7 @@ function App() {
   const bulkAbortRef = useRef(null);
   const [showUniqueOnly, setShowUniqueOnly] = useState(true);
   const [bulkCity, setBulkCity] = useState('');
+  const [hoveredStore, setHoveredStore] = useState(null);
 
   // Always use modal for preview
   const isMobile = true;
@@ -222,6 +233,17 @@ function App() {
     }, {})
   );
 
+  // Tab Navigation styles
+  const tabButtonStyle = (active) => ({
+    padding: '10px 20px',
+    background: active ? '#61dafb' : 'transparent',
+    color: active ? '#000' : '#6d5c3d', // darker brown for unselected
+    border: 'none',
+    cursor: 'pointer',
+    fontSize: 16,
+    fontWeight: active ? 'bold' : 'normal'
+  });
+
   return (
     <div className="App">
       <header className="App-header">
@@ -235,62 +257,10 @@ function App() {
           width: '100%',
           maxWidth: 1000
         }}>
-          <button
-            onClick={() => handleTabChange('search')}
-            style={{
-              padding: '10px 20px',
-              background: activeTab === 'search' ? '#61dafb' : 'transparent',
-              color: activeTab === 'search' ? '#000' : '#fff',
-              border: 'none',
-              cursor: 'pointer',
-              fontSize: 16,
-              fontWeight: activeTab === 'search' ? 'bold' : 'normal'
-            }}
-          >
-            🔍 Search
-          </button>
-          <button
-            onClick={() => handleTabChange('history')}
-            style={{
-              padding: '10px 20px',
-              background: activeTab === 'history' ? '#61dafb' : 'transparent',
-              color: activeTab === 'history' ? '#000' : '#fff',
-              border: 'none',
-              cursor: 'pointer',
-              fontSize: 16,
-              fontWeight: activeTab === 'history' ? 'bold' : 'normal'
-            }}
-          >
-            📊 Search History
-          </button>
-          <button
-            onClick={() => handleTabChange('saved')}
-            style={{
-              padding: '10px 20px',
-              background: activeTab === 'saved' ? '#61dafb' : 'transparent',
-              color: activeTab === 'saved' ? '#000' : '#fff',
-              border: 'none',
-              cursor: 'pointer',
-              fontSize: 16,
-              fontWeight: activeTab === 'saved' ? 'bold' : 'normal'
-            }}
-          >
-            💾 Saved Searches
-          </button>
-          <button
-            onClick={() => handleTabChange('bulk')}
-            style={{
-              padding: '10px 20px',
-              background: activeTab === 'bulk' ? '#61dafb' : 'transparent',
-              color: activeTab === 'bulk' ? '#000' : '#fff',
-              border: 'none',
-              cursor: 'pointer',
-              fontSize: 16,
-              fontWeight: activeTab === 'bulk' ? 'bold' : 'normal'
-            }}
-          >
-            🗺️ Bulk Search
-          </button>
+          <button onClick={() => handleTabChange('search')} style={tabButtonStyle(activeTab === 'search')}>🔍 Search</button>
+          <button onClick={() => handleTabChange('history')} style={tabButtonStyle(activeTab === 'history')}>📊 Search History</button>
+          <button onClick={() => handleTabChange('saved')} style={tabButtonStyle(activeTab === 'saved')}>💾 Saved Searches</button>
+          <button onClick={() => handleTabChange('bulk')} style={tabButtonStyle(activeTab === 'bulk')}>🗺️ Bulk Search</button>
         </div>
 
         {/* Search Tab */}
@@ -475,15 +445,14 @@ function App() {
                 <Marker position={bulkCenter} draggable={true} eventHandlers={{ dragend: (e) => setBulkCenter([e.target.getLatLng().lat, e.target.getLatLng().lng]) }} />
                 <Circle center={bulkCenter} radius={bulkRadius} pathOptions={{ color: '#ffb366', fillColor: '#ffb366', fillOpacity: 0.2 }} />
                 <BulkMap center={bulkCenter} setCenter={setBulkCenter} radius={bulkRadius} setRadius={setBulkRadius} />
-                {(showUniqueOnly ? uniqueBulkStores : allBulkStores).map((store, idx) => (
-                  <Marker key={store.place_id || idx} position={[store.latitude, store.longitude]}>
-                  </Marker>
-                ))}
+                {hoveredStore && hoveredStore.latitude && hoveredStore.longitude && (
+                  <Marker position={[hoveredStore.latitude, hoveredStore.longitude]} icon={highlightIcon} />
+                )}
               </MapContainer>
             </div>
             <div style={{ marginBottom: 20 }}>
               <label>Radius (meters): </label>
-              <input type="range" min={500} max={10000} step={100} value={bulkRadius} onChange={e => setBulkRadius(Number(e.target.value))} style={{ width: 200 }} />
+              <input type="range" min={500} max={200000} step={100} value={bulkRadius} onChange={e => setBulkRadius(Number(e.target.value))} style={{ width: 200 }} />
               <span style={{ marginLeft: 10 }}>{bulkRadius} m</span>
             </div>
             <div style={{ marginBottom: 20 }}>
@@ -499,24 +468,28 @@ function App() {
               </label>
             </div>
             {bulkRunning && <div style={{ marginBottom: 20, color: '#3d2c1e' }}>Progress: {bulkProgress}%</div>}
-            {bulkResults.length > 0 && (
+            {uniqueBulkStores.length > 0 && (
               <div style={{ maxHeight: '40vh', overflowY: 'auto' }}>
                 <table style={{ width: '100%', background: '#fff8ee', borderRadius: 8, color: '#3d2c1e', borderCollapse: 'collapse', fontSize: 13 }}>
                   <thead>
                     <tr>
+                      <th>Name</th>
+                      <th>Address</th>
                       <th>Lat</th>
                       <th>Lng</th>
-                      <th>Stores Found</th>
-                      <th>Status</th>
                     </tr>
                   </thead>
                   <tbody>
-                    {bulkResults.map((res, idx) => (
-                      <tr key={idx}>
-                        <td>{res.lat.toFixed(5)}</td>
-                        <td>{res.lng.toFixed(5)}</td>
-                        <td>{res.stores.length}</td>
-                        <td>{res.error ? <span style={{ color: '#f44336' }}>Error</span> : 'OK'}</td>
+                    {uniqueBulkStores.map((store, idx) => (
+                      <tr key={store.place_id || idx}
+                        onMouseEnter={() => setHoveredStore(store)}
+                        onMouseLeave={() => setHoveredStore(null)}
+                        style={{ cursor: 'pointer', background: hoveredStore && hoveredStore.place_id === store.place_id ? '#ffe0b2' : (idx % 2 === 0 ? '#fff8ee' : '#f3e3c3') }}
+                      >
+                        <td>{store.name}</td>
+                        <td>{store.address}</td>
+                        <td>{store.latitude ? store.latitude.toFixed(5) : ''}</td>
+                        <td>{store.longitude ? store.longitude.toFixed(5) : ''}</td>
                       </tr>
                     ))}
                   </tbody>
@@ -565,7 +538,7 @@ function App() {
       </header>
 
       <footer>
-      v1.3 - Bulk Search Streaming, Map Pins, City Names, and Filtering!
+      v1.4 - Bulk Search: Unique Store Table, Hover Pin, 200km Radius, and Pin Color!
       </footer>
     </div>
   );
