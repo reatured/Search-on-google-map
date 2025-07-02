@@ -283,7 +283,7 @@ def get_cached_searches(db: Session = Depends(get_db)):
         for item in cached
     ]
 
-@app.post("/bulk_search", summary="Bulk grid search with streaming results", tags=["Bulk"])
+@app.get("/bulk_search", summary="Bulk grid search with streaming results", tags=["Bulk"])
 def bulk_search(
     center: List[float] = Query(..., description="[lat, lng] center of search"),
     radius: float = Query(5000, description="Radius in meters (default 5000m)"),
