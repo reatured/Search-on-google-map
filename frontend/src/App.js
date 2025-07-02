@@ -288,38 +288,40 @@ function App() {
             <div style={{ width: '100%', maxWidth: 1000, margin: '0 auto', position: 'relative' }}>
               <div style={{ width: '100%', maxHeight: '60vh', overflowY: 'auto', background: 'transparent' }}>
                 {(showUniqueOnly ? uniqueSearchResults : results).length > 0 && (
-                  <table style={{ width: '100%', background: '#222', borderRadius: 8, color: '#fff', borderCollapse: 'collapse', fontSize: 13 }}>
-                    <thead>
-                      <tr>
-                        <th style={{ padding: '6px', borderBottom: '1px solid #444' }}>Name</th>
-                        <th style={{ padding: '6px', borderBottom: '1px solid #444' }}>Address</th>
-                        <th style={{ padding: '6px', borderBottom: '1px solid #444' }}>Phone</th>
-                        <th style={{ padding: '6px', borderBottom: '1px solid #444' }}>Website</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {(showUniqueOnly ? uniqueSearchResults : results).map((store, idx) => (
-                        <tr key={store.place_id || idx} style={{ background: idx % 2 === 0 ? '#222' : '#292929' }}>
-                          <td style={{ padding: '6px' }}>{store.name}</td>
-                          <td style={{ padding: '6px' }}>{store.address}</td>
-                          <td style={{ padding: '6px' }}>{store.phone ? `📞 ${store.phone}` : ''}</td>
-                          <td style={{ padding: '6px' }}>
-                            {store.website && (
-                              <a
-                                href={store.website}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                style={{ color: '#61dafb', cursor: 'pointer', fontSize: 13 }}
-                                onClick={e => handleWebsiteClick(store.website, e)}
-                              >
-                                Website
-                              </a>
-                            )}
-                          </td>
+                  <div style={{ width: '100%', overflowX: 'auto' }}>
+                    <table style={{ width: '100%', background: '#222', borderRadius: 8, color: '#fff', borderCollapse: 'collapse', fontSize: 13 }}>
+                      <thead style={{ position: 'sticky', top: 0, zIndex: 2, background: '#222' }}>
+                        <tr>
+                          <th style={{ padding: '6px', borderBottom: '1px solid #444', minWidth: 120 }}>Name</th>
+                          <th style={{ padding: '6px', borderBottom: '1px solid #444', minWidth: 200 }}>Address</th>
+                          <th style={{ padding: '6px', borderBottom: '1px solid #444', minWidth: 160 }}>Phone</th>
+                          <th style={{ padding: '6px', borderBottom: '1px solid #444', minWidth: 180 }}>Website</th>
                         </tr>
-                      ))}
-                    </tbody>
-                  </table>
+                      </thead>
+                      <tbody>
+                        {(showUniqueOnly ? uniqueSearchResults : results).map((store, idx) => (
+                          <tr key={store.place_id || idx} style={{ background: idx % 2 === 0 ? '#222' : '#292929' }}>
+                            <td style={{ padding: '6px' }}>{store.name}</td>
+                            <td style={{ padding: '6px' }}>{store.address}</td>
+                            <td style={{ padding: '6px', minWidth: 160 }}>{store.phone ? `📞 ${store.phone}` : ''}</td>
+                            <td style={{ padding: '6px', minWidth: 180 }}>
+                              {store.website && (
+                                <a
+                                  href={store.website}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  style={{ color: '#61dafb', cursor: 'pointer', fontSize: 13 }}
+                                  onClick={e => handleWebsiteClick(store.website, e)}
+                                >
+                                  Website
+                                </a>
+                              )}
+                            </td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
                 )}
                 {(showUniqueOnly ? uniqueSearchResults : results).length === 0 && !loading && !error && <div>Enter a location and search for hardware stores.</div>}
               </div>
