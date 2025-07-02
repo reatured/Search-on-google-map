@@ -8,7 +8,8 @@ A modern web application that helps users find hardware stores near any location
 - **Location-based search** - Find hardware stores near any address, city, or place
 - **Real-time results** - Get instant results with store details
 - **Comprehensive data** - Store names, addresses, phone numbers, and websites
-- **Intelligent caching** - Results cached for 1 hour to improve performance
+- **Intelligent caching** - Results cached for 1 month to improve performance
+- **Deduplication by name** - Option to hide repeated stores with the same name (e.g., only one "Home Depot" shown)
 
 ### 🏪 **Store Information**
 - **Store names** and **addresses**
@@ -17,8 +18,16 @@ A modern web application that helps users find hardware stores near any location
 - **Distance-based results** (within 10km radius)
 - **Geographic coordinates** for mapping integration
 
+### 🗺️ **Bulk Search (Streaming)**
+- **Interactive map** - Drop a pin and select a radius (up to 20km)
+- **Bulk grid search** - Backend streams results for a grid of points within the selected area
+- **Live map pins** - See unique stores appear in real time as the search runs
+- **Deduplication by name** - Hide repeated stores by name in bulk results
+- **City name in history** - Bulk search and history use city names, not just coordinates
+
 ### 🎨 **Modern UI/UX**
 - **Clean, responsive design** that works on all devices
+- **Improved mobile tab visibility** - Unselected tabs are now darker for better readability
 - **Loading states** with progress indicators
 - **Error handling** with user-friendly messages
 - **Beautiful animations** and smooth interactions
@@ -47,6 +56,7 @@ A modern web application that helps users find hardware stores near any location
 
 ### Frontend
 - **React** - Modern UI framework
+- **Leaflet** - Interactive maps
 - **CSS3** - Styling and animations
 - **GitHub Pages** - Static hosting
 
@@ -86,28 +96,29 @@ Search-on-google-map/
 
 ### Search Endpoints
 - `GET /search` - Search for hardware stores near a location
+- `GET /bulk_search` - Streaming bulk grid search (center, radius, spacing)
 
 ### Analytics Endpoints
 - `GET /analytics/popular-searches` - Get most searched locations
 - `GET /analytics/search-stats` - Get search statistics
 - `GET /analytics/recent-searches` - Get recent search history
+- `GET /analytics/cached-searches` - Get all cached searches
 
-### Example Response
+### Example Bulk Search Usage
+```
+GET /bulk_search?center=35.681236,139.767125&radius=20000&spacing=2000
+```
+- Streams results for a grid of points within a 20km radius of the center.
+
+### Example Response (streamed)
 ```json
 {
-  "location": "Tokyo, Japan",
+  "lat": 35.68,
+  "lng": 139.76,
   "stores": [
-    {
-      "name": "Hardware Store Name",
-      "address": "123 Main St, Tokyo, Japan",
-      "website": "https://example.com",
-      "phone": "+81-3-1234-5678",
-      "email": null,
-      "place_id": "ChIJ...",
-      "latitude": 35.6762,
-      "longitude": 139.6503
-    }
-  ]
+    { "name": "Home Depot", "address": "...", ... }
+  ],
+  "city": "Tokyo"
 }
 ```
 
@@ -139,7 +150,8 @@ Search-on-google-map/
 3. Or serve with a local server:
    ```bash
    cd frontend
-   python -m http.server 8000
+   npm install
+   npm start
    ```
 
 ### Backend
@@ -147,26 +159,21 @@ Search-on-google-map/
    ```bash
    cd backend
    ```
-
 2. Create virtual environment:
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
-
 3. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
-
 4. Set up environment variables:
    ```bash
    echo "GOOGLE_MAPS_API_KEY=your_api_key_here" > .env
    echo "DATABASE_URL=postgresql://localhost/hardware_finder" >> .env
    ```
-
 5. Set up local PostgreSQL database (optional for development)
-
 6. Run the server:
    ```bash
    uvicorn main:app --reload
@@ -183,6 +190,7 @@ This project demonstrates:
 5. **Production practices** - CORS, error handling, environment variables
 6. **Data analytics** - Search tracking and performance monitoring
 7. **User experience** - Responsive design, loading states, error messages
+8. **Streaming bulk search** - Real-time results for large area queries
 
 ## 🔍 How It Works
 
@@ -195,6 +203,7 @@ This project demonstrates:
 7. **Results are saved to database** for analytics and caching
 8. **Results are returned** to the frontend
 9. **Frontend displays the stores** in a clean, organized list
+10. **Bulk search** streams results for a grid of points, deduplicates by name, and shows pins on the map
 
 ## 🎉 Future Enhancements
 
@@ -204,32 +213,6 @@ This project demonstrates:
 - [ ] Implement user accounts and favorites
 - [ ] Add store hours and availability
 - [ ] Mobile app version
-
-## 🚀 Next Steps
-
-### 📊 **Online Data Storage & Caching**
-- **Database Integration** - ✅ Implemented PostgreSQL for storing search results
-- **Cache Management** - ✅ Cache frequently searched locations to reduce API calls
-- **Data Persistence** - ✅ Store historical search data for analytics
-- **Rate Limiting** - Implement smart rate limiting to optimize API usage
-
-### 🔍 **Advanced Search Capabilities**
-- **Grid Search Algorithm** - Implement area-based grid searching for comprehensive coverage
-- **Batch Processing** - Handle hundreds of concurrent searches efficiently
-- **Geographic Boundaries** - Search within specific city limits, counties, or regions
-- **Multi-threaded Queries** - Parallel processing for faster large-scale searches
-
-### 🎯 **Smart Search Features**
-- **Area Coverage** - Search entire cities or regions with systematic grid patterns
-- **Density Analysis** - Identify hardware store clusters and gaps
-- **Progressive Loading** - Load results progressively for large datasets
-- **Search Optimization** - Intelligent query batching and API quota management
-
-### 📈 **Scalability Improvements**
-- **Load Balancing** - Distribute search load across multiple API endpoints
-- **Background Jobs** - Process large searches asynchronously
-- **Data Analytics** - ✅ Track search patterns and popular locations
-- **Performance Monitoring** - ✅ Monitor API response times and success rates
 
 ---
 
