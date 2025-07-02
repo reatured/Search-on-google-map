@@ -12,6 +12,9 @@ from database import get_db, create_tables
 from models import SearchHistory, Store as StoreModel, LocationCache
 import hashlib
 from datetime import datetime, timedelta
+from fastapi.responses import StreamingResponse
+import json
+import math
 
 load_dotenv()
 API_KEY = os.getenv('GOOGLE_MAPS_API_KEY')
@@ -202,12 +205,12 @@ def search_hardware_stores(
         search_record.store_count = len(stores)
         search_record.response_time_ms = int((time.time() - start_time) * 1000)
         
-        # Cache the results for 1 hour
+        # Cache the results for 1 month
         cache_result = LocationCache(
             location_hash=location_hash,
             location=location,
             results={'location': location, 'stores': [store.dict() for store in stores]},
-            expires_at=datetime.utcnow() + timedelta(hours=1)
+            expires_at=datetime.utcnow() + timedelta(days=30)
         )
         db.add(cache_result)
         
@@ -263,4 +266,102 @@ def get_recent_searches(db: Session = Depends(get_db)):
         "search_status": item.search_status,
         "store_count": item.store_count,
         "response_time_ms": item.response_time_ms
-    } for item in recent] 
+    } for item in recent]
+
+@app.get("/analytics/cached-searches", summary="Get all cached searches", tags=["Analytics"])
+def get_cached_searches(db: Session = Depends(get_db)):
+    """Get all cached search results from the cache table."""
+    cached = db.query(LocationCache).order_by(LocationCache.cached_at.desc()).all()
+    return [
+        {
+            "location": item.location,
+            "cached_at": item.cached_at,
+            "expires_at": item.expires_at,
+            "store_count": len(item.results.get('stores', [])),
+            "results": item.results
+        }
+        for item in cached
+    ]
+
+@app.post("/bulk_search", summary="Bulk grid search with streaming results", tags=["Bulk"])
+def bulk_search(
+    center: List[float] = Query(..., description="[lat, lng] center of search"),
+    radius: float = Query(5000, description="Radius in meters (default 5000m)"),
+    spacing: float = Query(2000, description="Grid spacing in meters (default 2000m)"),
+    db: Session = Depends(get_db),
+    request: Request = None
+):
+    """
+    Streams hardware store search results for a grid of points within a circle.
+    Deduplicates stores by place_id. Uses city name for search history.
+    """
+    def generate_grid_points(center, radius, spacing):
+        points = []
+        R = 6371000
+        clat, clng = center
+        dLat = spacing / R * (180 / math.pi)
+        dLng = spacing / (R * math.cos((math.pi * clat) / 180)) * (180 / math.pi)
+        for lat in frange(clat - radius / R * (180 / math.pi), clat + radius / R * (180 / math.pi), dLat):
+            for lng in frange(clng - radius / (R * math.cos((math.pi * clat) / 180)) * (180 / math.pi), clng + radius / (R * math.cos((math.pi * clat) / 180)) * (180 / math.pi), dLng):
+                d = R * math.acos(
+                    math.sin(clat * math.pi / 180) * math.sin(lat * math.pi / 180) +
+                    math.cos(clat * math.pi / 180) * math.cos(lat * math.pi / 180) * math.cos((lng - clng) * math.pi / 180)
+                )
+                if d <= radius:
+                    points.append((lat, lng))
+        return points
+    def frange(start, stop, step):
+        while start <= stop:
+            yield start
+            start += step
+    def stream():
+        seen_place_ids = set()
+        city_name = None
+        points = generate_grid_points(center, radius, spacing)
+        for idx, (lat, lng) in enumerate(points):
+            # Reverse geocode for city name (only once, at center)
+            if idx == 0:
+                geo_params = {'latlng': f'{lat},{lng}', 'key': API_KEY}
+                try:
+                    geo_resp = requests.get(GEOCODE_URL, params=geo_params, timeout=10)
+                    geo_resp.raise_for_status()
+                    geo_data = geo_resp.json()
+                    if geo_data.get('status') == 'OK' and geo_data.get('results'):
+                        for comp in geo_data['results'][0].get('address_components', []):
+                            if 'locality' in comp['types']:
+                                city_name = comp['long_name']
+                                break
+                        if not city_name:
+                            city_name = geo_data['results'][0].get('formatted_address', f'{lat},{lng}')
+                    else:
+                        city_name = f'{lat},{lng}'
+                except Exception:
+                    city_name = f'{lat},{lng}'
+            # Search for hardware stores at this point
+            params = {
+                'location': f'{lat},{lng}',
+                'radius': 10000,
+                'type': 'hardware_store',
+                'key': API_KEY
+            }
+            try:
+                resp = requests.get(PLACES_URL, params=params, timeout=10)
+                resp.raise_for_status()
+                data = resp.json()
+                stores = []
+                for store_data in data.get('results', []):
+                    place_id = store_data.get('place_id')
+                    if place_id and place_id not in seen_place_ids:
+                        seen_place_ids.add(place_id)
+                        stores.append({
+                            'name': store_data.get('name', 'N/A'),
+                            'address': store_data.get('vicinity', ''),
+                            'place_id': place_id,
+                            'latitude': store_data.get('geometry', {}).get('location', {}).get('lat'),
+                            'longitude': store_data.get('geometry', {}).get('location', {}).get('lng')
+                        })
+                yield f"data: {json.dumps({'lat': lat, 'lng': lng, 'stores': stores, 'city': city_name})}\n\n"
+            except Exception as e:
+                yield f"data: {json.dumps({'lat': lat, 'lng': lng, 'stores': [], 'error': str(e), 'city': city_name})}\n\n"
+            time.sleep(0.5)  # Throttle to avoid API rate limits
+    return StreamingResponse(stream(), media_type="text/event-stream") 

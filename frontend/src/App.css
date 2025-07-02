@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  background: #f8f3ea; /* warm beige */
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -14,14 +16,15 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f8f3ea; /* warm beige */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #3d2c1e; /* soft brown */
+  padding-top: 40px;
 }
 
 .App-link {
@@ -36,3 +39,57 @@
     transform: rotate(360deg);
   }
 }
+
+footer {
+  margin-top: 40px;
+  color: #bfa77a;
+  font-size: 15px;
+  background: transparent;
+}
+
+button {
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Tab Navigation */
+button[style*='background: #61dafb'],
+button[style*='background: #61dafb;'] {
+  background: #ffb366 !important; /* orange accent */
+  color: #3d2c1e !important;
+}
+
+button[style*='background: transparent'] {
+  background: transparent !important;
+  color: #bfa77a !important;
+}
+
+input[type="text"] {
+  border: 1px solid #e0c9a6;
+  border-radius: 6px;
+  background: #fff8ee;
+  color: #3d2c1e;
+  font-size: 16px;
+}
+
+table {
+  background: #fff8ee !important;
+  color: #3d2c1e !important;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(200, 170, 120, 0.08);
+}
+th, td {
+  border-bottom: 1px solid #e0c9a6 !important;
+}
+th {
+  background: #f3e3c3 !important;
+  color: #3d2c1e !important;
+}
+tr {
+  background: #fff8ee !important;
+}
+tr:nth-child(even) {
+  background: #f3e3c3 !important;
+}
+
+/* Modal Preview */
+/* Keep modal dark for contrast */
