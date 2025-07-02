@@ -285,7 +285,7 @@ def get_cached_searches(db: Session = Depends(get_db)):
 
 @app.get("/bulk_search", summary="Bulk grid search with streaming results", tags=["Bulk"])
 def bulk_search(
-    center: List[float] = Query(..., description="[lat, lng] center of search"),
+    center: str = Query(..., description="[lat,lng] center of search, comma-separated"),
     radius: float = Query(5000, description="Radius in meters (default 5000m)"),
     spacing: float = Query(2000, description="Grid spacing in meters (default 2000m)"),
     db: Session = Depends(get_db),
@@ -295,6 +295,9 @@ def bulk_search(
     Streams hardware store search results for a grid of points within a circle.
     Deduplicates stores by place_id. Uses city name for search history.
     """
+    # Parse center
+    lat, lng = map(float, center.split(","))
+    center_coords = [lat, lng]
     def generate_grid_points(center, radius, spacing):
         points = []
         R = 6371000
@@ -317,7 +320,7 @@ def bulk_search(
     def stream():
         seen_place_ids = set()
         city_name = None
-        points = generate_grid_points(center, radius, spacing)
+        points = generate_grid_points(center_coords, radius, spacing)
         for idx, (lat, lng) in enumerate(points):
             # Reverse geocode for city name (only once, at center)
             if idx == 0:
