@@ -213,7 +213,3 @@ This project demonstrates:
 - [ ] Implement user accounts and favorites
 - [ ] Add store hours and availability
 - [ ] Mobile app version
-
----
-
-**Built with ❤️ using modern web technologies and deployed for the world to use!**
