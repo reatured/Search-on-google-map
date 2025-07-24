@@ -77,20 +77,16 @@ table {
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(200, 170, 120, 0.08);
 }
-
 th, td {
   border-bottom: 1px solid #e0c9a6 !important;
 }
-
 th {
   background: #f3e3c3 !important;
   color: #3d2c1e !important;
 }
-
 tr {
   background: #fff8ee !important;
 }
-
 tr:nth-child(even) {
   background: #f3e3c3 !important;
 }

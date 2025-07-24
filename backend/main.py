@@ -24,6 +24,9 @@ class Store(BaseModel):
     website: Optional[str] = None
     phone: Optional[str] = None
     email: Optional[str] = None
+    place_id: Optional[str] = None
+    latitude: Optional[float] = None
+    longitude: Optional[float] = None
 
 
 class SearchResponse(BaseModel):
@@ -162,4 +165,4 @@ def _get_store_details(stores_data: List[dict]) -> List[Store]:
             email=None
         ))
     
-    return stores 
+    return stores
