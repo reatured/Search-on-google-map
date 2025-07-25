@@ -265,7 +265,7 @@ Best regards,
                         className="link--website"
                         title="Analyze company information"
                       >
-                        Analyze Company
+                        AI Analyze
                       </button>
                     </td>
                   </tr>

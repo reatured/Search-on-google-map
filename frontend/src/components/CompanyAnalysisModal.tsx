@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactMarkdown from 'react-markdown';
 import { Store } from '../context/SearchContext';
 
 // Email template - will be replaced with backend API call in the future
@@ -41,6 +42,29 @@ interface CompanyAnalysisModalProps {
   onGenerateEmail: (store: Store) => void;
 }
 
+// localStorage functions for saving/loading analysis data
+const getStorageKey = (store: Store) => `analysis_${store.name}_${store.address}`;
+
+const saveAnalysisToStorage = (store: Store, analysisData: any) => {
+  try {
+    const key = getStorageKey(store);
+    localStorage.setItem(key, JSON.stringify(analysisData));
+  } catch (error) {
+    console.error('Error saving analysis to localStorage:', error);
+  }
+};
+
+const loadAnalysisFromStorage = (store: Store) => {
+  try {
+    const key = getStorageKey(store);
+    const stored = localStorage.getItem(key);
+    return stored ? JSON.parse(stored) : null;
+  } catch (error) {
+    console.error('Error loading analysis from localStorage:', error);
+    return null;
+  }
+};
+
 const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
   show,
   store,
@@ -55,6 +79,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
   const [loadingEmail, setLoadingEmail] = React.useState(false);
   const [analysisError, setAnalysisError] = React.useState<string | null>(null);
   const [emailError, setEmailError] = React.useState<string | null>(null);
+  const modalRef = React.useRef<HTMLDivElement>(null);
 
   // API call for company analysis
   const fetchCompanyAnalysis = React.useCallback(async () => {
@@ -86,6 +111,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
 
       const data = await response.json();
       setAnalysisData(data);
+      saveAnalysisToStorage(store, data);
     } catch (error) {
       console.log('Using fallback analysis data');
       // Fallback to default analysis when backend is not ready
@@ -109,6 +135,28 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
           'Prepare partnership proposal'
         ]
       });
+      if (store) {
+        saveAnalysisToStorage(store, {
+          basicInfo: {
+            name: store.name,
+            address: store.address,
+            phone: store.phone,
+            website: store.website
+          },
+          analysisPoints: [
+            'Location-based market analysis',
+            'Potential partnership opportunities', 
+            'Business size estimation',
+            'Contact strategy recommendations'
+          ],
+          nextSteps: [
+            'Research company background',
+            'Analyze local market presence',
+            'Identify decision makers',
+            'Prepare partnership proposal'
+          ]
+        });
+      }
     } finally {
       setLoadingAnalysis(false);
     }
@@ -177,12 +225,35 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
     onClose();
   };
 
+  // Handle click outside to close modal
+  React.useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
+        onClose();
+      }
+    };
+    
+    if (show) {
+      document.addEventListener('mousedown', handleClickOutside);
+      return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+      };
+    }
+  }, [show, onClose]);
+
   // Load company analysis when modal opens
   React.useEffect(() => {
-    if (show && store && !analysisData) {
-      fetchCompanyAnalysis();
+    if (show && store) {
+      // First check localStorage for cached analysis
+      const cachedAnalysis = loadAnalysisFromStorage(store);
+      if (cachedAnalysis) {
+        setAnalysisData(cachedAnalysis);
+      } else {
+        // If no cached data, fetch from API
+        fetchCompanyAnalysis();
+      }
     }
-  }, [show, store, analysisData, fetchCompanyAnalysis]);
+  }, [show, store, fetchCompanyAnalysis]);
 
   if (!show || !store) {
     return null;
@@ -190,7 +261,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
 
   return (
     <div className="modal-overlay">
-      <div className={`modal-content modal-content--analysis ${showEmailSection ? 'modal-content--wide' : ''}`}>
+      <div ref={modalRef} className={`modal-content modal-content--analysis ${showEmailSection ? 'modal-content--wide' : ''}`}>
         <div className="modal-controls">
           <button 
             onClick={onClose} 
@@ -295,7 +366,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
                   <div className="analysis-section">
                     <h3>AI Market Analysis</h3>
                     <div className="ai-analysis-content">
-                      {analysisData.perplexityAnalysis}
+                      <ReactMarkdown>{analysisData.perplexityAnalysis}</ReactMarkdown>
                     </div>
                   </div>
                 )}
@@ -308,24 +379,34 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
 
             <div className="analysis-footer">
               <p><em>This analysis can help inform your outreach strategy.</em></p>
-              {!showEmailSection ? (
+              <div style={{display: 'flex', gap: '10px', justifyContent: 'center', marginTop: '15px'}}>
                 <button
-                  onClick={handleGenerateEmail}
-                  className="btn btn--primary"
-                  style={{marginTop: '15px'}}
+                  onClick={() => {
+                    setAnalysisData(null);
+                    fetchCompanyAnalysis();
+                  }}
+                  className="btn btn--secondary"
                   disabled={loadingAnalysis}
                 >
-                  Generate Cold Email
+                  {loadingAnalysis ? 'Refreshing...' : 'Refresh Analysis'}
                 </button>
-              ) : (
-                <button
-                  onClick={handleSendEmail}
-                  className="btn btn--primary"
-                  style={{marginTop: '15px'}}
-                >
-                  Send Email
-                </button>
-              )}
+                {!showEmailSection ? (
+                  <button
+                    onClick={handleGenerateEmail}
+                    className="btn btn--primary"
+                    disabled={loadingAnalysis}
+                  >
+                    Generate Cold Email
+                  </button>
+                ) : (
+                  <button
+                    onClick={handleSendEmail}
+                    className="btn btn--primary"
+                  >
+                    Send Email
+                  </button>
+                )}
+              </div>
             </div>
           </div>
 
