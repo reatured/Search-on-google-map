@@ -35,6 +35,22 @@ James Hardware
 ✉️ [your email] | 📞 [your phone]`
 };
 
+// Fallback company analysis template - used when AI analysis is not available
+const FALLBACK_ANALYSIS_TEMPLATE = {
+  analysisPoints: [
+    'Location-based market analysis',
+    'Potential partnership opportunities', 
+    'Business size estimation',
+    'Contact strategy recommendations'
+  ],
+  nextSteps: [
+    'Research company background',
+    'Analyze local market presence',
+    'Identify decision makers',
+    'Prepare partnership proposal'
+  ]
+};
+
 interface CompanyAnalysisModalProps {
   show: boolean;
   store: Store | null;
@@ -45,10 +61,15 @@ interface CompanyAnalysisModalProps {
 // localStorage functions for saving/loading analysis data
 const getStorageKey = (store: Store) => `analysis_${store.name}_${store.address}`;
 
-const saveAnalysisToStorage = (store: Store, analysisData: any) => {
+const saveAnalysisToStorage = (store: Store, analysisData: any, hasAI: boolean = false) => {
   try {
     const key = getStorageKey(store);
-    localStorage.setItem(key, JSON.stringify(analysisData));
+    const dataToSave = {
+      ...analysisData,
+      hasAIAnalysis: hasAI,
+      timestamp: new Date().toISOString()
+    };
+    localStorage.setItem(key, JSON.stringify(dataToSave));
   } catch (error) {
     console.error('Error saving analysis to localStorage:', error);
   }
@@ -79,6 +100,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
   const [loadingEmail, setLoadingEmail] = React.useState(false);
   const [analysisError, setAnalysisError] = React.useState<string | null>(null);
   const [emailError, setEmailError] = React.useState<string | null>(null);
+  const [hasAIAnalysis, setHasAIAnalysis] = React.useState(false);
   const modalRef = React.useRef<HTMLDivElement>(null);
 
   // API call for company analysis
@@ -111,52 +133,24 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
 
       const data = await response.json();
       setAnalysisData(data);
-      saveAnalysisToStorage(store, data);
+      setHasAIAnalysis(true);
+      saveAnalysisToStorage(store, data, true);
     } catch (error) {
       console.log('Using fallback analysis data');
       // Fallback to default analysis when backend is not ready
-      setAnalysisData({
+      const fallbackData = {
         basicInfo: {
           name: store.name,
           address: store.address,
           phone: store.phone,
           website: store.website
         },
-        analysisPoints: [
-          'Location-based market analysis',
-          'Potential partnership opportunities', 
-          'Business size estimation',
-          'Contact strategy recommendations'
-        ],
-        nextSteps: [
-          'Research company background',
-          'Analyze local market presence',
-          'Identify decision makers',
-          'Prepare partnership proposal'
-        ]
-      });
-      if (store) {
-        saveAnalysisToStorage(store, {
-          basicInfo: {
-            name: store.name,
-            address: store.address,
-            phone: store.phone,
-            website: store.website
-          },
-          analysisPoints: [
-            'Location-based market analysis',
-            'Potential partnership opportunities', 
-            'Business size estimation',
-            'Contact strategy recommendations'
-          ],
-          nextSteps: [
-            'Research company background',
-            'Analyze local market presence',
-            'Identify decision makers',
-            'Prepare partnership proposal'
-          ]
-        });
-      }
+        analysisPoints: FALLBACK_ANALYSIS_TEMPLATE.analysisPoints,
+        nextSteps: FALLBACK_ANALYSIS_TEMPLATE.nextSteps
+      };
+      setAnalysisData(fallbackData);
+      setHasAIAnalysis(false);
+      saveAnalysisToStorage(store, fallbackData, false);
     } finally {
       setLoadingAnalysis(false);
     }
@@ -248,6 +242,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
       const cachedAnalysis = loadAnalysisFromStorage(store);
       if (cachedAnalysis) {
         setAnalysisData(cachedAnalysis);
+        setHasAIAnalysis(cachedAnalysis.hasAIAnalysis || false);
       } else {
         // If no cached data, fetch from API
         fetchCompanyAnalysis();
@@ -304,7 +299,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
                   </ul>
                 </div>
 
-                {analysisData.analysisPoints && (
+                {!hasAIAnalysis && analysisData.analysisPoints && (
                   <div className="analysis-section">
                     <h3>Analysis Points</h3>
                     <ul>
@@ -315,7 +310,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
                   </div>
                 )}
 
-                {analysisData.nextSteps && (
+                {!hasAIAnalysis && analysisData.nextSteps && (
                   <div className="analysis-section">
                     <h3>Next Steps</h3>
                     <ol>
@@ -383,6 +378,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
                 <button
                   onClick={() => {
                     setAnalysisData(null);
+                    setHasAIAnalysis(false);
                     fetchCompanyAnalysis();
                   }}
                   className="btn btn--secondary"
