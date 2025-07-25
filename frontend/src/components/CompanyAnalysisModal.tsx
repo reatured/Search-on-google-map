@@ -255,9 +255,45 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
                   </div>
                 )}
 
+                {analysisData.productCategories && (
+                  <div className="analysis-section">
+                    <h3>Product Categories & Opportunities</h3>
+                    {analysisData.productCategories.map((category: any, idx: number) => (
+                      <div key={idx} className="product-category">
+                        <h4 className="category-name">{category.name}</h4>
+                        <p className="category-description">{category.description}</p>
+                        
+                        <div className="potential-products">
+                          <strong>Potential Products:</strong>
+                          <ul className="products-list">
+                            {category.potential_products.map((product: string, pidx: number) => (
+                              <li key={pidx}>{product}</li>
+                            ))}
+                          </ul>
+                        </div>
+                        
+                        {category.market_links && category.market_links.length > 0 && (
+                          <div className="market-links">
+                            <strong>Market Research:</strong>
+                            <ul className="links-list">
+                              {category.market_links.map((link: string, lidx: number) => (
+                                <li key={lidx}>
+                                  <a href={link} target="_blank" rel="noopener noreferrer" className="market-link">
+                                    {link}
+                                  </a>
+                                </li>
+                              ))}
+                            </ul>
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                )}
+
                 {analysisData.perplexityAnalysis && (
                   <div className="analysis-section">
-                    <h3>AI Analysis</h3>
+                    <h3>AI Market Analysis</h3>
                     <div className="ai-analysis-content">
                       {analysisData.perplexityAnalysis}
                     </div>

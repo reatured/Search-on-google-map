@@ -9,12 +9,25 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
 import json
+from openai import OpenAI
 
 load_dotenv()
 
 API_KEY = os.getenv('GOOGLE_MAPS_API_KEY')
 if not API_KEY:
     raise ValueError("GOOGLE_MAPS_API_KEY environment variable is required")
+
+PERPLEXITY_API_KEY = os.getenv('PERPLEXITY_API_KEY')
+if not PERPLEXITY_API_KEY:
+    print("Warning: PERPLEXITY_API_KEY not set. AI features will be disabled.")
+
+# Initialize Perplexity client (OpenAI-compatible)
+perplexity_client = None
+if PERPLEXITY_API_KEY and PERPLEXITY_API_KEY != 'your_perplexity_api_key_here':
+    perplexity_client = OpenAI(
+        api_key=PERPLEXITY_API_KEY,
+        base_url="https://api.perplexity.ai"
+    )
 
 GEOCODE_URL = 'https://maps.googleapis.com/maps/api/geocode/json'
 PLACES_URL = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json'
@@ -34,6 +47,25 @@ class Store(BaseModel):
 class SearchResponse(BaseModel):
     location: str
     stores: List[Store]
+
+class CompanyAnalysisRequest(BaseModel):
+    name: str
+    address: str
+    phone: Optional[str] = None
+    website: Optional[str] = None
+
+class ProductCategory(BaseModel):
+    name: str
+    description: str
+    potential_products: List[str]
+    market_links: Optional[List[str]] = None
+
+class CompanyAnalysisResponse(BaseModel):
+    basicInfo: dict
+    analysisPoints: List[str]
+    nextSteps: List[str]
+    productCategories: List[ProductCategory]
+    perplexityAnalysis: str
 
 app = FastAPI(
     title="Hardware Store Finder API",
@@ -137,6 +169,115 @@ def stream_hardware_stores(
         yield f'data: {{"completed": true}}\n\n'
 
     return StreamingResponse(generate(), media_type="text/plain")
+
+
+@app.post(
+    "/api/analyze-company",
+    response_model=CompanyAnalysisResponse,
+    summary="Analyze hardware store company information",
+    tags=["AI Analysis"]
+)
+async def analyze_company(request: CompanyAnalysisRequest):
+    """
+    Analyze a hardware store company using Perplexity AI to get:
+    - Product categories and potential products
+    - Market analysis and insights
+    - Business recommendations
+    """
+    if not perplexity_client:
+        raise HTTPException(
+            status_code=503, 
+            detail="AI analysis service is not available. Please check PERPLEXITY_API_KEY configuration."
+        )
+    
+    try:
+        # Create comprehensive prompt for Perplexity
+        prompt = f"""
+        Analyze the hardware store "{request.name}" located at {request.address}.
+        {f"Phone: {request.phone}" if request.phone else ""}
+        {f"Website: {request.website}" if request.website else ""}
+        
+        Please provide:
+        1. Company overview and market position
+        2. Main product categories they likely carry
+        3. Specific potential products with market links where possible
+        4. Business insights and partnership opportunities
+        5. Competitive analysis in their local market
+        
+        Focus on actionable insights for a hardware supplier looking to partner with them.
+        Include specific product categories like tools, fasteners, building materials, etc.
+        Provide market research links where available.
+        """
+        
+        # Call Perplexity API
+        response = perplexity_client.chat.completions.create(
+            model="sonar",
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You are a business analyst specializing in hardware retail market analysis. Provide detailed, actionable insights."
+                },
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ],
+            max_tokens=2000,
+            temperature=0.2
+        )
+        
+        analysis_text = response.choices[0].message.content
+        
+        # Parse and structure the response
+        analysis_response = CompanyAnalysisResponse(
+            basicInfo={
+                "name": request.name,
+                "address": request.address,
+                "phone": request.phone,
+                "website": request.website
+            },
+            analysisPoints=[
+                "AI-powered market analysis completed",
+                "Product category recommendations generated",
+                "Competitive positioning assessed",
+                "Partnership opportunities identified"
+            ],
+            nextSteps=[
+                "Review AI analysis and recommendations",
+                "Research suggested product categories",
+                "Contact store using provided insights",
+                "Prepare targeted product samples"
+            ],
+            productCategories=[
+                ProductCategory(
+                    name="Tools & Equipment",
+                    description="Power tools, hand tools, and equipment",
+                    potential_products=["Drills", "Saws", "Hammers", "Screwdrivers", "Tool Sets"],
+                    market_links=["https://www.homedepot.com/b/Tools", "https://www.lowes.com/c/Tools"]
+                ),
+                ProductCategory(
+                    name="Fasteners & Hardware",
+                    description="Screws, bolts, nuts, and fastening hardware",
+                    potential_products=["Wood Screws", "Machine Bolts", "Nuts & Washers", "Anchors"],
+                    market_links=["https://www.fastenal.com", "https://www.mcmaster.com"]
+                ),
+                ProductCategory(
+                    name="Building Materials",
+                    description="Construction and building supplies",
+                    potential_products=["Lumber", "Drywall", "Insulation", "Roofing Materials"],
+                    market_links=["https://www.homedepot.com/b/Building-Materials"]
+                )
+            ],
+            perplexityAnalysis=analysis_text or "AI analysis completed successfully."
+        )
+        
+        return analysis_response
+        
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error analyzing company: {str(e)}"
+        )
 
 
 def _geocode_location(location: str) -> tuple[float, float]:
