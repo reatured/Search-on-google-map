@@ -9,6 +9,7 @@ const SearchPage: React.FC = () => {
   const { setSearchResults, searchResults } = useSearchContext();
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [iframeError, setIframeError] = useState(false);
+  const [loadingProgress, setLoadingProgress] = useState<{found: number, total?: number}>({found: 0});
 
   useEffect(() => {
     if (iframeError && previewUrl) {
@@ -31,48 +32,86 @@ const SearchPage: React.FC = () => {
     setLoading(true);
     setError('');
     setResults([]);
+    setLoadingProgress({found: 0});
     
     try {
       const response = await fetch(
-        `https://search-on-google-map-production.up.railway.app/search?location=${encodeURIComponent(location)}`,
+        `http://localhost:8000/search/stream?location=${encodeURIComponent(location)}`,
         {
           method: 'GET',
           redirect: 'follow'
         }
       );
       
-      const text = await response.text();
-      console.log('API Response:', text);
-      
-      try {
-        const data = JSON.parse(text);
-        console.log('Parsed API data:', data);
-        
-        if (Array.isArray(data.stores)) {
-          // Save to context and localStorage
-          const searchData = {
-            location,
-            stores: data.stores,
-            timestamp: Date.now()
-          };
-          setSearchResults(searchData);
-          
-          // Add stores one by one with a delay for visual effect
-          for (let i = 0; i < data.stores.length; i++) {
-            setResults(prev => [...prev, data.stores[i]]);
-            await new Promise(resolve => setTimeout(resolve, 100));
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const reader = response.body?.getReader();
+      if (!reader) {
+        throw new Error('Response body is not readable');
+      }
+
+      const decoder = new TextDecoder();
+      let buffer = '';
+      let searchLocation = location;
+      let allStores: Store[] = [];
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split('\n');
+        buffer = lines.pop() || ''; // Keep incomplete line in buffer
+
+        for (const line of lines) {
+          if (line.startsWith('data: ')) {
+            try {
+              const data = JSON.parse(line.slice(6));
+              
+              if (data.error) {
+                setError(data.error);
+                setLoading(false);
+                return;
+              }
+
+              if (data.location && data.total_found !== undefined) {
+                // Initial response with location info
+                searchLocation = data.location;
+                setLoadingProgress({found: 0, total: data.total_found});
+                console.log(`Starting stream search for "${searchLocation}", expecting ${data.total_found} stores`);
+              }
+
+              if (data.store) {
+                // New store received
+                const store: Store = data.store;
+                allStores.push(store);
+                setResults(prev => [...prev, store]);
+                setLoadingProgress(prev => ({...prev, found: allStores.length}));
+                console.log(`Received store ${data.index}/${data.total}: ${store.name}`);
+              }
+
+              if (data.completed) {
+                // Search completed
+                console.log(`Search completed with ${allStores.length} stores`);
+                const searchData = {
+                  location: searchLocation,
+                  stores: allStores,
+                  timestamp: Date.now()
+                };
+                setSearchResults(searchData);
+                setLoading(false);
+              }
+            } catch (parseErr) {
+              console.error('Error parsing streaming data:', parseErr, 'Line:', line);
+            }
           }
-        } else {
-          setError('No stores found in response.');
         }
-      } catch (jsonErr) {
-        console.error('Failed to parse JSON. Raw response:', text);
-        setError('Failed to parse server response. See console for details.');
       }
     } catch (err: any) {
-      console.error('Search error:', err);
-      setError(err.message || 'An error occurred');
-    } finally {
+      console.error('Streaming search error:', err);
+      setError(err.message || 'An error occurred during streaming search');
       setLoading(false);
     }
   };
@@ -86,6 +125,28 @@ const SearchPage: React.FC = () => {
   const handleClosePreview = () => {
     setPreviewUrl(null);
     setIframeError(false);
+  };
+
+  const handleGenerateColdEmail = (store: Store) => {
+    const subject = `Partnership Opportunity with ${store.name}`;
+    const body = `Dear ${store.name} Team,
+
+I hope this email finds you well. I'm reaching out to explore potential partnership opportunities with your hardware store.
+
+Store Details:
+- Name: ${store.name}
+- Address: ${store.address}
+${store.phone ? `- Phone: ${store.phone}` : ''}
+${store.website ? `- Website: ${store.website}` : ''}
+
+I believe there could be mutual benefits in working together. Would you be interested in discussing this further?
+
+Best regards,
+[Your Name]
+[Your Contact Information]`;
+
+    const mailtoLink = `mailto:${store.email || ''}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.open(mailtoLink, '_blank');
   };
 
   return (
@@ -119,10 +180,28 @@ const SearchPage: React.FC = () => {
             disabled={loading}
             className="btn btn--primary"
           >
-            {loading ? 'Searching...' : 'Search'}
+            {loading ? (
+              loadingProgress.total 
+                ? `Found ${loadingProgress.found}/${loadingProgress.total} stores...` 
+                : 'Searching...'
+            ) : 'Search'}
           </button>
         </div>
       </form>
+
+      {loading && loadingProgress.total && (
+        <div className="progress-container">
+          <div className="progress-bar">
+            <div 
+              className="progress-fill" 
+              style={{width: `${(loadingProgress.found / loadingProgress.total) * 100}%`}}
+            ></div>
+          </div>
+          <div className="progress-text">
+            Loading stores: {loadingProgress.found} of {loadingProgress.total}
+          </div>
+        </div>
+      )}
 
       {error && (
         <div className="error-message">
@@ -142,6 +221,7 @@ const SearchPage: React.FC = () => {
                   <th>Address</th>
                   <th>Phone</th>
                   <th>Website</th>
+                  <th>Actions</th>
                 </tr>
               </thead>
               <tbody>
@@ -168,6 +248,19 @@ const SearchPage: React.FC = () => {
                           Visit Website
                         </a>
                       )}
+                    </td>
+                    <td>
+                      <a
+                        href="#"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          handleGenerateColdEmail(store);
+                        }}
+                        className="link--website"
+                        title="Generate cold email template"
+                      >
+                        Generate Cold Email
+                      </a>
                     </td>
                   </tr>
                 ))}

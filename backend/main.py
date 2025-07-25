@@ -6,7 +6,9 @@ import requests
 from dotenv import load_dotenv
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import StreamingResponse
 from pydantic import BaseModel
+import json
 
 load_dotenv()
 
@@ -82,6 +84,61 @@ def search_hardware_stores(
     return SearchResponse(location=location, stores=stores)
 
 
+@app.get(
+    "/search/stream",
+    summary="Stream hardware stores by location",
+    tags=["Search"]
+)
+def stream_hardware_stores(
+    location: str = Query(
+        ..., 
+        description="Address, city, or place to search for hardware stores"
+    )
+):
+    """
+    Stream hardware stores as they are found and processed.
+    Returns stores one by one as JSON objects separated by newlines.
+    """
+    def generate():
+        try:
+            lat, lng = _geocode_location(location)
+        except ValueError as e:
+            yield f'data: {{"error": "Geocoding failed: {str(e)}"}}\n\n'
+            return
+        except requests.RequestException as e:
+            yield f'data: {{"error": "Geocoding API request failed: {str(e)}"}}\n\n'
+            return
+
+        try:
+            all_results = _search_nearby_stores(lat, lng)
+        except requests.RequestException as e:
+            yield f'data: {{"error": "Places API request failed: {str(e)}"}}\n\n'
+            return
+        
+        if not all_results:
+            yield f'data: {{"location": "{location}", "stores": [], "completed": true}}\n\n'
+            return
+
+        # Send initial response with location
+        yield f'data: {{"location": "{location}", "total_found": {len(all_results)}}}\n\n'
+        
+        # Stream stores as they're processed
+        for i, store in enumerate(all_results):
+            store_data = _get_single_store_details(store)
+            if store_data:
+                result = {
+                    "store": store_data.dict(),
+                    "index": i + 1,
+                    "total": len(all_results)
+                }
+                yield f'data: {json.dumps(result)}\n\n'
+        
+        # Send completion signal
+        yield f'data: {{"completed": true}}\n\n'
+
+    return StreamingResponse(generate(), media_type="text/plain")
+
+
 def _geocode_location(location: str) -> tuple[float, float]:
     """Geocode a location string to lat/lng coordinates."""
     geo_params = {'address': location, 'key': API_KEY}
@@ -135,34 +192,44 @@ def _get_store_details(stores_data: List[dict]) -> List[Store]:
     stores = []
     
     for store in stores_data:
-        name = store.get('name', 'N/A')
-        place_id = store.get('place_id')
-        
-        if not place_id:
-            continue
-        
-        details_params = {
-            'place_id': place_id,
-            'fields': 'name,formatted_phone_number,website,formatted_address,international_phone_number',
-            'key': API_KEY
-        }
-        
-        try:
-            details_resp = requests.get(DETAILS_URL, params=details_params, timeout=10)
-            details_resp.raise_for_status()
-            details = details_resp.json().get('result', {})
-        except requests.RequestException:
-            details = {}
-        
-        stores.append(Store(
-            name=name,
-            address=details.get('formatted_address', store.get('vicinity', 'N/A')),
-            website=details.get('website'),
-            phone=(
-                details.get('formatted_phone_number') or 
-                details.get('international_phone_number')
-            ),
-            email=None
-        ))
+        store_data = _get_single_store_details(store)
+        if store_data:
+            stores.append(store_data)
     
     return stores
+
+
+def _get_single_store_details(store: dict) -> Optional[Store]:
+    """Get detailed information for a single store."""
+    name = store.get('name', 'N/A')
+    place_id = store.get('place_id')
+    
+    if not place_id:
+        return None
+    
+    details_params = {
+        'place_id': place_id,
+        'fields': 'name,formatted_phone_number,website,formatted_address,international_phone_number',
+        'key': API_KEY
+    }
+    
+    try:
+        details_resp = requests.get(DETAILS_URL, params=details_params, timeout=10)
+        details_resp.raise_for_status()
+        details = details_resp.json().get('result', {})
+    except requests.RequestException:
+        details = {}
+    
+    return Store(
+        name=name,
+        address=details.get('formatted_address', store.get('vicinity', 'N/A')),
+        website=details.get('website'),
+        phone=(
+            details.get('formatted_phone_number') or 
+            details.get('international_phone_number')
+        ),
+        email=None,
+        place_id=place_id,
+        latitude=store.get('geometry', {}).get('location', {}).get('lat'),
+        longitude=store.get('geometry', {}).get('location', {}).get('lng')
+    )
