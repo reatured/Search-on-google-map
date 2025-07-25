@@ -6,7 +6,6 @@ import Layout from './Layout';
 import SearchPage from './pages/SearchPage';
 import ResultsPage from './pages/ResultsPage';
 import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
 import { SearchProvider } from './context/SearchContext';
 
 function App() {

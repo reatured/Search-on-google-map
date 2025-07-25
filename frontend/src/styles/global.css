@@ -296,14 +296,17 @@
 
 /* Tables */
 .table-container {
-  width: 100%;
+  width: calc(100vw - 40px);
   max-height: 60vh;
-  overflow-y: auto;
+  overflow: auto;
   background: transparent;
+  margin-left: calc(50% - 50vw + 20px);
+  margin-right: calc(50% - 50vw + 20px);
 }
 
 .data-table {
   width: 100%;
+  min-width: 1200px;
   background: var(--bg-secondary);
   border-radius: 10px;
   color: var(--text-primary);
@@ -313,7 +316,7 @@
 }
 
 .data-table th {
-  padding: 12px;
+  padding: 30px;
   border-bottom: 1px solid var(--border-color);
   background: var(--bg-accent);
   color: var(--text-primary);
@@ -336,21 +339,13 @@
 }
 
 .data-table th:nth-child(3),
-.data-table td:nth-child(3) {
-  width: 150px;
-  min-width: 150px;
-}
-
+.data-table td:nth-child(3),
 .data-table th:nth-child(4),
-.data-table td:nth-child(4) {
-  width: 120px;
-  min-width: 120px;
-}
-
+.data-table td:nth-child(4),
 .data-table th:nth-child(5),
 .data-table td:nth-child(5) {
-  width: 140px;
-  min-width: 140px;
+  width: 150px;
+  min-width: 150px;
 }
 
 /* Links */
@@ -567,6 +562,199 @@
   border: none;
   border-radius: 8px;
   margin-top: 40px;
+}
+
+.modal-content--analysis {
+  width: 90vw;
+  max-width: 800px;
+  height: auto;
+  max-height: 80vh;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+.modal-content--wide {
+  max-width: 1200px;
+  width: 95vw;
+}
+
+.analysis-content {
+  text-align: left;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.analysis-content h2 {
+  color: var(--text-primary);
+  margin-bottom: 20px;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 10px;
+}
+
+.analysis-content h3 {
+  color: var(--text-primary);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.analysis-section {
+  margin-bottom: 20px;
+}
+
+.analysis-section ul,
+.analysis-section ol {
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+.analysis-section li {
+  margin-bottom: 5px;
+}
+
+.analysis-footer {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.analysis-footer p {
+  color: var(--text-secondary);
+}
+
+.loading-section {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.error-section {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--error-color);
+}
+
+.ai-analysis-content {
+  background-color: var(--bg-accent);
+  padding: 15px;
+  border-radius: 6px;
+  border-left: 4px solid var(--accent-color);
+  line-height: 1.6;
+  color: var(--text-primary);
+  white-space: pre-wrap;
+}
+
+.analysis-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.analysis-container--split {
+  flex-direction: row;
+  gap: 20px;
+}
+
+.analysis-container--split .analysis-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.email-section {
+  flex: 1;
+  padding: 20px;
+  margin-top: 40px;
+  border-left: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+}
+
+.email-section h3 {
+  color: var(--text-primary);
+  margin-bottom: 15px;
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 10px;
+  flex-shrink: 0;
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.subject-section {
+  flex-shrink: 0;
+  margin-bottom: 15px;
+}
+
+.email-label {
+  display: block;
+  color: var(--text-primary);
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.email-subject-input {
+  width: 100%;
+  height: 40px;
+  padding: 8px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.email-subject-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.email-body-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  margin-bottom: 15px;
+}
+
+.email-textarea {
+  width: 100%;
+  flex: 1;
+  min-height: 300px;
+  padding: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  line-height: 1.4;
+  resize: none;
+}
+
+.email-textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.email-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  flex-shrink: 0;
+  height: 50px;
+  align-items: center;
+}
+
+.btn--secondary {
+  background-color: var(--bg-accent);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
 }
 
 /* Utility Classes */

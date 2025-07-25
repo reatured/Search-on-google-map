@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSearchContext, Store } from '../context/SearchContext';
+import CompanyAnalysisModal from '../components/CompanyAnalysisModal';
 
 const SearchPage: React.FC = () => {
   const [location, setLocation] = useState('');
@@ -10,6 +11,7 @@ const SearchPage: React.FC = () => {
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [iframeError, setIframeError] = useState(false);
   const [loadingProgress, setLoadingProgress] = useState<{found: number, total?: number}>({found: 0});
+  const [analysisModal, setAnalysisModal] = useState<{show: boolean, store: Store | null}>({show: false, store: null});
 
   useEffect(() => {
     if (iframeError && previewUrl) {
@@ -36,7 +38,7 @@ const SearchPage: React.FC = () => {
     
     try {
       const response = await fetch(
-        `http://localhost:8000/search/stream?location=${encodeURIComponent(location)}`,
+        `https://search-on-google-map-production.up.railway.app/search/stream?location=${encodeURIComponent(location)}`,
         {
           method: 'GET',
           redirect: 'follow'
@@ -125,6 +127,14 @@ const SearchPage: React.FC = () => {
   const handleClosePreview = () => {
     setPreviewUrl(null);
     setIframeError(false);
+  };
+
+  const handleAnalyzeCompany = (store: Store) => {
+    setAnalysisModal({show: true, store});
+  };
+
+  const handleCloseAnalysis = () => {
+    setAnalysisModal({show: false, store: null});
   };
 
   const handleGenerateColdEmail = (store: Store) => {
@@ -221,7 +231,7 @@ Best regards,
                   <th>Address</th>
                   <th>Phone</th>
                   <th>Website</th>
-                  <th>Actions</th>
+                  <th>Analyze</th>
                 </tr>
               </thead>
               <tbody>
@@ -250,17 +260,13 @@ Best regards,
                       )}
                     </td>
                     <td>
-                      <a
-                        href="#"
-                        onClick={(e) => {
-                          e.preventDefault();
-                          handleGenerateColdEmail(store);
-                        }}
+                      <button
+                        onClick={() => handleAnalyzeCompany(store)}
                         className="link--website"
-                        title="Generate cold email template"
+                        title="Analyze company information"
                       >
-                        Generate Cold Email
-                      </a>
+                        Analyze Company
+                      </button>
                     </td>
                   </tr>
                 ))}
@@ -300,6 +306,14 @@ Best regards,
           </div>
         </div>
       )}
+
+      {/* Company Analysis Modal */}
+      <CompanyAnalysisModal
+        show={analysisModal.show}
+        store={analysisModal.store}
+        onClose={handleCloseAnalysis}
+        onGenerateEmail={handleGenerateColdEmail}
+      />
 
       {results.length === 0 && !loading && !error && (
         <div className="instructions">
