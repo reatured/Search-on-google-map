@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
-import { Store } from '../context/SearchContext';
+import remarkGfm from 'remark-gfm';
+import { Store, useSearchContext } from '../context/SearchContext';
 
 // Email template - will be replaced with backend API call in the future
 const EMAIL_TEMPLATE = {
@@ -101,7 +102,13 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
   const [analysisError, setAnalysisError] = React.useState<string | null>(null);
   const [emailError, setEmailError] = React.useState<string | null>(null);
   const [hasAIAnalysis, setHasAIAnalysis] = React.useState(false);
+  const [language, setLanguage] = React.useState<'english' | 'chinese'>('english');
+  const [emailLanguage, setEmailLanguage] = React.useState<'english' | 'chinese'>('english');
+  const [chineseAnalysis, setChineseAnalysis] = React.useState<string | null>(null);
+  const [loadingChinese, setLoadingChinese] = React.useState(false);
   const modalRef = React.useRef<HTMLDivElement>(null);
+  const { getAPIEndpoint } = useSearchContext();
+
 
   // API call for company analysis
   const fetchCompanyAnalysis = React.useCallback(async () => {
@@ -112,7 +119,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
     
     try {
       const response = await fetch(
-        `https://search-on-google-map-production.up.railway.app/api/analyze-company`,
+        `${getAPIEndpoint()}/api/analyze-company`,
         {
           method: 'POST',
           headers: {
@@ -132,6 +139,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
       }
 
       const data = await response.json();
+      console.log('AI Analysis Response:', data);
       setAnalysisData(data);
       setHasAIAnalysis(true);
       saveAnalysisToStorage(store, data, true);
@@ -145,8 +153,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
           phone: store.phone,
           website: store.website
         },
-        analysisPoints: FALLBACK_ANALYSIS_TEMPLATE.analysisPoints,
-        nextSteps: FALLBACK_ANALYSIS_TEMPLATE.nextSteps
+        perplexityAnalysis: null
       };
       setAnalysisData(fallbackData);
       setHasAIAnalysis(false);
@@ -155,6 +162,53 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
       setLoadingAnalysis(false);
     }
   }, [store]);
+
+  // API call for Chinese company analysis
+  const fetchChineseAnalysis = React.useCallback(async () => {
+    if (!store || !analysisData?.perplexityAnalysis) return;
+    
+    setLoadingChinese(true);
+    
+    try {
+      const response = await fetch(
+        `${getAPIEndpoint()}/api/analyze-company`,
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            name: store.name,
+            address: store.address,
+            phone: store.phone,
+            website: store.website,
+            language: 'chinese'
+          })
+        }
+      );
+
+      if (!response.ok) {
+        throw new Error('Backend endpoint not available');
+      }
+
+      const data = await response.json();
+      console.log('Chinese AI Analysis Response:', data);
+      setChineseAnalysis(data.perplexityAnalysis);
+      // Save Chinese analysis to localStorage
+      if (store) {
+        const storageKey = `${getStorageKey(store)}_chinese`;
+        localStorage.setItem(storageKey, JSON.stringify({
+          analysis: data.perplexityAnalysis,
+          timestamp: new Date().toISOString()
+        }));
+      }
+    } catch (error) {
+      console.log('Chinese analysis failed:', error);
+      setChineseAnalysis('Chinese analysis not available. Please try again later.');
+    } finally {
+      setLoadingChinese(false);
+    }
+  }, [store, analysisData]);
 
   // API call for email generation
   const fetchEmailGeneration = React.useCallback(async () => {
@@ -165,7 +219,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
     
     try {
       const response = await fetch(
-        `https://search-on-google-map-production.up.railway.app/api/generate-email`,
+        `${getAPIEndpoint()}/api/generate-email`,
         {
           method: 'POST',
           headers: {
@@ -178,7 +232,8 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
               phone: store.phone,
               website: store.website
             },
-            analysis: analysisData
+            analysis: analysisData,
+            language: emailLanguage
           })
         }
       );
@@ -188,6 +243,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
       }
 
       const data = await response.json();
+      console.log('Email Generation Response:', data);
       setEmailSubject(data.subject);
       setEmailContent(data.body);
     } catch (error) {
@@ -205,7 +261,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
     } finally {
       setLoadingEmail(false);
     }
-  }, [store, analysisData]);
+  }, [store, analysisData, emailLanguage]);
 
   const handleGenerateEmail = async () => {
     setShowEmailSection(true);
@@ -235,6 +291,24 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
     }
   }, [show, onClose]);
 
+  // Handle language switching
+  const handleLanguageSwitch = (newLang: 'english' | 'chinese') => {
+    setLanguage(newLang);
+    if (newLang === 'chinese' && !chineseAnalysis && hasAIAnalysis) {
+      // Check localStorage for Chinese analysis first
+      if (store) {
+        const storageKey = `${getStorageKey(store)}_chinese`;
+        const cached = localStorage.getItem(storageKey);
+        if (cached) {
+          const parsedCache = JSON.parse(cached);
+          setChineseAnalysis(parsedCache.analysis);
+        } else {
+          fetchChineseAnalysis();
+        }
+      }
+    }
+  };
+
   // Load company analysis when modal opens
   React.useEffect(() => {
     if (show && store) {
@@ -243,6 +317,14 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
       if (cachedAnalysis) {
         setAnalysisData(cachedAnalysis);
         setHasAIAnalysis(cachedAnalysis.hasAIAnalysis || false);
+        
+        // Load Chinese analysis if available
+        const chineseStorageKey = `${getStorageKey(store)}_chinese`;
+        const cachedChinese = localStorage.getItem(chineseStorageKey);
+        if (cachedChinese) {
+          const parsedChinese = JSON.parse(cachedChinese);
+          setChineseAnalysis(parsedChinese.analysis);
+        }
       } else {
         // If no cached data, fetch from API
         fetchCompanyAnalysis();
@@ -267,8 +349,35 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
         </div>
         
         <div className={`analysis-container ${showEmailSection ? 'analysis-container--split' : ''}`}>
-          <div className="analysis-content">
-            <h2>Company Analysis - {store.name}</h2>
+          <div className={`analysis-content ${showEmailSection ? 'analysis-content--scrollable' : ''}`}>
+            <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px'}}>
+            <div style={{textAlign: 'left'}}>
+              <p style={{fontSize: '14px', color: 'var(--text-secondary)', marginBottom: '4px', fontWeight: 'normal'}}>Company Analysis</p>
+              <h2 style={{fontSize: '24px', fontWeight: 'bold', color: 'var(--text-primary)', margin: '0'}}>{store.name}</h2>
+            </div>
+              <div style={{display: 'flex', gap: '8px', alignItems: 'center'}}>
+                {/* Language Toggle */}
+                {hasAIAnalysis && (
+                  <div style={{display: 'flex', gap: '8px'}}>
+                    <button
+                      onClick={() => handleLanguageSwitch('english')}
+                      className={`btn btn--small ${language === 'english' ? 'btn--primary' : 'btn--secondary'}`}
+                      style={{fontSize: '12px', padding: '6px 12px', minWidth: '70px', height: '32px'}}
+                    >
+                      English
+                    </button>
+                    <button
+                      onClick={() => handleLanguageSwitch('chinese')}
+                      className={`btn btn--small ${language === 'chinese' ? 'btn--primary' : 'btn--secondary'}`}
+                      style={{fontSize: '12px', padding: '6px 12px', minWidth: '70px', height: '32px'}}
+                      disabled={loadingChinese}
+                    >
+                      {loadingChinese ? 'Loading...' : '中文'}
+                    </button>
+                  </div>
+                )}
+              </div>
+            </div>
             
             {loadingAnalysis ? (
               <div className="loading-section">
@@ -299,71 +408,113 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
                   </ul>
                 </div>
 
-                {!hasAIAnalysis && analysisData.analysisPoints && (
+                {hasAIAnalysis && (analysisData.perplexityAnalysis || chineseAnalysis) ? (
                   <div className="analysis-section">
-                    <h3>Analysis Points</h3>
-                    <ul>
-                      {analysisData.analysisPoints.map((point: string, idx: number) => (
-                        <li key={idx}>{point}</li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-
-                {!hasAIAnalysis && analysisData.nextSteps && (
-                  <div className="analysis-section">
-                    <h3>Next Steps</h3>
-                    <ol>
-                      {analysisData.nextSteps.map((step: string, idx: number) => (
-                        <li key={idx}>{step}</li>
-                      ))}
-                    </ol>
-                  </div>
-                )}
-
-                {analysisData.productCategories && (
-                  <div className="analysis-section">
-                    <h3>Product Categories & Opportunities</h3>
-                    {analysisData.productCategories.map((category: any, idx: number) => (
-                      <div key={idx} className="product-category">
-                        <h4 className="category-name">{category.name}</h4>
-                        <p className="category-description">{category.description}</p>
-                        
-                        <div className="potential-products">
-                          <strong>Potential Products:</strong>
-                          <ul className="products-list">
-                            {category.potential_products.map((product: string, pidx: number) => (
-                              <li key={pidx}>{product}</li>
-                            ))}
-                          </ul>
-                        </div>
-                        
-                        {category.market_links && category.market_links.length > 0 && (
-                          <div className="market-links">
-                            <strong>Market Research:</strong>
-                            <ul className="links-list">
-                              {category.market_links.map((link: string, lidx: number) => (
-                                <li key={lidx}>
-                                  <a href={link} target="_blank" rel="noopener noreferrer" className="market-link">
-                                    {link}
-                                  </a>
-                                </li>
-                              ))}
-                            </ul>
-                          </div>
-                        )}
-                      </div>
-                    ))}
-                  </div>
-                )}
-
-                {analysisData.perplexityAnalysis && (
-                  <div className="analysis-section">
-                    <h3>AI Market Analysis</h3>
-                    <div className="ai-analysis-content">
-                      <ReactMarkdown>{analysisData.perplexityAnalysis}</ReactMarkdown>
+                    <h3>{language === 'chinese' ? 'AI 市场分析' : 'AI Market Analysis'}</h3>
+                    <div className="ai-analysis-content" style={{lineHeight: '1.6'}}>
+                      <ReactMarkdown
+                        remarkPlugins={[remarkGfm]}
+                        components={{
+                          p: ({ children }) => <p style={{ marginBottom: '12px', lineHeight: '1.6' }}>{children}</p>,
+                          ul: ({ children }) => <ul style={{ marginBottom: '12px', paddingLeft: '20px' }}>{children}</ul>,
+                          ol: ({ children }) => <ol style={{ marginBottom: '12px', paddingLeft: '20px' }}>{children}</ol>,
+                          li: ({ children }) => <li style={{ marginBottom: '4px' }}>{children}</li>,
+                          h1: ({ children }) => <h1 style={{ marginBottom: '12px', marginTop: '20px', fontSize: '1.5em', fontWeight: 'bold' }}>{children}</h1>,
+                          h2: ({ children }) => <h2 style={{ marginBottom: '10px', marginTop: '18px', fontSize: '1.3em', fontWeight: 'bold' }}>{children}</h2>,
+                          h3: ({ children }) => <h3 style={{ marginBottom: '8px', marginTop: '16px', fontSize: '1.2em', fontWeight: 'bold' }}>{children}</h3>,
+                          h4: ({ children }) => <h4 style={{ marginBottom: '6px', marginTop: '14px', fontSize: '1.1em', fontWeight: 'bold' }}>{children}</h4>,
+                          table: ({ children }) => (
+                            <table style={{ 
+                              width: '100%', 
+                              borderCollapse: 'collapse', 
+                              marginBottom: '16px',
+                              border: '1px solid var(--border-color)'
+                            }}>
+                              {children}
+                            </table>
+                          ),
+                          thead: ({ children }) => (
+                            <thead style={{ backgroundColor: 'var(--bg-accent)' }}>
+                              {children}
+                            </thead>
+                          ),
+                          th: ({ children }) => (
+                            <th style={{ 
+                              padding: '8px 12px', 
+                              border: '1px solid var(--border-color)',
+                              fontWeight: 'bold',
+                              textAlign: 'left'
+                            }}>
+                              {children}
+                            </th>
+                          ),
+                          td: ({ children }) => (
+                            <td style={{ 
+                              padding: '8px 12px', 
+                              border: '1px solid var(--border-color)'
+                            }}>
+                              {children}
+                            </td>
+                          ),
+                          a: ({ children, href }) => (
+                            <a 
+                              href={href} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              style={{ 
+                                color: 'var(--accent-color)', 
+                                textDecoration: 'none',
+                                fontWeight: 'bold'
+                              }}
+                            >
+                              {children}
+                            </a>
+                          ),
+                          blockquote: ({ children }) => (
+                            <blockquote style={{ 
+                              borderLeft: '4px solid var(--accent-color)',
+                              paddingLeft: '16px',
+                              marginLeft: '0',
+                              marginBottom: '12px',
+                              fontStyle: 'italic',
+                              backgroundColor: 'var(--bg-accent)',
+                              padding: '12px 16px',
+                              borderRadius: '4px'
+                            }}>
+                              {children}
+                            </blockquote>
+                          )
+                        }}
+                      >
+                        {language === 'chinese' && chineseAnalysis 
+                          ? chineseAnalysis 
+                          : analysisData.perplexityAnalysis
+                        }
+                      </ReactMarkdown>
                     </div>
                   </div>
+                ) : (
+                  !hasAIAnalysis && (
+                    <>
+                      <div className="analysis-section">
+                        <h3>Analysis Points</h3>
+                        <ul>
+                          {FALLBACK_ANALYSIS_TEMPLATE.analysisPoints.map((point: string, idx: number) => (
+                            <li key={idx}>{point}</li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      <div className="analysis-section">
+                        <h3>Next Steps</h3>
+                        <ol>
+                          {FALLBACK_ANALYSIS_TEMPLATE.nextSteps.map((step: string, idx: number) => (
+                            <li key={idx}>{step}</li>
+                          ))}
+                        </ol>
+                      </div>
+                    </>
+                  )
                 )}
               </>
             ) : (
@@ -379,6 +530,8 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
                   onClick={() => {
                     setAnalysisData(null);
                     setHasAIAnalysis(false);
+                    setChineseAnalysis(null);
+                    setLanguage('english');
                     fetchCompanyAnalysis();
                   }}
                   className="btn btn--secondary"
@@ -386,7 +539,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
                 >
                   {loadingAnalysis ? 'Refreshing...' : 'Refresh Analysis'}
                 </button>
-                {!showEmailSection ? (
+                {!showEmailSection && (
                   <button
                     onClick={handleGenerateEmail}
                     className="btn btn--primary"
@@ -394,21 +547,38 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
                   >
                     Generate Cold Email
                   </button>
-                ) : (
-                  <button
-                    onClick={handleSendEmail}
-                    className="btn btn--primary"
-                  >
-                    Send Email
-                  </button>
                 )}
               </div>
             </div>
           </div>
 
           {showEmailSection && (
-            <div className="email-section">
-              <h3>Generated Cold Email</h3>
+            <div className={`email-section email-section--scrollable ${loadingEmail ? 'email-section--loading' : ''}`}>
+              <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '20px'}}>
+                <h3>Generated Cold Email</h3>
+                <div style={{display: 'flex', gap: '8px', alignItems: 'center'}}>
+                  {/* Email Language Toggle */}
+                  <span style={{fontSize: '12px', color: 'var(--text-secondary)', marginRight: '8px'}}>
+                    Language:
+                  </span>
+                  <button
+                    onClick={() => setEmailLanguage('english')}
+                    className={`btn btn--small ${emailLanguage === 'english' ? 'btn--primary' : 'btn--secondary'}`}
+                    style={{fontSize: '12px', padding: '6px 12px', minWidth: '70px', height: '32px'}}
+                    disabled={loadingEmail}
+                  >
+                    English
+                  </button>
+                  <button
+                    onClick={() => setEmailLanguage('chinese')}
+                    className={`btn btn--small ${emailLanguage === 'chinese' ? 'btn--primary' : 'btn--secondary'}`}
+                    style={{fontSize: '12px', padding: '6px 12px', minWidth: '70px', height: '32px'}}
+                    disabled={loadingEmail}
+                  >
+                    中文
+                  </button>
+                </div>
+              </div>
               
               {loadingEmail ? (
                 <div className="loading-section">
@@ -425,6 +595,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
                       onChange={(e) => setEmailSubject(e.target.value)}
                       className="email-subject-input"
                       placeholder="Email subject..."
+                      disabled={loadingEmail}
                     />
                   </div>
                   
@@ -436,24 +607,26 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
                       onChange={(e) => setEmailContent(e.target.value)}
                       className="email-textarea"
                       placeholder="Generated email content will appear here..."
+                      disabled={loadingEmail}
                     />
                   </div>
                   
                   <div className="email-actions">
                     <button
+                      onClick={fetchEmailGeneration}
+                      className="btn btn--secondary"
+                      disabled={loadingEmail}
+                    >
+                      {loadingEmail ? 'Regenerating...' : 'Regenerate Email'}
+                    </button>
+                    <button
                       onClick={() => {
                         const fullEmail = `Subject: ${emailSubject}\n\n${emailContent}`;
                         navigator.clipboard.writeText(fullEmail);
                       }}
-                      className="btn btn--secondary"
-                    >
-                      Copy to Clipboard
-                    </button>
-                    <button
-                      onClick={handleSendEmail}
                       className="btn btn--primary"
                     >
-                      Open in Email Client
+                      Copy to Clipboard
                     </button>
                   </div>
                 </div>

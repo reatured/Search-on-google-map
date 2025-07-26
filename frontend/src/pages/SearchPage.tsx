@@ -7,11 +7,12 @@ const SearchPage: React.FC = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [results, setResults] = useState<Store[]>([]);
-  const { setSearchResults, searchResults } = useSearchContext();
+  const { setSearchResults, searchResults, useLocalAPI, setUseLocalAPI, getAPIEndpoint } = useSearchContext();
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [iframeError, setIframeError] = useState(false);
   const [loadingProgress, setLoadingProgress] = useState<{found: number, total?: number}>({found: 0});
   const [analysisModal, setAnalysisModal] = useState<{show: boolean, store: Store | null}>({show: false, store: null});
+
 
   useEffect(() => {
     if (iframeError && previewUrl) {
@@ -38,7 +39,7 @@ const SearchPage: React.FC = () => {
     
     try {
       const response = await fetch(
-        `https://search-on-google-map-production.up.railway.app/search/stream?location=${encodeURIComponent(location)}`,
+        `${getAPIEndpoint()}/search/stream?location=${encodeURIComponent(location)}`,
         {
           method: 'GET',
           redirect: 'follow'
@@ -161,6 +162,31 @@ Best regards,
 
   return (
     <div className="page-container--search">
+      {/* API Endpoint Toggle - Top Right */}
+      <div style={{position: 'absolute', top: '20px', right: '20px', zIndex: 10}}>
+        <div style={{display: 'flex', gap: '6px', alignItems: 'center'}}>
+          <span style={{fontSize: '11px', color: 'var(--text-secondary)', marginRight: '6px'}}>
+            API:
+          </span>
+          <button
+            onClick={() => setUseLocalAPI(false)}
+            className={`btn btn--small ${!useLocalAPI ? 'btn--primary' : 'btn--secondary'}`}
+            style={{fontSize: '10px', padding: '3px 6px'}}
+            title="Use Production API (Railway)"
+          >
+            🌐 Prod
+          </button>
+          <button
+            onClick={() => setUseLocalAPI(true)}
+            className={`btn btn--small ${useLocalAPI ? 'btn--primary' : 'btn--secondary'}`}
+            style={{fontSize: '10px', padding: '3px 6px'}}
+            title="Use Local API (localhost:8002)"
+          >
+            💻 Local
+          </button>
+        </div>
+      </div>
+      
       <div className="content-section--centered">
         <h1 className="page-title--gradient">
           Hardware Store Finder
@@ -198,6 +224,7 @@ Best regards,
           </button>
         </div>
       </form>
+
 
       {loading && loadingProgress.total && (
         <div className="progress-container">

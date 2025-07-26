@@ -26,8 +26,14 @@ A modern web application that helps users find hardware stores near any location
 - **City name in history** - Bulk search and history use city names, not just coordinates
 
 ### Modern UI/UX
+- **Tailwind UI Design System** - Professional, modern interface with consistent styling
 - **Clean, responsive design** that works on all devices
 - **Improved mobile tab visibility** - Unselected tabs are now darker for better readability
+- **Enhanced Modal Experience** - Independent scrolling sections for analysis and email
+- **Consistent Button Design** - Uniform language buttons with proper dimensions
+- **Real-time Visual Feedback** - Loading states with grayed-out sections during AI processing
+- **Global API Toggle** - Centralized API endpoint selection in top-right corner
+- **Two-line Headers** - Clean typography with proper hierarchy
 - **Loading states** with progress indicators
 - **Error handling** with user-friendly messages
 - **Beautiful animations** and smooth interactions
@@ -42,7 +48,12 @@ A modern web application that helps users find hardware stores near any location
 
 ### AI-Powered Features
 - **Company Analysis** - AI-powered analysis of hardware stores using Perplexity API
+- **Multi-language Support** - Analysis available in English and Chinese (中文)
 - **Smart Email Generation** - Personalized cold emails based on company analysis
+- **Email Language Selection** - Generate emails in English or Chinese independently
+- **Regenerate Email** - Refresh AI-generated content with new variations
+- **Real-time Loading States** - Visual feedback during AI processing
+- **Global API Management** - Centralized API endpoint selection (Production/Local)
 - **Intelligent Fallbacks** - Works with static templates when AI endpoints are unavailable
 - **Dynamic Content** - Analysis and emails adapt to each specific store
 
@@ -59,12 +70,35 @@ A modern web application that helps users find hardware stores near any location
 - **Backend API**: Deployed on Railway with automatic HTTPS
 - **Database**: PostgreSQL hosted on Railway
 
+## Recent Updates (Latest)
+
+### UI/UX Enhancements
+- **Tailwind UI Design System** - Complete design overhaul for professional appearance
+- **Enhanced Modal Interface** - Independent scrolling for analysis and email sections
+- **Global API Management** - Centralized API endpoint selection with persistent settings
+- **Improved Typography** - Two-line headers with proper visual hierarchy
+- **Consistent Button Design** - Uniform language toggles with standardized dimensions
+
+### AI Features Improvements
+- **Multi-language Support** - Analysis and email generation in English and Chinese
+- **Email Regeneration** - Ability to regenerate AI content with different variations
+- **Real-time Loading States** - Visual feedback with grayed-out sections during processing
+- **Language Independence** - Separate language selection for analysis and emails
+
+### Technical Improvements
+- **Context API Integration** - Global state management for API endpoints
+- **Enhanced Scrolling** - Vertical-only scrolling with proper content boundaries
+- **Form Validation** - Improved input handling with disabled states during loading
+- **Performance Optimization** - Better memory management and state handling
+
 ## Tech Stack
 
 ### Frontend
-- **React** - Modern UI framework
+- **React** - Modern UI framework with TypeScript
+- **Context API** - Global state management for API endpoints
+- **Tailwind UI** - Professional design system for consistent styling
+- **CSS3** - Advanced styling with CSS custom properties
 - **Leaflet** - Interactive maps
-- **CSS3** - Styling and animations
 - **GitHub Pages** - Static hosting
 
 ### Backend
@@ -79,6 +113,7 @@ A modern web application that helps users find hardware stores near any location
 - **Google Geocoding API** - Convert addresses to coordinates
 - **Google Places API** - Find nearby hardware stores
 - **Google Place Details API** - Get detailed store information
+- **Perplexity API** - AI-powered company analysis and email generation
 
 ## Project Structure
 

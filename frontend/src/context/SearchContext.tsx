@@ -18,6 +18,9 @@ interface SearchContextType {
   searchResults: SearchResults | null;
   setSearchResults: (results: SearchResults | null) => void;
   clearSearchResults: () => void;
+  useLocalAPI: boolean;
+  setUseLocalAPI: (useLocal: boolean) => void;
+  getAPIEndpoint: () => string;
 }
 
 const SearchContext = createContext<SearchContextType | undefined>(undefined);
@@ -36,6 +39,7 @@ interface SearchProviderProps {
 
 export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
   const [searchResults, setSearchResultsState] = useState<SearchResults | null>(null);
+  const [useLocalAPI, setUseLocalAPIState] = useState<boolean>(false);
 
   // Load from localStorage on mount
   useEffect(() => {
@@ -53,6 +57,16 @@ export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
     } catch (error) {
       console.error('Error loading search results from localStorage:', error);
       localStorage.removeItem('hardwareStoreSearchResults');
+    }
+
+    // Load API preference from localStorage
+    try {
+      const savedAPIPreference = localStorage.getItem('useLocalAPI');
+      if (savedAPIPreference !== null) {
+        setUseLocalAPIState(JSON.parse(savedAPIPreference));
+      }
+    } catch (error) {
+      console.error('Error loading API preference from localStorage:', error);
     }
   }, []);
 
@@ -74,8 +88,30 @@ export const SearchProvider: React.FC<SearchProviderProps> = ({ children }) => {
     localStorage.removeItem('hardwareStoreSearchResults');
   };
 
+  const setUseLocalAPI = (useLocal: boolean) => {
+    setUseLocalAPIState(useLocal);
+    try {
+      localStorage.setItem('useLocalAPI', JSON.stringify(useLocal));
+    } catch (error) {
+      console.error('Error saving API preference to localStorage:', error);
+    }
+  };
+
+  const getAPIEndpoint = () => {
+    return useLocalAPI 
+      ? 'http://localhost:8002' 
+      : 'https://search-on-google-map-production.up.railway.app';
+  };
+
   return (
-    <SearchContext.Provider value={{ searchResults, setSearchResults, clearSearchResults }}>
+    <SearchContext.Provider value={{ 
+      searchResults, 
+      setSearchResults, 
+      clearSearchResults,
+      useLocalAPI,
+      setUseLocalAPI,
+      getAPIEndpoint
+    }}>
       {children}
     </SearchContext.Provider>
   );
