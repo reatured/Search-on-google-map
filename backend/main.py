@@ -1,24 +1,33 @@
 import os
-import requests
-from fastapi import FastAPI, Query, HTTPException, Depends, Request
-from fastapi.middleware.cors import CORSMiddleware
-from dotenv import load_dotenv
-from typing import List, Optional
-from pydantic import BaseModel
 import time
-from sqlalchemy.orm import Session
-from sqlalchemy import func
-from database import get_db, create_tables
-from models import SearchHistory, Store as StoreModel, LocationCache
-import hashlib
-from datetime import datetime, timedelta
+from typing import List, Optional
+
+import requests
+from dotenv import load_dotenv
+from fastapi import FastAPI, HTTPException, Query
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import StreamingResponse
+from pydantic import BaseModel
 import json
-import math
+from openai import OpenAI
 
 load_dotenv()
+
 API_KEY = os.getenv('GOOGLE_MAPS_API_KEY')
-print("Loaded API KEY:", API_KEY)
+if not API_KEY:
+    raise ValueError("GOOGLE_MAPS_API_KEY environment variable is required")
+
+PERPLEXITY_API_KEY = os.getenv('PERPLEXITY_API_KEY')
+if not PERPLEXITY_API_KEY:
+    print("Warning: PERPLEXITY_API_KEY not set. AI features will be disabled.")
+
+# Initialize Perplexity client (OpenAI-compatible)
+perplexity_client = None
+if PERPLEXITY_API_KEY and PERPLEXITY_API_KEY != 'your_perplexity_api_key_here':
+    perplexity_client = OpenAI(
+        api_key=PERPLEXITY_API_KEY,
+        base_url="https://api.perplexity.ai"
+    )
 
 GEOCODE_URL = 'https://maps.googleapis.com/maps/api/geocode/json'
 PLACES_URL = 'https://maps.googleapis.com/maps/api/place/nearbysearch/json'
@@ -34,19 +43,45 @@ class Store(BaseModel):
     latitude: Optional[float] = None
     longitude: Optional[float] = None
 
+
 class SearchResponse(BaseModel):
     location: str
     stores: List[Store]
 
-class AnalyticsResponse(BaseModel):
-    total_searches: int
-    successful_searches: int
-    total_stores_found: int
-    success_rate: float
+class CompanyAnalysisRequest(BaseModel):
+    name: str
+    address: str
+    phone: Optional[str] = None
+    website: Optional[str] = None
+    language: Optional[str] = "english"
 
-app = FastAPI(title="Hardware Store Finder API", description="Search for hardware stores using Google Places API.")
+class ProductCategory(BaseModel):
+    name: str
+    description: str
+    potential_products: List[str]
+    market_links: Optional[List[str]] = None
 
-# Allow all origins for dev
+class CompanyAnalysisResponse(BaseModel):
+    basicInfo: dict
+    analysisPoints: List[str]
+    nextSteps: List[str]
+    productCategories: List[ProductCategory]
+    perplexityAnalysis: str
+
+class EmailGenerationRequest(BaseModel):
+    store: dict
+    analysis: Optional[dict] = None
+    language: Optional[str] = "english"
+
+class EmailGenerationResponse(BaseModel):
+    subject: str
+    body: str
+
+app = FastAPI(
+    title="Hardware Store Finder API",
+    description="Search for hardware stores using Google Places API."
+)
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["*"],
@@ -55,316 +90,410 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-# Create database tables on startup
-@app.on_event("startup")
-async def startup_event():
-    create_tables()
 
-@app.get("/search", response_model=SearchResponse, summary="Search hardware stores by location", tags=["Search"])
+@app.get(
+    "/search",
+    response_model=SearchResponse,
+    summary="Search hardware stores by location",
+    tags=["Search"]
+)
 def search_hardware_stores(
-    location: str = Query(..., description="Address, city, or place to search for hardware stores"),
-    request: Request = None,
-    db: Session = Depends(get_db)
+    location: str = Query(
+        ..., 
+        description="Address, city, or place to search for hardware stores"
+    )
 ):
     """
     Search for hardware stores near a given location using the Google Places API.
     Returns a list of stores with name, address, website, and phone number.
-    Saves search history and store data to database.
     """
-    start_time = time.time()
-    
-    # Create search history record
-    search_record = SearchHistory(
-        location=location,
-        user_ip=request.client.host if request else None,
-        search_status='processing'
-    )
-    db.add(search_record)
-    db.commit()
-    
     try:
-        # Check cache first
-        location_hash = hashlib.md5(location.lower().encode()).hexdigest()
-        cached_result = db.query(LocationCache).filter(
-            LocationCache.location_hash == location_hash,
-            LocationCache.expires_at > datetime.utcnow()
-        ).first()
-        
-        if cached_result:
-            # Return cached result
-            search_record.search_status = 'success'
-            search_record.store_count = len(cached_result.results.get('stores', []))
-            search_record.response_time_ms = int((time.time() - start_time) * 1000)
-            db.commit()
-            return SearchResponse(**cached_result.results)
-        
-        # Geocode location
-        geo_params = {'address': location, 'key': API_KEY}
-        try:
-            geo_resp = requests.get(GEOCODE_URL, params=geo_params, timeout=10)
-            geo_resp.raise_for_status()
-        except requests.RequestException as e:
-            search_record.search_status = 'error'
-            db.commit()
-            raise HTTPException(status_code=502, detail=f"Geocoding API request failed: {e}")
-        
-        geo_data = geo_resp.json()
-        if geo_data.get('status') != 'OK' or not geo_data.get('results'):
-            search_record.search_status = 'error'
-            db.commit()
-            raise HTTPException(status_code=400, detail=f"Geocoding failed: {geo_data.get('status')}")
-        
-        loc = geo_data['results'][0]['geometry']['location']
-        lat, lng = loc['lat'], loc['lng']
+        lat, lng = _geocode_location(location)
+    except ValueError as e:
+        raise HTTPException(status_code=400, detail=str(e))
+    except requests.RequestException as e:
+        raise HTTPException(status_code=502, detail=f"Geocoding API request failed: {e}")
 
-        # Find hardware stores
-        params = {
-            'location': f'{lat},{lng}',
-            'radius': 10000,
-            'type': 'hardware_store',
-            'key': API_KEY
-        }
-        all_results = []
-        next_page_token = None
-        while True:
-            if next_page_token:
-                params['pagetoken'] = next_page_token
-                time.sleep(2)
-            try:
-                resp = requests.get(PLACES_URL, params=params, timeout=10)
-                resp.raise_for_status()
-            except requests.RequestException as e:
-                search_record.search_status = 'error'
-                db.commit()
-                raise HTTPException(status_code=502, detail=f"Places API request failed: {e}")
-            
-            data = resp.json()
-            if data.get('status') not in ['OK', 'ZERO_RESULTS']:
-                search_record.search_status = 'error'
-                db.commit()
-                raise HTTPException(status_code=502, detail=f"Places API error: {data.get('status')}")
-            
-            results = data.get('results', [])
-            all_results.extend(results)
-            next_page_token = data.get('next_page_token')
-            if not next_page_token:
-                break
-        
-        if not all_results:
-            search_record.search_status = 'no_results'
-            search_record.store_count = 0
-            search_record.response_time_ms = int((time.time() - start_time) * 1000)
-            db.commit()
-            return SearchResponse(location=location, stores=[])
-
-        # Get details for each store
-        stores = []
-        for store_data in all_results:
-            name = store_data.get('name', 'N/A')
-            place_id = store_data.get('place_id')
-            details_params = {
-                'place_id': place_id,
-                'fields': 'name,formatted_phone_number,website,formatted_address,types,international_phone_number',
-                'key': API_KEY
-            }
-            try:
-                details_resp = requests.get(DETAILS_URL, params=details_params, timeout=10)
-                details_resp.raise_for_status()
-            except requests.RequestException:
-                details = {}
-            else:
-                details = details_resp.json().get('result', {})
-            
-            store = Store(
-                name=name,
-                address=details.get('formatted_address', store_data.get('vicinity', 'N/A')),
-                website=details.get('website'),
-                phone=details.get('formatted_phone_number') or details.get('international_phone_number'),
-                email=None,  # Email not available from Google Places API
-                place_id=place_id,
-                latitude=store_data.get('geometry', {}).get('location', {}).get('lat'),
-                longitude=store_data.get('geometry', {}).get('location', {}).get('lng')
-            )
-            stores.append(store)
-            
-            # Save store to database
-            db_store = StoreModel(
-                search_id=search_record.id,
-                name=store.name,
-                address=store.address,
-                website=store.website,
-                phone=store.phone,
-                place_id=store.place_id,
-                latitude=store.latitude,
-                longitude=store.longitude
-            )
-            db.add(db_store)
-        
-        # Update search record with results
-        search_record.search_status = 'success'
-        search_record.store_count = len(stores)
-        search_record.response_time_ms = int((time.time() - start_time) * 1000)
-        
-        # Cache the results for 1 month
-        cache_result = LocationCache(
-            location_hash=location_hash,
-            location=location,
-            results={'location': location, 'stores': [store.dict() for store in stores]},
-            expires_at=datetime.utcnow() + timedelta(days=30)
-        )
-        db.add(cache_result)
-        
-        db.commit()
-        return SearchResponse(location=location, stores=stores)
-        
-    except Exception as e:
-        search_record.search_status = 'error'
-        db.commit()
-        raise HTTPException(status_code=500, detail=str(e))
-
-@app.get("/analytics/popular-searches", summary="Get most searched locations", tags=["Analytics"])
-def get_popular_searches(db: Session = Depends(get_db)):
-    """Get most searched locations"""
-    popular = db.query(SearchHistory.location, 
-                      func.count(SearchHistory.id).label('search_count'))\
-                .group_by(SearchHistory.location)\
-                .order_by(func.count(SearchHistory.id).desc())\
-                .limit(10)\
-                .all()
-    return [{"location": item.location, "search_count": item.search_count} for item in popular]
-
-@app.get("/analytics/search-stats", response_model=AnalyticsResponse, summary="Get search statistics", tags=["Analytics"])
-def get_search_stats(db: Session = Depends(get_db)):
-    """Get search statistics"""
-    total_searches = db.query(SearchHistory).count()
-    successful_searches = db.query(SearchHistory)\
-                           .filter(SearchHistory.search_status == 'success')\
-                           .count()
-    total_stores = db.query(StoreModel).count()
+    try:
+        all_results = _search_nearby_stores(lat, lng)
+    except requests.RequestException as e:
+        raise HTTPException(status_code=502, detail=f"Places API request failed: {e}")
     
-    success_rate = (successful_searches / total_searches * 100) if total_searches > 0 else 0
-    
-    return AnalyticsResponse(
-        total_searches=total_searches,
-        successful_searches=successful_searches,
-        total_stores_found=total_stores,
-        success_rate=round(success_rate, 2)
+    if not all_results:
+        return SearchResponse(location=location, stores=[])
+
+    stores = _get_store_details(all_results)
+    return SearchResponse(location=location, stores=stores)
+
+
+@app.get(
+    "/search/stream",
+    summary="Stream hardware stores by location",
+    tags=["Search"]
+)
+def stream_hardware_stores(
+    location: str = Query(
+        ..., 
+        description="Address, city, or place to search for hardware stores"
     )
-
-@app.get("/analytics/recent-searches", summary="Get recent searches", tags=["Analytics"])
-def get_recent_searches(db: Session = Depends(get_db)):
-    """Get recent search history"""
-    recent = db.query(SearchHistory)\
-               .order_by(SearchHistory.search_timestamp.desc())\
-               .limit(20)\
-               .all()
-    
-    return [{
-        "id": item.id,
-        "location": item.location,
-        "search_timestamp": item.search_timestamp,
-        "search_status": item.search_status,
-        "store_count": item.store_count,
-        "response_time_ms": item.response_time_ms
-    } for item in recent]
-
-@app.get("/analytics/cached-searches", summary="Get all cached searches", tags=["Analytics"])
-def get_cached_searches(db: Session = Depends(get_db)):
-    """Get all cached search results from the cache table."""
-    cached = db.query(LocationCache).order_by(LocationCache.cached_at.desc()).all()
-    return [
-        {
-            "location": item.location,
-            "cached_at": item.cached_at,
-            "expires_at": item.expires_at,
-            "store_count": len(item.results.get('stores', [])),
-            "results": item.results
-        }
-        for item in cached
-    ]
-
-@app.get("/bulk_search", summary="Bulk grid search with streaming results", tags=["Bulk"])
-def bulk_search(
-    center: str = Query(..., description="[lat,lng] center of search, comma-separated"),
-    radius: float = Query(5000, description="Radius in meters (default 5000m)"),
-    spacing: float = Query(2000, description="Grid spacing in meters (default 2000m)"),
-    db: Session = Depends(get_db),
-    request: Request = None
 ):
     """
-    Streams hardware store search results for a grid of points within a circle.
-    Deduplicates stores by place_id. Uses city name for search history.
+    Stream hardware stores as they are found and processed.
+    Returns stores one by one as JSON objects separated by newlines.
     """
-    # Parse center
-    lat, lng = map(float, center.split(","))
-    center_coords = [lat, lng]
-    def generate_grid_points(center, radius, spacing):
-        points = []
-        R = 6371000
-        clat, clng = center
-        dLat = spacing / R * (180 / math.pi)
-        dLng = spacing / (R * math.cos((math.pi * clat) / 180)) * (180 / math.pi)
-        for lat in frange(clat - radius / R * (180 / math.pi), clat + radius / R * (180 / math.pi), dLat):
-            for lng in frange(clng - radius / (R * math.cos((math.pi * clat) / 180)) * (180 / math.pi), clng + radius / (R * math.cos((math.pi * clat) / 180)) * (180 / math.pi), dLng):
-                d = R * math.acos(
-                    math.sin(clat * math.pi / 180) * math.sin(lat * math.pi / 180) +
-                    math.cos(clat * math.pi / 180) * math.cos(lat * math.pi / 180) * math.cos((lng - clng) * math.pi / 180)
-                )
-                if d <= radius:
-                    points.append((lat, lng))
-        return points
-    def frange(start, stop, step):
-        while start <= stop:
-            yield start
-            start += step
-    def stream():
-        seen_place_ids = set()
-        city_name = None
-        points = generate_grid_points(center_coords, radius, spacing)
-        for idx, (lat, lng) in enumerate(points):
-            # Reverse geocode for city name (only once, at center)
-            if idx == 0:
-                geo_params = {'latlng': f'{lat},{lng}', 'key': API_KEY}
-                try:
-                    geo_resp = requests.get(GEOCODE_URL, params=geo_params, timeout=10)
-                    geo_resp.raise_for_status()
-                    geo_data = geo_resp.json()
-                    if geo_data.get('status') == 'OK' and geo_data.get('results'):
-                        for comp in geo_data['results'][0].get('address_components', []):
-                            if 'locality' in comp['types']:
-                                city_name = comp['long_name']
-                                break
-                        if not city_name:
-                            city_name = geo_data['results'][0].get('formatted_address', f'{lat},{lng}')
-                    else:
-                        city_name = f'{lat},{lng}'
-                except Exception:
-                    city_name = f'{lat},{lng}'
-            # Search for hardware stores at this point
-            params = {
-                'location': f'{lat},{lng}',
-                'radius': 10000,
-                'type': 'hardware_store',
-                'key': API_KEY
-            }
-            try:
-                resp = requests.get(PLACES_URL, params=params, timeout=10)
-                resp.raise_for_status()
-                data = resp.json()
-                stores = []
-                for store_data in data.get('results', []):
-                    place_id = store_data.get('place_id')
-                    if place_id and place_id not in seen_place_ids:
-                        seen_place_ids.add(place_id)
-                        stores.append({
-                            'name': store_data.get('name', 'N/A'),
-                            'address': store_data.get('vicinity', ''),
-                            'place_id': place_id,
-                            'latitude': store_data.get('geometry', {}).get('location', {}).get('lat'),
-                            'longitude': store_data.get('geometry', {}).get('location', {}).get('lng')
-                        })
-                yield f"data: {json.dumps({'lat': lat, 'lng': lng, 'stores': stores, 'city': city_name})}\n\n"
-            except Exception as e:
-                yield f"data: {json.dumps({'lat': lat, 'lng': lng, 'stores': [], 'error': str(e), 'city': city_name})}\n\n"
-            time.sleep(0.5)  # Throttle to avoid API rate limits
-    return StreamingResponse(stream(), media_type="text/event-stream") 
+    def generate():
+        try:
+            lat, lng = _geocode_location(location)
+        except ValueError as e:
+            yield f'data: {{"error": "Geocoding failed: {str(e)}"}}\n\n'
+            return
+        except requests.RequestException as e:
+            yield f'data: {{"error": "Geocoding API request failed: {str(e)}"}}\n\n'
+            return
+
+        try:
+            all_results = _search_nearby_stores(lat, lng)
+        except requests.RequestException as e:
+            yield f'data: {{"error": "Places API request failed: {str(e)}"}}\n\n'
+            return
+        
+        if not all_results:
+            yield f'data: {{"location": "{location}", "stores": [], "completed": true}}\n\n'
+            return
+
+        # Send initial response with location
+        yield f'data: {{"location": "{location}", "total_found": {len(all_results)}}}\n\n'
+        
+        # Stream stores as they're processed
+        for i, store in enumerate(all_results):
+            store_data = _get_single_store_details(store)
+            if store_data:
+                result = {
+                    "store": store_data.dict(),
+                    "index": i + 1,
+                    "total": len(all_results)
+                }
+                yield f'data: {json.dumps(result)}\n\n'
+        
+        # Send completion signal
+        yield f'data: {{"completed": true}}\n\n'
+
+    return StreamingResponse(generate(), media_type="text/plain")
+
+
+@app.post(
+    "/api/analyze-company",
+    response_model=CompanyAnalysisResponse,
+    summary="Analyze hardware store company information",
+    tags=["AI Analysis"]
+)
+async def analyze_company(request: CompanyAnalysisRequest):
+    """
+    Analyze a hardware store company using Perplexity AI to get:
+    - Product categories and potential products
+    - Market analysis and insights
+    - Business recommendations
+    """
+    if not perplexity_client:
+        raise HTTPException(
+            status_code=503, 
+            detail="AI analysis service is not available. Please check PERPLEXITY_API_KEY configuration."
+        )
+    
+    try:
+        # Create comprehensive prompt for Perplexity
+        if request.language == "chinese":
+            prompt = f"""
+            请分析位于 {request.address} 的五金店 "{request.name}"。
+            {f"电话: {request.phone}" if request.phone else ""}
+            {f"网站: {request.website}" if request.website else ""}
+            
+            请提供以下信息：
+            1. 公司概况和市场地位
+            2. 他们可能经营的主要产品类别
+            3. 具体的潜在产品，如果可能的话提供市场链接
+            4. 商业见解和合作机会
+            5. 当地市场竞争分析
+            
+            重点关注对寻求与他们合作的五金供应商的可行见解。
+            包括具体的产品类别，如工具、紧固件、建材等。
+            如果有的话，请提供市场研究链接。
+            
+            请用中文回答。
+            """
+        else:
+            prompt = f"""
+            Analyze the hardware store "{request.name}" located at {request.address}.
+            {f"Phone: {request.phone}" if request.phone else ""}
+            {f"Website: {request.website}" if request.website else ""}
+            
+            Please provide:
+            1. Company overview and market position
+            2. Main product categories they likely carry
+            3. Specific potential products with market links where possible
+            4. Business insights and partnership opportunities
+            5. Competitive analysis in their local market
+            
+            Focus on actionable insights for a hardware supplier looking to partner with them.
+            Include specific product categories like tools, fasteners, building materials, etc.
+            Provide market research links where available.
+            """
+        
+        # Call Perplexity API
+        response = perplexity_client.chat.completions.create(
+            model="sonar",
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You are a business analyst specializing in hardware retail market analysis. Provide detailed, actionable insights."
+                },
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ],
+            max_tokens=2000,
+            temperature=0.2
+        )
+        
+        analysis_text = response.choices[0].message.content
+        
+        # Parse and structure the response
+        analysis_response = CompanyAnalysisResponse(
+            basicInfo={
+                "name": request.name,
+                "address": request.address,
+                "phone": request.phone,
+                "website": request.website
+            },
+            analysisPoints=[],
+            nextSteps=[],
+            productCategories=[],
+            perplexityAnalysis=analysis_text or "AI analysis completed successfully."
+        )
+        
+        return analysis_response
+        
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error analyzing company: {str(e)}"
+        )
+
+
+@app.post(
+    "/api/generate-email",
+    response_model=EmailGenerationResponse,
+    summary="Generate cold email for hardware store outreach",
+    tags=["AI Analysis"]
+)
+async def generate_email(request: EmailGenerationRequest):
+    """
+    Generate a personalized cold email for reaching out to a hardware store.
+    Uses AI to create contextual, professional outreach emails.
+    """
+    if not perplexity_client:
+        raise HTTPException(
+            status_code=503,
+            detail="AI email generation service is not available. Please check PERPLEXITY_API_KEY configuration."
+        )
+    
+    try:
+        store_info = request.store
+        analysis_info = request.analysis.get('perplexityAnalysis', '') if request.analysis else ''
+        
+        # Create prompt for email generation
+        if request.language == "chinese":
+            prompt = f"""
+            为以下五金店生成一封专业的商务合作邮件：
+            
+            店铺信息：
+            - 名称: {store_info.get('name', 'N/A')}
+            - 地址: {store_info.get('address', 'N/A')}
+            - 电话: {store_info.get('phone', 'N/A')}
+            - 网站: {store_info.get('website', 'N/A')}
+            
+            {"市场分析信息：" + analysis_info if analysis_info else ""}
+            
+            请生成：
+            1. 邮件主题（简洁且吸引人）
+            2. 邮件正文（专业、个性化、突出合作价值）
+            
+            发件人背景：James Hardware是一家成立于1995年的家族五金制造出口公司，专业生产家居装饰五金产品。
+            
+            请用中文回复，格式如下：
+            主题：[邮件主题]
+            
+            正文：
+            [邮件正文内容]
+            """
+        else:
+            prompt = f"""
+            Generate a professional cold email for reaching out to the following hardware store:
+            
+            Store Information:
+            - Name: {store_info.get('name', 'N/A')}
+            - Address: {store_info.get('address', 'N/A')}
+            - Phone: {store_info.get('phone', 'N/A')}
+            - Website: {store_info.get('website', 'N/A')}
+            
+            {"Market Analysis: " + analysis_info if analysis_info else ""}
+            
+            Generate:
+            1. Email subject line (concise and compelling)
+            2. Email body (professional, personalized, value-focused)
+            
+            Sender Background: James Hardware is a family-owned hardware manufacturing and export company established in 1995, specializing in high-quality home decoration hardware products.
+            
+            Format your response as:
+            Subject: [email subject]
+            
+            Body:
+            [email body content]
+            """
+        
+        # Call Perplexity API for email generation
+        response = perplexity_client.chat.completions.create(
+            model="sonar",
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You are a professional business communication specialist. Generate personalized, compelling cold emails for B2B hardware partnerships."
+                },
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ],
+            max_tokens=1000,
+            temperature=0.3
+        )
+        
+        email_content = response.choices[0].message.content
+        
+        # Parse subject and body from AI response
+        try:
+            if "Subject:" in email_content and "Body:" in email_content:
+                parts = email_content.split("Body:", 1)
+                subject = parts[0].replace("Subject:", "").strip()
+                body = parts[1].strip()
+            elif "主题：" in email_content and "正文：" in email_content:
+                parts = email_content.split("正文：", 1)
+                subject = parts[0].replace("主题：", "").strip()
+                body = parts[1].strip()
+            else:
+                # Fallback: use first line as subject, rest as body
+                lines = email_content.strip().split('\n', 1)
+                subject = lines[0].strip()
+                body = lines[1].strip() if len(lines) > 1 else email_content
+        except:
+            # Ultimate fallback
+            subject = f"Partnership Opportunity with {store_info.get('name', 'Your Hardware Store')}"
+            body = email_content
+        
+        return EmailGenerationResponse(
+            subject=subject,
+            body=body
+        )
+        
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error generating email: {str(e)}"
+        )
+
+
+def _geocode_location(location: str) -> tuple[float, float]:
+    """Geocode a location string to lat/lng coordinates."""
+    geo_params = {'address': location, 'key': API_KEY}
+    geo_resp = requests.get(GEOCODE_URL, params=geo_params, timeout=10)
+    geo_resp.raise_for_status()
+    
+    geo_data = geo_resp.json()
+    if geo_data.get('status') != 'OK' or not geo_data.get('results'):
+        raise ValueError(f"Geocoding failed: {geo_data.get('status')}")
+    
+    loc = geo_data['results'][0]['geometry']['location']
+    return loc['lat'], loc['lng']
+
+
+def _search_nearby_stores(lat: float, lng: float) -> List[dict]:
+    """Search for nearby hardware stores using Google Places API."""
+    params = {
+        'location': f'{lat},{lng}',
+        'radius': 10000,
+        'type': 'hardware_store',
+        'key': API_KEY
+    }
+    
+    all_results = []
+    next_page_token = None
+    
+    while True:
+        if next_page_token:
+            params['pagetoken'] = next_page_token
+            time.sleep(2)  # Required delay for pagination
+        
+        resp = requests.get(PLACES_URL, params=params, timeout=10)
+        resp.raise_for_status()
+        
+        data = resp.json()
+        if data.get('status') not in ['OK', 'ZERO_RESULTS']:
+            raise requests.RequestException(f"Places API error: {data.get('status')}")
+        
+        results = data.get('results', [])
+        all_results.extend(results)
+        
+        next_page_token = data.get('next_page_token')
+        if not next_page_token:
+            break
+    
+    return all_results
+
+
+def _get_store_details(stores_data: List[dict]) -> List[Store]:
+    """Get detailed information for each store."""
+    stores = []
+    
+    for store in stores_data:
+        store_data = _get_single_store_details(store)
+        if store_data:
+            stores.append(store_data)
+    
+    return stores
+
+
+def _get_single_store_details(store: dict) -> Optional[Store]:
+    """Get detailed information for a single store."""
+    name = store.get('name', 'N/A')
+    place_id = store.get('place_id')
+    
+    if not place_id:
+        return None
+    
+    details_params = {
+        'place_id': place_id,
+        'fields': 'name,formatted_phone_number,website,formatted_address,international_phone_number',
+        'key': API_KEY
+    }
+    
+    try:
+        details_resp = requests.get(DETAILS_URL, params=details_params, timeout=10)
+        details_resp.raise_for_status()
+        details = details_resp.json().get('result', {})
+    except requests.RequestException:
+        details = {}
+    
+    return Store(
+        name=name,
+        address=details.get('formatted_address', store.get('vicinity', 'N/A')),
+        website=details.get('website'),
+        phone=(
+            details.get('formatted_phone_number') or 
+            details.get('international_phone_number')
+        ),
+        email=None,
+        place_id=place_id,
+        latitude=store.get('geometry', {}).get('location', {}).get('lat'),
+        longitude=store.get('geometry', {}).get('location', {}).get('lng')
+    )
