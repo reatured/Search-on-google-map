@@ -53,6 +53,7 @@ class CompanyAnalysisRequest(BaseModel):
     address: str
     phone: Optional[str] = None
     website: Optional[str] = None
+    language: Optional[str] = "english"
 
 class ProductCategory(BaseModel):
     name: str
@@ -66,6 +67,15 @@ class CompanyAnalysisResponse(BaseModel):
     nextSteps: List[str]
     productCategories: List[ProductCategory]
     perplexityAnalysis: str
+
+class EmailGenerationRequest(BaseModel):
+    store: dict
+    analysis: Optional[dict] = None
+    language: Optional[str] = "english"
+
+class EmailGenerationResponse(BaseModel):
+    subject: str
+    body: str
 
 app = FastAPI(
     title="Hardware Store Finder API",
@@ -192,22 +202,42 @@ async def analyze_company(request: CompanyAnalysisRequest):
     
     try:
         # Create comprehensive prompt for Perplexity
-        prompt = f"""
-        Analyze the hardware store "{request.name}" located at {request.address}.
-        {f"Phone: {request.phone}" if request.phone else ""}
-        {f"Website: {request.website}" if request.website else ""}
-        
-        Please provide:
-        1. Company overview and market position
-        2. Main product categories they likely carry
-        3. Specific potential products with market links where possible
-        4. Business insights and partnership opportunities
-        5. Competitive analysis in their local market
-        
-        Focus on actionable insights for a hardware supplier looking to partner with them.
-        Include specific product categories like tools, fasteners, building materials, etc.
-        Provide market research links where available.
-        """
+        if request.language == "chinese":
+            prompt = f"""
+            请分析位于 {request.address} 的五金店 "{request.name}"。
+            {f"电话: {request.phone}" if request.phone else ""}
+            {f"网站: {request.website}" if request.website else ""}
+            
+            请提供以下信息：
+            1. 公司概况和市场地位
+            2. 他们可能经营的主要产品类别
+            3. 具体的潜在产品，如果可能的话提供市场链接
+            4. 商业见解和合作机会
+            5. 当地市场竞争分析
+            
+            重点关注对寻求与他们合作的五金供应商的可行见解。
+            包括具体的产品类别，如工具、紧固件、建材等。
+            如果有的话，请提供市场研究链接。
+            
+            请用中文回答。
+            """
+        else:
+            prompt = f"""
+            Analyze the hardware store "{request.name}" located at {request.address}.
+            {f"Phone: {request.phone}" if request.phone else ""}
+            {f"Website: {request.website}" if request.website else ""}
+            
+            Please provide:
+            1. Company overview and market position
+            2. Main product categories they likely carry
+            3. Specific potential products with market links where possible
+            4. Business insights and partnership opportunities
+            5. Competitive analysis in their local market
+            
+            Focus on actionable insights for a hardware supplier looking to partner with them.
+            Include specific product categories like tools, fasteners, building materials, etc.
+            Provide market research links where available.
+            """
         
         # Call Perplexity API
         response = perplexity_client.chat.completions.create(
@@ -236,38 +266,9 @@ async def analyze_company(request: CompanyAnalysisRequest):
                 "phone": request.phone,
                 "website": request.website
             },
-            analysisPoints=[
-                "AI-powered market analysis completed",
-                "Product category recommendations generated",
-                "Competitive positioning assessed",
-                "Partnership opportunities identified"
-            ],
-            nextSteps=[
-                "Review AI analysis and recommendations",
-                "Research suggested product categories",
-                "Contact store using provided insights",
-                "Prepare targeted product samples"
-            ],
-            productCategories=[
-                ProductCategory(
-                    name="Tools & Equipment",
-                    description="Power tools, hand tools, and equipment",
-                    potential_products=["Drills", "Saws", "Hammers", "Screwdrivers", "Tool Sets"],
-                    market_links=["https://www.homedepot.com/b/Tools", "https://www.lowes.com/c/Tools"]
-                ),
-                ProductCategory(
-                    name="Fasteners & Hardware",
-                    description="Screws, bolts, nuts, and fastening hardware",
-                    potential_products=["Wood Screws", "Machine Bolts", "Nuts & Washers", "Anchors"],
-                    market_links=["https://www.fastenal.com", "https://www.mcmaster.com"]
-                ),
-                ProductCategory(
-                    name="Building Materials",
-                    description="Construction and building supplies",
-                    potential_products=["Lumber", "Drywall", "Insulation", "Roofing Materials"],
-                    market_links=["https://www.homedepot.com/b/Building-Materials"]
-                )
-            ],
+            analysisPoints=[],
+            nextSteps=[],
+            productCategories=[],
             perplexityAnalysis=analysis_text or "AI analysis completed successfully."
         )
         
@@ -277,6 +278,128 @@ async def analyze_company(request: CompanyAnalysisRequest):
         raise HTTPException(
             status_code=500,
             detail=f"Error analyzing company: {str(e)}"
+        )
+
+
+@app.post(
+    "/api/generate-email",
+    response_model=EmailGenerationResponse,
+    summary="Generate cold email for hardware store outreach",
+    tags=["AI Analysis"]
+)
+async def generate_email(request: EmailGenerationRequest):
+    """
+    Generate a personalized cold email for reaching out to a hardware store.
+    Uses AI to create contextual, professional outreach emails.
+    """
+    if not perplexity_client:
+        raise HTTPException(
+            status_code=503,
+            detail="AI email generation service is not available. Please check PERPLEXITY_API_KEY configuration."
+        )
+    
+    try:
+        store_info = request.store
+        analysis_info = request.analysis.get('perplexityAnalysis', '') if request.analysis else ''
+        
+        # Create prompt for email generation
+        if request.language == "chinese":
+            prompt = f"""
+            为以下五金店生成一封专业的商务合作邮件：
+            
+            店铺信息：
+            - 名称: {store_info.get('name', 'N/A')}
+            - 地址: {store_info.get('address', 'N/A')}
+            - 电话: {store_info.get('phone', 'N/A')}
+            - 网站: {store_info.get('website', 'N/A')}
+            
+            {"市场分析信息：" + analysis_info if analysis_info else ""}
+            
+            请生成：
+            1. 邮件主题（简洁且吸引人）
+            2. 邮件正文（专业、个性化、突出合作价值）
+            
+            发件人背景：James Hardware是一家成立于1995年的家族五金制造出口公司，专业生产家居装饰五金产品。
+            
+            请用中文回复，格式如下：
+            主题：[邮件主题]
+            
+            正文：
+            [邮件正文内容]
+            """
+        else:
+            prompt = f"""
+            Generate a professional cold email for reaching out to the following hardware store:
+            
+            Store Information:
+            - Name: {store_info.get('name', 'N/A')}
+            - Address: {store_info.get('address', 'N/A')}
+            - Phone: {store_info.get('phone', 'N/A')}
+            - Website: {store_info.get('website', 'N/A')}
+            
+            {"Market Analysis: " + analysis_info if analysis_info else ""}
+            
+            Generate:
+            1. Email subject line (concise and compelling)
+            2. Email body (professional, personalized, value-focused)
+            
+            Sender Background: James Hardware is a family-owned hardware manufacturing and export company established in 1995, specializing in high-quality home decoration hardware products.
+            
+            Format your response as:
+            Subject: [email subject]
+            
+            Body:
+            [email body content]
+            """
+        
+        # Call Perplexity API for email generation
+        response = perplexity_client.chat.completions.create(
+            model="sonar",
+            messages=[
+                {
+                    "role": "system",
+                    "content": "You are a professional business communication specialist. Generate personalized, compelling cold emails for B2B hardware partnerships."
+                },
+                {
+                    "role": "user",
+                    "content": prompt
+                }
+            ],
+            max_tokens=1000,
+            temperature=0.3
+        )
+        
+        email_content = response.choices[0].message.content
+        
+        # Parse subject and body from AI response
+        try:
+            if "Subject:" in email_content and "Body:" in email_content:
+                parts = email_content.split("Body:", 1)
+                subject = parts[0].replace("Subject:", "").strip()
+                body = parts[1].strip()
+            elif "主题：" in email_content and "正文：" in email_content:
+                parts = email_content.split("正文：", 1)
+                subject = parts[0].replace("主题：", "").strip()
+                body = parts[1].strip()
+            else:
+                # Fallback: use first line as subject, rest as body
+                lines = email_content.strip().split('\n', 1)
+                subject = lines[0].strip()
+                body = lines[1].strip() if len(lines) > 1 else email_content
+        except:
+            # Ultimate fallback
+            subject = f"Partnership Opportunity with {store_info.get('name', 'Your Hardware Store')}"
+            body = email_content
+        
+        return EmailGenerationResponse(
+            subject=subject,
+            body=body
+        )
+        
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error generating email: {str(e)}"
         )
 
 
