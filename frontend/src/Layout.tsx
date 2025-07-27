@@ -43,9 +43,9 @@ const Layout: React.FC = () => {
       
       <footer className="layout-footer">
         <div className="footer-info">
-          <span>v2.0</span>
+          <span>v3.0</span>
           <span>Powered by Google Places API</span>
-          <span>Built with React Router & TypeScript</span>
+          <span>Built with React & FastAPI</span>
         </div>
         <div className="footer-copyright">
           © 2024 Hardware Store Finder. 

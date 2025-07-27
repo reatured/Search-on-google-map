@@ -182,6 +182,121 @@ def stream_hardware_stores(
 
 
 @app.post(
+    "/api/analyze-company/stream",
+    summary="Stream hardware store company analysis",
+    tags=["AI Analysis"]
+)
+async def analyze_company_stream(request: CompanyAnalysisRequest):
+    """
+    Stream analyze a hardware store company using Perplexity AI.
+    Returns analysis results as they are generated with Server-Sent Events.
+    """
+    if not perplexity_client:
+        def error_generator():
+            yield f'data: {{"error": "AI analysis service is not available. Please check PERPLEXITY_API_KEY configuration."}}\n\n'
+        return StreamingResponse(error_generator(), media_type="text/plain")
+    
+    def generate():
+        try:
+            # Send initial status
+            yield f'data: {{"status": "starting", "message": "Initializing company analysis..."}}\n\n'
+            
+            # Create comprehensive prompt for Perplexity
+            if request.language == "chinese":
+                prompt = f"""
+                请分析位于 {request.address} 的五金店 "{request.name}"。
+                {f"电话: {request.phone}" if request.phone else ""}
+                {f"网站: {request.website}" if request.website else ""}
+                
+                请提供以下信息：
+                1. 公司概况和市场地位
+                2. 他们可能经营的主要产品类别
+                3. 具体的潜在产品，如果可能的话提供市场链接
+                4. 商业见解和合作机会
+                5. 当地市场竞争分析
+                
+                重点关注对寻求与他们合作的五金供应商的可行见解。
+                包括具体的产品类别，如工具、紧固件、建材等。
+                如果有的话，请提供市场研究链接。
+                
+                请用中文回答。
+                """
+            else:
+                prompt = f"""
+                Analyze the hardware store "{request.name}" located at {request.address}.
+                {f"Phone: {request.phone}" if request.phone else ""}
+                {f"Website: {request.website}" if request.website else ""}
+                
+                Please provide:
+                1. Company overview and market position
+                2. Main product categories they likely carry
+                3. Specific potential products with market links where possible
+                4. Business insights and partnership opportunities
+                5. Competitive analysis in their local market
+                
+                Focus on actionable insights for a hardware supplier looking to partner with them.
+                Include specific product categories like tools, fasteners, building materials, etc.
+                Provide market research links where available.
+                """
+            
+            # Send analysis status
+            yield f'data: {{"status": "analyzing", "message": "Connecting to AI analysis service..."}}\n\n'
+            
+            # Call Perplexity API with streaming
+            response = perplexity_client.chat.completions.create(
+                model="sonar",
+                messages=[
+                    {
+                        "role": "system",
+                        "content": "You are a business analyst specializing in hardware retail market analysis. Provide detailed, actionable insights."
+                    },
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ],
+                max_tokens=2000,
+                temperature=0.2,
+                stream=True
+            )
+            
+            # Send streaming status
+            yield f'data: {{"status": "streaming", "message": "Receiving analysis results..."}}\n\n'
+            
+            # Stream the response
+            full_content = ""
+            for chunk in response:
+                if chunk.choices[0].delta.content:
+                    content = chunk.choices[0].delta.content
+                    full_content += content
+                    yield f'data: {{"type": "content", "content": {json.dumps(content)}}}\n\n'
+            
+            # Send final structured response
+            analysis_response = {
+                "type": "complete",
+                "data": {
+                    "basicInfo": {
+                        "name": request.name,
+                        "address": request.address,
+                        "phone": request.phone,
+                        "website": request.website
+                    },
+                    "analysisPoints": [],
+                    "nextSteps": [],
+                    "productCategories": [],
+                    "perplexityAnalysis": full_content or "AI analysis completed successfully."
+                }
+            }
+            
+            yield f'data: {json.dumps(analysis_response)}\n\n'
+            
+        except Exception as e:
+            yield f'data: {{"error": "Error analyzing company: {str(e)}"}}\n\n'
+    
+    return StreamingResponse(generate(), media_type="text/plain")
+
+
+@app.post(
     "/api/analyze-company",
     response_model=CompanyAnalysisResponse,
     summary="Analyze hardware store company information",

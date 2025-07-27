@@ -110,7 +110,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
   const { getAPIEndpoint } = useSearchContext();
 
 
-  // API call for company analysis
+  // API call for company analysis with streaming
   const fetchCompanyAnalysis = React.useCallback(async () => {
     if (!store) return;
     
@@ -119,7 +119,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
     
     try {
       const response = await fetch(
-        `${getAPIEndpoint()}/api/analyze-company`,
+        `${getAPIEndpoint()}/api/analyze-company/stream`,
         {
           method: 'POST',
           headers: {
@@ -129,7 +129,8 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
             name: store.name,
             address: store.address,
             phone: store.phone,
-            website: store.website
+            website: store.website,
+            language: language
           })
         }
       );
@@ -138,11 +139,69 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
         throw new Error('Backend endpoint not available');
       }
 
-      const data = await response.json();
-      console.log('AI Analysis Response:', data);
-      setAnalysisData(data);
+      // Initialize analysis data with basic info
+      const initialData = {
+        basicInfo: {
+          name: store.name,
+          address: store.address,
+          phone: store.phone,
+          website: store.website
+        },
+        perplexityAnalysis: '',
+        analysisPoints: [],
+        nextSteps: [],
+        productCategories: []
+      };
+      setAnalysisData(initialData);
       setHasAIAnalysis(true);
-      saveAnalysisToStorage(store, data, true);
+
+      // Handle streaming response
+      const reader = response.body?.getReader();
+      const decoder = new TextDecoder();
+      let streamedContent = '';
+
+      if (reader) {
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+
+          const chunk = decoder.decode(value);
+          const lines = chunk.split('\n');
+
+          for (const line of lines) {
+            if (line.startsWith('data: ')) {
+              try {
+                const data = JSON.parse(line.substring(6));
+                
+                if (data.error) {
+                  console.error('Streaming error:', data.error);
+                  setAnalysisError(data.error);
+                  break;
+                }
+                
+                if (data.type === 'content') {
+                  streamedContent += data.content;
+                  // Update the analysis data with streaming content
+                  setAnalysisData(prev => ({
+                    ...prev,
+                    perplexityAnalysis: streamedContent
+                  }));
+                } else if (data.type === 'complete') {
+                  // Final complete data
+                  setAnalysisData(data.data);
+                  saveAnalysisToStorage(store, data.data, true);
+                } else if (data.status) {
+                  // Status updates (optional: could show these to user)
+                  console.log('Analysis status:', data.message);
+                }
+              } catch (e) {
+                // Ignore malformed JSON lines
+                console.warn('Failed to parse streaming data:', line);
+              }
+            }
+          }
+        }
+      }
     } catch (error) {
       console.log('Using fallback analysis data');
       // Fallback to default analysis when backend is not ready
@@ -161,17 +220,18 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
     } finally {
       setLoadingAnalysis(false);
     }
-  }, [store]);
+  }, [store, language]);
 
-  // API call for Chinese company analysis
+  // API call for Chinese company analysis with streaming
   const fetchChineseAnalysis = React.useCallback(async () => {
-    if (!store || !analysisData?.perplexityAnalysis) return;
+    if (!store) return;
     
     setLoadingChinese(true);
+    setChineseAnalysis('');
     
     try {
       const response = await fetch(
-        `${getAPIEndpoint()}/api/analyze-company`,
+        `${getAPIEndpoint()}/api/analyze-company/stream`,
         {
           method: 'POST',
           headers: {
@@ -191,16 +251,53 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
         throw new Error('Backend endpoint not available');
       }
 
-      const data = await response.json();
-      console.log('Chinese AI Analysis Response:', data);
-      setChineseAnalysis(data.perplexityAnalysis);
-      // Save Chinese analysis to localStorage
-      if (store) {
-        const storageKey = `${getStorageKey(store)}_chinese`;
-        localStorage.setItem(storageKey, JSON.stringify({
-          analysis: data.perplexityAnalysis,
-          timestamp: new Date().toISOString()
-        }));
+      // Handle streaming response
+      const reader = response.body?.getReader();
+      const decoder = new TextDecoder();
+      let streamedContent = '';
+
+      if (reader) {
+        while (true) {
+          const { done, value } = await reader.read();
+          if (done) break;
+
+          const chunk = decoder.decode(value);
+          const lines = chunk.split('\n');
+
+          for (const line of lines) {
+            if (line.startsWith('data: ')) {
+              try {
+                const data = JSON.parse(line.substring(6));
+                
+                if (data.error) {
+                  console.error('Chinese streaming error:', data.error);
+                  setChineseAnalysis('Chinese analysis not available. Please try again later.');
+                  break;
+                }
+                
+                if (data.type === 'content') {
+                  streamedContent += data.content;
+                  setChineseAnalysis(streamedContent);
+                } else if (data.type === 'complete') {
+                  // Final complete data
+                  setChineseAnalysis(data.data.perplexityAnalysis);
+                  // Save Chinese analysis to localStorage
+                  if (store) {
+                    const storageKey = `${getStorageKey(store)}_chinese`;
+                    localStorage.setItem(storageKey, JSON.stringify({
+                      analysis: data.data.perplexityAnalysis,
+                      timestamp: new Date().toISOString()
+                    }));
+                  }
+                } else if (data.status) {
+                  console.log('Chinese analysis status:', data.message);
+                }
+              } catch (e) {
+                console.warn('Failed to parse Chinese streaming data:', line);
+              }
+            }
+          }
+        }
       }
     } catch (error) {
       console.log('Chinese analysis failed:', error);
@@ -208,7 +305,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
     } finally {
       setLoadingChinese(false);
     }
-  }, [store, analysisData]);
+  }, [store]);
 
   // API call for email generation
   const fetchEmailGeneration = React.useCallback(async () => {
@@ -372,7 +469,7 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
                       style={{fontSize: '12px', padding: '6px 12px', minWidth: '70px', height: '32px'}}
                       disabled={loadingChinese}
                     >
-                      {loadingChinese ? 'Loading...' : '中文'}
+                      {loadingChinese ? '📡' : '中文'}
                     </button>
                   </div>
                 )}
@@ -382,6 +479,17 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
             {loadingAnalysis ? (
               <div className="loading-section">
                 <p>Analyzing company information...</p>
+                {analysisData?.perplexityAnalysis && (
+                  <div style={{marginTop: '16px', padding: '12px', backgroundColor: 'var(--bg-accent)', borderRadius: '8px'}}>
+                    <p style={{fontSize: '14px', color: 'var(--text-secondary)', marginBottom: '8px'}}>
+                      ✨ Streaming analysis results...
+                    </p>
+                    <div style={{lineHeight: '1.6', fontSize: '14px'}}>
+                      {analysisData.perplexityAnalysis}
+                      <span className="streaming-cursor">|</span>
+                    </div>
+                  </div>
+                )}
               </div>
             ) : analysisData ? (
               <>
@@ -410,7 +518,14 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
 
                 {hasAIAnalysis && (analysisData.perplexityAnalysis || chineseAnalysis) ? (
                   <div className="analysis-section">
-                    <h3>{language === 'chinese' ? 'AI 市场分析' : 'AI Market Analysis'}</h3>
+                    <h3>
+                      {language === 'chinese' ? 'AI 市场分析' : 'AI Market Analysis'}
+                      {loadingChinese && language === 'chinese' && (
+                        <span style={{marginLeft: '8px', fontSize: '14px', color: 'var(--text-secondary)'}}>
+                          ✨ Streaming...
+                        </span>
+                      )}
+                    </h3>
                     <div className="ai-analysis-content" style={{lineHeight: '1.6'}}>
                       <ReactMarkdown
                         remarkPlugins={[remarkGfm]}
@@ -487,8 +602,8 @@ const CompanyAnalysisModal: React.FC<CompanyAnalysisModalProps> = ({
                         }}
                       >
                         {language === 'chinese' && chineseAnalysis 
-                          ? chineseAnalysis 
-                          : analysisData.perplexityAnalysis
+                          ? chineseAnalysis + (loadingChinese ? ' ▋' : '')
+                          : analysisData.perplexityAnalysis + (loadingAnalysis && analysisData.perplexityAnalysis ? ' ▋' : '')
                         }
                       </ReactMarkdown>
                     </div>
